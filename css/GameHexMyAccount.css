@@ -1,0 +1,459 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    max-width: 1440px;
+    /* 排版 */
+    margin: 0 auto;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* -------------- 以下CSS區域為 GH_MyAccount.html 使用  ------------------- */
+
+.GameHex_MyAccount_HopeList{
+    /* 外觀 */
+    background-color: #222222;
+    /* 尺寸 */
+    width: auto;
+    height: 924px;
+}
+
+.GameHex_MyAccount_HopeList h1{
+    /* 尺寸 */
+    font-size: 36px;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    /* 排版 */
+    text-align: center;
+    padding-top: 20px;
+}
+
+.GH_MA_HopeList_BigBox{
+    /* 尺寸 */
+    width: 1200px;
+    height: 819px;
+    /* 外觀 */
+    background-color: #0C223F;
+    /* 排版 */
+    margin: 0 auto;
+    margin-top: 44px;
+}
+
+.GH_MA_HopeList_SearchBox{
+    /* 排版 */
+    display: flex;
+    align-items: center;
+}
+
+.GH_MA_HopeList_SearchTool{
+    /* 尺寸 */
+    width: 749px;
+    height: 40px;
+    /* 外觀 */
+    background-color: #ACACAC;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-left: 16px;
+}
+
+.GH_MA_HopeList_SearchTool::placeholder{
+    /* 排版 */
+    padding-left: 16px;
+}
+
+.SearchTool{
+    /* 排版 */
+    margin-top: 36px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.GH_MA_HopeList_SortTool{
+    /* 尺寸 */
+    width: 232px;
+    height: 46px;
+    /* 外觀 */
+    border: 1px solid #000;
+    border-radius: 16px;
+    background-color: #585858;
+    /* 排版 */
+    margin-left: 115px;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.GH_MA_HopeList_SortTool img{
+    /* 尺寸 */
+    width: 22px;
+    height: 22px;
+    /* 排版 */
+    margin-left: 23px;
+}
+
+.GH_MA_HopeList_SortTool p{
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    /* 尺寸 */
+    font-size: 18px;
+    font-weight: 500;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-left: 16px;
+}
+
+.GH_MA_HopeList_GameList{
+    /* 尺寸 */
+    width: 1200px;
+    height: 700px;
+    /* 滾動條 */
+    overflow-y: scroll;
+}
+
+.GH_MA_HopeList_GameCard{
+    /* 尺寸 */
+    width: 1150px;
+    height: 200px;
+    /* 外觀 */
+    background-color: #3A5A85;
+    border-radius: 16px;
+    /* 排版 */
+    margin-top: 24px;
+    margin-left: 12px;
+    margin-bottom: 28px;
+    display: flex;
+}
+
+.GH_MA_HopeList_GameCard_SortModify{
+    /* 排版 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+    margin-top: 9.5px;
+    /* 外觀 */
+    border-left: 4px solid #fff;
+    /* 尺寸 */
+    height: 181px;
+}
+
+.GH_MA_HopeList_GameCard_SortModify p{
+    /* 尺寸 */
+    font-size: 40px;
+    font-weight: bold;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 40px;
+}
+
+.GH_MA_HopeList_GameCard_img{
+    /* 尺寸 */
+    width: 300px;
+    height: 200px;
+    /* 排版 */
+    position: relative;
+    margin-left: 40px;
+}
+
+.GH_MA_HopeList_GameCard_img img{
+    /* 尺寸 */
+    width: 300px;
+    height: 200px;
+    /* 外觀 */
+    border-radius: 16px;
+}
+
+.GH_MA_HopeList_GameCard_Discount{
+    /* 排版 */
+    position: absolute;
+    top: 148px;
+    left: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 外觀 */
+    background-color: #292929;
+    border-radius: 4px;
+    color: #fff;
+    /* 尺寸 */
+    width: 128px;
+    height: 39px;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+}
+
+.GH_MA_HopeList_GameCard_Discount p{
+    /* 外觀 */
+    border-radius: 16px;
+    background-color: #fff;
+    color: #000;
+    /* 排版 */
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 8px;
+    /* 字體 */
+    font-size: 12px;
+}
+
+.GH_MA_HopeList_GameCard_Discount span{
+    /* 字體 */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.GH_MA_HopeList_GameCard_Ifo{
+    /* 排版 */
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.GH_MA_HopeList_GameCard_Ifo_Title{
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.GH_MA_HopeList_GameCard_Ifo_View{
+    /* 排版 */
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.GH_MA_HopeList_GameCard_Ifo_View p{
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-right: 20px;
+}
+
+.GH_MA_HopeList_GameCard_Ifo_View span{
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    /* 外觀 */
+    color: #fff;
+}
+
+.GH_MA_HopeList_GameCard_Ifo_ReleaseDay{
+    /* 排版 */
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.GH_MA_HopeList_GameCard_Ifo_ReleaseDay p{
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-right: 20px;
+}
+
+.GH_MA_HopeList_GameCard_Ifo_ReleaseDay span{
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    /* 外觀 */
+    color: #fff;
+}
+
+
+.GH_MA_HopeList_GameCard_Ifo_Tag{
+    /* 排版 */
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.GH_MA_HopeList_GameCard_Ifo_Tag ul{
+    /* 尺寸 */
+    width: 220px;
+    /* 排版 */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.GH_MA_HopeList_GameCard_Ifo_Tag ul li{
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    /* 外觀 */
+    color: #000;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    /* 尺寸 */
+    width: 60px;
+    /* 排版 */
+    margin-bottom: 8px;
+    margin-right: 4px;
+    padding: 4px;
+    text-align: center;
+}
+
+.GH_MA_HopeList_GameCard_Ifo_Tag ul li:nth-child(3){
+    /* 排版 */
+    margin-right: 0px;
+}
+
+.GH_MA_HopeList_GameCard_Ifo_Tag ul li:nth-child(6){
+    /* 排版 */
+    margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------- 以下為 按鈕 專區 */
+.BTN_Style_ProductTo_SearchName{
+    /* 尺寸 */
+    width: 50px;
+    height: 44px;
+    /* 外觀 */
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: none;
+    background-image: url(../img/Vector-Right.png);
+    background-size: fit;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* 排版 */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.BTN_Style_ProductTo_ModUpSort{
+    /* 尺寸 */
+    width: 50px;
+    height: 40px;
+    /* 外觀 */
+    background-color: transparent;
+    box-shadow: none;
+    background-image: url(../img/Up.png);
+    background-size: fit;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* 排版 */
+    margin-left: 40px;
+}
+
+.BTN_Style_ProductTo_ModDownSort{
+    /* 尺寸 */
+    width: 50px;
+    height: 40px;
+    /* 外觀 */
+    background-color: transparent;
+    box-shadow: none;
+    background-image: url(../img/Down.png);
+    background-size: fit;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* 排版 */
+    margin-left: 40px;
+}
+
+.BTN_Style_ProductTo_BuyInSec{
+    /* 尺寸 */
+    width: 213px;
+    height: 67px;
+    font-size: 20px;
+    font-weight: bold;
+    /* 外觀 */
+    background-image: url(../img/BTN_001.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    /* 移除預設外觀 */
+    border: none;
+    background-color: transparent;
+    /* 排版 */
+    margin-left: 140px;
+    margin-top: 68px;
+    line-height: 67px;
+    text-align: center;
+}
