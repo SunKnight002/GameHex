@@ -1,0 +1,106 @@
+/* ------------------------------------------------------------------------- */
+/* 開始進行html5 寫法更正 */
+
+.wrap{
+    /* 尺寸 */
+    width: 1440px;
+    height: auto;
+
+    /* 排版 */
+    margin: 0 auto;
+}
+
+header {
+    /* 尺寸 */
+    width: 1440px;
+    height: 100px;
+    /* 外觀 */
+    background-color: #000000;
+    /* 排版 */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------- 這邊為logo圖片 專用CSS ------------------------------- */
+
+
+.header_Logo{
+    /* 尺寸 */
+    width: 142px;
+    height: 60px;
+    /* 排版 */
+    padding-top: 20px;
+    margin-left: 120px;
+}
+
+.header_Logo a{
+    /* 排版 */
+    display: block;
+    /* 尺寸 */
+    width: auto;
+    height: auto;
+}
+
+.header_Logo a >img{
+    /* 排版 */
+    display: block;
+    /* 尺寸 */
+    width: 142px;
+    height: 60px;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------- 這邊為header ul 專用CSS ------------------------------- */
+
+
+header ul{       
+    /* 排版 */
+    display: flex;
+    margin-left: 127px;
+}
+
+header ul > a{
+    /* 外觀 */
+    color: #fff;
+    Text-decoration:none;
+    /* 排版 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul > a > img{
+    /* 尺寸 */
+    width: 20px;
+    height: 20px;
+    /* 排版 */
+    display: block;
+    text-align: center;
+    margin-right: 8px;
+}
+
+header ul > a > li{
+    /* 外觀 */
+    font-size: 18px;
+    /* for 中文字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* 排版 */
+    margin-right: 40px;
+}
+
+header ul > a > li:hover{
+    /* 外觀 */
+    border-bottom: 2px solid orange;
+    /* 尺寸 */
+    display: block;
+    width: auto;
+    /* 排版 */
+    padding-bottom: 12px;
+
+}

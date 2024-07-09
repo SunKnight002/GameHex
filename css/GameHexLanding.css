@@ -1,0 +1,1716 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+    /* 尺寸 */
+    width: 1440px;
+    height: auto;
+
+    /* 排版 */
+    margin: 0 auto;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* 此處開始為 main01 之 視覺設定 */
+
+
+.main01{
+	/* 外觀 */
+	background-color: #2F2F2F;
+	/* border:  1px solid orange; */
+}
+
+
+.main01 h1{
+	/* 尺寸 */
+	font-size: 40px;
+
+	/* 外觀 */
+	color: #fff;
+
+	/* 字體 */
+		/* for 中文字體 */
+		font-family: "Noto Sans TC", sans-serif;
+		font-weight: bold;
+		font-style: normal;
+
+	/* 排版 */
+	text-align: center;
+	padding-top: 40px;
+	margin-bottom: 20px;
+}
+
+.main01_img_CarouselArea{
+	/* 尺寸  */
+	/* height: 800px; */
+	height: 600px;
+
+	/* 外觀 */
+	/* border: 1px solid green; */
+
+	/* 排版 */
+	display: flex;
+	position: relative;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* 此處開始為 卡片01 */
+
+.main01_img_card01{
+	/* 尺寸 */
+	width: 800px;
+	height: 600px;
+
+	/* 外觀 */
+	background-color: #fff;
+	border: 1px solid black;
+
+	/* 排版 */
+	margin: 0 auto;
+	z-index: 5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	/* 字體 */
+		    /* for 英文字體 */
+			font-family: "Roboto", sans-serif;
+			font-weight: bold;
+			font-style: normal;
+		
+			/* for 中文字體 */
+			font-family: "Noto Sans TC", sans-serif;
+			font-weight: bold;
+			font-style: normal;
+}
+
+.main01_img_card01 img{
+	/* 排版 */
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 8px;
+	margin-top: 18px;
+}
+
+.main01_img_card01 h2{
+	/* 尺寸 */
+	font-size: 32px;
+
+	/* 排版 */
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.main01_img_card01 p{
+	/* 尺寸 */
+	font-size: 16px;
+
+	/* 排版 */
+	text-align: left;
+	margin: 0px 25px 20px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* 此處開始為 卡片02 */
+
+.main01_img_card02{
+	/* 尺寸 */
+	width: 800px;
+	height: 600px;
+
+	/* 外觀 */
+	background-color: #fff;
+	border: 1px solid black;
+	opacity: 50%;
+
+	/* 排版 */
+	margin: 0 auto;
+	z-index: 4;
+	position: absolute;
+	top: 0;
+	right: 80px;
+
+	/* 字體 */
+		    /* for 英文字體 */
+			font-family: "Roboto", sans-serif;
+			font-weight: bold;
+			font-style: normal;
+		
+			/* for 中文字體 */
+			font-family: "Noto Sans TC", sans-serif;
+			font-weight: bold;
+			font-style: normal;
+}
+
+.main01_img_card02 img{
+	/* 排版 */
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 8px;
+}
+
+.main01_img_card02 h2{
+	/* 尺寸 */
+	font-size: 32px;
+
+	/* 排版 */
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.main01_img_card02 p{
+	/* 尺寸 */
+	font-size: 16px;
+
+	/* 排版 */
+	text-align: left;
+	margin: 0px 25px 20px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* 此處開始為 卡片03 */
+
+.main01_img_card03{
+	/* 尺寸 */
+	width: 800px;
+	height: 600px;
+
+	/* 外觀 */
+	background-color: #fff;
+	border: 1px solid black;
+	opacity: 50%;
+
+	/* 排版 */
+	margin: 0 auto;
+	z-index: 3;
+	position: absolute;
+	left: 40px;
+
+	/* 字體 */
+		    /* for 英文字體 */
+			font-family: "Roboto", sans-serif;
+			font-weight: bold;
+			font-style: normal;
+		
+			/* for 中文字體 */
+			font-family: "Noto Sans TC", sans-serif;
+			font-weight: bold;
+			font-style: normal;
+}
+
+.main01_img_card03 img{
+	/* 排版 */
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 8px;
+}
+
+.main01_img_card03 h2{
+	/* 尺寸 */
+	font-size: 32px;
+
+	/* 排版 */
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.main01_img_card03 p{
+	/* 尺寸 */
+	font-size: 16px;
+
+	/* 排版 */
+	text-align: left;
+	margin: 0px 25px 20px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* 此處開始為 main01 下方的自動輪播霸條 */
+
+.main01_img_scroll{
+	/* 外觀 */
+	background-color: #2F2F2F;
+
+	/* 排版 */
+	margin-top: 30px;
+	margin-bottom: 32px;
+}
+
+
+.main01_img_scroll ul{
+	/* 排版 */
+	display: flex;
+	justify-content: center;
+}
+
+.main01_img_scroll li{
+	/* 排版 */
+	margin-right: 24px;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* 此處開始為 main01 下方的紅色底部 */
+
+.main01_footer{
+	/* 尺寸 */
+	height: 124px;
+
+	/* 外觀 */
+	background-color: #FF5252;
+
+	/* 排版 */
+	display: flex;
+	align-items: center;
+
+}
+
+.main01_footer h3{
+	/* 尺寸 */
+	font-size: 36px;
+
+	/* 外觀 */
+	color: #fff;
+
+	/* 字體 */
+			/* for 中文字體 */
+			font-family: "Noto Sans TC", sans-serif;
+			font-weight: bold;
+			font-style: normal;
+
+	/* 排版 */
+	text-align: center;
+	margin-top: 44px;
+	margin-bottom: 44px;
+	margin-left: 235px;
+	margin-right: 340px;
+
+}
+
+.main01_agelimit{
+	/* 排版 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* 外觀 */
+	background-color: #3E3E3E;
+}
+
+.main01_agelimit img{
+	/* 排版 */
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 12px;
+}
+
+.main01_agelimit p{
+	/* 排版 */
+	margin:8px 12px;
+	margin-left: 20px;
+
+	/* 外觀 */
+	color: #fff;
+
+	/* 字體 */
+	font-size: 14px;
+	line-height: 16px;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* 此處開始為 main02 */
+
+.main02{
+	/* 尺寸 */
+	width: auto;
+	height: 1024px;
+	
+	/* 排版 */
+	position: relative;
+	/* border: 1px solid red; */
+}
+
+.main02::before{
+	/* 尺寸 */
+	width: 100%;
+	height: 1024px;
+
+	/* 外觀 */
+	content: "";
+	filter: brightness(50%) blur(5px);
+
+	/* 排版 */
+	display: block;
+	background-size: cover;
+	background-image: url(../img/BC_BG_001.png);
+	position: absolute;
+	/* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.main02_Title01{
+	/* 尺吋 */
+	font-size: 40px;
+
+	/* 字體 */
+				/* for 中文字體 */
+				font-family: "Noto Sans TC", sans-serif;
+				font-weight: bold;
+				font-style: normal;
+	/* 排版 */
+	margin-bottom: 16px;
+	margin-left: 118px;
+	margin-top: 104px;
+	position: absolute;
+
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_Title02{
+	/* 尺吋 */
+	font-size: 80px;
+
+	/* 字體 */
+				/* for 中文字體 */
+				font-family: "Noto Sans TC", sans-serif;
+				font-weight: bold;
+				font-style: normal;
+	/* 排版 */
+	margin-left: 118px;
+	margin-top: 178px;
+	position: absolute;
+
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_content{
+	
+	/* 排版 */
+	display: flex;
+	position: absolute;
+	top: 313px;
+	left: 130px;
+
+	/* 外觀 */
+	/* border: 1px solid blue; */
+
+	/* 尺寸 */
+	width: 1180px;
+	height: 620px;
+	
+}
+
+/* ------------------------------------------------------------------------------ */
+/* 以下開始是 main02 的 第一張 卡片 */
+
+.main02_box1{
+	/* 外觀 */
+	border: 1px solid #fff;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
+
+	/* 排版 */
+	position: absolute;
+
+	/* 尺寸 */
+	width: 280px;
+	height: 620px;
+
+	/* 顯示 */
+	opacity: 0.1;
+}
+
+.main02_Title03{
+	/* 尺吋 */
+	font-size: 80px;
+
+	/* 字體 */
+				/* for 中文字體 */
+				font-family: "Noto Sans TC", sans-serif;
+				font-weight: bold;
+				font-style: normal;
+	/* 排版 */
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 40px;
+
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_Title04{
+	/* 尺吋 */
+	font-size: 36px;
+
+	/* 字體 */
+				/* for 中文字體 */
+				font-family: "Noto Sans TC", sans-serif;
+				font-weight: bold;
+				font-style: normal;
+	/* 排版 */
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 20px;
+	
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_img01{
+	/* 排版 */
+	margin-left: 36px;
+	margin-top: 24px;
+	margin-bottom: 60px;
+}
+
+
+
+.main02_box1 p{
+	/* 尺吋 */
+	font-size: 16px;
+
+	/* 排版 */
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 80px;
+
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_box1 a{
+	/* 排版 */
+	margin-left: 34px;
+}
+
+.main02_box1 a > span{
+	/* 排版 */
+	position: absolute;
+	left: 105px;
+	top: 497px;
+
+	/* 尺吋 */
+	font-size: 16px;
+	
+	/* 外觀 */
+	color: #fff;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* 以下開始是 main02 的 第二張 卡片 */
+
+
+.main02_box2{
+	/* 外觀 */
+	border: 1px solid #fff;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
+
+	/* 排版 */
+	position: absolute;
+	margin-left: 300px;
+
+	/* 尺寸 */
+	width: 280px;
+	height: 620px;
+
+	/* 顯示 */
+	opacity: 0.1;
+}
+
+.main02_Title03{
+	/* 尺吋 */
+	font-size: 80px;
+
+	/* 字體 */
+				/* for 中文字體 */
+				font-family: "Noto Sans TC", sans-serif;
+				font-weight: bold;
+				font-style: normal;
+	/* 排版 */
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 40px;
+
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_Title04{
+	/* 尺吋 */
+	font-size: 36px;
+
+	/* 字體 */
+				/* for 中文字體 */
+				font-family: "Noto Sans TC", sans-serif;
+				font-weight: bold;
+				font-style: normal;
+	/* 排版 */
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 20px;
+	
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_img01{
+	/* 排版 */
+	margin-left: 36px;
+	margin-top: 24px;
+	margin-bottom: 60px;
+}
+
+.main02_box2 p{
+	/* 尺吋 */
+	font-size: 16px;
+
+	/* 排版 */
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 80px;
+
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_box2 a{
+	/* 排版 */
+	margin-left: 34px;
+}
+
+.main02_box2 a > span{
+	/* 排版 */
+	position: absolute;
+	left: 105px;
+	top: 497px;
+
+	/* 尺吋 */
+	font-size: 16px;
+	
+	/* 外觀 */
+	color: #fff;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* 以下開始是 main02 的 第三張 卡片 */
+
+
+.main02_box3{
+	/* 外觀 */
+	border: 1px solid #fff;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
+
+	/* 排版 */
+	position: absolute;
+	margin-left: 600px;
+
+	/* 尺寸 */
+	width: 280px;
+	height: 620px;
+
+	/* 顯示 */
+	opacity: 0.1;
+}
+
+.main02_Title03{
+	/* 尺吋 */
+	font-size: 80px;
+
+	/* 字體 */
+				/* for 中文字體 */
+				font-family: "Noto Sans TC", sans-serif;
+				font-weight: bold;
+				font-style: normal;
+	/* 排版 */
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 40px;
+
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_Title04{
+	/* 尺吋 */
+	font-size: 36px;
+
+	/* 字體 */
+				/* for 中文字體 */
+				font-family: "Noto Sans TC", sans-serif;
+				font-weight: bold;
+				font-style: normal;
+	/* 排版 */
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 20px;
+	
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_img01{
+	/* 排版 */
+	margin-left: 36px;
+	margin-top: 24px;
+	margin-bottom: 60px;
+}
+
+.main02_box3 p{
+	/* 尺吋 */
+	font-size: 16px;
+
+	/* 排版 */
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 80px;
+
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_box3 a{
+	/* 排版 */
+	margin-left: 34px;
+}
+
+.main02_box3 a > span{
+	/* 排版 */
+	position: absolute;
+	left: 105px;
+	top: 497px;
+
+	/* 尺吋 */
+	font-size: 16px;
+	
+	/* 外觀 */
+	color: #fff;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+/* 以下開始是 main02 的 第四張 卡片 */
+
+
+.main02_box4{
+	/* 外觀 */
+	border: 1px solid #fff;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
+
+	/* 排版 */
+	position: absolute;
+	margin-left: 900px;
+
+	/* 尺寸 */
+	width: 280px;
+	height: 620px;
+
+	/* 顯示 */
+	opacity: 0.1;
+}
+
+.main02_Title03{
+	/* 尺吋 */
+	font-size: 80px;
+
+	/* 字體 */
+				/* for 中文字體 */
+				font-family: "Noto Sans TC", sans-serif;
+				font-weight: bold;
+				font-style: normal;
+	/* 排版 */
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 40px;
+
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_Title04{
+	/* 尺吋 */
+	font-size: 36px;
+
+	/* 字體 */
+				/* for 中文字體 */
+				font-family: "Noto Sans TC", sans-serif;
+				font-weight: bold;
+				font-style: normal;
+	/* 排版 */
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 20px;
+	
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_img01{
+	/* 排版 */
+	margin-left: 36px;
+	margin-top: 24px;
+	margin-bottom: 60px;
+}
+
+.main02_box4 p{
+	/* 尺吋 */
+	font-size: 16px;
+
+	/* 排版 */
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 80px;
+
+	/* 外觀 */
+	color: #fff;
+}
+
+.main02_box4 a{
+	/* 排版 */
+	margin-left: 34px;
+}
+
+.main02_box4 a > span{
+	/* 排版 */
+	position: absolute;
+	left: 105px;
+	top: 497px;
+
+	/* 尺吋 */
+	font-size: 16px;
+	
+	/* 外觀 */
+	color: #fff;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+/* 以下開始是 main02 的 卡片hover 行為 */
+
+/* .main02_box3:hover ~ .main02_box4{
+	opacity: 1;
+} */
+
+
+.main02_box1:hover{
+	opacity: 1;
+	transition: opacity 0.4s ease-in-out;
+	background: linear-gradient(to bottom, rgba(255, 204, 24, 1),rgba(236, 131, 33, 1), rgba(255,255,254,0));
+}
+
+.main02_box2:hover{
+	opacity: 1;
+	transition: opacity 0.4s ease-in-out;
+	background: linear-gradient(to bottom, rgba(255, 204, 24, 1),rgba(236, 131, 33, 1), rgba(255,255,254,0));
+}
+
+
+.main02_box3:hover{
+	opacity: 1;
+	transition: opacity 0.4s ease-in-out;
+	background: linear-gradient(to bottom, rgba(255, 204, 24, 1),rgba(236, 131, 33, 1), rgba(255,255,254,0));
+}
+
+.main02_box4:hover{
+	opacity: 1;
+	transition: opacity 0.4s ease-in-out;
+	background: linear-gradient(to bottom, rgba(255, 204, 24, 1),rgba(236, 131, 33, 1), rgba(255,255,254,0));
+}
+
+
+/* ------------------------------------------------------------------------------ */
+/* 以下開始是 main03 的 區域 */
+
+.main03{
+	/* 尺寸 */
+	width: 100%;
+	height: 1024px;
+
+	/* 外貌 */
+	background-color: #333333;
+	/* border: 1px solid blueviolet; */
+}
+
+.main03_text{
+	/* 尺寸 */
+	width: 100%;
+	height: 100px;
+
+	/* 外貌 */
+	border-bottom: 2px solid #fff;
+	border-top: 2px solid #fff;
+
+	/* 排版 */
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+/* ---------------------------------------------------------------------- */
+/* 第一個標題 */
+
+.main03_title01 a{
+	/* 尺寸 */
+		font-size:36px ;
+	/* 字體 */
+			/* for 中文字體 */
+			font-family: "Noto Sans TC", sans-serif;
+			font-weight: bold;
+			font-style: normal;
+
+	/* 外貌 */
+	color: #fff;
+	text-decoration: none;
+
+	/* 排版 */
+	margin-right: 80px;
+}
+
+.main03_title01 a:hover{
+	/* 外貌 */
+	color: #FF5252;
+	/* border-bottom: 1px solid #FF5252; */
+	box-shadow: 0 5px 0 0 #FF5252; 
+}
+
+/* ---------------------------------------------------------------------- */
+/* 第二個標題 */
+
+.main03_title02 a{
+	/* 尺寸 */
+		font-size:36px ;
+	/* 字體 */
+			/* for 中文字體 */
+			font-family: "Noto Sans TC", sans-serif;
+			font-weight: bold;
+			font-style: normal;
+
+	/* 外貌 */
+	color: #fff;
+	text-decoration: none;
+	
+	/* 排版 */
+	margin-right: 80px;
+}
+
+.main03_title02 a:hover{
+	/* 外貌 */
+	color: #FF5252;
+	/* border-bottom: 1px solid #FF5252; */
+	box-shadow: 0 5px 0 0 #FF5252; 
+}
+
+/* ---------------------------------------------------------------------- */
+/* 第三個標題 */
+
+.main03_title03 a{
+	/* 尺寸 */
+		font-size:36px ;
+	/* 字體 */
+			/* for 中文字體 */
+			font-family: "Noto Sans TC", sans-serif;
+			font-weight: bold;
+			font-style: normal;
+
+	/* 外貌 */
+	color: #fff;
+	text-decoration: none;
+	
+	/* 排版 */
+	margin-right: 80px;
+}
+
+.main03_title03 a:hover{
+	/* 外貌 */
+	color: #FF5252;
+	/* border-bottom: 1px solid #FF5252; */
+	box-shadow: 0 5px 0 0 #FF5252; 
+}
+
+/* ---------------------------------------------------------------------- */
+/* 第四個標題 */
+
+.main03_title04 a{
+	/* 尺寸 */
+		font-size:36px ;
+	/* 字體 */
+			/* for 中文字體 */
+			font-family: "Noto Sans TC", sans-serif;
+			font-weight: bold;
+			font-style: normal;
+
+	/* 外貌 */
+	color: #fff;
+	text-decoration: none;
+	
+	/* 排版 */
+	margin-right: 80px;
+}
+
+.main03_title04 a:hover{
+	/* 外貌 */
+	color: #FF5252;
+	/* border-bottom: 1px solid #FF5252; */
+	box-shadow: 0 5px 0 0 #FF5252; 
+}
+
+/* ------------------------------------------------------------------------------ */
+/* 以下開始是 main03 的 內容區域 */
+
+
+.main03_content{
+	/* 尺寸 */
+	width: 1197px;
+	height: 796px;
+
+	/* 外貌 */
+	/* border: 1px solid greenyellow; */
+
+	/* 排版 */
+	margin: 0 auto;
+	margin-top: 35px;
+	display: flex;
+}
+
+
+/* 以下是 main03 左邊banner區塊 */
+
+.main03_banner01{
+	/* 尺寸 */
+	width: 150px;
+	height: 796px;
+
+	/* 外貌 */
+	/* border: 1px solid orange; */
+
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-right: 36px;
+}
+
+.main03_img01{
+	/* 尺寸 */
+	width: 150px;
+	height: 490px;
+}
+
+
+.main03_img02{
+	/* 尺寸 */
+	width: 150px;
+	height: 250px;
+}
+
+/* 以下是 main03 右邊banner區塊 */
+
+.main03_banner02{
+	/* 尺寸 */
+	width: 150px;
+	height: 796px;
+
+	/* 外貌 */
+	/* border: 1px solid orange; */
+
+	/* 排版 */
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	margin-left: 35px;
+}
+
+.main03_img01{
+	/* 尺寸 */
+	width: 150px;
+	height: 490px;
+}
+
+
+.main03_img02{
+	/* 尺寸 */
+	width: 150px;
+	height: 250px;
+}
+
+/* 以下是 main03 中間上層 文字區塊 */
+
+.main03_textarea{
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+}
+
+.main03_text01{
+	/* 排版 */
+	display: flex;
+	flex-direction:row;
+
+	/* 外貌 */
+	/* border: 1px solid red; */
+}
+
+.main03_text01 img{
+	/* 尺寸 */
+	width: 400px;
+	height: 400px;
+}
+
+.main03_text01_text p{
+	/* 尺寸 */
+	font-size: 16px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	
+	/* 外貌 */
+	color: #fff;
+
+	/* 排版 */
+	margin-top: 38px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 32px;
+	line-height: 1.6;
+}
+
+.main03_faketitle01{
+	/* 尺寸 */
+	font-size: 36px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	
+	/* 外貌 */
+	color: #fff;
+
+	/* 排版 */
+	margin-left: 41px;
+	margin-bottom: 20px;
+}
+
+.main03_faketitle02{
+	/* 尺寸 */
+	font-size: 32px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	
+	/* 外貌 */
+	color: #fff;
+
+	/* 排版 */
+	margin-left: 41px;
+}
+
+/* --------------------------------------------------------- */
+/* 以下是 main03 中間下層 文字區塊 */
+
+.main03-text02{
+	/* 排版 */
+	display: flex;
+	flex-direction:row-reverse;
+
+	/* 外貌 */
+	/* border: 1px solid red; */
+}
+
+.main03-text02 img{
+	/* 尺寸 */
+	width: 400px;
+	height: 400px;
+}
+
+.main03_faketitle03{
+	/* 尺寸 */
+	font-size: 32px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	
+	/* 外貌 */
+	color: #fff;
+
+	/* 排版 */
+	margin-left: 44px;
+	margin-top: 51.5px;
+}
+
+.main03_text02_text p{
+	/* 尺寸 */
+	font-size: 16px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	
+	/* 外貌 */
+	color: #fff;
+
+	/* 排版 */
+	margin-top: 38px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 32px;
+	line-height: 1.6;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* 以下開始是 main04 的 內容區域 */
+
+.main04{
+	/* 尺寸 */
+	width: 1440px;
+	height: 888px;
+
+	/* 外貌 */
+	background-color: #333333;
+	/* border: 1px solid red; */
+}
+
+.main04_content{
+	/* 排版 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main04_img{
+	/* 排版 */
+	margin-left: 120px;
+	margin-top: 24px;
+
+	/* 外貌 */
+ 	/* 設定初始狀態的陰影效果 */
+  	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	/* 設定過渡時間為 3 秒 */
+	transition: filter 3s  box-shadow 0.5s;
+	/* ai提供的光暈效果 */
+	animation: glow 3s infinite;
+	@keyframes glow {
+		0% {
+		  box-shadow: 0 0 5px #ff0000;
+		}
+		50% {
+		  box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000;
+		}
+		100% {
+		  box-shadow: 0 0 5px #ff0000;
+		}
+	  }
+}
+
+.main04_img:hover{
+	/* 當滑鼠移至圖片上時，移除灰階效果 */
+	filter: grayscale(0%) opacity(100%) saturate(150%);
+	/* 自己另外製作的效果 */
+	animation: hover_glow 2s infinite;
+	@keyframes hover_glow {
+		0% {
+			box-shadow: 0 0 20px rgba(255, 217, 97, 0.5);
+		}
+		50% {
+			box-shadow: 0 0 20px rgba(247, 107, 28, 1);
+		}
+		100% {
+			box-shadow: 0 0 20px rgba(255, 217, 97, 0.3);
+		}
+	}
+}
+
+
+.main04_text{
+	/* 外貌 */
+	/* border: 1px solid green; */
+
+	/* 排版 */
+	margin-left: 97px;
+}
+
+.main04-title01{
+	/* 排版 */
+	margin-top: 77px;
+	
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+
+	/* 尺寸 */
+	font-size: 40px;
+
+	/* 外貌 */
+	color: #fff;
+}
+
+.main04-title02{
+	/* 排版 */
+	margin-top: 40px;
+	
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+	/* 尺寸 */
+	font-size: 36px;
+
+	/* 外貌 */
+	color: #fff;
+}
+
+.main04_text  > ul{
+	/* 排版 */
+	display: flex;
+}
+
+
+.main04_text ul a{
+	/* 外貌 */
+	text-decoration: none;
+	color: #fff;
+
+	/* 尺寸 */
+	font-size: 18px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	
+}
+
+
+.main04_text ul a li{
+	/* 外貌 */
+	border: 1px solid #fff;
+	border-radius: 100px;
+
+	/* 排版 */
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-top: 24px;
+	margin-right: 16px;
+	margin-bottom: 28px;
+
+}
+
+.main04_text > p{
+	/* 外貌 */
+	color: #fff;
+
+	/* 尺寸 */
+	font-size: 16px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+	/* 排版 */
+	line-height: 1.6;
+	margin-bottom: 67px;
+	margin-right: 157px;
+}
+
+
+.main04_img_scroll{
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+	/* 外貌 */
+	/* border: 1px solid red; */
+
+	/* 尺寸 */
+	width: 564px;
+}
+
+.main04_img_scroll ul{
+	/* 排版 */
+	display: flex;
+	justify-content: center;
+}
+
+.main04_img_scroll ul li{
+	/* 排版 */
+	margin-right: 24px;
+}
+
+.main04_text .main04_img_scroll > p{
+	/* 排版 */
+	margin-top: 41px;
+	margin-bottom: 113px;
+
+	/* 外貌 */
+	color: #fff;
+
+	/* 尺寸 */
+	font-size: 20px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+.main04_footer{
+	/* 外貌 */
+	background-color: #515151;
+
+	/* 尺寸 */
+	width: auto;
+	height: 138px;
+}
+
+.main04_footer h1{
+	/* 排版 */
+	text-align: center;
+	padding-top: 43px;
+
+	/* 外貌 */
+	color: #fff;
+
+	/* 尺寸 */
+	font-size: 36px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* -------------------------------------------------------------------------------- */
+/*  以下開始 是 main05 的區域 */
+
+.main05{
+	/* 尺寸 */
+	width: 100%;
+	height: 1024px;
+	
+	/* 外貌 */
+	border: 1px solid peru;
+	background-color: #333;
+}
+
+.main05_content_top01{
+	/* 尺寸 */
+	height: 174px;
+	/* 樣貌 */
+	background-color: #333;
+
+	/* 排版 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main05_content_top01 h1{
+	/* 尺寸 */
+	font-size: 40px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+
+	/* 外貌 */
+	color: #fff;
+
+	/* 排版 */
+	text-align: center;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.main05_content_top02{
+	/* 尺寸 */
+	height: 114px;
+
+	/* 樣貌 */
+	background-color: #F35858;
+
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+}
+
+.main05_content_top02_01{
+	/* 排版 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 12px;
+}
+
+.main05_content_top02_01 p{
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+
+	/* 尺寸 */
+	font-size: 28px;
+
+	/* 外貌 */
+	color: #fff;
+
+	/* 排版 */
+	margin-left: 8px;
+	margin-right: 40px;
+}
+
+.main05_content_mid{
+
+}
+
+.main05_img_CarouselArea{
+	/* 排版 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+
+	/* 外貌 */
+	/* border: 1px solid rebeccapurple; */
+}
+
+.main05_img_card01{
+	/* 排版 */
+	position: relative;
+	z-index: 3;
+}
+
+.main05_img_card01 img{
+	/* 尺寸 */
+	width: 450px;
+	height: 450px;
+
+	/* 排版 */
+	display: block;
+}
+
+.main05_img_card01 > a{
+	/* 樣貌 */
+	text-decoration: none;
+	color: #fff;
+	background-color: #FF5252;
+	border-radius: 8px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+
+	/* 尺寸 */
+	font-size: 18px;
+	width: 118px;
+	height: 39px;
+
+	/* 排版 */
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 9px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 370px;
+}
+
+/* 以下為 main05 第二張 卡片 的區域 */
+
+.main05_img_card02{
+	position: relative;
+	z-index: 2;
+	opacity: 0.5;
+	right: -65px;
+}
+
+.main05_img_card02 img{
+	/* 尺寸 */
+	width: 350px;
+	height: 350px;
+
+	/* 排版 */
+	display: block;
+}
+
+.main05_img_card02 > a{
+	/* 樣貌 */
+	text-decoration: none;
+	color: #fff;
+	background-color: #FF5252;
+	border-radius: 8px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+
+	/* 尺寸 */
+	font-size: 18px;
+	width: 118px;
+	height: 39px;
+
+	/* 排版 */
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 9px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 270px;
+}
+
+/* 以下為 main05 第三張 卡片 的區域 */
+
+.main05_img_card03{
+	position: relative;
+	z-index: 1;
+	opacity: 0.5;
+	left: -65px;
+}
+
+.main05_img_card03 img{
+	/* 尺寸 */
+	width: 350px;
+	height: 350px;
+
+	/* 排版 */
+	display: block;
+}
+
+.main05_img_card03 > a{
+	/* 樣貌 */
+	text-decoration: none;
+	color: #fff;
+	background-color: #FF5252;
+	border-radius: 8px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+
+	/* 尺寸 */
+	font-size: 18px;
+	width: 118px;
+	height: 39px;
+
+	/* 排版 */
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 9px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 270px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* 以下區域 是 main05 立即購買按鈕 */
+
+.main05_content_btn{
+	/* 外貌 */
+	/* border: 1px solid orange; */
+	
+	/* 排版 */
+	text-align: center;
+	margin-top: 40px;
+	position: relative;
+}
+
+.main05_content_btn a{
+	/* 樣貌 */
+	text-decoration: none;
+	color: #fff;
+
+	/* 尺寸 */
+	font-size: 16px;
+
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.main05_content_btn a > span{
+	position: absolute;
+	top: 25px;
+	left: 685px;
+}
+

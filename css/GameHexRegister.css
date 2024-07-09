@@ -1,0 +1,516 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+    /* 尺寸 */
+    width: 1440px;
+    height: auto;
+
+    /* 排版 */
+    margin: 0 auto;
+
+    /* 字體 */
+    /* for 中文字體 */
+	font-family: "Noto Sans TC, sans-serif,Roboto";
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* 此處開始為 Register 01  之 視覺設定相關檔案 */
+
+
+.RegisterMain{
+    /* 尺寸 */
+    width: 1440px;
+    height: 923px;
+
+    /* 排版 */
+    position: relative;
+
+    /* 外觀 */
+    /* border: 1px solid red; */
+}
+
+.RegisterMain::before{
+    /* 尺寸 */
+    width: 100%;
+    height: 100%;
+
+    /* 樣貌 */
+    content: "";
+    filter: brightness(30%) blur(5px);
+    background-image: url(../img/BC_BG_001.png);
+
+    /* 排版 */
+    display: block;
+	background-size: cover;
+
+    /* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.RegisterMain_Top{
+    /* 尺寸 */
+    width: 828px;
+    height: 160px;
+
+    /* 外觀 */
+    /* border: 1px solid yellow; */
+
+    /* 排版 */
+    position: absolute;
+    margin-top: 56px;
+    margin-left: 306px;
+    display: flex;
+    align-items: center;
+}
+
+.arrow01{
+    /* 排版 */
+    position: absolute;
+    left:200px;
+}
+
+.arrow02{
+    /* 排版 */
+    position: absolute;
+    left:560px;
+}
+
+.RegisterMain_Top_content01{
+    /* 尺寸 */
+    width: 150px;
+    height: 160px;
+
+    /* 排版 */
+    position: absolute;
+
+    /* 外觀 */
+    /* border: 1px solid orange; */
+}
+
+.RegisterMain_Top_content01 img{
+    /* 尺寸 */
+    width: 80px;
+    height: 80px;
+
+    /* 排版 */
+    display: block;
+    margin-left: 35px;
+}
+
+.RegisterMain_Top_content01 p{
+    /* 外觀 */
+    color: #fff;
+
+    /* 尺寸 */
+    font-size: 28px;
+    font-weight: bold;
+
+    /* 排版 */
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.RegisterMain_Top_content01 span{
+    /* 外觀 */
+    color: #fff;
+
+    /* 尺寸 */
+    font-size: 18px;
+    font-weight: 500;
+
+    /* 排版 */
+    text-align: center;
+
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+}
+
+/* ---------------------------------------------------------- */
+/* 這邊是 第二個 藍色點點 */
+
+
+.RegisterMain_Top_content02{
+    /* 尺寸 */
+    width: 150px;
+    height: 160px;
+
+    /* 排版 */
+    position: absolute;
+    left: 350px;
+
+    /* 外觀 */
+    /* border: 1px solid orange; */
+}
+
+.RegisterMain_Top_content02 img{
+    /* 尺寸 */
+    width: 80px;
+    height: 80px;
+
+    /* 排版 */
+    display: block;
+    margin-left: 35px;
+}
+
+.RegisterMain_Top_content02 p{
+    /* 外觀 */
+    color: #fff;
+
+    /* 尺寸 */
+    font-size: 28px;
+    font-weight: bold;
+
+    /* 排版 */
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.RegisterMain_Top_content02 span{
+    /* 外觀 */
+    color: #fff;
+
+    /* 尺寸 */
+    font-size: 18px;
+    font-weight: 500;
+
+    /* 排版 */
+    text-align: center;
+
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* ---------------------------------------------------------- */
+/* 這邊是 第三個 藍色點點 */
+
+
+.RegisterMain_Top_content03{
+    /* 尺寸 */
+    width: 150px;
+    height: 160px;
+
+    /* 排版 */
+    position: absolute;
+    left: 677px;
+
+    /* 外觀 */
+    /* border: 1px solid orange; */
+}
+
+.RegisterMain_Top_content03 img{
+    /* 尺寸 */
+    width: 80px;
+    height: 80px;
+
+    /* 排版 */
+    display: block;
+    margin-left: 35px;
+}
+
+.RegisterMain_Top_content03 p{
+    /* 外觀 */
+    color: #fff;
+
+    /* 尺寸 */
+    font-size: 28px;
+    font-weight: bold;
+
+    /* 排版 */
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.RegisterMain_Top_content03 span{
+    /* 外觀 */
+    color: #fff;
+
+    /* 尺寸 */
+    font-size: 18px;
+    font-weight: 500;
+
+    /* 排版 */
+    text-align: center;
+
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+}
+
+/* ------------------------------------------------------- */
+/* 以下這邊為  Register 下半 區域 */
+
+.RegisterMain_Bot{
+    /* 排版 */
+    position: absolute;
+    top: 280px;
+    left: 460px;
+    bottom: 0;
+
+    /* 外觀 */
+    /* border: 1px solid yellow; */
+}
+
+.RegisterMain_Bot h1{ 
+    /* 尺寸 */
+    font-size: 36px;
+    font-weight: bold;
+
+    /* 外觀 */
+    color: #fff;
+
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+
+    /* 排版 */
+    margin-top: 64px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.RegisterMain_Bot > p{
+    /* 尺寸 */
+    font-size: 28px;
+    font-weight: bold;
+
+    /* 外觀 */
+    color: #fff;
+
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+
+    /* 排版 */
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.RegisterMain_Bot .tipsText{
+    /* 尺寸 */
+    font-size: 20px;
+    font-weight: bold;
+
+    /* 排版 */
+    margin-bottom: 12px;
+    text-align-last: left;
+}
+
+.RegisterMain_Bot input{
+    /* 尺吋 */
+    width: 600px;
+    height: 47px;
+
+    /* 外觀 */
+    border-radius: 16px;
+    background-color: #fff;
+
+    /* 排版 */
+    margin-bottom: 20px;
+
+}
+
+.RegisterMain_Bot input::placeholder{
+    /* 尺寸 */
+    font-size: 16px;
+    font-weight: 400;
+
+    /* 外觀 */
+    color: #000;
+
+    /* 排版 */
+    padding-left: 20px;
+}
+
+.RegisterMain_Bot a{
+    /* 排版 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 31px;
+
+    /* 外觀 */
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 16px;
+
+    /* 尺寸 */
+    width: 600px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* 此處開始為 Register 02  之 視覺設定相關檔案 */
+
+
+.RegisterMain02{
+    /* 尺寸 */
+    width: 1440px;
+    height: 923px;
+
+    /* 排版 */
+    position: relative;
+
+    /* 外觀 */
+    /* border: 1px solid red; */
+}
+
+.RegisterMain02::before{
+    /* 尺寸 */
+    width: 100%;
+    height: 100%;
+
+    /* 樣貌 */
+    content: "";
+    filter: brightness(30%) blur(5px);
+    background-image: url(../img/BC_BG_001.png);
+
+    /* 排版 */
+    display: block;
+	background-size: cover;
+
+    /* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.RegisterMain_Bot .errorNotGet{
+    /* 尺寸 */
+    font-size: 20px;
+    font-weight: bold;
+
+    /* 外觀 */
+    color: #fff;
+
+    /* 排版 */
+    margin-top: 44px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.RegisterMain_Bot .Resend_BTN{
+    /* 排版 */
+    margin-top: 12px;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* 此處開始為 Register 03  之 視覺設定相關檔案 */
+
+
+.RegisterMain03{
+    /* 尺寸 */
+    width: 1440px;
+    height: 923px;
+
+    /* 排版 */
+    position: relative;
+
+    /* 外觀 */
+    /* border: 1px solid red; */
+}
+
+.RegisterMain03::before{
+    /* 尺寸 */
+    width: 100%;
+    height: 100%;
+
+    /* 樣貌 */
+    content: "";
+    filter: brightness(30%) blur(5px);
+    background-image: url(../img/BC_BG_001.png);
+
+    /* 排版 */
+    display: block;
+	background-size: cover;
+
+    /* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.RegisterMain_Bot span{
+    /* 外觀 */
+    color: #fff;
+
+    /* 尺寸 */
+    font-size: 24px;
+    font-weight: bold;
+
+    /* 排版 */
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 44px;
+}
+
+
+
+

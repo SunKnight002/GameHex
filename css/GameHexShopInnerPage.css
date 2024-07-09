@@ -1,0 +1,1583 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    max-width: 1440px;
+    /* 排版 */
+    margin: 0 auto;
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* -------------- 以下CSS區域為 GH_ShopWorkInnerPage.html 使用  ----------------------- */
+/* -------------- 以下CSS區域為 GameHex_WorkInnerPage_OverRall 使用  ----------------------- */
+.GameHex_WorkInnerPage_OverRall{
+	/* 外觀 */
+	background-color: #0C223F;
+	/* 尺寸 */
+	width: auto;
+	height: 940px;
+	/* 邊線 */
+	border: 1px solid red;
+}
+
+.GH_WIP_OverRall_Info{
+	/* 尺寸 */
+	width: 1175px;
+	height: 581px;
+	/* 排版 */
+	display: flex;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.GH_WIP_OverRall_Info_Img{
+	/* 尺寸 */
+	width: 680px;
+	height: 540px;
+	/* ScrollBar */
+	overflow-x: scroll;
+}
+
+.GH_WIP_OverRall_Info_Img_Video{}
+
+.GH_WIP_OverRall_Info_Img_Video img{
+	/* 尺寸 */
+	width: 680px;
+	height: 400px;
+	/* 排版 */
+	margin-bottom: 8px;
+}
+
+.GH_WIP_OverRall_Info_Img_Thumbnail{
+	/* 排版 */
+	display: flex;
+}
+
+.GH_WIP_OverRall_Info_Img_Thumbnail img{
+	/* 尺寸 */
+	width: 200px;
+	height: 120px;
+	/* 排版 */
+	margin-right: 40px;
+}
+
+.GH_WIP_OverRall_Info_Img_Thumbnail img:last-child{
+	/* 排版 */
+	margin-right: 0px;
+}
+
+/* --------------------------------- 遊戲大綱與評價專區 */
+.GH_WIP_WIP_OverRall_Info_Text{
+	/* 尺寸 */
+	width: 409px;
+	height: 179px;
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+	margin-left: 40px;
+	margin-top: 18px;
+	text-align: center;
+}
+
+.GH_WIP_OverRall_Info_Text_Itro h1{
+	/* 尺寸 */
+	font-size: 36px;
+	font-weight: bold;
+	/* 排版 */
+	margin-bottom: 16px;
+	/* 外觀 */
+	color: #fff;
+}
+
+.GH_WIP_OverRall_Info_Text_Itro span{
+	/* 尺寸 */
+	font-size: 16px;
+	font-weight: 400;
+	/* 排版 */
+	text-align-last: left;
+	line-height: 1.2;
+	/* 外觀 */
+	color: #fff;
+}
+
+.GH_WIP_OverRall_Info_Text_ReleDay{
+	/* 排版 */
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.GH_WIP_OverRall_Info_Text_ReleDay p{
+	/* 尺寸 */
+	font-size: 18px;
+	font-weight: bold;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-right: 40px;
+}
+
+.GH_WIP_OverRall_Info_Text_ReleDay span{
+	/* 尺寸 */
+	font-size: 16px;
+	font-weight: 400;
+	/* 外觀 */
+	color: #fff;
+}
+
+.GH_WIP_OverRall_Info_Text_Publisher{
+	/* 排版 */
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+.GH_WIP_OverRall_Info_Text_Publisher p{
+	/* 尺寸 */
+	font-size: 18px;
+	font-weight: bold;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-right: 60px;
+}
+
+.GH_WIP_OverRall_Info_Text_Publisher span{
+	/* 尺寸 */
+	font-size: 16px;
+	font-weight: 400;
+	/* 外觀 */
+	color: #fff;
+}
+
+.GH_WIP_WIP_OverRall_Info_Text > p{
+	/* 尺寸 */
+	font-size: 18px;
+	font-weight: bold;
+	/* 外觀 */
+	color: #fff;
+	/* 排版  */
+	text-align-last: left;
+	margin-bottom: 16px;
+}
+
+.GH_WIP_OverRall_Info_Text_Tag{
+	/* 尺寸 */
+	width: 320px;
+	/* 排版 */
+	margin-bottom: 8px;
+}
+
+.GH_WIP_OverRall_Info_Text_Tag ul{
+	/* 排版 */
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.GH_WIP_OverRall_Info_Text_Tag li{
+	/* 外觀 */
+	border: 1px solid #fff;
+	border-radius: 16px;
+	color: #fff;
+	/* 尺寸 */
+	font-size: 14px;
+	/* 排版 */
+	margin-right: 8px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+
+.GH_WIP_OverRall_Info_Text_Tag li:nth-child(4){
+	/* 排版 */
+	margin-right: 0;
+}
+
+.GH_WIP_OverRall_Info_Text_Tag li:nth-child(8){
+	/* 排版 */
+	margin-right: 0;
+}
+
+.GH_WIP_OverRall_Info_Text_GameView{
+	/* 排版 */
+	display: flex;
+}
+
+.GH_WIP_OverRall_Info_Text_PMView{
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+}
+
+.GH_WIP_OverRall_Info_Text_PView{
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+}
+
+.GH_WIP_OverRall_Info_Text_PView p{
+	/* 外觀 */
+	color: #fff;
+	background-color: #3C3C3C;
+	/* 尺寸 */
+	font-size: 24px;
+	font-weight: bold;
+	width: 214px;
+	height: 35px;
+	/* 排版 */
+	text-align: center;
+	display: block;
+	padding-top: 8px;
+	margin-right: 8px;
+}
+
+.GH_WIP_OverRall_Info_Text_MView{
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	/* 尺寸 */
+	height: 96px;
+	width: 214px;
+	/* 外觀 */
+	background-color: #FF2121;
+}
+
+.GH_WIP_OverRall_Info_Text_MView span{
+	/* 外觀 */
+	color: #fff;
+	/* 尺寸 */
+	font-size: 32px;
+	font-weight: bold;
+	/* 排版  */
+	margin-top: 20px;
+}
+
+.GH_WIP_OverRall_Info_Text_MView span:nth-child(2){
+	/* 外觀 */
+	color: #fff;
+	/* 尺寸 */
+	font-size: 16px;
+	font-weight: 400;
+	/* 排版  */
+	margin-bottom: 8px;
+	margin-top: 8px;	
+}
+
+.GH_WIP_OverRall_Info_Text_MagaViewAll{
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+}
+
+.GH_WIP_OverRall_Info_Text_MagaView01{
+	/* 尺寸 */
+	width: 205px;
+	height: 46px;
+	font-size: 16px;
+	/* 外觀 */
+	background-color: #1BB24C;
+	/* 排版 */
+	display: flex;
+	align-items: center;
+	margin-top: 8px;
+	margin-bottom: 24px;
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+}
+
+.GH_WIP_OverRall_Info_Text_MagaView01 img{
+	/* 排版 */
+	margin-right: 4px;
+	/* 尺寸 */
+	width: 39px;
+	height: 42px;
+}
+
+.GH_WIP_OverRall_Info_Text_MagaView02{
+	/* 尺寸 */
+	width: 205px;
+	height: 46px;
+	font-size: 16px;
+	/* 外觀 */
+	background-color: #1BB24C;
+	/* 排版 */
+	display: flex;
+	align-items: center;
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+}
+
+.GH_WIP_OverRall_Info_Text_MagaView02 img{
+	/* 排版 */
+	margin-right: 4px;
+	/* 尺寸 */
+	width: 39px;
+	height: 42px;
+}
+
+.GH_WIP_OverRall_Behavior{
+	/* 排版 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 135px;
+	margin-bottom: 18px;
+	/* 外觀 */
+	background-color: #3A5A85;
+	border: 1px solid #000;
+	/* 尺寸 */
+	width: 1175px;
+	height: 58px;
+}
+
+
+/* ----------------------------------- 鑑賞家評論 */
+
+.GH_WIP_OverRall_Comment_UserInfo{
+	/* 排版 */
+	display: flex;
+	align-items: center;
+}
+
+.GH_WIP_OverRall_Comment{
+	/* 尺寸 */
+	width: 1176px;
+	height: 120px;
+	/* 邊線 */
+	border: 1px solid #000;
+	/* 排版 */
+	margin-top: 40px;
+	margin-left: 134px;
+	display: flex;
+	align-items: center;
+	/* 外觀 */
+	background-color: #3A5A85;
+}
+
+.GH_WIP_OverRall_Comment_Avatar{
+	/* 排版 */
+	display: flex;
+}
+
+.GH_WIP_OverRall_Comment_Avatar img{
+	/* 尺寸 */
+	width: 67px;
+	height: 67px;
+	/* 外觀 */
+	border-radius: 50%;
+	/* 排版 */
+	margin-top: 14.5px;
+	margin-left: 8px;
+	margin-right: 16px;
+}
+
+.GH_WIP_OverRall_Comment_AvatarNameTime{
+	/* 文字顏色 */
+	color: #fff;
+}
+
+.GH_WIP_OverRall_Comment_AvatarNameTime p{
+	/* 尺寸 */
+	font-size: 28px;
+	font-weight: bold;
+	/* 排版 */
+	margin-bottom: 16px;
+}
+
+.GH_WIP_OverRall_Comment_AvatarNameTime span{
+	/* 尺寸 */
+	font-size: 16px;
+	font-weight: 400;	
+}
+
+.GH_WIP_OverRall_Comment_Post{
+	/* 尺寸 */
+	width: 797px;
+	/* 文字 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-left: 80px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* -------------- 以下CSS區域為 GameHex_WorkInnerPage_Introduce 使用  ----------------------- */
+.GameHex_WorkInnerPage_Introduce{
+	/* 外觀 */
+	background-color: #0C223F;
+	/* 尺寸 */
+	width: auto;
+	height: 1024px;
+	/* 邊線 */
+	border: 1px solid orange;
+	/* 排版 */
+	display: flex;
+}
+
+.GH_WorkInnerPage_Introduce_Left{
+	/* 排版 */
+	margin-top: 50px;
+	margin-left: 118px;
+}
+
+.GH_WorkInnerPage_Introduce_Left img{
+	/* 尺寸 */
+	width: 350px;
+	height: 640px;
+	/* 排版 */
+	display: block;
+}
+
+.GH_WorkInnerPage_Introduce_Left_Title{
+	/* 邊線 */
+	border-left: 1px solid #fff;
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 67px;
+}
+
+.GH_WorkInnerPage_Introduce_Left_Title p{
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	/* 尺寸 */
+	font-size: 60px;
+	font-weight: bold;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-top: 19px;
+	margin-left: 40px;
+}
+
+.GH_WorkInnerPage_Introduce_Left_Title_Mid{
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	/* 尺寸 */
+	font-size: 40px;
+	font-weight: bold;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-top: 19px;
+	margin-left: 40px;	
+}
+
+.GH_WorkInnerPage_Introduce_Left_Title_Small{
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	/* 尺寸 */
+	font-size: 28px;
+	font-weight: bold;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-top: 19px;
+	margin-left: 40px;		
+}
+
+/* --------------------------- 中間 */
+.GH_WorkInnerPage_Introduce_Mid{
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+	margin-top: 63px;
+	margin-left: 20px;
+}
+
+.GH_WorkInnerPage_Introduce_Mid img{
+	/* 尺寸 */
+	width:	400px ;
+	height: 350px;
+}
+
+.GH_WorkInnerPage_Introduce_Mid_TextArea{
+	/* 尺寸 */
+	width:	400px ;
+	height: 500px;
+	/* 外觀 */
+	background-color: rgba(255, 255, 255, 0.6);
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	/* 排版 */
+	margin-top: 28px;
+	display: flex;
+	flex-direction: column;
+}
+
+.GH_WorkInnerPage_Introduce_Mid_TextArea p{
+	/* 尺寸 */
+	font-size: 32px;
+	font-weight: bold;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-top: 80px;
+	margin-left: 20px;
+	margin-bottom: 12px;
+}
+
+.GH_WorkInnerPage_Introduce_Mid_Title_Mid{
+	/* 尺寸 */
+	font-size: 24px;
+	font-weight: bold;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-left: 20px;	
+}
+
+.GH_WorkInnerPage_Introduce_Mid_Title_Small01{
+	/* 尺寸 */
+	font-size: 16px;
+	font-weight: 400;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-top: 12px;
+	margin-left: 20px;
+	margin-bottom: 40px;		
+}
+
+.GH_WorkInnerPage_Introduce_Mid_Title_Small02{
+	/* 尺寸 */
+	font-size: 16px;
+	font-weight: 400;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-left: 20px;	
+}
+
+/* ------------------------- 右邊 */
+
+.GH_WorkInnerPage_Introduce_Right{
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+	margin-top: 63px;
+	margin-left: 20px;
+}
+
+.GH_WorkInnerPage_Introduce_Right img{
+	/* 尺寸 */
+	width:	400px ;
+	height: 629px;
+}
+
+.GH_WorkInnerPage_Introduce_Right_TextArea{
+	/* 尺寸 */
+	width:	400px ;
+	height: 220px;
+	/* 外觀 */
+	background-color: rgba(255, 255, 255, 0.6);
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	/* 排版 */
+	margin-top: 28px;
+	display: flex;
+	flex-direction: column;
+}
+
+.GH_WorkInnerPage_Introduce_Right_TextArea p{
+	/* 尺寸 */
+	font-size: 32px;
+	font-weight: bold;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-top: 40px;
+	margin-left: 20px;
+	margin-bottom: 12px;
+}
+
+.GH_WorkInnerPage_Introduce_Right_Title_Mid{
+	/* 尺寸 */
+	font-size: 24px;
+	font-weight: bold;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-left: 20px;	
+}
+
+.GH_WorkInnerPage_Introduce_Right_Title_Small01{
+	/* 尺寸 */
+	font-size: 16px;
+	font-weight: 400;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-top: 12px;
+	margin-left: 20px;
+}
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* -------------- 以下CSS區域為 GameHex_WorkInnerPage_DLC 使用  ----------------------- */
+.GameHex_WorkInnerPage_DLC{
+	/* 外觀 */
+	background-color: #0C223F;
+	/* 尺寸 */
+	width: auto;
+	height: 1024px;
+	/* 邊線 */
+	border: 1px solid yellow;
+}
+
+.GH_WIP_DLC_Game{
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+}
+
+.GH_WIP_DLC_Version{
+	/* 排版 */
+	display: flex;
+	align-items: center;
+}
+
+.GH_WIP_DLC_Game_Gold{
+	/* 邊線 */
+	border: 1px solid #fff;
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+	margin-left: 113px;
+	margin-right: 32px;
+	/* 排版 */
+	position: relative;
+}
+
+.GH_WIP_DLC_Game_Gold p{
+	/* 尺寸 */
+	font-size: 32px;
+	font-weight: bold;
+	/* 排版 */
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 16px;
+	/* 外觀 */
+	color: #fff;
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+}
+
+.GH_WIP_DLC_Game_Gold img{
+	/* 尺寸 */
+	width: 350px;
+	height: 350px;
+}
+
+/* 豪華版 DLC */
+.GH_WIP_DLC_Game_Deluxe{
+	/* 邊線 */
+	border: 1px solid #fff;
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+	margin-left: 33px;
+	/* 排版 */
+	position: relative;
+	margin-top: 26px;
+}
+
+.GH_WIP_DLC_Game_Deluxe p{
+	/* 尺寸 */
+	font-size: 32px;
+	font-weight: bold;
+	/* 排版 */
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	/* 外觀 */
+	color: #fff;
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+}
+
+.GH_WIP_DLC_Game_Deluxe img{
+	/* 尺寸 */
+	width: 450px;
+	height: 450px;
+}
+
+/* 標準版 DLC */
+.GH_WIP_DLC_Game_Standard{
+	/* 邊線 */
+	border: 1px solid #fff;
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+	margin-left: 33px;
+	/* 排版 */
+	position: relative;
+}
+
+.GH_WIP_DLC_Game_Standard p{
+	/* 尺寸 */
+	font-size: 32px;
+	font-weight: bold;
+	/* 排版 */
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 16px;
+	/* 外觀 */
+	color: #fff;
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+}
+
+.GH_WIP_DLC_Game_Standard img{
+	/* 尺寸 */
+	width: 350px;
+	height: 350px;
+}
+
+
+/*  -------------- 以下為 此頁紅色banner */
+.GH_WIP_DLC_Banner{
+	/* 尺寸 */
+	width: auto;
+	height: 114px;
+	/* 外觀 */
+	background-color: #FF5252;
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.GH_WIP_DLC_Banner_Left_Maga{
+	/* 排版 */
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.GH_WIP_DLC_Banner_Left_Maga img{
+	/* 尺寸 */
+	width: 39px;
+	height: 42px;
+	/* 排版 */
+	margin-left: 40px;
+}
+
+.GH_WIP_DLC_Banner_Left_Maga p{
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+	font-size: 28px;
+	font-weight: bold;
+	/* 排版 */
+	margin-left: 8px;
+}
+
+.GH_WIP_DLC_Banner_Right_Maga{
+	/* 排版 */
+	display: flex;
+	align-items: center;
+}
+
+.GH_WIP_DLC_Banner_Right_Maga img{
+	/* 尺寸 */
+	width: 39px;
+	height: 42px;
+	/* 排版 */
+	margin-left: 40px;
+}
+
+.GH_WIP_DLC_Banner_Right_Maga p{
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+	font-size: 28px;
+	font-weight: bold;
+	/* 排版 */
+	margin-left: 8px;
+}
+
+/* ------------------ 這邊放置 這遊戲的美術設定 */
+.GH_WIP_DLC_ArtBook_Swiper{
+	/* 排版 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.GH_WIP_DLC_ArtBook{
+	/* 外觀 */
+	background-color: #466C9A;
+	/* 尺寸 */
+	width: auto;
+	height: 241px;
+	/* 排版 */
+	display: flex;
+	align-items: center;
+}
+
+.GH_WIP_DLC_ArtBook01{
+	/* 排版 */
+	position: relative;
+	margin-right: 24px;
+}
+
+.GH_WIP_DLC_ArtBook01 img{
+	/* 尺寸 */
+	width: 252px;
+	height: 216px;
+	/* 外觀 */
+	border-radius: 16px;
+}
+
+.GH_WIP_DLC_ArtBook02{
+	/* 排版 */
+	position: relative;
+	margin-right: 24px;
+}
+
+.GH_WIP_DLC_ArtBook02 img{
+	/* 尺寸 */
+	width: 252px;
+	height: 216px;
+	/* 外觀 */
+	border-radius: 16px;
+}
+
+
+.GH_WIP_DLC_ArtBook03{
+	/* 排版 */
+	position: relative;
+	margin-right: 24px;
+}
+
+.GH_WIP_DLC_ArtBook03 img{
+	/* 尺寸 */
+	width: 252px;
+	height: 216px;
+	/* 外觀 */
+	border-radius: 16px;
+}
+
+.GH_WIP_DLC_ArtBook04{
+	/* 排版 */
+	position: relative;
+}
+
+.GH_WIP_DLC_ArtBook04 img{
+	/* 尺寸 */
+	width: 252px;
+	height: 216px;
+	/* 外觀 */
+	border-radius: 16px;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* -------------- 以下CSS區域為 GameHex_WorkInnerPage_GameNews 使用  ----------------------- */
+.GameHex_WorkInnerPage_OtherGames{
+	/* 外觀 */
+	background-color: #0C223F;	
+	/* 尺寸 */
+	width: auto;
+	height: 1024px;
+	/* 邊線 */
+	border: 1px solid blue;
+}
+
+.GH_WIP_OtherGames_Title01{
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	/* 外觀 */
+	color: #fff;
+	/* 尺寸 */
+	font-size: 32px;
+	font-weight: bold;
+	/* 排版 */
+	text-align: center;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.GH_WIP_OtherGames_Title02{
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	/* 外觀 */
+	color: #fff;
+	/* 尺寸 */
+	font-size: 32px;
+	font-weight: bold;
+	/* 排版 */
+	text-align: center;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.GH_WIP_OtherGames_Product01{
+	/* 尺寸 */
+	width: 1200px;
+	height: 300px;
+	/* 排版 */
+	margin-left: 120px;
+	display: flex;
+	/* 外觀 */
+	background-color: #3A5A85;
+}
+
+/* 小卡01 旁邊的標題 */
+.GH_WIP_OtherGames_Product_Title{
+	/* 邊線 */
+	border-left: 4px solid #fff;
+	/* 排版 */
+	margin-top: 46px;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	/* 尺寸 */
+	width: 205px;
+	height: 207px;
+}
+
+.GH_WIP_OtherGames_Product_Title p{
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-top: 20px;
+	margin-bottom: 12px;
+	margin-left: 40px;
+}
+
+.GH_WIP_OtherGames_Product_SubTitle01{
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
+
+.GH_WIP_OtherGames_Product_SubTitle02{
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	/* 外觀 */
+	color: #fff;
+	/* 排版 */
+	margin-bottom: 12px;
+	margin-left: 40px;
+}
+
+.GH_WIP_OtherGames_Product_Info{
+	/* 排版 */
+	display: flex;
+	flex-direction: column;
+	/* 排版 */
+	margin-top: 40px;
+}
+
+.GH_WIP_OtherGames_Product_Info span{
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	/* 外觀 */
+	color: #fff;
+	/* 尺寸 */
+	font-size: 16px;
+	/* 排版 */
+	line-height: 1.4;
+}
+
+.GH_WIP_OtherGames_Product_Info p{
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	/* 外觀 */
+	color: #fff;
+	/* 尺寸 */
+	font-size: 32px;
+	font-weight: bold;
+	/* 排版 */
+	margin-bottom: 24px;
+}
+
+.GH_WIP_OtherGames_Product01_Info_SubTitle{
+	/* 字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	/* 外觀 */
+	color: #fff;
+	/* 尺寸 */
+	font-size: 28px;
+	font-weight: bold;
+	/* 排版 */
+	margin-bottom: 8px;	
+}
+
+.GH_WIP_OtherGames_Product01_Info span{}
+
+/* ------------------- 小卡  ------------- */
+
+.recomeGame_Card {
+    /* 尺寸 */
+    width: 400px;
+    height: 269px;
+    /* 排版 */
+   margin-right: 36px;
+   margin-left: 36px;
+   margin-top: 15.5px;
+
+    /* 外觀 */
+    /* border: 1px solid yellow; */
+}
+
+.recomeGame_CardFin{
+    /* 尺寸 */
+    width: 300px;
+    height: 300px;
+    
+}
+
+.recomeGame_img {
+    /* 排版 */
+    position: relative;
+}
+
+
+.recomeGame_img>img {
+    /* 尺寸 */
+    width: 400px;
+    height: 269px;
+    object-fit: cover;
+    /* 外觀 */
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.discountPrice {
+    /* 排版 */
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    /* 尺寸 */
+    width: auto;
+    height: 39px;
+
+    /* 外觀 */
+    background-color: #292929;
+    border-radius: 4px;
+    border: 1px solid #fff;
+}
+
+.discountPrice span {
+    /* 尺寸 */
+    font-size: 12px;
+
+    /* 外觀 */
+    color: #000;
+    border-radius: 16px;
+
+    /* 字體 */
+    font-family: "Roboto";
+
+    /* 排版 */
+    display: block;
+    background-color: #fff;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 7.5px;
+}
+
+.discountPrice p {
+    /* 尺寸 */
+    font-size: 14px;
+    font-weight: 500;
+
+    /* 外觀 */
+    color: #fff;
+
+    /* 字體 */
+    font-family: "Roboto";
+
+    /* 排版 */
+    margin-left: 8px;
+    margin-right: 7px;
+}
+
+.HopeList_BTN {
+    /* 排版 */
+    position: absolute;
+    top: 20px;
+	left: 344px;
+
+    /* 移除外觀 */
+    border: none;
+    background-color: transparent;
+}
+
+
+/* --------------------------------- */
+/* 小卡文字資訊區域 */
+.recomeGame_info {
+    /* 尺寸 */
+    width: 400px;
+    height: 100px;
+	/* 排版 */
+	position: absolute;
+	top: 170px;
+}
+
+.recomeGame_info_title {
+    /* 排版 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.recomeGame_info_title p {
+    /* 尺寸 */
+    font-size: 18px;
+    font-weight: bold;
+    /* 字體 */
+    font-family: "Noto Sans TC, sans-serif,Roboto";
+    /* 外觀 */
+    color: #fff;
+}
+
+.recomeGame_info_title ul {
+    /* 排版 */
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.recomeGame_info_title ul li img{
+	/* 尺寸 */
+	width: 24px;
+	height: 22px;
+}
+
+/* -----------------------------------  */
+/* 遊戲類型tag 以及 加入購物車按鈕 */
+
+.gameTag_Bigbox {
+    /* 排版 */
+    display: flex;
+    margin-left: 14px;
+    margin-top: 4px;
+}
+
+.gameTag_Bigbox ul {
+    /* 尺吋 */
+    width: 224px;
+    /* 排版 */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gameTag_Bigbox ul li {
+    /* 尺寸 */
+    font-size: 14px;
+	font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    background-color: #3A5A85;
+    border-radius: 8px;
+    /* 排版 */
+    padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+    margin-bottom: 8px;
+	margin-right: 2px;
+}
+
+.GH_WIP_OtherGames_Product02{
+	/* 尺寸 */
+	width: 1200px;
+	height: 300px;
+	/* 排版 */
+	margin-left: 120px;
+	display: flex;
+	/* 外觀 */
+	background-color: #3A5A85;
+}
+
+
+.GH_WIP_OtherGames_Product03{
+	/* 尺寸 */
+	width: 1200px;
+	height: 300px;
+	/* 排版 */
+	margin-left: 120px;
+	display: flex;
+	/* 外觀 */
+	background-color: #3A5A85;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* -------------- 以下CSS區域為 GameHex_WorkInnerPage_Feedback 使用  ----------------------- */
+.GameHex_WorkInnerPage_Feedback{
+	/* 外觀 */
+	background-color: #0C223F;
+	/* 尺寸 */
+	width: auto;
+	height: 1024px;
+	/* 邊線 */
+	border: 1px solid pink;
+}
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* -------------- 以下CSS區域為 GH_ShopWorkInnerPage.html BTN 按鈕 使用  ----------------------- */
+
+
+.BTN_Style_ProductTo_HopeList{
+	/* 外觀 */
+	background-color: #FF5252;
+	border: 1px solid #fff;
+	/* 尺寸 */
+	width: 148px;
+	height: 42px;
+	/* 排版 */
+	margin-right: 40px;
+	/* 文字 */
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.BTN_Style_ProductTo_Cart{
+	/* 外觀 */
+	background-color: #8CD428;
+	border: 1px solid #fff;
+	/* 尺寸 */
+	width: 148px;
+	height: 42px;
+	/* 排版 */
+	margin-right: 40px;
+	/* 文字 */
+	color: #282828;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+
+.BTN_Style_ProductTo_Ignore{
+	/* 外觀 */
+	background-color: #4A9BFF;
+	border: 1px solid #fff;
+	/* 尺寸 */
+	width: 148px;
+	height: 42px;
+	/* 排版 */
+	margin-right: 40px;
+	/* 文字 */
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+
+.BTN_Style_ProductTo_OtherGame{
+	/* 外觀 */
+	background-color: #4A9BFF;
+	border: 1px solid #fff;
+	/* 尺寸 */
+	width: 148px;
+	height: 42px;
+	/* 排版 */
+	margin-right: 40px;
+	/* 文字 */
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.BTN_Style_ProductTo_BuyGame1350{
+	/* 排版 */
+	position: absolute;
+	top: 350px;
+	left: 111px;
+	text-align: center;
+	/* 尺寸 */
+	width: 128px;
+	height: 40px;
+	/* 顏色 */
+	color: #000;
+	background-color: #fff;
+	/* 外觀 */
+	border: 1px solid #000;
+	border-radius: 16px;
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+}
+
+.BTN_Style_ProductTo_BuyGame1920{
+	/* 排版 */
+	position: absolute;
+	top: 350px;
+	left: 111px;
+	text-align: center;
+	/* 尺寸 */
+	width: 128px;
+	height: 40px;
+	/* 顏色 */
+	color: #000;
+	background-color: #fff;
+	/* 外觀 */
+	border: 1px solid #000;
+	border-radius: 16px;
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+}
+
+.BTN_Style_ProductTo_BuyGame1080{
+	/* 排版 */
+	position: absolute;
+	top: 350px;
+	left: 111px;
+	text-align: center;
+	/* 尺寸 */
+	width: 128px;
+	height: 40px;
+	/* 顏色 */
+	color: #000;
+	background-color: #fff;
+	/* 外觀 */
+	border: 1px solid #000;
+	border-radius: 16px;
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+}
+
+/* 立即購買 按鈕 */
+.BTN_Style_ProductTo_BuyGameNow{
+	/* 排版 */
+	margin-top: 31px;
+	margin-bottom: 28px;
+	margin-left: auto;
+	margin-right: auto;
+	/* 尺寸 */
+	width: 212px;
+	height: 66px;
+	/* 顏色 */
+	color: #000;
+	background-color: #fff;
+	/* 外觀 */
+	border: 1px solid #000;
+	border-radius: 16px;
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+/* <!-- 向左邊滑動 按鈕 --> */
+.BTN_Style_Product_Swiper_Left{
+	/* 外觀 */
+	background-image: url(../img/Vector-Left.png);
+	/* 尺寸 */
+	width: 26px;
+	height: 34px;
+	/* 移除外觀 */
+	background-color: transparent;
+	border: 0px;
+	/* 排版 */
+	margin-right: 24px;
+	margin-left: 128px;
+}
+
+
+.BTN_Style_Product_Swiper_Right{
+	/* 外觀 */
+	background-image: url(../img/Vector-Right.png);
+	/* 尺寸 */
+	width: 26px;
+	height: 34px;
+	/* 移除外觀 */
+	background-color: transparent;
+	border: 0px;
+	/* 排版 */
+	margin-left: 24px;
+}
+
+
+.BTN_Style_ProductTo_ArtBook1920{
+	/* 排版 */
+	position: absolute;
+	top: 160px;
+	left: 63px;
+	text-align: center;
+	/* 尺寸 */
+	width: 128px;
+	height: 40px;
+	/* 顏色 */
+	color: #000;
+	background-color: #fff;
+	/* 外觀 */
+	border: 1px solid #000;
+	border-radius: 16px;
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+}
+
+
+.BTN_Style_ProductTo_ArtBook1220{
+	/* 排版 */
+	position: absolute;
+	top: 160px;
+	left: 63px;
+	text-align: center;
+	/* 尺寸 */
+	width: 128px;
+	height: 40px;
+	/* 顏色 */
+	color: #000;
+	background-color: #fff;
+	/* 外觀 */
+	border: 1px solid #000;
+	border-radius: 16px;
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+}
+
+.BTN_Style_ProductTo_ArtBook1420{
+	/* 排版 */
+	position: absolute;
+	top: 160px;
+	left: 63px;
+	text-align: center;
+	/* 尺寸 */
+	width: 128px;
+	height: 40px;
+	/* 顏色 */
+	color: #000;
+	background-color: #fff;
+	/* 外觀 */
+	border: 1px solid #000;
+	border-radius: 16px;
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+}
+
+.BTN_Style_ProductTo_ArtBook1620{
+	/* 排版 */
+	position: absolute;
+	top: 160px;
+	left: 63px;
+	text-align: center;
+	/* 尺寸 */
+	width: 128px;
+	height: 40px;
+	/* 顏色 */
+	color: #000;
+	background-color: #fff;
+	/* 外觀 */
+	border: 1px solid #000;
+	border-radius: 16px;
+	/* 字體 */
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+}
+
+/*  加入購物車 按鈕  小卡上面的 */
+.AddToCart_BTN {
+    /* 尺寸 */
+    width: 136px;
+    height: 28px;
+    /* 外觀 */
+    background-color: #fff;
+    border-radius: 8px;
+    border: none;
+    /* 排版 */
+    margin-top: 14px;
+    margin-left: 12px;
+	/* 文字 */
+	font-size: 14px;
+}

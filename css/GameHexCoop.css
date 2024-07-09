@@ -1,0 +1,1155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    max-width: 1440px;
+    /* 排版 */
+    margin: 0 auto;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------- 這邊為 main 專用CSS ------------------------------- */
+main{
+    /* 排版 */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------- 這邊為 GameHex_Coop_Introduce 專用CSS ----------------- */
+.GameHex_Coop_Introduce{
+    /* 尺寸 */
+    width: auto;
+    height: 924px;
+    /* 外觀 */
+    /* border: 1px solid blue; */
+    background-color: #313131;
+    /* 排坂 */
+    position: relative;
+}
+
+.GameHex_Coop_Introduce_Title{
+    /* 排版 */
+    position: absolute;
+    top: 31px;
+    left: 175px;
+    /* 尺寸 */
+    width: 276px;
+    height: 197px;
+}
+
+.GameHex_Coop_Introduce_Title img{
+    /* 尺寸 */
+    width: 25px;
+    height: 181px;
+}
+
+.GameHex_Coop_Introduce_Title p {
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    /* 尺寸 */
+    font-size: 60px;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    position: absolute;
+    top: 0;
+    left: 42px;
+}
+
+.GameHex_Coop_Introduce_Title h1{
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    /* 尺寸 */
+    font-size: 40px;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    position: absolute;
+    top: 95px;
+    left: 42px;    
+}
+
+.GameHex_Coop_Introduce_Title span{
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    /* 尺寸 */
+    font-size: 28px;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    position: absolute;
+    top: 150px;
+    left: 42px;        
+}
+
+.GameHex_Coop_Introduce_Slogan{
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    /* 尺寸 */
+    font-size: 28px;
+    /* 外觀 */
+    color: #fff;
+}
+
+.GameHex_Coop_Introduce_Slogan01{
+    /* 排版 */
+    position: absolute;
+    top: 709px;
+    right: 113px;
+    /* 外觀 */
+    text-decoration:underline;
+}
+
+.GameHex_Coop_Introduce_Slogan02{
+    /* 排版 */
+    position: absolute;
+    top: 790px;
+    right: 200px;
+    /* 外觀 */
+    text-decoration:underline;
+}
+
+.GameHex_Coop_Introduce_Slogan03{
+    /* 排版 */
+    position: absolute;
+    top: 865px;
+    right: 453px;
+    /* 外觀 */
+    text-decoration:underline;
+}
+
+.GameHex_Coop_Introduce_CardBox{
+    /* 排版 */
+    display: flex;
+}
+
+.GameHex_Coop_Introduce_Card01{
+    /* 尺寸 */
+    width: 240px;
+    height: 630px;   
+    /* 排版 */
+    margin-top: 270px;
+    margin-left: 175px;
+}
+
+.GameHex_Coop_Introduce_Card01 img{
+    /* 尺寸 */
+    display: block;
+}
+
+.GameHex_Coop_Introduce_Card01 p{
+    /* 排版 */
+    position: absolute;
+    top: 666px;
+    left: 246px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* 外觀 */
+    color: #363300;
+    background-color: #EFFF00;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    /* 尺寸 */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.GameHex_Coop_Introduce_Card02{
+    /* 尺寸 */
+    width: 240px;
+    height: 630px;   
+    /* 排版 */
+    margin-top: 193px;
+    margin-left: 40px;
+}
+
+.GameHex_Coop_Introduce_Card02 img{
+    display: block;
+}
+
+.GameHex_Coop_Introduce_Card02 p{
+    /* 排版 */
+    position: absolute;
+    top: 589px;
+    left: 553px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* 外觀 */
+    color: #680000;
+    background-color: #F8442D;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    /* 尺寸 */
+    font-size: 18px;
+    font-weight: 500;    
+}
+
+.GameHex_Coop_Introduce_Card03{
+    /* 尺寸 */
+    width: 240px;
+    height: 630px;   
+    /* 排版 */
+    margin-top: 116px;
+    margin-left: 40px;
+}
+
+.GameHex_Coop_Introduce_Card03 img{
+    display: block;
+}
+
+.GameHex_Coop_Introduce_Card03 p{
+    /* 排版 */
+    position: absolute;
+    top: 512px;
+    left: 859px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* 外觀 */
+    color: #363300;
+    background-color: #EFFF00;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    /* 尺寸 */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.GameHex_Coop_Introduce_Card04{
+    /* 尺寸 */
+    width: 240px;
+    height: 630px;   
+    /* 排版 */
+    margin-top: 39px;
+    margin-left: 40px;
+}
+
+.GameHex_Coop_Introduce_Card04 img{
+    display: block;
+}
+
+.GameHex_Coop_Introduce_Card04 p{
+    /* 排版 */
+    position: absolute;
+    top: 435px;
+    left: 1109px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* 外觀 */
+    color: #680000;
+    background-color: #F8442D;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    /* 尺寸 */
+    font-size: 18px;
+    font-weight: 500;    
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------- 這邊為 GameHex_Coop_Upload 專用CSS ----------------- */
+.GameHex_Coop_Upload{
+    /* 尺寸 */
+    width: auto;
+    height: 1024px;
+    /* 外觀 */
+    /* border: 1px solid greenyellow; */
+    /* 排版 */
+    position: relative;
+}
+
+.GameHex_Coop_Upload::before{
+	/* 尺寸 */
+	width: 100%;
+	height: 1024px;
+
+	/* 外觀 */
+	content: "";
+	filter: brightness(50%) blur(5px);
+
+	/* 排版 */
+	display: block;
+	background-size: cover;
+	background-image: url(../img/BC_BG_001.png);
+	position: absolute;
+	/* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.GameHex_Coop_Upload_Info{
+    /* 尺寸 */
+    width: 320px;
+    height: 620px;
+    /* 外觀 */
+    border: 1px solid #fff;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
+    /* 排版 */
+    position: absolute;
+    top: 100px;
+    left: 119px;
+}
+
+.GameHex_Coop_Upload_Info_Num{
+    /* 尺寸 */
+    font-size: 80px;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.GameHex_Coop_Upload_Info_Title{
+    /* 尺寸 */
+    font-size: 40px;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-left: 40px;
+    margin-bottom: 12px;
+}
+
+.GameHex_Coop_Upload_Info_SubTitle{
+    /* 尺寸 */
+    font-size: 40px;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;  
+    /* 排版 */
+    margin-left: 40px;
+    margin-bottom: 16px;
+}
+
+.GameHex_Coop_Upload_Info img{
+    /* 尺寸 */
+    width: auto;
+    /* 排版 */
+    margin-left: 40px;    
+    margin-bottom: 40px;
+}
+
+.GameHex_Coop_Upload_Info_Paragraph_01{
+    /* 尺寸 */
+    font-size: 16px;   
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    /* 排版 */
+    margin-left: 40px;  
+    margin-bottom: 20px;
+    margin-right: 32px;
+    line-height: 1.2;
+    /* 外觀 */
+    color: #fff;      
+}
+
+.GameHex_Coop_Upload_Img{
+    /* 排版 */
+    position: absolute;
+    top: 100px;
+    left: 519px;
+}
+
+.GameHex_Coop_Upload_Img img{
+    /* 尺寸 */
+    width: 800px;
+    height: 620px;
+    /* 排版 */
+    display: block;
+}
+
+.GameHex_Coop_Upload_Pop{
+    /* 尺寸 */
+    width: 1440px;
+    height: 218px;
+    /* 排版 */
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    /* 外觀 */
+    background-color: #4E4E4E;
+}
+
+.GameHex_Coop_Upload_Pop_01{
+    /* 尺寸 */
+    width: 280px;
+    /* 外觀 */
+    background-color: #0F185B;
+    /* 排版 */
+    display: flex;
+    align-items: center;
+    /* 文字顏色 */
+    color: #fff;
+}
+
+.GameHex_Coop_Upload_Pop_01 p{
+    /* 排版 */
+    margin-left: 14px;
+    margin-right: 16px;
+    /* 尺寸 */
+    font-size: 40px;
+    font-weight: bold;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+}
+
+.GameHex_Coop_Upload_Pop_01 img{
+    /* 尺寸 */
+    width: 13px;
+    height: 54px;
+    /* 排版 */
+    display: block;
+}
+
+.GameHex_Coop_Upload_Pop_01 span{
+    /* 排版 */
+    margin-left: 8px;
+    /* 尺寸 */
+    font-size: 20px;
+    font-weight: bold;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.GameHex_Coop_Upload_Pop_02{
+    /* 尺寸 */
+    width: 280px;
+    /* 外觀 */
+    background-color: #0F1C79;
+    /* 排版 */
+    display: flex;
+    align-items: center;
+    /* 文字顏色 */
+    color: #fff;
+}
+
+.GameHex_Coop_Upload_Pop_02 p{
+    /* 排版 */
+    margin-left: 14px;
+    margin-right: 16px;
+    /* 尺寸 */
+    font-size: 40px;
+    font-weight: bold;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+}
+
+.GameHex_Coop_Upload_Pop_02 img{
+    /* 尺寸 */
+    width: 13px;
+    height: 54px;
+    /* 排版 */
+    display: block;
+}
+
+.GameHex_Coop_Upload_Pop_02 span{
+    /* 排版 */
+    margin-left: 8px;
+    /* 尺寸 */
+    font-size: 20px;
+    font-weight: bold;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.GameHex_Coop_Upload_Pop_03{
+    /* 尺寸 */
+    width: 280px;
+    /* 外觀 */
+    background-color: #5260C9;
+    /* 排版 */
+    display: flex;
+    align-items: center;
+    /* 文字顏色 */
+    color: #fff;
+}
+
+.GameHex_Coop_Upload_Pop_03 p{
+    /* 排版 */
+    margin-left: 14px;
+    margin-right: 0px;
+    /* 尺寸 */
+    font-size: 40px;
+    font-weight: bold;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+}
+
+.GameHex_Coop_Upload_Pop_03 img{
+    /* 尺寸 */
+    width: 13px;
+    height: 54px;
+    /* 排版 */
+    display: block;
+}
+
+.GameHex_Coop_Upload_Pop_03 span{
+    /* 排版 */
+    margin-left: 8px;
+    /* 尺寸 */
+    font-size: 20px;
+    font-weight: bold;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.GameHex_Coop_Upload_Pop_04{
+    /* 尺寸 */
+    width: 280px;
+    /* 外觀 */
+    background-color: #6895D2;
+    /* 排版 */
+    display: flex;
+    align-items: center;
+    /* 文字顏色 */
+    color: #fff;
+}
+
+.GameHex_Coop_Upload_Pop_04 p{
+    /* 排版 */
+    margin-left: 51px;
+    margin-right: 16px;
+    /* 尺寸 */
+    font-size: 40px;
+    font-weight: bold;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+}
+
+.GameHex_Coop_Upload_Pop_04 img{
+    /* 尺寸 */
+    width: 13px;
+    height: 54px;
+    /* 排版 */
+    display: block;
+}
+
+.GameHex_Coop_Upload_Pop_04 span{
+    /* 排版 */
+    margin-left: 8px;
+    /* 尺寸 */
+    font-size: 20px;
+    font-weight: bold;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------- 這邊為 GameHex_Coop_Offer 專用CSS ----------------- */
+.GameHex_Coop_Offer{
+    /* 尺寸 */
+    width: auto;
+    height: 1024px;
+    /* 外觀 */
+    /* border: 1px solid yellow; */
+    /* 排版 */
+    display: flex;
+    position: relative;
+}
+
+.GameHex_Coop_Offer::before{
+    /* 外觀 */
+    content: "";
+    filter: brightness(50%) blur(5px);
+    background-image: url(../img/BC_BG_001.png);
+    /* 排版 */
+    position: absolute;
+    display: block;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* 尺寸 */
+    width: 100%;
+    height: 1024px;
+}
+
+.GameHex_Coop_Offer_Img img{
+    /* 尺寸 */
+    width: 224px;
+    height: 738px;
+    /* 排版 */
+    display: block;
+    margin-top: 128px;
+    margin-left: 122px;
+    position: absolute;
+}
+
+/* ----------- 中間的文字區塊 ------------ */
+.GameHex_Coop_Offer_TextBox{
+    /* 排版 */
+    position: absolute;
+    top: 185px;
+    left: 366px;
+    display: flex;
+    flex-direction: column;
+    /* 尺寸 */
+    width: 550px;    
+}
+
+.GameHex_Coop_Offer_TextBox_box01{
+    /* 排版 */
+    display: flex;
+    align-items: center;
+}
+
+.GameHex_Coop_Offer_TextBox_box01 img{
+    /* 尺吋 */
+    width: 220px;
+    height: 220px;
+}
+
+.TextBox{
+    /* 尺寸 */
+    width: 294px;
+    /* 排版 */
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    margin-right: 24px;
+    /* 字體顏色 */
+    color: #fff;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    /* 外觀 */
+    border-right:1px solid #fff ;
+}
+
+
+.TextBox02{
+    /* 尺寸 */
+    width: 294px;
+    /* 排版 */
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    margin-left: 24px;
+    /* 字體顏色 */
+    color: #fff;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    /* 外觀 */
+    border-left:1px solid #fff ;
+}
+
+.TextBox span{
+    /* 排版 */
+    line-height: 30px;
+    padding-right: 12px;
+    /* 尺寸 */
+    font-size: 16px;
+}
+
+
+.TextBox_Title{
+    /* 尺寸 */
+    font-size: 36px;
+    font-weight: bold;
+    /* 排版 */
+    margin-bottom: 20px;
+}
+
+.TextBox_SubTitle{
+    /* 排版 */
+    margin-bottom: 16px;
+    /* 尺寸 */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.GameHex_Coop_Offer_TextBox_box02{
+    /* 排版 */
+    display: flex;
+    align-items: center;
+}
+
+.GameHex_Coop_Offer_TextBox_box02 img{
+    /* 尺吋 */
+    width: 220px;
+    height: 220px;
+}
+
+.GameHex_Coop_Offer_TextBox_box03{
+    /* 排版 */
+    display: flex;
+    align-items: center;
+}
+
+.GameHex_Coop_Offer_TextBox_box03 img{
+    /* 尺吋 */
+    width: 220px;
+    height: 220px;
+}
+
+.GameHex_Coop_Offer_Info{
+    /* 尺寸 */
+    width: 325px;
+    height: 718px;
+    /* 外觀 */
+    border: 1px solid #fff;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
+    /* 排版 */
+    position: absolute;
+    top: 129px;
+    right: 117px;
+}
+
+.GameHex_Coop_Offer_Info_Num{
+    /* 尺寸 */
+    font-size: 80px;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.GameHex_Coop_Offer_Info_Title{
+    /* 尺寸 */
+    font-size: 40px;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-left: 40px;
+    margin-bottom: 12px;
+}
+
+.GameHex_Coop_Offer_Info_SubTitle{
+    /* 尺寸 */
+    font-size: 40px;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;  
+    /* 排版 */
+    margin-left: 40px;
+    margin-bottom: 16px;
+}
+
+.GameHex_Coop_Offer_Info img{
+    /* 尺寸 */
+    width: auto;
+    /* 排版 */
+    margin-left: 40px;    
+    margin-bottom: 40px;
+}
+
+.GameHex_Coop_Offer_Info_Paragraph_01{
+    /* 尺寸 */
+    font-size: 16px;   
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    /* 排版 */
+    margin-left: 40px;  
+    margin-bottom: 20px;
+    margin-right: 32px;
+    line-height: 1.2;
+    /* 外觀 */
+    color: #fff;      
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------- 這邊為 GameHex_Coop_Contact 專用CSS ----------------- */
+.GameHex_Coop_Contact{
+    /* 尺寸 */
+    width: auto;
+    height: 924px;
+    /* 外觀 */
+    /* border: 1px solid pink; */
+    /* 排版 */
+    position: relative;
+}
+
+.GameHex_Coop_Contact::before{
+     /* 外觀 */
+     content: "";
+     filter: brightness(50%) blur(5px);
+     background-image: url(../img/BC_BG_001.png);
+     /* 排版 */
+     position: absolute;
+     display: block;
+     background-size: cover;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     /* 尺寸 */
+     width: 100%;
+     height: 924px;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------- 這邊為 GameHex_Coop_Contact 專用CSS ----------------- */
+/* ----------------------- 這邊為 GameHex_Coop_Contact_Info 專用CSS ----------------- */
+.GameHex_Coop_Contact_Info{
+    /* 尺寸 */
+    width: 325px;
+    height: 718px;
+    /* 外觀 */
+    border: 1px solid #fff;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
+    /* 排版 */
+    position: absolute;
+    top: 113px;
+    left: 173px;
+}
+
+.GameHex_Coop_Contact_Info_Num{
+    /* 尺寸 */
+    font-size: 80px;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.GameHex_Coop_Contact_Info_Title{
+    /* 尺寸 */
+    font-size: 40px;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-left: 40px;
+    margin-bottom: 12px;
+}
+
+.GameHex_Coop_Contact_Info_SubTitle{
+    /* 尺寸 */
+    font-size: 40px;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;  
+    /* 排版 */
+    margin-left: 40px;
+    margin-bottom: 16px;
+}
+
+.GameHex_Coop_Contact_Info img{
+    /* 尺寸 */
+    width: auto;
+    /* 排版 */
+    margin-left: 40px;    
+    margin-bottom: 40px;
+}
+
+.GameHex_Coop_Contact_Info_Paragraph_01{
+    /* 尺寸 */
+    font-size: 16px;   
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    /* 排版 */
+    margin-left: 40px;  
+    margin-bottom: 20px;
+    margin-right: 32px;
+    line-height: 1.2;
+    /* 外觀 */
+    color: #fff;      
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------ 這邊為按鈕專區 ---------------------- */
+.understandUS_btn{
+    /* 尺寸 */
+    width: 213px;
+    height: 67px;
+    font-size: 20px;
+    font-weight: bold;
+    /* 外觀 */
+    background-image: url(../img/BTN_001.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    /* 移除預設外觀 */
+    border: none;
+    background-color: transparent;
+    /* 排版 */
+    margin-left: 40px;
+    margin-top: 40px;
+    line-height: 67px;
+    text-align: center;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------- 這邊為 GameHex_Coop_Contact 專用CSS ----------------- */
+/* ----------------------- 這邊為 GameHex_Coop_Contact_Text 專用CSS ----------------- */
+.GameHex_Coop_Contact_Text{
+    /* 排版 */
+    position: absolute;
+    top: 113px;
+    left: 638px;
+}
+
+.GameHex_Coop_Contact_Text_Title{
+    /* 尺寸 */
+    font-size: 40px;   
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-bottom: 40px;
+}
+
+.GameHex_Coop_Contact_Text_Form{
+    /* 尺寸 */
+    width: 500px;
+    height: 620px;
+    /* 外觀 */
+    border-radius: 16px;
+    background-color: rgba(91, 91,91, 0.8);
+    /* 排版 */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.GameHex_Coop_Contact_Text_Form_Top{
+    /* 排版 */
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.GameHex_Coop_Contact_Text_Form_UserName{
+    /* 排版 */
+    margin-right: 40px;
+}
+
+.GameHex_Coop_Contact_Text_Form_UserName p{
+    /* 尺寸 */
+    font-size: 20px;   
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-bottom: 8px;
+}
+
+.GameHex_Coop_Contact_Text_Form_UserName input{
+    /* 尺寸 */
+    width: 159px;
+    height: 24px;
+    font-size: 16px;  
+    /* 外觀 */
+    border-radius: 16px;
+    color: #000;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    /* 排版 */
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.GameHex_Coop_Contact_Text_Form_UserLastName  p{
+    /* 尺寸 */
+    font-size: 20px;   
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-bottom: 8px;
+}
+
+.GameHex_Coop_Contact_Text_Form_UserLastName input{
+    /* 尺寸 */
+    width: 159px;
+    height: 24px;
+    font-size: 16px;  
+    /* 外觀 */
+    border-radius: 16px;
+    border: none;
+    color: #000;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    /* 排版 */
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.GameHex_Coop_Contact_Text_Form_mid{
+    /* 排版 */
+    margin-bottom: 24px;
+}
+
+.GameHex_Coop_Contact_Text_Form_mid p{
+    /* 尺寸 */
+    font-size: 20px;   
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-bottom: 8px;
+}
+
+.GameHex_Coop_Contact_Text_Form_mid input{
+    /* 尺寸 */
+    width: 159px;
+    height: 24px;
+    font-size: 16px;  
+    /* 外觀 */
+    border-radius: 16px;
+    border: none;
+    color: #000;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    /* 排版 */
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.GameHex_Coop_Contact_Text_Form_down p{
+    /* 尺寸 */
+    font-size: 20px;   
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-bottom: 8px;
+}
+
+.GameHex_Coop_Contact_Text_Form_down input{
+    /* 尺寸 */
+    width: 440px;
+    height: 240px;
+    font-size: 16px;  
+    /* 外觀 */
+    border-radius: 16px;
+    border: none;
+    color: #000;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    /* 排版 */
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.submit_Btn{
+    /* 尺寸 */
+    width: 213px;
+    height: 67px;
+    font-size: 20px;
+    font-weight: bold;
+    /* 外觀 */
+    background-image: url(../img/BTN_001.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    /* 移除預設外觀 */
+    border: none;
+    background-color: transparent;
+    /* 排版 */
+    margin-left: 144px;
+    margin-top: 28px;
+    line-height: 67px;
+    text-align: center;    
+}
+

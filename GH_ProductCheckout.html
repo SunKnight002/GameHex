@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productCheckoutIndex</title>
+
+     <!-- css 連結 -->
+     <link rel="stylesheet" href="../css/GameHexProductCheckOut.css">
+     <link rel="stylesheet" href="../css/header.css">
+     <link rel="stylesheet" href="../css/footer.css">
+ 
+     <!-- 英文字體 Roboto -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+ 
+     <!-- 中文字體 Noto Sans TC -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+                
+            <!-- 這邊是 header的區域 -->
+            <header>
+                <!-- 這邊是 header的區域 logo圖片 -->
+                <div class="header_Logo">
+                    <a href="../html/GH_LandingPage.html" target="_self"><img src="../img/logo.png.png" alt="GameHex Logo"></a>
+                </div>
+                <!-- 這邊是 header的區域 ul區域 -->
+                <ul>
+                    <a href="../html/GH_LandingPage.html" target="_self">
+                        <img src="../img/visibility_20dp.png" alt="">
+                        <li>主打新作</li>
+                    </a>
+                    
+                    <a href="../html/GH_Index.html" target="_self">
+                        <img src="../img/visibility_20dp.png" alt="">
+                        <li>產品銷售</li>
+                    </a>
+
+                    <a href="../html/GH_ProductCheckout.html" target="_self">
+                        <img src="../img/visibility_20dp.png" alt="">
+                        <li>購物推車</li>
+                    </a>
+
+                    <a href="../html/GH_WareHouse.html" target="_self">
+                        <img src="../img/visibility_20dp.png" alt="">
+                        <li>遊戲倉庫</li>
+                    </a>
+
+                    <a href="../html/GH_CompanyCoop.html" target="_self">
+                        <img src="../img/visibility_20dp.png" alt="">
+                        <li>企業合作</li>
+                    </a>
+
+                    <a href="../html/GH_MyAccount.html" target="_self">
+                        <img src="../img/visibility_20dp.png" alt="">
+                        <li>我的帳號</li>
+                    </a>
+
+                    <a href="../html/GH_LoginPage.html" target="_self">
+                        <img src="../img/visibility_20dp.png" alt="">
+                        <li>登入/註冊</li>
+                    </a>
+                </ul>
+            </header>
+
+
+            <!-- 這邊是 內容 的區域 -->
+            <div class="cheakOutMain">
+
+                <!-- 這邊是 內容 上層的區域 -->
+                <div class="cheakOutMain01_Top">
+                    <!-- 第一個 藍色點點 -->
+                    <div class="cheakOutMain_Top_Box01">
+                        <img src="../img/Dot_on.png" alt="">
+                        <p>確認商品</p>
+                        <span>(We are Here now)</span>
+                    </div>
+
+                    <img src="../img/Arrow_1.png" alt="">
+
+                    <!-- 第二個 藍色點點 -->
+                    <div class="cheakOutMain_Top_Box02">
+                        <img src="../img/Dot_off.png" alt="">
+                        <p>完成購買</p>
+                        <span>(We finish)</span>
+                    </div>
+                </div>
+
+                <!-- 這邊是 內容 下層的區域  -->
+                <div class="cheakOutMain_Bottom">
+
+                    <!-- 這邊是 內容 下層 左側的區域 -->
+                    <div class="cheakOutMain_Bottom_L">
+                        <h1>您的購物車</h1>
+                        <!-- 這邊是購物車 最外層 -->
+                        <div class="cheakOutMain_Bottom_L_BigBox">
+                            <!-- 這邊是購物車 內層的小卡01 -->
+                            <div class="cheakOutMain_Bottom_L_Box01">
+                                <!-- 小卡縮圖 -->
+                                <img src="../img/BC_0003.png" alt="">
+                                <!-- 小卡遊戲資訊 -->
+                                <div class="gameInfo">
+                                    <p>GameTitle</p>
+                                    <div class="playform_Icon">
+                                        <img src="../img/playform_windows.png" alt="">
+                                        <img src="../img/playform_linux.png" alt="">
+                                        <img src="../img/playform_apple.png" alt="">
+                                    </div>
+                                    <div class="discount_Tag"> -60% Off</div>
+                                </div>
+                                <!-- 小卡售價 -->
+                                <div class="price_Area">
+                                    <p>NT $ 450</p>
+                                    <span>NT $ 1,125</span>
+                                </div>
+                                <!-- 之後再購買 按鈕 -->
+                                <button type="button" id="cancelBuy" class="cancelBuy_BTN">之後再購買</button>
+                            </div>
+
+                                <!-- 這邊是購物車 內層的小卡02 -->
+                                <div class="cheakOutMain_Bottom_L_Box02">
+                                    <!-- 小卡縮圖 -->
+                                    <img src="../img/BC_0003.png" alt="">
+                                    <!-- 小卡遊戲資訊 -->
+                                    <div class="gameInfo">
+                                        <p>GameTitle</p>
+                                        <div class="playform_Icon">
+                                            <img src="../img/playform_windows.png" alt="">
+                                            <img src="../img/playform_linux.png" alt="">
+                                            <img src="../img/playform_apple.png" alt="">
+                                        </div>
+                                        <div class="discount_Tag"> -60% Off</div>
+                                    </div>
+                                    <!-- 小卡售價 -->
+                                    <div class="price_Area">
+                                        <p>NT $ 450</p>
+                                        <span>NT $ 1,125</span>
+                                    </div>
+                                    <!-- 之後再購買 按鈕 -->
+                                    <button type="button" id="cancelBuy" class="cancelBuy_BTN">之後再購買</button>
+                                </div>
+
+                                <!-- 這邊是購物車 內層的小卡03 -->
+                                <div class="cheakOutMain_Bottom_L_Box03">
+                                    <!-- 小卡縮圖 -->
+                                    <img src="../img/BC_0003.png" alt="">
+                                    <!-- 小卡遊戲資訊 -->
+                                    <div class="gameInfo">
+                                        <p>GameTitle</p>
+                                        <div class="playform_Icon">
+                                            <img src="../img/playform_windows.png" alt="">
+                                            <img src="../img/playform_linux.png" alt="">
+                                            <img src="../img/playform_apple.png" alt="">
+                                        </div>
+                                        <div class="discount_Tag"> -60% Off</div>
+                                    </div>
+                                    <!-- 小卡售價 -->
+                                    <div class="price_Area">
+                                        <p>NT $ 450</p>
+                                        <span>NT $ 1,125</span>
+                                    </div>
+                                    <!-- 之後再購買 按鈕 -->
+                                    <button type="button" id="cancelBuy" class="cancelBuy_BTN">之後再購買</button>
+                                </div>
+
+                                <!-- 這邊是購物車 內層的小卡04 -->
+                                <div class="cheakOutMain_Bottom_L_Box04">
+                                    <!-- 小卡縮圖 -->
+                                    <img src="../img/BC_0003.png" alt="">
+                                    <!-- 小卡遊戲資訊 -->
+                                    <div class="gameInfo">
+                                        <p>GameTitle</p>
+                                        <div class="playform_Icon">
+                                            <img src="../img/playform_windows.png" alt="">
+                                            <img src="../img/playform_linux.png" alt="">
+                                            <img src="../img/playform_apple.png" alt="">
+                                        </div>
+                                        <div class="discount_Tag"> -60% Off</div>
+                                    </div>
+                                    <!-- 小卡售價 -->
+                                    <div class="price_Area">
+                                        <p>NT $ 450</p>
+                                        <span>NT $ 1,125</span>
+                                    </div>
+                                    <!-- 之後再購買 按鈕 -->
+                                    <button type="button" id="cancelBuy" class="cancelBuy_BTN">之後再購買</button>
+                                </div>
+
+                                <!-- 這邊是購物車 內層的小卡05 -->
+                                <div class="cheakOutMain_Bottom_L_Box05">
+                                    <!-- 小卡縮圖 -->
+                                    <img src="../img/BC_0003.png" alt="">
+                                    <!-- 小卡遊戲資訊 -->
+                                    <div class="gameInfo">
+                                        <p>GameTitle</p>
+                                        <div class="playform_Icon">
+                                            <img src="../img/playform_windows.png" alt="">
+                                            <img src="../img/playform_linux.png" alt="">
+                                            <img src="../img/playform_apple.png" alt="">
+                                        </div>
+                                        <div class="discount_Tag"> -60% Off</div>
+                                    </div>
+                                    <!-- 小卡售價 -->
+                                    <div class="price_Area">
+                                        <p>NT $ 450</p>
+                                        <span>NT $ 1,125</span>
+                                    </div>
+                                    <!-- 之後再購買 按鈕 -->
+                                    <button type="button" id="cancelBuy" class="cancelBuy_BTN">之後再購買</button>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- 這邊是 內容 下層 右側的區域 -->
+                    <div class="cheakOutMain_Bottom_R">
+                        <div class="cheakOutMain_Bottom_R_Gauge">
+                            <p>unit price enumeration</p>
+                        </div>
+
+                        <div class="cheakOutMain_Bottom_R_Price">
+                            <ul>
+                                <div class="item01">
+                                    <li class="itemTitle">GameName</li>
+                                    <li class="itemType">NT$</li>
+                                    <li class="itemPrice">450</li>
+                                </div>
+
+                                <div class="item02">
+                                    <li class="itemTitle">GameName</li>
+                                    <li class="itemType">NT$</li>
+                                    <li class="itemPrice">1,450</li>
+                                </div>
+
+                                <div class="item03">
+                                    <li class="itemTitle">GameName</li>
+                                    <li class="itemType">NT$</li>
+                                    <li class="itemPrice">3,450</li>
+                                </div>
+
+                                <div class="item04">
+                                    <li class="itemTitle">GameName</li>
+                                    <li class="itemType">NT$</li>
+                                    <li class="itemPrice">2,450</li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="cheakOutMain_Bottom_R_Total">
+                            
+                            <div class="priceTotla">
+                                <p class="TotalTitle">Total</p>
+                                <p>NT$</p>
+                                <p>2,450</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 這邊是 內容 下層 下側的區域 -->
+                <div class="cheakOutMain_Bottom_B">
+                    <!-- 清除購物車 按鈕 -->
+                    <button type="button" id="claerBuy" class="clearlBuy_BTN" >清除購物車</button>
+                    <!-- 查看願望清單 按鈕 -->
+                    <button type="button" id="cheackHopeList" class="cheackHopeList_BTN" onclick="location.href='GH_MyAccount.html'">查看願望清單</button>
+
+                    <!-- 繼續結帳 按鈕 -->
+                    <button type="button" id="payMoney" class="payMoney_BTN" onclick="location.href='GH_ProductPayInfo.html'">繼續結帳</button>
+                </div>
+            </div>
+        
+             <!-- 這邊是 折價券與購買其他好物品專區 的區域 -->
+            <div class="cheakOutMain_Discount">
+
+                <!-- 這邊是 折價券 專區 -->
+                <div class="cheakOutMain_Discount_Top">
+                    <p>選擇想使用的折價券</p>
+
+                    <!-- 這是收容折價券 的容器 -->
+                    <div class="discountBigBox">
+                        <!-- 這是收容折價券  內層 的容器 -->
+                        <div class="discountBox">
+                            <!-- 這是左邊箭頭 -->
+                            <button id="LeftArrow" class="LeftArrow_BTN"><img src="../img/Vector-Left.png" alt=""></button>
+                            
+                            <!-- 這邊是 中間的折價券 -->
+                             <ul>
+                                <!-- 其中一張折價券 -->
+                                <li><img src="../img/BC_0002.png" alt=""><button id="Coupon001" class="UseThisCoupon_BTN">選用此券</button></li>
+
+                                <!-- 其中一張折價券 -->
+                                <li><img src="../img/BC_0002.png" alt=""><button id="Coupon002" class="UseThisCoupon_BTN">選用此券</button></li>
+
+                                <!-- 其中一張折價券 -->
+                                <li><img src="../img/BC_0002.png" alt=""><button id="Coupon003" class="UseThisCoupon_BTN">選用此券</button></li>
+
+                                <!-- 其中一張折價券 -->
+                                <li><img src="../img/BC_0002.png" alt=""><button id="Coupon004" class="UseThisCoupon_BTN">選用此券</button></li>
+
+                                <!-- 其中一張折價券 -->
+                                <li><img src="../img/BC_0002.png" alt=""><button id="Coupon005" class="UseThisCoupon_BTN">選用此券</button></li>
+                             </ul>
+
+                             <!-- 這是右邊箭頭 -->
+                             <button id="LeftArrow" class="RightArrow_BTN"><img src="../img/Vector-Right.png" alt=""></button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 這邊是 折價券 專區 -->
+                <div class="cheakOutMain_Discount_Bottom">
+                    <p>購買此項商品的用戶同時也購買了這些......</p>
+                </div>
+
+                <!-- 這邊是 作品 輪播區 -->
+                <div class="cheakOutMain_Discount_Bottom_GameList">
+                    
+                    <!-- 小卡一號 -->
+                    <div class="recomeGame_Card">
+                        <!-- 小卡圖片 -->
+                        <div class="recomeGame_img">
+                            <img src="../img/BC_0002.png" alt="">
+                            <!-- 小卡圖片上的 折價標籤 -->
+                            <div class="discountPrice">
+                                <span>-25%</span>
+                                <p>NT$350</p>
+                            </div>
+                            <!-- 小卡圖片上的 願望清單 按鈕 -->
+                            <button id="HopeList_0001" class="HopeList_BTN"><img src="../img/love.png" alt=""></button>
+                        </div>
+
+                        <!--  小卡文字資訊 -->
+                        <div class="recomeGame_info">
+                            <!-- 小卡遊戲名稱 以及 評價星星 -->
+                            <div class="recomeGame_info_title">
+                                <p>GameTitle</p>
+                                <ul>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                </ul>
+                            </div>
+
+                            <!-- 遊戲的類型Tag  -->
+                            <div class="gameTag_Bigbox">
+                                <ul>
+                                    <li>獨立遊戲</li>
+                                    <li>動作</li>
+                                    <li>多人連線</li>
+                                    <li>類魂遊戲</li>
+                                    <li>角色扮演</li>
+                                    <li>搶先體驗</li>
+                                </ul>
+                                <!-- 小卡文字上的 加入購物車 按鈕 -->
+                                <button id="AddToCart_0001" class="AddToCart_BTN">加入購物車</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 小卡二號 -->
+                    <div class="recomeGame_Card">
+                        <!-- 小卡圖片 -->
+                        <div class="recomeGame_img">
+                            <img src="../img/BC_0002.png" alt="">
+                            <!-- 小卡圖片上的 折價標籤 -->
+                            <div class="discountPrice">
+                                <span>-25%</span>
+                                <p>NT$350</p>
+                            </div>
+                            <!-- 小卡圖片上的 願望清單 按鈕 -->
+                            <button id="HopeList_0001" class="HopeList_BTN"><img src="../img/love.png" alt=""></button>
+                        </div>
+
+                        <!--  小卡文字資訊 -->
+                        <div class="recomeGame_info">
+                            <!-- 小卡遊戲名稱 以及 評價星星 -->
+                            <div class="recomeGame_info_title">
+                                <p>GameTitle</p>
+                                <ul>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                </ul>
+                            </div>
+
+                            <!-- 遊戲的類型Tag  -->
+                            <div class="gameTag_Bigbox">
+                                <ul>
+                                    <li>獨立遊戲</li>
+                                    <li>動作</li>
+                                    <li>多人連線</li>
+                                    <li>類魂遊戲</li>
+                                    <li>角色扮演</li>
+                                    <li>搶先體驗</li>
+                                </ul>
+                                <!-- 小卡文字上的 加入購物車 按鈕 -->
+                                <button id="AddToCart_0001" class="AddToCart_BTN">加入購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 小卡三號 -->
+                    <div class="recomeGame_CardFin">
+                        <!-- 小卡圖片 -->
+                        <div class="recomeGame_img">
+                            <img src="../img/BC_0002.png" alt="">
+                            <!-- 小卡圖片上的 折價標籤 -->
+                            <div class="discountPrice">
+                                <span>-25%</span>
+                                <p>NT$350</p>
+                            </div>
+                            <!-- 小卡圖片上的 願望清單 按鈕 -->
+                            <button id="HopeList_0001" class="HopeList_BTN"><img src="../img/love.png" alt=""></button>
+                        </div>
+
+                        <!--  小卡文字資訊 -->
+                        <div class="recomeGame_info">
+                            <!-- 小卡遊戲名稱 以及 評價星星 -->
+                            <div class="recomeGame_info_title">
+                                <p>GameTitle</p>
+                                <ul>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                    <li><img src="../img/star.png" alt=""></li>
+                                </ul>
+                            </div>
+
+                            <!-- 遊戲的類型Tag  -->
+                            <div class="gameTag_Bigbox">
+                                <ul>
+                                    <li>獨立遊戲</li>
+                                    <li>動作</li>
+                                    <li>多人連線</li>
+                                    <li>類魂遊戲</li>
+                                    <li>角色扮演</li>
+                                    <li>搶先體驗</li>
+                                </ul>
+                                <!-- 小卡文字上的 加入購物車 按鈕 -->
+                                <button id="AddToCart_0001" class="AddToCart_BTN">加入購物車</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 輪播條 -->
+                <div class="cheakOutMain_Discount_Bottom_Scroll">
+                    <ul>
+                        <li><img src="../img/Vector-Left.png" alt=""></li>
+                        <li><img src="../img/Scroll_Dot.png" alt=""></li>
+                        <li><img src="../img/Scroll_Dot.png" alt=""></li>
+                        <li><img src="../img/Scroll_Dot.png" alt=""></li>
+                        <li><img src="../img/Scroll_Dot.png" alt=""></li>
+                        <li><img src="../img/Scroll_Hover.png" alt=""></li>
+                        <li><img src="../img/Scroll_Dot.png" alt=""></li>
+                        <li><img src="../img/Vector-Right.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+    
+</body>
+</html>
