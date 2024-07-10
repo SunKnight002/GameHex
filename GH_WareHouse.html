@@ -7,7 +7,7 @@
 
     
     <!-- css 連結 -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/GameHexWareHouse.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
 
@@ -72,8 +72,34 @@
     </header>
 
     <main>
+        <!-- 這邊是 遊戲倉庫 上方的1440*1024 遊戲運行頁 -->
+         <!-- 有時間的話回來寫 -->
+        <!-- <article class="GameHex_WareHouse_GameLunch"></article> -->
 
+        <!-- 這邊是 遊戲倉庫 下方的1440*1024 遊戲收藏頁 -->
+        <article class="GameHex_WareHouse_GameChest">
+            <!-- 這邊放置標題 -->
+            <h1>您購買的遊戲都會出現在這邊</h1>
+            <p>如果遊戲尚未出現，請重新整理頁面/回報客服信箱 GameHex_Help@gmail.com</p>
 
+            <section class="GH_WH_GameChest_GameArea">
+                <!-- 遊戲啟動用小卡0001號 -->
+                <div class="GameCard_Lunch">
+                    <!-- 小卡圖片部分 -->
+                    <div class="GameCard_Lunch_Img">
+                        <img src="./img/BC_0002.png" alt="">
+                        <p>累計遊玩 127 小時</p>
+                        <span>上次遊玩 2024/01/06 </span>
+                    </div>
+                    <!-- 小卡文字資訊與啟動按鈕 -->
+                    <div class="GameCard_Lunch_Info">
+                        <p class="GameCard_Lunch_Info_Title">GameTitle</p>
+                        <!-- 啟動按鈕 -->
+                        <button id="BTN_ProductTo_Lunch_0001" class="BTN_Style_ProductTo_Lunch" onclick="location.href='#'">啟動遊戲</button>
+                    </div>
+                </div>
+            </section>
+        </article>
     </main>
 
 
@@ -87,4 +113,5 @@
             </div>
         </footer>
 </body>
+<script src="./js/GameWareHouse.js"></script>
 </html>

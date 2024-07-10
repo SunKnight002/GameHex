@@ -60,7 +60,6 @@ table {
     width: auto;
     height: 924px;
     /* 邊線 */
-    border: 1px solid red;
     /* 排版 */
     position: relative;
 }
@@ -142,8 +141,6 @@ table {
     /* 尺寸 */
     width: auto;
     height: 1024px;
-    /* 邊線 */
-    border: 1px solid orange;
     /* 排版 */
     position: relative;
 }
@@ -246,8 +243,6 @@ table {
     left: 120px;
     display: flex;
     align-items: center;
-    /* 外框 */
-    border: 1px solid orange;
     /* 尺寸 */
     width: 1200px;
     height: 872px;
@@ -406,9 +401,6 @@ table {
 
 
 .GH_I_ShopArea_GameArea_GameCardList{
-
-    /* 邊線 */
-    border: 1px solid purple;
     /* 尺寸 */
     width: 1032px;
     height: 728px;
