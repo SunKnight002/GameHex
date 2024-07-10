@@ -1,0 +1,118 @@
+/* ------------------- 小卡  ------------- */
+
+.recomeGame_Card {
+    /* 尺寸 */
+    width: 400px;
+    height: 269px;
+    /* 排版 */
+   margin-right: 36px;
+   margin-left: 36px;
+   margin-top: 15.5px;
+
+    /* 外觀 */
+    /* border: 1px solid yellow; */
+}
+
+.recomeGame_CardFin{
+    /* 尺寸 */
+    width: 300px;
+    height: 300px;
+    
+}
+
+.recomeGame_img {
+    /* 排版 */
+    position: relative;
+}
+
+
+.recomeGame_img>img {
+    /* 尺寸 */
+    width: 400px;
+    height: 269px;
+    object-fit: cover;
+    /* 外觀 */
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.discountPrice {
+    /* 排版 */
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    /* 尺寸 */
+    width: auto;
+    height: 39px;
+
+    /* 外觀 */
+    background-color: #292929;
+    border-radius: 4px;
+    border: 1px solid #fff;
+}
+
+.discountPrice span {
+    /* 尺寸 */
+    font-size: 12px;
+
+    /* 外觀 */
+    color: #000;
+    border-radius: 16px;
+
+    /* 字體 */
+    font-family: "Roboto";
+
+    /* 排版 */
+    display: block;
+    background-color: #fff;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 7.5px;
+}
+
+.discountPrice p {
+    /* 尺寸 */
+    font-size: 14px;
+    font-weight: 500;
+
+    /* 外觀 */
+    color: #fff;
+
+    /* 字體 */
+    font-family: "Roboto";
+
+    /* 排版 */
+    margin-left: 8px;
+    margin-right: 7px;
+}
+
+.HopeList_BTN {
+    /* 排版 */
+    position: absolute;
+    top: 20px;
+	left: 344px;
+
+    /* 移除外觀 */
+    border: none;
+    background-color: transparent;
+}
+
+/*  加入購物車 按鈕  小卡上面的 */
+.AddToCart_BTN {
+    /* 尺寸 */
+    width: 136px;
+    height: 28px;
+    /* 外觀 */
+    background-color: #fff;
+    border-radius: 8px;
+    border: none;
+    /* 排版 */
+    margin-top: 14px;
+    margin-left: 12px;
+	/* 文字 */
+	font-size: 14px;
+}

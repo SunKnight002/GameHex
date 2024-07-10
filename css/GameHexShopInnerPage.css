@@ -1581,3 +1581,9 @@ table {
 	/* 文字 */
 	font-size: 14px;
 }
+
+.test{
+	width: 1440px;
+	height: 1024px;
+	display: flex;
+}
