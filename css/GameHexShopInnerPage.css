@@ -63,7 +63,7 @@ table {
 	width: auto;
 	height: 940px;
 	/* 邊線 */
-	border: 1px solid red;
+	border: 1px solid black;
 }
 
 .GH_WIP_OverRall_Info{
@@ -468,8 +468,6 @@ table {
 	/* 尺寸 */
 	width: auto;
 	height: 1024px;
-	/* 邊線 */
-	border: 1px solid orange;
 	/* 排版 */
 	display: flex;
 }
@@ -684,8 +682,6 @@ table {
 	/* 尺寸 */
 	width: auto;
 	height: 1024px;
-	/* 邊線 */
-	border: 1px solid yellow;
 }
 
 .GH_WIP_DLC_Game{
@@ -1326,6 +1322,12 @@ table {
 	font-weight: 500;
 }
 
+.BTN_Style_ProductTo_HopeList:hover{
+	font-weight: bold;
+	background-color: #d13838;
+}
+
+
 .BTN_Style_ProductTo_Cart{
 	/* 外觀 */
 	background-color: #8CD428;
@@ -1339,6 +1341,11 @@ table {
 	color: #282828;
 	font-size: 18px;
 	font-weight: 500;
+}
+
+.BTN_Style_ProductTo_Cart:hover{
+	font-weight: bold;
+	background-color: #619617;
 }
 
 
@@ -1357,6 +1364,10 @@ table {
 	font-weight: 500;
 }
 
+.BTN_Style_ProductTo_Ignore:hover{
+	font-weight: bold;
+	background-color: #1b73dd;
+}
 
 .BTN_Style_ProductTo_OtherGame{
 	/* 外觀 */
@@ -1371,6 +1382,11 @@ table {
 	color: #fff;
 	font-size: 18px;
 	font-weight: 500;
+}
+
+.BTN_Style_ProductTo_OtherGame:hover{
+	font-weight: bold;
+	background-color: #1b73dd;
 }
 
 .BTN_Style_ProductTo_BuyGame1350{
@@ -1453,6 +1469,11 @@ table {
 	font-family: "Roboto", sans-serif;
 	font-size: 32px;
 	font-weight: bold;
+}
+
+.BTN_Style_ProductTo_BuyGameNow:hover{
+	background-color: #6D6D6D;
+	color: orange;
 }
 
 /* <!-- 向左邊滑動 按鈕 --> */

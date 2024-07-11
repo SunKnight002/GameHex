@@ -237,6 +237,14 @@ body {
     text-align: center;
 }
 
+.GH_I_ShopArea_SearchBar_TagBTN ul a li:hover{
+    background-color: #0092FF;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
 .GH_I_ShopArea_SearchBar_TagBTN ul a li{
     /* 尺寸 */
     width: 92px;
@@ -336,6 +344,13 @@ body {
     margin-bottom: 16px;
 }
 
+.GH_I_ShopArea_GameTag_FromYour ul a:hover{
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
 /* ------------------------------- 依照類型瀏覽 */
 /* ------------------------------- 依照類型瀏覽 */
 /* ------------------------------- 依照類型瀏覽 */
@@ -371,6 +386,12 @@ body {
 .GH_I_ShopArea_GameTag_FromGame ul a li{
     /* 排版 */
     margin-bottom: 16px;
+}
+
+.GH_I_ShopArea_GameTag_FromGame ul a:hover{
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
@@ -447,7 +468,7 @@ body {
     /* 排版 */
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 8px;
     margin-top: 32px;
     /* 滾動條 */
     overflow-y: scroll;
@@ -464,7 +485,7 @@ body {
     width: 252px;
     height: 216px;
     /* 排版 */
-   margin-right: 8px;
+    margin-right: 8px;
     margin-bottom: 40px;
     /* 外觀 */
     /* border: 1px solid yellow; */

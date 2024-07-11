@@ -1,16 +1,16 @@
 // 建立一個陣列來儲存所有的卡片資訊
 let gameCard_L = [
-    { img: "./img/BC_0002.png", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/BC_0002.png", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/BC_0002.png", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/BC_0002.png", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/BC_0002.png", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/BC_0002.png", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/BC_0002.png", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/BC_0002.png", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/BC_0002.png", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/BC_0002.png", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/BC_0002.png", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
+    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
+    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
+    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
+    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
+    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
+    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
+    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
+    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
+    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
+    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
+    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
 ];
 
 // 獲取要插入卡片的section

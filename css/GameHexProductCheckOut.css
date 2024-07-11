@@ -157,9 +157,6 @@ table {
 /* 第二個 藍色點點 */
 
 .cheakOutMain_Top_Box02 {
-    /* 外觀 */
-    /* border: 1px solid orange; */
-
     /* 排版 */
     text-align: center;
 }
@@ -273,13 +270,9 @@ table {
     /* 尺寸 */
     width: 200px;
     height: 120px;
-
     /* 排版 */
     margin-left: 30px;
     margin-top: 16px;
-
-    /* 外觀 */
-    border: 1px solid orange;
 }
 
 .gameInfo {
@@ -409,13 +402,9 @@ table {
     /* 尺寸 */
     width: 200px;
     height: 120px;
-
     /* 排版 */
     margin-left: 30px;
     margin-top: 16px;
-
-    /* 外觀 */
-    border: 1px solid orange;
 }
 
 /* 這邊是購物車 內層的小卡03 */
@@ -437,13 +426,9 @@ table {
     /* 尺寸 */
     width: 200px;
     height: 120px;
-
     /* 排版 */
     margin-left: 30px;
     margin-top: 16px;
-
-    /* 外觀 */
-    border: 1px solid orange;
 }
 
 /* 這邊是購物車 內層的小卡04 */
@@ -465,13 +450,9 @@ table {
     /* 尺寸 */
     width: 200px;
     height: 120px;
-
     /* 排版 */
     margin-left: 30px;
     margin-top: 16px;
-
-    /* 外觀 */
-    border: 1px solid orange;
 }
 
 
@@ -494,13 +475,9 @@ table {
     /* 尺寸 */
     width: 200px;
     height: 120px;
-
     /* 排版 */
     margin-left: 30px;
     margin-top: 16px;
-
-    /* 外觀 */
-    border: 1px solid orange;
 }
 
 
@@ -726,12 +703,8 @@ table {
     /* 尺寸 */
     width: auto;
     height: 1024px;
-
     /* 排版 */
     position: relative;
-
-    /* 外觀 */
-    border: 1px solid red;
 }
 
 .cheakOutMain_Discount::before {
@@ -1044,9 +1017,6 @@ table {
     justify-content: center;
     text-align: center;
     padding-top: 8px;
-
-    /* 外觀 */
-    /* border: 1px solid orange; */
 }
 
 .recomeGame_info_title p {

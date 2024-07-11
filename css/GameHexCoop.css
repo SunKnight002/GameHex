@@ -323,12 +323,12 @@ main{
 
 	/* 外觀 */
 	content: "";
-	filter: brightness(50%) blur(5px);
+	filter: brightness(60%) blur(3px);
 
 	/* 排版 */
 	display: block;
 	background-size: cover;
-	background-image: url(../img/BC_BG_001.png);
+	background-image: url(../img/BG_For_Register_003.jpg);
 	position: absolute;
 	/* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
 	top: 0;
