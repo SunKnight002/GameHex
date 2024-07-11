@@ -1,118 +1,592 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 774px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 774px;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+
+
+
+
+
+
+
+/* index 頁面最上層 第二個 1440*1024尺寸 */
+.GameHex_Index_ShopArea{
+  /* 尺寸 */
+  width: auto;
+  height: 1024px;
+  /* 排版 */
+  position: relative;
+}
+
+.GameHex_Index_ShopArea::before{
+ /* 尺寸 */
+   width: 100%;
+   height: 1024px;
+   /* 外觀 */
+   content: "";
+   filter: brightness(50%) blur(5px);
+   /* 排版 */
+   display: block;
+   background-size: cover;
+   background-image: url(../img/BC_BG_001.png);
+   position: absolute;
+   /* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
+ 
+}
+
+.GH_I_ShopArea_SearchBar{
+  /* 邊線 */
+  border: 1px solid #000;
+  /* 尺寸 */
+  width: 1060px;
+  height: 40px;
+  /* 排版 */
+  display: flex;
+  position: absolute;
+  margin-top: 73px;
+  margin-left: 258px;
+  /* 外觀 */
+  background-color: #3A5A85;
+  border-radius: 8px;
+}
+
+.GH_I_ShopArea_SearchBar_TagBTN{}
+
+.GH_I_ShopArea_SearchBar_TagBTN ul{
+  /* 排版 */
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.GH_I_ShopArea_SearchBar_TagBTN ul a{
+  /* 字體 */
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  /* 外觀 */
+  color: #fff;
+  text-decoration: none;
+  /* 排版 */
+  text-align: center;
+}
+
+.GH_I_ShopArea_SearchBar_TagBTN ul a li{
+  /* 尺寸 */
+  width: 92px;
+  height: 24px;
+  /* 排版 */
+  margin-top: 8px;
+  margin-right: 32px;
+  line-height: 24px;
+  /* 外觀 */
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+.GH_I_ShopArea_SearchBar_SeeBTN{
+  /* 尺寸 */
+  width: 178px;
+  height: 40px;
+  /* 排版 */
+  margin-left: 120px;
+  position: relative;
+}
+
+.GH_MA_HopeList_SearchTool{
+  /* 尺寸 */
+  width: 178px;
+  height: 40px;
+  /* 外觀 */
+  background-color: #ACACAC;
+  border: 1px solid black;
+  border-radius: 8px;
+  /* 排版 */
+  position: relative;
+}
+
+.GH_MA_HopeList_SearchTool::placeholder{
+  /* 排版 */
+  padding-left: 16px;
+}
+
+.GH_I_ShopArea_DispalyAndTag{
+  /* 排版 */
+  position: absolute;
+  top: 153px;
+  left: 120px;
+  display: flex;
+  align-items: center;
+  /* 尺寸 */
+  width: 1200px;
+  height: 872px;
+}
+
+.GH_I_ShopArea_GameTag{
+  /* 尺寸 */
+  width: 120px;
+  height: 872px;
+  /* 外框 */
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #3A5A85;
+  /* 排版 */
+  margin-right: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.GH_I_ShopArea_GameTag_FromYour{
+  /* 字體 */
+  font-family: "Noto Sans TC", sans-serif;
+  /* 文字顏色 */
+  color: #fff;
+  /* 排版 */
+  margin-top: 12px;
+  margin-left: 16px;
+  margin-bottom: 20px;
+}
+
+.GH_I_ShopArea_GameTag_FromYour p{
+  /* 尺寸 */
+  font-size: 16px;
+  font-weight: bold;
+  /* 排版 */
+  margin-bottom: 16px;
+}
+
+.GH_I_ShopArea_GameTag_FromYour ul{}
+
+.GH_I_ShopArea_GameTag_FromYour ul a{
+  /* 外觀 */
+  color: #fff;
+  text-decoration: none;
+  /* 文字 */
+  font-size: 12px;
+}
+
+.GH_I_ShopArea_GameTag_FromYour ul a li{
+  /* 排版 */
+  margin-bottom: 16px;
+}
+
+/* ------------------------------- 依照類型瀏覽 */
+/* ------------------------------- 依照類型瀏覽 */
+/* ------------------------------- 依照類型瀏覽 */
+.GH_I_ShopArea_GameTag_FromGame{
+  /* 字體 */
+  font-family: "Noto Sans TC", sans-serif;
+  /* 文字顏色 */
+  color: #fff;
+  /* 排版 */
+  margin-top: 12px;
+  margin-left: 16px;
+  margin-bottom: 20px;
+}
+
+.GH_I_ShopArea_GameTag_FromGame p{
+  /* 尺寸 */
+  font-size: 16px;
+  font-weight: bold;
+  /* 排版 */
+  margin-bottom: 16px;
+}
+
+.GH_I_ShopArea_GameTag_FromGame ul{}
+
+.GH_I_ShopArea_GameTag_FromGame ul a{
+  /* 外觀 */
+  color: #fff;
+  text-decoration: none;
+  /* 文字 */
+  font-size: 12px;
+}
+
+.GH_I_ShopArea_GameTag_FromGame ul a li{
+  /* 排版 */
+  margin-bottom: 16px;
+}
+
+
+/* ------------------------------- 遊戲卡片放置區 */
+/* ------------------------------- 遊戲卡片放置區 */
+/* ------------------------------- 遊戲卡片放置區 */
+
+.GH_I_ShopArea_GameArea{
+  /* 尺寸 */
+  width: 1072px;
+  height: 872px;
+  /* 外框 */
+  border: 1px solid #000;
+  border-radius: 16px;
+  background-color: #3A5A85;
+  /*  */
+}
+
+.GH_I_ShopArea_GameArea_TitleAndSearh{
+  /* 排版 */
+  display: flex;
+  align-items: center;
+  /* 排版 */
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.GH_I_ShopArea_GameArea_TitleAndSearh p{
+  /* 字體 */
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  /* 外觀 */
+  color: #fff;
+  /* 排版 */
+  margin-right: 400px;
+}
+
+.GameFilterStyle{
+  /* 尺寸 */
+  width: 206px;
+  height: 40px;
+  /* 文字 */
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  /* 外觀 */
+  border: 1px solid #000;
+  border-radius: 4px;
+  /* 排版 */
+  text-align: center;
+  padding-right: 20px;
+
+  /* 移除箭頭 */
+  -webkit-appearance: none; /* 移除原生樣式 */
+  -moz-appearance: none;
+  appearance: none;
+  background: url('../img/Down.png') no-repeat, linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-position: right 10px center; /* 設定自定義箭頭的位置 */
+  background-size: 20px 20px; /* 設定自定義箭頭的大小 */
+  /* 其他樣式... */
+}
+
+.GameFilterStyle:optional{
+  /* 排版 */
+ padding-left: 24px;
+}
+
+
+.GH_I_ShopArea_GameArea_GameCardList{
+  /* 尺寸 */
+  width: 1032px;
+  height: 728px;
+  /* 排版 */
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 32px;
+}
+
+/* ---------------------------------------- */
+/* ------------------- 小卡 */
+
 /* ------------------- 小卡  ------------- */
 
 .recomeGame_Card {
-    /* 尺寸 */
-    width: 400px;
-    height: 269px;
-    /* 排版 */
-   margin-right: 36px;
-   margin-left: 36px;
-   margin-top: 15.5px;
+  /* 尺寸 */
+  width: 252px;
+  height: 216px;
+  /* 排版 */
+ margin-right: 8px;
+  margin-bottom: 40px;
+  /* 外觀 */
+  /* border: 1px solid yellow; */
+}
 
-    /* 外觀 */
-    /* border: 1px solid yellow; */
+.recomeGame_Card:nth-child(4){
+  margin-right: 0;
+}
+
+.recomeGame_Card:nth-child(8){
+  margin-right: 0;
+}
+
+.recomeGame_Card:nth-child(12){
+  margin-right: 0;
 }
 
 .recomeGame_CardFin{
-    /* 尺寸 */
-    width: 300px;
-    height: 300px;
-    
+  /* 尺寸 */
+  width: 300px;
+  height: 300px;
 }
 
 .recomeGame_img {
-    /* 排版 */
-    position: relative;
+  /* 排版 */
+  position: relative;
 }
 
 
 .recomeGame_img>img {
-    /* 尺寸 */
-    width: 400px;
-    height: 269px;
-    object-fit: cover;
-    /* 外觀 */
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+  /* 尺寸 */
+  width: 252px;
+  height: 140px;
+  object-fit: cover;
+  /* 外觀 */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .discountPrice {
-    /* 排版 */
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    left: 16px;
-    /* 尺寸 */
-    width: auto;
-    height: 39px;
-
-    /* 外觀 */
-    background-color: #292929;
-    border-radius: 4px;
-    border: 1px solid #fff;
+  /* 排版 */
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  /* 尺寸 */
+  width: 115px;
+  height: 30px;
+  /* 外觀 */
+  background-color: #292929;
+  border-radius: 4px;
+  border: 1px solid #fff;
 }
 
 .discountPrice span {
-    /* 尺寸 */
-    font-size: 12px;
-
-    /* 外觀 */
-    color: #000;
-    border-radius: 16px;
-
-    /* 字體 */
-    font-family: "Roboto";
-
-    /* 排版 */
-    display: block;
-    background-color: #fff;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    margin-left: 7.5px;
+  /* 尺寸 */
+  font-size: 12px;
+  /* 外觀 */
+  color: #000;
+  border-radius: 16px;
+  /* 字體 */
+  font-family: "Roboto";
+  /* 排版 */
+  display: block;
+  background-color: #fff;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-left: 4px;
 }
 
 .discountPrice p {
-    /* 尺寸 */
-    font-size: 14px;
-    font-weight: 500;
+  /* 尺寸 */
+  font-size: 14px;
+  font-weight: 500;
+  /* 外觀 */
+  color: #fff;
+  /* 字體 */
+  font-family: "Roboto";
+  /* 排版 */
+  margin-left: 8px;
+  margin-right: 7px;
+}
 
-    /* 外觀 */
-    color: #fff;
+.HopeList_BTN img{
+  /* 尺寸 */
+  width: 28px;
+  height: 28px;
+}
 
-    /* 字體 */
-    font-family: "Roboto";
+/* --------------------------------- */
+/* 小卡文字資訊區域 */
+.recomeGame_info {
+  /* 尺寸 */
+  width: 252px;
+  height: 75px;
+/* 排版 */
+  /* 外觀 */
+  background-color: #1B2838;
+}
 
-    /* 排版 */
-    margin-left: 8px;
-    margin-right: 7px;
+.recomeGame_info_title {
+  /* 排版 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.recomeGame_info_title p {
+  /* 尺寸 */
+  font-size: 16px;
+  font-weight: bold;
+  /* 字體 */
+  font-family: "Noto Sans TC, sans-serif,Roboto";
+  /* 外觀 */
+  color: #fff;
+}
+
+.recomeGame_info_title ul {
+  /* 排版 */
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.recomeGame_info_title ul li img{
+/* 尺寸 */
+width: 16px;
+height: 16px;
+}
+
+/* -----------------------------------  */
+/* 遊戲類型tag 以及 加入購物車按鈕 */
+
+.gameTag_Bigbox {
+  /* 排版 */
+  display: flex;
+  margin-left: 8px;
+  margin-top: 4px;
+}
+
+.gameTag_Bigbox ul {
+  /* 尺吋 */
+  width: 170px;
+  /* 排版 */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gameTag_Bigbox ul li {
+  /* 尺寸 */
+  font-size: 10px;
+font-weight: bold;
+  /* 外觀 */
+  color: #fff;
+  background-color: #3A5A85;
+  border-radius: 8px;
+  /* 排版 */
+  padding: 4px;
+  margin-bottom: 8px;
+margin-right: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- 按鈕專區 ----- */
+/* ---------------------- 按鈕專區 ----- */
+/* ---------------------- 按鈕專區 ----- */
+.BTN_Style_ProductTo_SearchName{
+  /* 尺寸 */
+  width: 47px;
+  height: 44px;
+  /* 外觀 */
+  background-color: #333333;
+  border-radius: 8px;
+  box-shadow: none;
+  /*外觀圖樣 */
+  background-image:url(../img/Vector-Right.png);
+  background-size: fit;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* 排版 */
+  position: absolute;
+  top: 0;
+  left:136px;
 }
 
 .HopeList_BTN {
-    /* 排版 */
-    position: absolute;
-    top: 20px;
-	left: 344px;
-
-    /* 移除外觀 */
-    border: none;
-    background-color: transparent;
+  /* 排版 */
+  position: absolute;
+  top: 12px;
+left: 200px;
+  /* 移除外觀 */
+  border: none;
+  background-color: transparent;
 }
+
 
 /*  加入購物車 按鈕  小卡上面的 */
 .AddToCart_BTN {
-    /* 尺寸 */
-    width: 136px;
-    height: 28px;
-    /* 外觀 */
-    background-color: #fff;
-    border-radius: 8px;
-    border: none;
-    /* 排版 */
-    margin-top: 14px;
-    margin-left: 12px;
-	/* 文字 */
-	font-size: 14px;
+  /* 尺寸 */
+  width: 100px;
+  height: 24px;
+  /* 外觀 */
+  background-color: #fff;
+  border-radius: 8px;
+  border: none;
+  /* 排版 */
+  margin-top: 14px;
+  margin-right: 4px;
+/* 文字 */
+font-size: 12px;
+  font-weight: 500;
 }

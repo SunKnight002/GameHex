@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>GameHex首頁</title>
+  <title>Swiper demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -34,12 +34,16 @@
         </ul>
     </header>
 
-    <main>
-          <!-- index 頁面最上層 第一個 1440*1024尺寸 -->
-        <article class="GameHex_Index_Swiper">
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
+
+
+
+
+
+<main>
+    <article class="GameHex_Index_Swiper">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="./img/BC_0002.png" alt=""></div>
                     <div class="swiper-slide"><img src="./img/BC_0002.png" alt=""></div>
                     <div class="swiper-slide"><img src="./img/BC_0002.png" alt=""></div>
@@ -49,18 +53,22 @@
                     <div class="swiper-slide"><img src="./img/BC_0002.png" alt=""></div>
                     <div class="swiper-slide"><img src="./img/BC_0002.png" alt=""></div>
                     <div class="swiper-slide"><img src="./img/BC_0002.png" alt=""></div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-                <div class="autoplay-progress">
-                    <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20"></circle></svg>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
                     <span></span>
+                    </div>
                 </div>
-            </div>
-            <!-- 遊戲標題 -->
+                            <!-- 遊戲標題以及切換輪播條 -->
             <section class="GH_I_Swiper_Footer"><p>即將上市的新遊戲</p></section>
-        </article>
+</article>
+
+
 
 
         <!-- index 頁面最上層 第二個 1440*1024尺寸 -->
@@ -193,39 +201,54 @@
         <!--   之後有空補上 -->
         <!-- <article class="GameHex_Index_GameSuggest"></article> -->
 
+
     </main>
     <!-- 產生小卡 -->
     <script src="./js/GameIndex.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        const progressCircle = document.querySelector(".autoplay-progress svg");
-        const progressContent = document.querySelector(".autoplay-progress span");
-        var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        },
-        on: {
-            autoplayTimeLeft(s, time, progress) {
-            progressCircle.style.setProperty("--progress", 1 - progress);
-            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-            }
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
         }
-        });
-    </script>
+      }
+    });
+  </script>
 </body>
+
 </html>
