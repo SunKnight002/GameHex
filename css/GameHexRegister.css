@@ -86,8 +86,8 @@ table {
 
     /* 樣貌 */
     content: "";
-    filter: brightness(30%) blur(5px);
-    background-image: url(../img/BC_BG_001.png);
+    filter: brightness(60%) blur(2px);
+    background-image: url(../img/BG_For_Register_002.jpg);
 
     /* 排版 */
     display: block;
@@ -328,13 +328,10 @@ table {
     /* 尺寸 */
     font-size: 28px;
     font-weight: bold;
-
     /* 外觀 */
     color: #fff;
-
     /* 字體 */
     font-family: "Roboto", sans-serif;
-
     /* 排版 */
     margin-bottom: 16px;
     text-align: center;
@@ -354,13 +351,12 @@ table {
     /* 尺吋 */
     width: 600px;
     height: 47px;
-
     /* 外觀 */
     border-radius: 16px;
     background-color: #fff;
-
     /* 排版 */
     margin-bottom: 20px;
+    padding-left: 12px;
 
 }
 
@@ -368,12 +364,10 @@ table {
     /* 尺寸 */
     font-size: 16px;
     font-weight: 400;
-
     /* 外觀 */
     color: #000;
-
     /* 排版 */
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 .RegisterMain_Bot a{
@@ -423,8 +417,8 @@ table {
 
     /* 樣貌 */
     content: "";
-    filter: brightness(30%) blur(5px);
-    background-image: url(../img/BC_BG_001.png);
+    filter: brightness(60%) blur(3px);
+    background-image: url(../img/BG_For_Register_003.jpg);
 
     /* 排版 */
     display: block;
@@ -455,8 +449,18 @@ table {
 .RegisterMain_Bot .Resend_BTN{
     /* 排版 */
     margin-top: 12px;
+    background-color: #F8442D;
 }
 
+.Resend_BTN:hover{
+    background-color: #E6331C;
+    color: #480E07;
+}
+
+.Keep_BTN:hover{
+    background-color: #6D6D6D;
+    color: #000;   
+}
 
 /* -------------------------------------------------------------------------------- */
 /* 此處開始為 Register 03  之 視覺設定相關檔案 */
@@ -481,8 +485,8 @@ table {
 
     /* 樣貌 */
     content: "";
-    filter: brightness(30%) blur(5px);
-    background-image: url(../img/BC_BG_001.png);
+    filter: brightness(60%) blur(3px);
+    background-image: url(../img/BG_For_Register_004.jpg);
 
     /* 排版 */
     display: block;
@@ -510,7 +514,3 @@ table {
     margin-top: 40px;
     margin-bottom: 44px;
 }
-
-
-
-

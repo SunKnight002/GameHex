@@ -86,7 +86,7 @@ table {
     /* 樣貌 */
     content: "";
     filter: brightness(30%) blur(5px);
-    background-image: url(../img/BC_BG_001.png);
+    background-image: url(../img/BG_For_Register_001.jpg);
 
     /* 排版 */
     display: block;
@@ -238,6 +238,8 @@ table {
     /* 排版 */
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-left: 174px;
 }
 
 .LoginPageMain01_LB_Text > p{
@@ -252,13 +254,14 @@ table {
     text-align: center;
     margin-top: 58px;
     margin-bottom: 22px;
+
 }
 
 .LoginPageMain01_LB_Slogan{
     /* 排版 */
     display: flex;
     align-items: center;
-    margin-left: 174px;
+    /* margin-left: 174px; */
 }
 
 .LoginPageMain01_LB_Slogan > img{
@@ -288,12 +291,18 @@ table {
     display: flex;
     align-items: center;
     margin-top: 40px;
-    margin-left: 224px;
+    /* margin-left: 224px; */
 }
 
 .LoginPageMain01_LB_BTN_L{
     /* 排版 */
     margin-right: 60px;
+}
+
+.LoginPageMain01_LB_BTN_L a:hover{
+    /* 外觀 */
+    background-color: #5D5D5D;
+    color: #000;
 }
 
 .LoginPageMain01_LB_BTN_L a{
@@ -302,13 +311,11 @@ table {
     justify-content: center;
     align-items: center;
     text-align: center;
-
     /* 尺寸 */
     width: 168px;
     height: 60px;
     font-size: 24px;
     font-weight: bold;
-
     /* 外觀 */
     background-color: #797979;
     border-radius: 16px;
@@ -320,14 +327,11 @@ table {
     /* 尺寸 */
     font-size: 18px;
     font-weight: 500;
-
     /* 外觀 */
     color: #fff;
-    text-decoration:underline;
-
     /* 排版 */
     text-align: center;
-    margin-top: 12px;
+    margin-top: 16px;
 }
 
 
@@ -336,19 +340,23 @@ table {
     /*  */
 }
 
+.LoginPageMain01_LB_BTN_R a:hover{
+    /* 外觀 */
+    background-color: #E6331C;
+    color: #480E07;
+}
+
 .LoginPageMain01_LB_BTN_R a{
     /* 排版 */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
     /* 尺寸 */
     width: 168px;
     height: 60px;
     font-size: 24px;
     font-weight: bold;
-
     /* 外觀 */
     background-color: #F8442D;
     border-radius: 16px;
@@ -360,14 +368,11 @@ table {
     /* 尺寸 */
     font-size: 18px;
     font-weight: 500;
-
     /* 外觀 */
     color: #fff;
-    text-decoration:underline;
-
     /* 排版 */
     text-align: center;
-    margin-top: 12px;
+    margin-top: 16px;
 }
 
 /* ----------------------------------------------------------------- */

@@ -57,7 +57,7 @@ table {
 .GameHex_Product_Add {
     /* 尺寸 */
     width: auto;
-    height: 1024px;
+    height: 824px;
     /* 排版 */
     position: relative;
 }
@@ -65,8 +65,8 @@ table {
 .GameHex_Product_Add::before {
     /* 外觀 */
     content: "";
-    filter: brightness(30%) blur(5px);
-    background-image: url(../img/BC_BG_001.png);
+    filter: brightness(60%) blur(3px);
+    background-image: url(../img/BG_For_Register_004.jpg);
     /* 排版 */
     display: block;
     background-size: cover;
@@ -84,7 +84,7 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    top: 240px;
+    top: 150px;
     left: 273px;
     margin-top: 32px;
     /* 尺寸 */
@@ -94,6 +94,9 @@ table {
     background-color: rgba(104, 149, 210, 0.6);
     border: 1px solid black;
     border-radius: 16px;
+    /* 預設先透明 */
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
 }
 
 .GameHex_Product_Add_Tips h1{
@@ -174,4 +177,9 @@ table {
     text-align: center;
     line-height: 65px;
     margin-left: 328px;
+}
+
+.GameHex_Product_Add_Tips a:hover{
+    background-color: #6D6D6D;
+    color: #000;   
 }
