@@ -10,7 +10,7 @@ let gameCards = [
     { img: "./img/GameCard_252140Card_001.jpg", discount: "-60%", price: "NT$300", title: "冷冽莊園", tags: ["獨立遊戲", "策略模擬", "領地養成", "單機劇情", "角色扮演", "搶先體驗"] },
     { img: "./img/GameCard_252140Card_003.jpg", discount: "-50%", price: "NT$400", title: "獵龍之心", tags: ["獨立遊戲", "砍殺", "多人連線", "搞笑類型", "角色扮演", "搶先體驗"] },
     { img: "./img/GameCard_252140Card_002.jpg", discount: "-80%", price: "NT$100", title: "節奏趴搭碰", tags: ["音樂遊戲", "動作", "多人連線", "類魂遊戲", "角色扮演", "搶先體驗"] },
-    { img: "./img/GameCard_252140Card_001.jpg", discount: "-20%", price: "NT$200", title: "虛擬路人主播", tags: ["獨立遊戲", "模擬", "虛擬主播", "經營養成", "策略管理", "搶先體驗"] }
+    { img: "./img/GameCard_252140Card_001.jpg", discount: "-20%", price: "NT$200", title: "虛擬路人主播", tags: ["獨立遊戲", "模擬", "虛擬主播", "經營養成", "策略管理", "搶先體驗"] },
 ];
 
 // 獲取要插入卡片的div

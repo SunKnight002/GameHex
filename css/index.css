@@ -468,7 +468,7 @@ body {
     /* 排版 */
     display: flex;
     flex-wrap: wrap;
-    margin-left: 8px;
+    margin-left: 20px;
     margin-top: 32px;
     /* 滾動條 */
     overflow-y: scroll;

@@ -3,134 +3,177 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-.wrap{
-    /* 尺寸 */
-    width: 1440px;
-    height: auto;
 
-    /* 排版 */
-    margin: 0 auto;
-
-    /* 字體 */
-    /* for 中文字體 */
-	font-family: "Noto Sans TC, sans-serif,Roboto";
-	font-weight: bold;
-	font-style: normal;
-}
 
 
 /* -------------------------------------------------------------------------------- */
 /* 此處開始為 LoginPage 之 視覺設定相關檔案 */
 
-.LoginPageMain01{
-    /* 尺寸 */
-    width: 1440px;
-    height: 923px;
-
-    /* 排版 */
-    position: relative;
-
-    /* 外觀 */
-    /* border: 1px solid red; */
+.LoginPageMain01 .main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
-
-.LoginPageMain01::before{
+.LoginPageMain01 {
     /* 尺寸 */
     width: 100%;
-    height: 100%;
-
-    /* 樣貌 */
-    content: "";
-    filter: brightness(30%) blur(5px);
-    background-image: url(../img/BG_For_Register_001.jpg);
-
+    height: 923px;
     /* 排版 */
-    display: block;
-	background-size: cover;
-
-    /* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
-    position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+    display: flex;
+    background-image: url(../img/BG_For_Register_Blur_001.jpg);
 }
 
 /* 此處開始為 包裹  LoginPageMain01_Left 左側文字 區域的容器*/
 
-.LoginPageMain01_Left{
-    /* 外觀 */
-    /* border: 1px solid yellow; */
+.LoginPageMain01_Left {}
 
-    /* 排版 */
-    position: absolute;
-}
-
-.LoginPageMain01_Left h1{
+.LoginPageMain01_Left h1 {
     /* 尺寸 */
     font-size: 36px;
-
     /* 外觀 */
     color: #fff;
-
     /* 排版 */
-    margin-left: 169px;
     margin-top: 114px;
 }
 
-.LoginPageMain01_Left > p{
+.LoginPageMain01_Left>p {
     /* 尺寸 */
     font-size: 32px;
-
     /* 外觀 */
     color: #fff;
-
     /* 排版 */
-    margin-left: 169px;
     margin-top: 4px;
 }
 
@@ -139,13 +182,11 @@ table {
 /* 以下為  帳號與密碼  中文字 */
 
 
-.LoginPageMain01_Left .TipText{
+.LoginPageMain01_Left .TipText {
     /* 尺寸 */
     font-size: 20px;
-
     /* 外觀 */
     color: #fff;
-
     /* 排版 */
     margin-top: 40px;
 }
@@ -153,25 +194,21 @@ table {
 /* ----------------------------------------------------------------- */
 /* 以下為  帳號  欄位 */
 
-.LoginPageMain01_Left_Account{
+.LoginPageMain01_Left_Account {
     /* 尺寸 */
     width: 600px;
     height: 47px;
-
     /* 外觀 */
     border-radius: 16px;
-
     /* 排版 */
     padding-left: 20px;
     margin-top: 12px;
-    margin-left: 169px;
 }
 
 .LoginPageMain01_Left_Account::placeholder {
     /* 尺寸 */
     font-size: 16px;
     font-weight: 400;
-
     /* 外觀 */
     color: #000;
 }
@@ -179,53 +216,46 @@ table {
 /* ----------------------------------------------------------------- */
 /* 以下為  密碼  欄位 */
 
-.LoginPageMain01_Left_Password{
+.LoginPageMain01_Left_Password {
     /* 尺寸 */
     width: 600px;
     height: 47px;
-
     /* 外觀 */
     border-radius: 16px;
-
     /* 排版 */
     padding-left: 20px;
     margin-top: 12px;
-    margin-left: 169px;
 }
 
 .LoginPageMain01_Left_Password::placeholder {
     /* 尺寸 */
     font-size: 16px;
     font-weight: 400;
-    
     /* 外觀 */
     color: #000;
 }
 
 /* 以下為 記住我  核取方塊 */
 
-.checkbox{
+.checkbox {
     /* 排版 */
     display: flex;
     align-items: center;
     margin-top: 40px;
-    margin-left: 169px;
 }
 
-.LoginPageMain01_Left_Rem{
+.LoginPageMain01_Left_Rem {
     /* 尺寸 */
     width: 27px;
     height: 27px;
 }
 
-.LoginPageMain01_Left label{
+.LoginPageMain01_Left label {
     /* 尺寸 */
     font-style: 18px;
     font-weight: 500;
-
     /* 外觀 */
     color: #fff;
-
     /* 排版 */
     margin-left: 8px;
     text-align: center;
@@ -234,22 +264,19 @@ table {
 /* -------------------------------------------------------------------- */
 /* 以下 是 頁面下方放  文字 的地方  */
 
-.LoginPageMain01_LB_Text{
+.LoginPageMain01_LB_Text {
     /* 排版 */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 174px;
 }
 
-.LoginPageMain01_LB_Text > p{
+.LoginPageMain01_LB_Text>p {
     /* 尺寸 */
     font-size: 14px;
     font-weight: 400;
-
     /* 外觀 */
     color: #fff;
-
     /* 排版 */
     text-align: center;
     margin-top: 58px;
@@ -257,26 +284,23 @@ table {
 
 }
 
-.LoginPageMain01_LB_Slogan{
+.LoginPageMain01_LB_Slogan {
     /* 排版 */
     display: flex;
     align-items: center;
-    /* margin-left: 174px; */
 }
 
-.LoginPageMain01_LB_Slogan > img{
+.LoginPageMain01_LB_Slogan>img {
     /* 排版 */
     display: block;
 }
 
-.LoginPageMain01_LB_Slogan > p {
+.LoginPageMain01_LB_Slogan>p {
     /* 尺寸 */
     font-size: 20px;
     font-weight: bold;
-
     /* 外觀 */
     color: #fff;
-
     /* 排版 */
     text-align: center;
     margin-right: 24px;
@@ -286,26 +310,25 @@ table {
 /* -------------------------------------------------------------------- */
 /* 以下 是 頁面下方  放按鈕 的地方  */
 
-.LoginPageMain01_LB_BTN{
+.LoginPageMain01_LB_BTN {
+    /* 尺寸 */
+    width: 600px;
     /* 排版 */
     display: flex;
     align-items: center;
+    justify-content: space-around;
     margin-top: 40px;
-    /* margin-left: 224px; */
 }
 
-.LoginPageMain01_LB_BTN_L{
-    /* 排版 */
-    margin-right: 60px;
-}
+.LoginPageMain01_LB_BTN_L {}
 
-.LoginPageMain01_LB_BTN_L a:hover{
+.LoginPageMain01_LB_BTN_L a:hover {
     /* 外觀 */
     background-color: #5D5D5D;
     color: #000;
 }
 
-.LoginPageMain01_LB_BTN_L a{
+.LoginPageMain01_LB_BTN_L a {
     /* 排版 */
     display: flex;
     justify-content: center;
@@ -323,7 +346,7 @@ table {
     color: #fff;
 }
 
-.LoginPageMain01_LB_BTN_L  p{
+.LoginPageMain01_LB_BTN_L p {
     /* 尺寸 */
     font-size: 18px;
     font-weight: 500;
@@ -336,17 +359,15 @@ table {
 
 
 
-.LoginPageMain01_LB_BTN_R{
-    /*  */
-}
+.LoginPageMain01_LB_BTN_R {}
 
-.LoginPageMain01_LB_BTN_R a:hover{
+.LoginPageMain01_LB_BTN_R a:hover {
     /* 外觀 */
     background-color: #E6331C;
     color: #480E07;
 }
 
-.LoginPageMain01_LB_BTN_R a{
+.LoginPageMain01_LB_BTN_R a {
     /* 排版 */
     display: flex;
     justify-content: center;
@@ -364,7 +385,7 @@ table {
     color: #fff;
 }
 
-.LoginPageMain01_LB_BTN_R  p{
+.LoginPageMain01_LB_BTN_R p {
     /* 尺寸 */
     font-size: 18px;
     font-weight: 500;
@@ -378,29 +399,26 @@ table {
 /* ----------------------------------------------------------------- */
 /* 以下 是  LoginPageMain01_Right 右邊的區域*/
 
-.LoginPageMain01_Right{
+.LoginPageMain01_Right {
     /* 排版 */
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    margin-left: 862px;
+    margin-left: 83px;
     margin-top: 219px;
 }
 
-.LoginPageMain01_Right p{
+.LoginPageMain01_Right p {
     /* 尺寸 */
     font-size: 20px;
     font-weight: bold;
-
     /* 外觀 */
     color: #fff;
-
     /* 排版 */
     margin-bottom: 12px;
 }
 
-.LoginPageMain01_Right img{
+.LoginPageMain01_Right img {
     /* 排版 */
     display: block;
     margin-bottom: 24px;
@@ -410,12 +428,23 @@ table {
     height: 422px;
 }
 
-.LoginPageMain01_Right a{
+.LoginPageMain01_Right a {
     /* 外觀 */
     text-decoration: none;
     color: #fff;
-
     /* 尺寸 */
     font-size: 20px;
     font-weight: bold;
+}
+
+
+
+
+
+
+/* ----------------- RWD ----------------------- Start ---------------------- */
+
+@media (max-width: 768px) {
+    /* 在小於768px的裝置上應用這些CSS規則 */
+
 }
