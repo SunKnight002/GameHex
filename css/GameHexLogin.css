@@ -3,139 +3,49 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
 body {
-    line-height: 1;
+	line-height: 1;
 }
-
-ol,
-ul {
-    list-style: none;
+ol, ul {
+	list-style: none;
 }
-
-blockquote,
-q {
-    quotes: none;
+blockquote, q {
+	quotes: none;
 }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
-
-
 
 /* -------------------------------------------------------------------------------- */
 /* 此處開始為 LoginPage 之 視覺設定相關檔案 */
@@ -153,19 +63,22 @@ table {
     /* 排版 */
     display: flex;
     background-image: url(../img/BG_For_Register_Blur_001.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 /* 此處開始為 包裹  LoginPageMain01_Left 左側文字 區域的容器*/
 
-.LoginPageMain01_Left {}
+.LoginPageMain01_Left {
+    /* 排版 */
+    margin-top: 114px;
+}
 
 .LoginPageMain01_Left h1 {
     /* 尺寸 */
     font-size: 36px;
     /* 外觀 */
     color: #fff;
-    /* 排版 */
-    margin-top: 114px;
 }
 
 .LoginPageMain01_Left>p {
@@ -443,8 +356,42 @@ table {
 
 
 /* ----------------- RWD ----------------------- Start ---------------------- */
+@media (max-width: 1366px) {
+    /* 在小於1366px的裝置上應用這些CSS規則 */
+    .LoginPageMain01 {
+        /* 尺寸 */
+        height: 668px;
+    }
+    .LoginPageMain01_Right {
+        margin-top: 60px;
+    }
+    .LoginPageMain01 .main {
+        width: 90%;
+    }
+    .LoginPageMain01_Left {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 1280px) {
+    /* 在小於1280px的裝置上應用這些CSS規則 */
+}
+
+
+@media (max-width: 968px) {
+    /* 在小於968px的裝置上應用這些CSS規則 */
+}
+
 
 @media (max-width: 768px) {
     /* 在小於768px的裝置上應用這些CSS規則 */
-
+    .LoginPageMain01 {
+        /* 尺寸 */
+        width: 100%;
+        height: 923px;
+        /* 排版 */
+        display: flex;
+        background-image: url(../img/BG_For_Register_Blur_001.jpg);
+    }
+    
 }
