@@ -115,3 +115,22 @@ header ul > a > li:hover{
         margin-left: 40px;
     }
 }
+@media (max-width: 430px) {
+    header {
+        height: 90px;
+    }
+}
+
+@media (max-width: 414px) {}
+
+@media (max-width: 393px) {
+    header {
+        height: 80px;
+    }
+}
+
+@media (max-width: 376px) {
+    .hanber > img {
+        margin-right: 20px;
+    }
+}
