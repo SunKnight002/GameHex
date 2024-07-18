@@ -6,11 +6,12 @@
 header {
     /* 尺寸 */
     width: 100%;
-    height: 100px;
     /* 外觀 */
     background-color: #000000;
     /* 排版 */
     margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -82,13 +83,10 @@ header ul > a > li:hover{
 
 
 /* ----------------- RWD ----------------------- Start ---------------------- */
+/* ----------------- RWD ----------------------- PC ---------------------- */
 
 @media (max-width: 1366px) {
     /* 在小於1366px的裝置上應用這些CSS規則 */
-}
-
-@media (max-width: 1280px) {
-    /* 在小於1280px的裝置上應用這些CSS規則 */
 }
 
 @media (max-width: 1100px) {
@@ -97,6 +95,9 @@ header ul > a > li:hover{
         margin-right: 12px;
     }
 }
+
+/* ----------------- RWD ----------------------- Start ---------------------- */
+/* ----------------- RWD ----------------------- Table ---------------------- */
 
 @media (max-width: 968px) {
     /* 在小於968px的裝置上應用這些CSS規則 */
@@ -115,21 +116,16 @@ header ul > a > li:hover{
         margin-left: 40px;
     }
 }
+
+
+/* ----------------- RWD ----------------------- Start ---------------------- */
+/* ----------------- RWD ----------------------- Mobile ---------------------- */
+
 @media (max-width: 430px) {
     header {
-        height: 90px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
-}
-
-@media (max-width: 414px) {}
-
-@media (max-width: 393px) {
-    header {
-        height: 80px;
-    }
-}
-
-@media (max-width: 376px) {
     .hanber > img {
         margin-right: 20px;
     }
