@@ -62,18 +62,38 @@ main{
 	font-style: normal;
 }
 
+
+
 /* -------------------------------------------------------------------------------- */
-/* 此處開始為 Register 01  之 視覺設定相關檔案 */
+/* 此處開始為 Register 02  之 視覺設定相關檔案 */
 
 
-.RegisterMain{
+.RegisterMain02{
     /* 尺寸 */
     width: 100%;
     height: 90vh;
-    /* 外觀 */
-    background-image: url(../img/BG_For_Register_002.jpg);
-    background-size: cover;
+    background-image: url(../img/BG_For_Register_003.jpg);
 }
+
+.RegisterMain02::before{
+    /* 尺寸 */
+    width: 100%;
+    height: 100%;
+    /* 樣貌 */
+    content: "";
+    filter: brightness(60%) blur(3px);
+  
+    /* 排版 */
+    display: block;
+	background-size: cover;
+    /* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
 
 .RegisterMain_Top{
     /* 尺寸 */
@@ -233,9 +253,10 @@ main{
     font-family: "Roboto", sans-serif;
 }
 
-/* ------------------------------------------------------- */
-/* 以下這邊為  Register 下半 區域 */
 
+
+
+/* ------------------------------ */
 .RegisterMain_Bot{
     /* 尺寸 */
     width: 80%;
@@ -286,8 +307,7 @@ main{
     color: #fff;
 }
 
-
-/* ------------------------------ 帳號輸入框 ----------------------*/
+/* ------------------------------ 驗證碼輸入框 ----------------------*/
 .inputBox01{
     /* 尺吋 */
     width: 50%;
@@ -317,69 +337,34 @@ main{
 }
 
 
-/* ------------------------------ 密碼輸入框 ----------------------*/
-
-.inputBox02{
-    /* 尺吋 */
-    width: 50%;
-    /* 排版 */
-    margin-bottom: 20px;
-}
-
-.inputBox02 input{
-    /* 尺吋 */
-    width: 100%;
-    height: 4vh;
-    /* 外觀 */
-    border-radius: 16px;
-    background-color: #fff;
-    /* 排版 */
-    padding-left: 12px;
-}
-
-.inputBox02 input::placeholder{
+.RegisterMain_Bot .errorNotGet{
     /* 尺寸 */
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: bold;
     /* 外觀 */
-    color: #000;
+    color: #fff;
     /* 排版 */
-    padding-left: 0px;
+    margin-top: 44px;
+    margin-bottom: 0;
+    text-align: left;
 }
 
-
-/* ------------------------------ 二次密碼輸入框 ----------------------*/
-
-.inputBox03{
-    /* 尺吋 */
-    width: 50%;
+.RegisterMain_Bot .Resend_BTN{
     /* 排版 */
-    margin-bottom: 20px;
+    margin-top: 12px;
+    background-color: #F8442D;
 }
 
-.inputBox03 input{
-    /* 尺吋 */
-    width: 100%;
-    height: 4vh;
-    /* 外觀 */
-    border-radius: 16px;
-    background-color: #fff;
-    /* 排版 */
-    padding-left: 12px;
+.Resend_BTN:hover{
+    background-color: #E6331C;
+    color: #480E07;
 }
 
-.inputBox03 input::placeholder{
-    /* 尺寸 */
-    font-size: 16px;
-    font-weight: 400;
-    /* 外觀 */
-    color: #000;
-    /* 排版 */
-    padding-left: 0px;
+.Keep_BTN:hover{
+    background-color: #6D6D6D;
+    color: #000;   
 }
 
-
-/* ------------------------------ 繼續按鈕 ----------------------*/
 .RegisterMain_Bot > a{
     /* 排版 */
     display: flex;
@@ -398,146 +383,4 @@ main{
     height: 6vh;
     font-size: 24px;
     font-weight: bold;
-}
-
-/* ----------------- RWD - Start -------------------------- */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - PC Part ------------------------ */
-@media (max-width: 1920px) {}
-
-@media (max-width: 1536px) {
-    .RegisterMain_Top {
-        padding-top: 40px;
-    }
-    .RegisterMain_Bot h1 {
-        margin-top: 40px;
-    }
-}
-
-@media (max-width: 1280px) {
-    .RegisterMain {
-        height: 100vh;
-    }
-}
-
-
-/* ----------------- RWD - Table Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-
-/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
-@media (max-width: 1100px) {}
-
-
-
-/* ----------------- RWD - Mobile Part ------------------------ */
-/* ----------------- RWD - Mobile Part ------------------------ */
-/* ----------------- RWD - Mobile Part ------------------------ */
-
-@media (max-width: 600px) {
-    .RegisterMain_Top_Box01 p {
-        font-size: 18px;
-    }
-
-    .RegisterMain_Top_Box02 p {
-        font-size: 18px;
-    }
-
-    .RegisterMain_Top_Box03 p {
-        font-size: 18px;
-    }
-    
-    .RegisterMain_Top_Box01 span {
-        font-size: 14px;
-    }
-
-    .RegisterMain_Top_Box02 span {
-        font-size: 14px;
-    }
-
-    .RegisterMain_Top_Box03 span {
-        font-size: 14px;
-    }
-
-    .RegisterMain_Bot > p {
-        font-size: 24px;
-    }
-
-    .inputBox01 {
-        width: 80%;
-    }
-
-    .inputBox02 {
-        width: 80%;
-    }
-
-    .inputBox03 {
-        width: 80%;
-    }
-
-    .RegisterMain_Bot > a {
-        width: 60%;
-    }
-
-    .RegisterMain_Top_Box01 img {
-        width: 60%;
-    }
-
-    .RegisterMain_Top_Box02 img {
-        width: 60%;
-    }
-
-    .RegisterMain_Top_Box03 img {
-        width: 60%;
-    }
-
-    .RegisterMain_Bot h1 {
-        font-size: 32px;
-    }
-}
-
-/* -------------------------------------------------------------------------------- */
-/* 此處開始為 Register 03  之 視覺設定相關檔案 */
-
-
-.RegisterMain03{
-    /* 尺寸 */
-    width: 1440px;
-    height: 923px;
-    /* 排版 */
-    position: relative;
-}
-
-.RegisterMain03::before{
-    /* 尺寸 */
-    width: 100%;
-    height: 100%;
-
-    /* 樣貌 */
-    content: "";
-    filter: brightness(60%) blur(3px);
-    background-image: url(../img/BG_For_Register_004.jpg);
-    /* 排版 */
-    display: block;
-	background-size: cover;
-    /* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
-    position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
-
-.RegisterMain_Bot span{
-    /* 外觀 */
-    color: #fff;
-    /* 尺寸 */
-    font-size: 24px;
-    font-weight: bold;
-    /* 排版 */
-    display: block;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 44px;
 }
