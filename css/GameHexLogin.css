@@ -60,7 +60,7 @@ table {
 .LoginPageMain01 {
     /* 尺寸 */
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     /* 排版 */
     display: flex;
     background-image: url(../img/BG_For_Register_Blur_001.jpg);
