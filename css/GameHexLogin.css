@@ -365,7 +365,7 @@ table {
 
 @media (max-width: 1920px) {
     .LoginPageMain01_Left {
-        margin-top: 160px;
+        margin-top: 80px;
     }
 
     .LoginPageMain01_Left>p {
@@ -445,12 +445,11 @@ table {
     }
 
     .LoginPageMain01_Left {
-        margin-top: 160px;
+        margin-top: 80px;
     }
 
     .LoginPageMain01_Left .TipText {
         font-size: 32px;
-        margin-top: 60px;
     }
 
     .LoginPageMain01_Left_Account {
@@ -507,16 +506,23 @@ table {
     }
 
     .LoginPageMain01_Left h1 {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .LoginPageMain01_Left>p {
-        font-size: 20px;
+        font-size: 28px;
+    }
+
+    .inputBox01{
+        margin-top: 16px;
+    }
+
+    .inputBox02{
+        margin-top: 16px;
     }
 
     .LoginPageMain01_Left .TipText {
         font-size: 24px;
-        margin-top: 24px;
     }
 
     .LoginPageMain01_Left_Account {
