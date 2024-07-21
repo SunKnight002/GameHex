@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    /* 排版 */
+    margin: 0 auto;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* -------------- 以下CSS區域為 信用卡結帳用02 使用  --------------------------------- */
+.GameHex_CheckOut_Finish {
+    /* 尺寸 */
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/BC_BG_001.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.GameHex_CheckOut_Finish_ProgressPoint{
+    /* 排版 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    /* 尺寸 */
+    width: 80%;
+}
+
+.GameHex_CheckOut_Finish_ProgressPoint > img{
+    /* 尺寸 */
+    width: 20%;
+}
+
+.Finish_ProgressPoint_1{
+    /* 排版 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 尺寸 */
+    width: 30%;   
+}
+
+.Finish_ProgressPoint_1 p{
+    /* 尺寸 */
+    font-size: 32px;
+    font-weight: 400;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-top: 24px;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.Finish_ProgressPoint_1 span{
+    /* 尺寸 */
+    font-size: 18px;
+    font-weight: 500;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-top: 24px;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+}
+
+.Finish_ProgressPoint_2{
+    /* 排版 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 尺寸 */
+    width: 30%;   
+}
+
+
+.Finish_ProgressPoint_2 p{
+    /* 尺寸 */
+    font-size: 32px;
+    font-weight: 400;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-top: 24px;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.Finish_ProgressPoint_2 span{
+    /* 尺寸 */
+    font-size: 18px;
+    font-weight: 500;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-top: 24px;
+    /* 字體 */
+    font-family: "Roboto", sans-serif;
+}
+
+.GameHex_CheckOut_Finish_Tips{
+    /* 排版 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* 尺寸 */
+    width: 60%;
+    /* 外觀 */
+    background-color: rgba(104, 149, 210, 0.6);
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.GameHex_CheckOut_Finish_Tips h1{
+    /* 尺寸 */
+    font-size: 36px;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-top: 40px;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.GameHex_CheckOut_Finish_Tips p{
+    /* 尺寸 */
+    width: 80%;
+    font-size: 28px;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 40px;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.GameHex_CheckOut_Finish_Tips span{
+    /* 尺寸 */
+    font-size: 20px;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    /* 排版 */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.GameHex_CheckOut_Finish_Tips a{
+    /* 尺寸 */
+    width: 20%;
+    height: 65px;
+    font-size: 24px;
+    font-weight: bold;
+    /* 外觀 */
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    text-decoration: none;
+    /* 字體 */
+    font-family: "Noto Sans TC", sans-serif;
+    /* 排版 */
+    text-align: center;
+    line-height: 65px;
+    margin-bottom: 40px;
+}
+
+
+/* ----------------- RWD - Start -------------------------- */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+@media (max-width: 1920px) {}
+
+@media (max-width: 1536px) {
+
+    .GameHex_CheckOut_Finish_ProgressPoint {
+        margin-top: 20px;
+    }
+
+    .GameHex_CheckOut_Finish_Tips h1 {
+        font-size: 32px;
+    }
+
+    .GameHex_CheckOut_Finish_Tips p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .GameHex_CheckOut_Finish_ProgressPoint {
+        margin-top: 0;
+    }
+
+    .GameHex_CheckOut_Finish {
+        height: 80vh;
+    }
+
+    .GameHex_CheckOut_Finish_Tips {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .GameHex_CheckOut_Finish_Tips span {
+        margin-top: 20px;
+    }
+
+    .GameHex_CheckOut_Finish_Tips a {
+        font-size: 20px;
+    }
+
+}
+
+
+
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+
+/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
+@media (max-width: 1100px) {
+
+
+    .Finish_ProgressPoint_1 p {
+        font-size: 28px;
+    }
+
+    .Finish_ProgressPoint_2 p {
+        font-size: 28px;
+    }
+
+    .Finish_ProgressPoint_1 span {
+        font-size: 16px;
+    }
+
+    .Finish_ProgressPoint_2 span {
+        font-size: 16px;
+    }
+
+    .GameHex_CheckOut_Finish_Tips h1 {
+        font-size: 28px;
+    }
+
+    .GameHex_CheckOut_Finish_ProgressPoint > img {
+        width: 10%;
+    }
+
+    .Finish_ProgressPoint_1 {
+        width: 35%;
+    }
+
+    .Finish_ProgressPoint_2 {
+        width: 35%;
+    }
+}
+
+
+
+
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+
+@media (max-width: 600px) {
+
+    .GameHex_CheckOut_Finish {
+        height: 100vh;
+    }
+
+    .GameHex_CheckOut_Finish_Tips a {
+        width: 40%;
+    }
+
+    .Finish_ProgressPoint_1 p {
+        font-size: 24px;
+        margin-top: 8px;
+    }
+
+    .Finish_ProgressPoint_2 p {
+        font-size: 24px;
+        margin-top: 8px;
+    }
+
+    .Finish_ProgressPoint_1 span {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .Finish_ProgressPoint_2 span {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .GameHex_CheckOut_Finish_Tips {
+        width: 90%;
+    }
+
+    .GameHex_CheckOut_Finish_Tips a {
+        margin-bottom: 12px;
+    }
+
+    .GameHex_CheckOut_Finish_Tips h1 {
+        margin-top: 20px;
+    }
+}

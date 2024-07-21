@@ -1,26 +1,26 @@
 footer{
-    /* 尺寸 */
-    width: 1440px;
-    height: 100px;
-
     /* 外觀 */
     background-color: #000000;
-
-    /* 排版 */
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-	justify-content: space-around;
 }
 
 footer img{
     /* 尺寸 */
-    width: 142px;
-    height: 60px;
+    width:  10vw;
+}
+
+.footer_area{
+    /* 排版 */
+	width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+	justify-content: space-around;
+	padding: 20px 0;
 }
 
 .footer_text{
 	/* 排版 */
+	width: 80%;
 	margin-top: auto;
 	margin-bottom: auto;
 	text-align: center;
@@ -29,17 +29,68 @@ footer img{
 .footer_text p{
 	/* 外貌 */
 	color: #fff;
-
 	/* 排版 */
 	display: flex;
 	flex-direction: column;
-
 	/* 字體 */
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: 300;
 	font-style: normal;
-
 	/* 尺吋 */
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 1.2;
+}
+
+
+
+/* ----------------- RWD - Start -------------------------- */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+@media (max-width: 1920px) {}
+
+@media (max-width: 1536px) {
+	.footer_area{
+		padding: 8px 0 8px 0;
+	}
+}
+
+@media (max-width: 1280px) {
+	footer img {
+		width: 12vw;
+	}
+}
+
+
+
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+
+/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
+@media (max-width: 1100px) {}
+
+
+
+
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+
+@media (max-width: 600px) {
+
+	footer img{
+		/* 尺寸 */
+		width: 20vw;
+	}
+
+	.footer_text{
+	/* 排版 */
+		width: 70%;
+	}
+
+	.footer_text p {
+		font-size: 14px;
+	}
+
 }
