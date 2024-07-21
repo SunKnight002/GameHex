@@ -30,7 +30,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    max-width: 1440px;
     /* 排版 */
     margin: 0 auto;
     /* 字體 */
@@ -56,29 +55,13 @@ table {
 /* ---------------------------------------------------------------------- */
 /* -------------- 以下CSS區域為 GH_WareHouse.html 使用  ------------------- */
 
-
-/* 這邊是 遊戲倉庫 上方的1440*1024 遊戲運行頁 */
-/* 這邊是 遊戲倉庫 上方的1440*1024 遊戲運行頁 */
-/* 這邊是 遊戲倉庫 上方的1440*1024 遊戲運行頁 */
-.GameHex_WareHouse_GameLunch{
-    /* 尺寸 */
-    width: auto;
-    height: 924px;
-    /* 邊線 */
-    border: 1px solid red;
-    /* 背景色 */
-    background-color: #000;    
-}
-
-
-
 /* 這邊是 遊戲倉庫 下方的1440*1024 遊戲收藏頁 */
 /* 這邊是 遊戲倉庫 下方的1440*1024 遊戲收藏頁 */
 /* 這邊是 遊戲倉庫 下方的1440*1024 遊戲收藏頁 */
 .GameHex_WareHouse_GameChest{
     /* 尺寸 */
     width: 100%;
-    height: 824px;
+    height: 80vh;
     /* 背景色 */
     background-color: #3A5A85;
     /* 排版 */
@@ -109,15 +92,17 @@ table {
 
 .GH_WH_GameChest_GameArea{
     /* 尺寸 */
-    width: 1224px;
-    height: 690px;
+    width: 80%;
+    height: auto;
     /* 背景色 */
     background-color: #0C223F;
     /* 滾動條 */
     overflow-y: scroll;
     /* 排版 */
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    justify-content: space-around;
+    gap: 40px;
 }
 
 
@@ -131,12 +116,7 @@ table {
     /* 邊框 */
     border: 1px solid black;
     border-radius: 16px;
-    /* 排版 */
-    margin-left: 16px;
-    margin-top: 24px;
 }
-
-
 
 .GameCard_Lunch_Img{
     /* 尺寸 */
@@ -147,9 +127,6 @@ table {
 }
 
 .GameCard_Lunch_Img img{
-    /* 尺寸 */
-    width: 280px;
-    height: 200px;
     /* 邊線 */
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
@@ -232,4 +209,40 @@ table {
     /* 邊線 */
     border: 1px solid #000;
     border-radius: 8px;
+}
+
+
+
+/* ----------------- RWD - Start -------------------------- */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+@media (max-width: 1920px) {}
+
+@media (max-width: 1536px) {}
+
+@media (max-width: 1280px) {
+    .GH_WH_GameChest_GameArea {
+        gap: 20px;
+    }
+}
+
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+
+/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
+@media (max-width: 1100px) {}
+
+
+
+
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+
+@media (max-width: 600px) {
+    .GameHex_WareHouse_GameChest h1 {
+        font-size: 24px;
+    }
 }
