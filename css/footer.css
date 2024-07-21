@@ -51,7 +51,7 @@ footer img{
 
 @media (max-width: 1536px) {
 	.footer_area{
-		padding: 8px 0 8px 0;
+		padding: 4px 0 4px 0;
 	}
 }
 
@@ -90,7 +90,7 @@ footer img{
 	}
 
 	.footer_text p {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 }
