@@ -63,19 +63,40 @@ main{
 }
 
 
-
 /* -------------------------------------------------------------------------------- */
-/* 此處開始為 Register 02  之 視覺設定相關檔案 */
+/* 此處開始為 Register 03  之 視覺設定相關檔案 */
 
 
-.RegisterMain02{
+.RegisterMain03{
     /* 尺寸 */
     width: 100%;
     height: 100vh;
-    background-image: url(../img/BG_For_Register_003.jpg);
+    /* 樣貌 */
+    background-image: url(../img/BG_For_Register_004.jpg);
     /* 排版 */
     display: block;
     background-size: cover;
+}
+
+.RegisterMain_Bot span{
+    /* 外觀 */
+    color: #fff;
+    /* 尺寸 */
+    font-size: 24px;
+    font-weight: bold;
+    /* 排版 */
+    display: block;
+    text-align: center;
+}
+
+.arrow01{
+    /* 排版 */
+    width: 10vw;
+}
+
+.arrow02{
+    /* 排版 */
+    width: 10vw;
 }
 
 .RegisterMain_Top{
@@ -88,16 +109,6 @@ main{
     justify-content: center;
     margin: 0 auto;
     padding-top: 56px;
-}
-
-.arrow01{
-    /* 排版 */
-    width: 10vw;
-}
-
-.arrow02{
-    /* 排版 */
-    width: 10vw;
 }
 
 .RegisterMain_Top_Box01{
@@ -237,8 +248,6 @@ main{
 }
 
 
-
-
 /* ------------------------------ */
 .RegisterMain_Bot{
     /* 尺寸 */
@@ -279,73 +288,6 @@ main{
     text-align: center;
 }
 
-.tipsText{
-    /* 尺寸 */
-    font-size: 20px;
-    font-weight: bold;
-    /* 排版 */
-    margin-bottom: 12px;
-    text-align-last: left;
-    /* 外觀 */
-    color: #fff;
-}
-
-/* ------------------------------ 驗證碼輸入框 ----------------------*/
-.inputBox01{
-    /* 尺吋 */
-    width: 50%;
-}
-
-.inputBox01 input{
-    /* 尺吋 */
-    width: 100%;
-    height: 4vh;
-    /* 外觀 */
-    border-radius: 16px;
-    background-color: #fff;
-    /* 排版 */
-    padding-left: 12px;
-}
-
-.inputBox01 input::placeholder{
-    /* 尺寸 */
-    font-size: 16px;
-    font-weight: 400;
-    /* 外觀 */
-    color: #000;
-    /* 排版 */
-    padding-left: 0px;
-}
-
-
-.RegisterMain_Bot .errorNotGet{
-    /* 尺寸 */
-    font-size: 20px;
-    font-weight: bold;
-    /* 外觀 */
-    color: #fff;
-    /* 排版 */
-    margin-top: 44px;
-    margin-bottom: 0;
-    text-align: left;
-}
-
-.RegisterMain_Bot .Resend_BTN{
-    /* 排版 */
-    margin-top: 12px;
-    background-color: #F8442D;
-}
-
-.Resend_BTN:hover{
-    background-color: #E6331C;
-    color: #480E07;
-}
-
-.Keep_BTN:hover{
-    background-color: #6D6D6D;
-    color: #000;   
-}
-
 .RegisterMain_Bot > a{
     /* 排版 */
     display: flex;
@@ -367,6 +309,14 @@ main{
 }
 
 
+.Keep_BTN:hover{
+    background-color: #6D6D6D;
+    color: #000;   
+}
+
+
+
+
 /* ----------------- RWD - Start -------------------------- */
 /* ----------------- RWD - PC Part ------------------------ */
 /* ----------------- RWD - PC Part ------------------------ */
@@ -375,35 +325,36 @@ main{
 
 @media (max-width: 1536px) {}
 
-@media (max-width: 1280px) {
-    .RegisterMain_Top {
-        padding-top: 28px;
-    }
+@media (max-width: 1280px) {}
 
-    .RegisterMain_Bot h1 {
-        margin-top: 40px;
-        margin-bottom: 28px;
-    }
 
-    .RegisterMain_Bot > a {
-        margin-top: 20px;
-    }
-
-    .RegisterMain_Bot .errorNotGet {
-        margin-top: 20px;
-    }
-
-    .RegisterMain_Bot .Resend_BTN {
-        margin-top: 20px;
-    }
-}
 
 /* ----------------- RWD - Table Part ------------------------ */
 /* ----------------- RWD - Table Part ------------------------ */
 /* ----------------- RWD - Table Part ------------------------ */
 
 /* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
-@media (max-width: 1100px) {}
+@media (max-width: 1100px) {
+
+    
+    .RegisterMain_Top_Box01 p {
+        font-size: 22px;
+    }
+
+    .RegisterMain_Top_Box02 p {
+        font-size: 22px;
+    }
+
+    .RegisterMain_Top_Box03 p {
+        font-size: 22px;
+    }
+
+    .RegisterMain_Bot > a {
+        font-size: 20px;
+    }
+}
+
+
 
 
 /* ----------------- RWD - Mobile Part ------------------------ */
@@ -411,10 +362,6 @@ main{
 /* ----------------- RWD - Mobile Part ------------------------ */
 
 @media (max-width: 600px) {
-
-    .RegisterMain_Top {
-        width: 90%;
-    }
 
     .RegisterMain_Top_Box01 img {
         width: 60%;
@@ -428,69 +375,28 @@ main{
         width: 60%;
     }
 
-    .RegisterMain_Bot h1 {
-        font-size: 24px;
-    }
-
-    .RegisterMain_Bot > p {
-        font-size: 20px;
-    }
-
-    .tipsText {
-        font-size: 16px;
-    }
-
-    .arrow01 {
-        width: 8vw;
-    }
-
-    .arrow02 {
-        width: 8vw;
-    }
-
-    .RegisterMain_Top_Box01 {
-        width: 30%;
-    }
-
     .RegisterMain_Top_Box01 p {
-        font-size: 20px;
-    }
-
-    .RegisterMain_Top_Box01 span {
-        font-size: 14px;
-    }
-
-    .RegisterMain_Top_Box02 {
-        width: 30%;
+        font-size: 18px;
     }
 
     .RegisterMain_Top_Box02 p {
-        font-size: 20px;
-    }
-
-    .RegisterMain_Top_Box02 span {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .RegisterMain_Top_Box03 p {
+        font-size: 18px;
+    }
+
+    
+    .RegisterMain_Bot span {
         font-size: 20px;
     }
 
-    .RegisterMain_Top_Box03 {
-        width: 30%;
-    }
-
-    .RegisterMain_Top_Box03 span {
-        font-size: 14px;
-    }
-
     .RegisterMain_Bot > a {
+        width: 60%;
         font-size: 18px;
     }
 
-    .RegisterMain_Bot > a {
-        font-size: 18px;
-    }
 
 
 }
