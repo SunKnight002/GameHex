@@ -27,46 +27,21 @@
     <!-- 這邊是 header的區域 -->
     <header>
         <!-- 這邊是 header的區域 logo圖片 -->
-        <div class="header_Logo">
-            <a href="GH_LandingPage.html" target="_self"><img src="./img/logo.png" alt="GameHex Logo"></a>
-        </div>
+        <a class="header_Logo" href="index.html" target="_self"><img src="./img/logo.png" alt="GameHex Logo"></a>
         <!-- 這邊是 header的區域 ul區域 -->
-        <ul>
-            <a href="GH_LandingPage.html" target="_self">
-                <img src="./img/visibility_20dp.png" alt="">
-                <li>主打新作</li>
-            </a>
-
-            <a href="index.html" target="_self">
-                <img src="./img/visibility_20dp.png" alt="">
-                <li>產品銷售</li>
-            </a>
-
-            <a href="GH_ProductCheckout.html" target="_self">
-                <img src="./img/visibility_20dp.png" alt="">
-                <li>購物推車</li>
-            </a>
-
-            <a href="GH_WareHouse.html" target="_self">
-                <img src="./img/visibility_20dp.png" alt="">
-                <li>遊戲倉庫</li>
-            </a>
-
-            <a href="GH_CompanyCoop.html" target="_self">
-                <img src="./img/visibility_20dp.png" alt="">
-                <li>企業合作</li>
-            </a>
-
-            <a href="GH_MyAccount.html" target="_self">
-                <img src="./img/visibility_20dp.png" alt="">
-                <li>願望清單</li>
-            </a>
-
-            <a href="GH_LoginPage.html" target="_self">
-                <img src="./img/visibility_20dp.png" alt="">
-                <li>登入/註冊</li>
-            </a>
-        </ul>
+        <nav>
+            <ul>
+                <a href="GH_LandingPage.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>主打新作</li></a>
+                <a href="index.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>產品銷售</li></a>
+                <a href="GH_ProductCheckout.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>購物推車</li></a>
+                <a href="GH_WareHouse.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>遊戲倉庫</li></a>
+                <a href="GH_CompanyCoop.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>企業合作</li></a>
+                <a href="GH_MyAccount.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>願望清單</li></a>
+                <a href="GH_LoginPage.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>登入/註冊</li></a>
+            </ul>
+        </nav>
+        <!-- 漢堡按鈕 -->
+        <div class="hanber"><img src="./img/set.svg" alt=""></div>
     </header>
 
     <main>
@@ -77,17 +52,19 @@
             <section class="GH_MA_HopeList_BigBox">
                 <!-- 這邊是搜尋列表  與 Sort 篩選器-->
                 <section class="GH_MA_HopeList_SearchBox">
-                    <!-- 搜尋工具 -->
-                    <div class="SearchTool">
+                    <div class="tool">
                         <!-- 搜尋列表 -->
                         <input type="text" placeholder="請輸入遊戲名稱以便開始查詢" class="GH_MA_HopeList_SearchTool">
-                       <button id="BTN_ProductTo_SearchName" class="BTN_Style_ProductTo_SearchName" onclick="location.href='#'"></button>
-                    </div>
-                    
+                        <button id="BTN_ProductTo_SearchName" class="BTN_Style_ProductTo_SearchName" onclick="location.href='#'"></button>
+                     </div>
                     <!-- Sort 篩選器 -->
-                    <div class="GH_MA_HopeList_SortTool">
-                        <img src="./img/Sory.png" alt="">
-                        <p>Price low to High</p>
+                    <div>
+                        <select class="GH_MA_HopeList_SortTool">
+                            <option value="Sort_Low">Price Low to High</option>
+                            <option value="Sort_Exp">Price High to low</option>
+                            <option value="Sort_Popular">Most Popular</option>
+                            <option value="Sort_New">Most New</option>
+                          </select>
                     </div>
                 </section>
 
@@ -95,7 +72,6 @@
                 <section class="GH_MA_HopeList_GameList">
                     <!-- 小卡 一號 -->
                     <div class="GH_MA_HopeList_GameCard">
-
                         <!-- 排列順序調整與編號 -->
                         <div class="GH_MA_HopeList_GameCard_SortModify">
                             <!-- 向上調整按鈕 -->
@@ -139,7 +115,6 @@
                                 </ul>
                               </div>
                          </div>
-
                           <!-- 立即購買 按鈕 -->
                           <button type="button" id="BTN_ProductTo_BuyInSec01" class="BTN_Style_ProductTo_BuyInSec" onclick="location.href='#'">立即購買</button>
                     </div>
@@ -244,57 +219,6 @@
 
                           <!-- 立即購買 按鈕 -->
                           <button type="button" id="BTN_ProductTo_BuyInSec03" class="BTN_Style_ProductTo_BuyInSec" onclick="location.href='#'">立即購買</button>
-                    </div>
-
-                    <!-- 小卡 四號 -->
-                    <div class="GH_MA_HopeList_GameCard">
-
-                        <!-- 排列順序調整與編號 -->
-                        <div class="GH_MA_HopeList_GameCard_SortModify">
-                            <!-- 向上調整按鈕 -->
-                            <button id="BTN_ProductTo_ModUpSort" class="BTN_Style_ProductTo_ModUpSort" onclick="location.href='#'"></button>
-                            <p>04</p>
-                            <!-- 向下調整按鈕 -->
-                            <button id="BTN_ProductTo_ModDownSort" class="BTN_Style_ProductTo_ModDownSort" onclick="location.href='#'"></button>
-                        </div>
-
-                        <!-- 小卡 四號 卡片圖像 -->
-                        <div class="GH_MA_HopeList_GameCard_img">
-                            <img src="./img/GameCard_300x200Card_004.jpg" alt="">
-                            <div class="GH_MA_HopeList_GameCard_Discount">
-                                <p>-25 %</p>
-                                <span>NT$ 350</span>
-                            </div>
-                        </div>                         
-
-                        <!-- 小卡 四號 卡片標題 -->
-                         <div class="GH_MA_HopeList_GameCard_Ifo">
-                            <p class="GH_MA_HopeList_GameCard_Ifo_Title">Game Title</p>
-                            <!-- 評論 -->
-                            <div class="GH_MA_HopeList_GameCard_Ifo_View">
-                                <p>整體評論</p>
-                                <span>大多好評</span>
-                            </div>
-                            <!-- 發行日期 -->
-                             <div class="GH_MA_HopeList_GameCard_Ifo_ReleaseDay">
-                                <p>發行日期</p>
-                                <span>2020年 3月 14日</span>   
-                             </div>
-                             <!-- 遊戲標籤 -->
-                              <div class="GH_MA_HopeList_GameCard_Ifo_Tag">
-                                <ul>
-                                    <li>獨立遊戲</li>
-                                    <li>動作</li>
-                                    <li>多人連線</li>
-                                    <li>類魂遊戲</li>
-                                    <li>角色扮演</li>
-                                    <li>搶先體驗</li>
-                                </ul>
-                              </div>
-                         </div>
-
-                          <!-- 立即購買 按鈕 -->
-                          <button type="button" id="BTN_ProductTo_BuyInSec04" class="BTN_Style_ProductTo_BuyInSec" onclick="location.href='#'">立即購買</button>
                     </div>
                 </section>
             </section>
