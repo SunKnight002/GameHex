@@ -24,7 +24,7 @@ for (let i = 0; i < gameCards.length; i++) {
     // 建立卡片的內容
     let content = `
         <div class="recomeGame_img">
-            <img id="GameImg_${i + 1}" src="${gameCards[i].img}" alt="">
+            <img id="GameImg_${i + 1}" src="${gameCards[i].img}" alt="" class="Card_000">
             <div class="discountPrice">
                 <span>${gameCards[i].discount}</span>
                 <p>${gameCards[i].price}</p>

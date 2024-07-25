@@ -31,11 +31,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
-    max-width: 1440px;
     /* 排版 */
     margin: 0 auto;
-    position: relative;
-    height: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -60,8 +57,8 @@ table {
 /* index 頁面最上層 第一個 1440*1024尺寸 */
 .GameHex_Index_Swiper{
     /* 尺寸 */
-    width: auto;
-    height: 924px;
+    width: 100%;
+    height: auto;
     /* 排版 */
     display: flex;
     flex-direction: column;
@@ -73,8 +70,8 @@ table {
 
 html,
 body {
-  position: relative;
-  height: 100%;
+  /* position: relative; */
+  /* height: 100%; */
 }
 
 body {
@@ -86,10 +83,9 @@ body {
   padding: 0;
 }
 
-
 .swiper {
   width: 100%;
-  height: 774px;
+  height: 90vh;
 }
 
 .swiper-slide {
@@ -104,7 +100,7 @@ body {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 774px;
+  height: 90vh;
   object-fit: cover;
 }
 
@@ -138,26 +134,25 @@ body {
   transform: rotate(-90deg);
 }
 
+.swiper-button-next, .swiper-button-prev{
+    --swiper-theme-color: #fff;
+}
 
-
-
-
+.autoplay-progress svg{
+    stroke: #eee;
+}
 
 /* ---------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------- */
 .GH_I_Swiper_Footer{
-    /* 尺寸 */
-    width: 1440px;
-    height: 151px;
-    /* 外觀 */
+    width: 100%;
+    height: auto;
     background-color: #FF5252;
-    /* 排版 */
-    position: absolute;
-    top: 874px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .GH_I_Swiper_Footer p{
@@ -167,63 +162,51 @@ body {
     font-weight: bold;
     /* 外觀 */
     color: #fff;
-    /* 排版 */
-    margin-bottom: 12px;
 }
-
-
-
 
 /* index 頁面最上層 第二個 1440*1024尺寸 */
 /* index 頁面最上層 第二個 1440*1024尺寸 */
 /* index 頁面最上層 第二個 1440*1024尺寸 */
 .GameHex_Index_ShopArea{
     /* 尺寸 */
-    width: auto;
-    height: 1024px;
-    /* 排版 */
-    position: relative;
-}
-
-.GameHex_Index_ShopArea::before{
- 	/* 尺寸 */
-     width: 100%;
-     height: 1024px;
-     /* 外觀 */
-     content: "";
-     filter: brightness(50%) blur(5px);
-     /* 排版 */
-     display: block;
-     background-size: cover;
-     background-image: url(../img/BC_BG_001.png);
-     position: absolute;
-     /* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
-   
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../img/BC_BG_001.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .GH_I_ShopArea_SearchBar{
     /* 邊線 */
     border: 1px solid #000;
     /* 尺寸 */
-    width: 1060px;
+    width: 60%;
     height: 40px;
     /* 排版 */
     display: flex;
-    position: absolute;
-    margin-top: 73px;
-    margin-left: 258px;
+    justify-content: space-between;
     /* 外觀 */
     background-color: #3A5A85;
     border-radius: 8px;
 }
 
-.GH_I_ShopArea_SearchBar_TagBTN{}
+.GH_I_ShopArea_SearchBar_TagBTN{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
 
 .GH_I_ShopArea_SearchBar_TagBTN ul{
     /* 排版 */
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-left: 8px;
+    justify-content: space-around;
 }
 
 .GH_I_ShopArea_SearchBar_TagBTN ul a{
@@ -243,15 +226,11 @@ body {
     font-weight: bold;
 }
 
-
-
 .GH_I_ShopArea_SearchBar_TagBTN ul a li{
     /* 尺寸 */
     width: 92px;
     height: 24px;
     /* 排版 */
-    margin-top: 8px;
-    margin-right: 32px;
     line-height: 24px;
     /* 外觀 */
     border: 1px solid #000;
@@ -260,11 +239,11 @@ body {
 
 .GH_I_ShopArea_SearchBar_SeeBTN{
     /* 尺寸 */
-    width: 178px;
+    width: 40%;
     height: 40px;
-    /* 排版 */
-    margin-left: 120px;
-    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 .GH_MA_HopeList_SearchTool{
@@ -286,20 +265,17 @@ body {
 
 .GH_I_ShopArea_DispalyAndTag{
     /* 排版 */
-    position: absolute;
-    top: 153px;
-    left: 120px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     /* 尺寸 */
-    width: 1200px;
-    height: 872px;
+    width: 80%;
+    height: auto;
 }
 
 .GH_I_ShopArea_GameTag{
     /* 尺寸 */
-    width: 120px;
-    height: 872px;
+    width: 10%;
+    height: auto;
     /* 外框 */
     border: 1px solid #000;
     border-radius: 8px;
@@ -316,9 +292,12 @@ body {
     /* 文字顏色 */
     color: #fff;
     /* 排版 */
-    margin-top: 12px;
-    margin-left: 16px;
-    margin-bottom: 20px;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .GH_I_ShopArea_GameTag_FromYour p{
@@ -329,20 +308,23 @@ body {
     margin-bottom: 16px;
 }
 
-.GH_I_ShopArea_GameTag_FromYour ul{}
+.GH_I_ShopArea_GameTag_FromYour ul{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .GH_I_ShopArea_GameTag_FromYour ul a{
     /* 外觀 */
     color: #fff;
     text-decoration: none;
     /* 文字 */
-    font-size: 12px;
+    font-size: 16px;
 }
 
-.GH_I_ShopArea_GameTag_FromYour ul a li{
-    /* 排版 */
-    margin-bottom: 16px;
-}
+.GH_I_ShopArea_GameTag_FromYour ul a li{}
 
 .GH_I_ShopArea_GameTag_FromYour ul a:hover{
     background-color: #fff;
@@ -360,9 +342,8 @@ body {
     /* 文字顏色 */
     color: #fff;
     /* 排版 */
-    margin-top: 12px;
-    margin-left: 16px;
-    margin-bottom: 20px;
+    padding: 20px 20px 0 20px;
+    text-align: center;
 }
 
 .GH_I_ShopArea_GameTag_FromGame p{
@@ -373,20 +354,23 @@ body {
     margin-bottom: 16px;
 }
 
-.GH_I_ShopArea_GameTag_FromGame ul{}
+.GH_I_ShopArea_GameTag_FromGame ul{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .GH_I_ShopArea_GameTag_FromGame ul a{
     /* 外觀 */
     color: #fff;
     text-decoration: none;
     /* 文字 */
-    font-size: 12px;
+    font-size: 16px;
 }
 
-.GH_I_ShopArea_GameTag_FromGame ul a li{
-    /* 排版 */
-    margin-bottom: 16px;
-}
+.GH_I_ShopArea_GameTag_FromGame ul a li{}
 
 .GH_I_ShopArea_GameTag_FromGame ul a:hover{
     background-color: #fff;
@@ -401,22 +385,23 @@ body {
 
 .GH_I_ShopArea_GameArea{
     /* 尺寸 */
-    width: 1072px;
-    height: 872px;
+    width: 70%;
+    height: 85vh;
     /* 外框 */
     border: 1px solid #000;
     border-radius: 16px;
     background-color: #3A5A85;
-    /*  */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .GH_I_ShopArea_GameArea_TitleAndSearh{
     /* 排版 */
     display: flex;
     align-items: center;
-    /* 排版 */
-    margin-left: 20px;
-    margin-top: 20px;
+    justify-content: space-between;;
 }
 
 .GH_I_ShopArea_GameArea_TitleAndSearh p{
@@ -426,8 +411,6 @@ body {
     font-weight: bold;
     /* 外觀 */
     color: #fff;
-    /* 排版 */
-    margin-right: 400px;
 }
 
 .GameFilterStyle{
@@ -444,7 +427,6 @@ body {
     /* 排版 */
     text-align: center;
     padding-right: 20px;
-
     /* 移除箭頭 */
     -webkit-appearance: none; /* 移除原生樣式 */
     -moz-appearance: none;
@@ -463,13 +445,13 @@ body {
 
 .GH_I_ShopArea_GameArea_GameCardList{
     /* 尺寸 */
-    width: 1032px;
-    height: 728px;
+    width: 100%;
+    height: 90%;
+    background-color:#333333;
     /* 排版 */
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
     /* 滾動條 */
     overflow-y: scroll;
     overflow-wrap: normal;
@@ -482,13 +464,11 @@ body {
 
 .recomeGame_Card {
     /* 尺寸 */
-    width: 252px;
-    height: 216px;
-    /* 排版 */
-    margin-right: 8px;
-    margin-bottom: 40px;
-    /* 外觀 */
-    /* border: 1px solid yellow; */
+    /* width: 252px;
+    height: 216px; */
+    width: 100%;
+    height: auto; 
+
 }
 
 .recomeGame_Card:nth-child(4){
@@ -514,26 +494,48 @@ body {
     position: relative;
 }
 
+.Card_000{
+    width: 100%;
+}
 
 .recomeGame_img>img {
     /* 尺寸 */
-    width: 252px;
-    height: 140px;
+    /* width: 252px;
+    height: 140px; */
+    width: 100%;
+    height: auto;
     object-fit: cover;
     /* 外觀 */
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
 
+.Card_BTN01{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Card_Love{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
 .discountPrice {
     /* 排版 */
     display: flex;
     align-items: center;
+    justify-content: space-around;
     position: absolute;
     top: 12px;
     left: 15px;
     /* 尺寸 */
-    width: 115px;
+    /* width: 115px; */
+    width: 40%;
     height: 30px;
     /* 外觀 */
     background-color: #292929;
@@ -556,7 +558,6 @@ body {
     padding-right: 12px;
     padding-top: 4px;
     padding-bottom: 4px;
-    margin-left: 4px;
 }
 
 .discountPrice p {
@@ -567,9 +568,6 @@ body {
     color: #fff;
     /* 字體 */
     font-family: "Roboto";
-    /* 排版 */
-    margin-left: 8px;
-    margin-right: 7px;
 }
 
 .HopeList_BTN img{
@@ -582,24 +580,26 @@ body {
 /* 小卡文字資訊區域 */
 .recomeGame_info {
     /* 尺寸 */
-    width: 252px;
-    height: 75px;
-	/* 排版 */
+    /* width: 252px;
+    height: 75px; */
+    width: 100%;
+    height: auto;
     /* 外觀 */
     background-color: #1B2838;
 }
 
 .recomeGame_info_title {
     /* 排版 */
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
 }
 
 .recomeGame_info_title p {
     /* 尺寸 */
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     /* 字體 */
     font-family: "Noto Sans TC, sans-serif,Roboto";
@@ -626,48 +626,33 @@ body {
 .gameTag_Bigbox {
     /* 排版 */
     display: flex;
-    margin-left: 8px;
-    margin-top: 4px;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
 }
 
 .gameTag_Bigbox ul {
     /* 尺吋 */
-    width: 170px;
+    width: 70%;
+    height: auto;
     /* 排版 */
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 8px;
 }
 
 .gameTag_Bigbox ul li {
     /* 尺寸 */
-    font-size: 10px;
-	font-weight: bold;
+    font-size: 12px;
     /* 外觀 */
     color: #fff;
     background-color: #3A5A85;
     border-radius: 8px;
     /* 排版 */
-    padding: 4px;
-    margin-bottom: 8px;
-	margin-right: 2px;
+    text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ---------------------- 按鈕專區 ----- */
 /* ---------------------- 按鈕專區 ----- */
@@ -685,51 +670,223 @@ body {
     background-size: fit;
     background-repeat: no-repeat;
     background-position: center;
-    /* 排版 */
-    position: absolute;
-    top: 0;
-    left:136px;
 }
 
 .HopeList_BTN {
     /* 排版 */
     position: absolute;
-    top: 12px;
-	left: 200px;
+    top: 10px;
+    right: 0;
     /* 移除外觀 */
     border: none;
     background-color: transparent;
 }
 
-
 /*  加入購物車 按鈕  小卡上面的 */
 .AddToCart_BTN {
     /* 尺寸 */
-    width: 100px;
+    width: 30%;
     height: 24px;
     /* 外觀 */
     background-color: #fff;
     border-radius: 8px;
     border: none;
     /* 排版 */
-    margin-top: 14px;
-    margin-right: 4px;
 	/* 文字 */
-	font-size: 12px;
-    font-weight: 500;
+	font-size: 14px;
+    font-weight: bold;
+}
+
+/* ----------------- RWD - Start -------------------------- */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+@media (max-width: 1920px) {}
+
+@media (max-width: 1536px) {
+    .GH_I_ShopArea_GameArea{
+        height: 90vh;
+        padding: 12px;
+        justify-content: space-around;
+    }
+
+    .gameTag_Bigbox ul{
+        gap: 4px;
+        width: 65%;
+    }
+
+    .gameTag_Bigbox ul li{
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .GH_MA_HopeList_SearchTool{
+        height: 4vh;
+    }
+
+    .BTN_Style_ProductTo_SearchName{
+        height: 4.3vh;
+    }
+
+    .AddToCart_BTN{
+        width: 25%;
+        height: auto;
+    }
+    
+    .GH_I_ShopArea_GameTag_FromGame p{
+        font-size: 14px;
+    }
+
+    .GH_I_ShopArea_GameTag_FromYour p{
+        font-size: 14px;
+    }
+    
+    .discountPrice{
+        width: 50%;
+    }
+
+    .recomeGame_info_title ul{
+        margin-left: 0;
+    }
+
+    .GH_I_ShopArea_SearchBar{
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    .GH_I_ShopArea_GameTag{
+        width: 15%;
+    }
+
+    .gameTag_Bigbox{
+        justify-content: space-between;
+    }
+
+    .gameTag_Bigbox ul li{
+        padding: 2px;
+    }
+
+    .gameTag_Bigbox ul{
+        width: 70%;
+    }
+
+    .AddToCart_BTN{
+        width: 25%;
+    }
+
+    .AddToCart_BTN{
+        font-size: 12px;
+    }
+
+    .GH_I_ShopArea_GameTag_FromYour{
+        padding: 12px 12px 0 12px;
+    }
+
+    .GH_I_ShopArea_GameTag_FromGame{
+        padding: 12px 12px 0 12px;
+    }
+
+}
+
+
+
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+
+/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
+@media (max-width: 1150px) {
+
+    .GH_I_ShopArea_GameArea_GameCardList{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .GH_I_ShopArea_GameTag{
+        display: none;
+    }
+
+    .GH_I_ShopArea_DispalyAndTag{
+        width: 100%;
+    }
+
+    .GH_I_ShopArea_SearchBar_TagBTN ul a li{
+        width: 7vw;
+    }
+
+    .GH_MA_HopeList_SearchTool{
+        width: 40%;
+        height: 3vh;
+    }
+
+
 }
 
 
 
 
-/* ----------------- */
-/* ----------------------- */
-/* index 頁面最上層 第三個 1440*1024尺寸 */
-.GameHex_Index_GameSuggest{
-    /* 尺寸 */
-    width: auto;
-    /* height: 1024px; */
-    /* 邊線 */
-    border: 1px solid yellow;
-    position: relative;
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+
+@media (max-width: 900px) {
+    .GH_I_ShopArea_GameArea_GameCardList{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .discountPrice{
+        width: 50%;
+    }
+
+    .recomeGame_info_title p{
+        font-size: 20px;
+    }
+
+    .gameTag_Bigbox ul li{
+        font-size: 16px;
+    }
+
+    .AddToCart_BTN{
+        font-size: 18px;
+    }
+
+    .recomeGame_info_title ul li img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .discountPrice span{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .discountPrice p{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .GH_I_ShopArea_GameArea_TitleAndSearh p{
+        font-size: 28px;
+    }
+
+    .GH_I_ShopArea_SearchBar_SeeBTN{
+        width: 30%;
+    }
+
+    .BTN_Style_ProductTo_SearchName{
+        height: 4vh;
+        width: 5vw;
+    }
+
+    .GH_I_ShopArea_SearchBar_TagBTN{
+        width: 70%;
+    }
+
+    .GH_I_ShopArea_SearchBar{
+        width: 80%;
+        height: auto;
+    }
+
 }
