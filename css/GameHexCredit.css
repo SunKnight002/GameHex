@@ -183,6 +183,7 @@ table {
     /* 排版 */
     display: flex;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
     margin-bottom: 20px;
     /* 字體 */
@@ -194,10 +195,23 @@ table {
     color: #fff;
 }
 
-.Credit_Input_PayType p{
-    /* 排版 */
-    margin-right: 40px;
+.Credit_Input_PayType p{}
+
+.c01{
+    display: flex;
+    align-items: center;
 }
+
+.c02{
+    display: flex;
+    align-items: center;
+}
+
+.c03{
+    display: flex;
+    align-items: center;
+}
+
 
 input[type="checkbox"] {
     /* 移除外觀 */
@@ -562,6 +576,30 @@ input[type="checkbox"] {
         margin-bottom: 20px;
     }
 
+    .Credit_Input_Num input{
+        padding-left: 8px;
+    }
+
+    .Credit_Input_LimitDate input{
+        padding-left: 8px;
+    }
+
+    .Credit_Input_CardUserName input{
+        padding-left: 8px;
+    }
+
+    .Credit_Input_CardSafeNum input{
+        padding-left: 8px;
+    }
+
+    .Credit_Input_EmailAccount input{
+        padding-left: 8px;
+    }
+
+    .Credit_Input_Receipt input{
+        padding-left: 8px;
+    }
+
 }
 
 @media (max-width: 1280px) {
@@ -591,6 +629,11 @@ input[type="checkbox"] {
     .GameHex_CheckOut_Credit_Paragraph_01 {
         margin-bottom: 12px;
     }
+
+    .Credit_Input_PayType{
+        justify-content: space-between;
+    }
+
 }
 
 
@@ -658,7 +701,7 @@ input[type="checkbox"] {
 /* ----------------- RWD - Mobile Part ------------------------ */
 /* ----------------- RWD - Mobile Part ------------------------ */
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .GameHex_CheckOut_Credit_Area {
         flex-direction: column;
     }

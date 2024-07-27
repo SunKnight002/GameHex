@@ -30,19 +30,23 @@
         <!-- 這邊是 header的區域 logo圖片 -->
         <a class="header_Logo" href="index.html" target="_self"><img src="./img/logo.png" alt="GameHex Logo"></a>
         <!-- 這邊是 header的區域 ul區域 -->
-        <nav>
-            <ul>
-                <a href="GH_LandingPage.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>主打新作</li></a>
-                <a href="index.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>產品銷售</li></a>
-                <a href="GH_ProductCheckout.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>購物推車</li></a>
-                <a href="GH_WareHouse.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>遊戲倉庫</li></a>
-                <a href="GH_CompanyCoop.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>企業合作</li></a>
-                <a href="GH_MyAccount.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>願望清單</li></a>
-                <a href="GH_LoginPage.html" target="_self"><img src="./img/visibility_20dp.png" alt=""><li>登入/註冊</li></a>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="GH_LandingPage.html" target="_self">主打新作</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html" target="_self">產品銷售</a></li>
+                <li class="nav-item"><a class="nav-link" href="GH_ProductCheckout.html" target="_self">購物推車</a></li>
+                <li class="nav-item"><a class="nav-link" href="GH_WareHouse.html" target="_self">遊戲倉庫</a></li>
+                <li class="nav-item"><a class="nav-link" href="GH_CompanyCoop.html" target="_self">企業合作</a></li>
+                <li class="nav-item"><a class="nav-link" href="GH_MyAccount.html" target="_self">願望清單</a></li>
+                <li class="nav-item"><a class="nav-link" href="GH_LoginPage.html" target="_self">登入/註冊</a></li>
             </ul>
         </nav>
         <!-- 漢堡按鈕 -->
-        <div class="hanber"><img src="./img/set.svg" alt=""></div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
 
      <!-- 這邊是 main 內容的區域 -->
@@ -56,13 +60,13 @@
                 <div class="GH_WIP_OverRall_Info_Img">
                     <!-- 這邊放置 遊戲影片 預設自動靜音播放 -->
                     <div class="GH_WIP_OverRall_Info_Img_Video">
-                        <img src="./img/WIP_680x400_001.jpg" alt="">
+                        <img id="BG01" src="./img/WIP_680x400_001.jpg" alt="">
                     </div>
                     <!-- 這邊放置 遊戲縮圖 點選後放大圖 -->
                     <div class="GH_WIP_OverRall_Info_Img_Thumbnail">
-                        <img src="./img/WIP_200x120_001.jpg" alt="">
-                        <img src="./img/WIP_200x120_001.jpg" alt="">
-                        <img src="./img/WIP_200x120_001.jpg" alt="">
+                        <img id="Tb01" src="./img/WIP_200x120_001.jpg" alt="">
+                        <img id="Tb02" src="./img/WIP_200x120_001.jpg" alt="">
+                        <img id="Tb03" src="./img/WIP_200x120_001.jpg" alt="">
                     </div>
                 </div>
 
@@ -131,7 +135,7 @@
             <!-- 這邊放置 遊戲商品 行為按鈕 -->
             <section class="GH_WIP_OverRall_Behavior">
                 <!-- 新增到願望清單 按鈕 -->
-                <button id="BTN_ProductTo_HopeList" class="BTN_Style_ProductTo_HopeList" onclick="location.href='GH_MyAccount.html'">新增到願望清單</button>
+                <button id="BTN_ProductTo_HopeList" class="BTN_Style_ProductTo_HopeList" onclick="location.href='GH_MyAccount.html'">新增願望清單</button>
                 <!-- 加入購物車 按鈕 -->
                 <button id="BTN_ProductTo_Cart" class="BTN_Style_ProductTo_Cart" onclick="location.href='GH_AddToCart.html'">加入購物車</button>
                 <!-- 忽略此遊戲 按鈕 -->
@@ -165,35 +169,35 @@
 
         <!-- 這邊放置 遊戲廠商圖文特點介紹 -->
         <article class="GameHex_WorkInnerPage_Introduce">
-            <!-- 這邊放置 遊戲廠商圖文特點介紹 左側 -->
-            <section class="GH_WorkInnerPage_Introduce_Left">
-                <div class="GH_WorkInnerPage_Introduce_Left_Title">
-                    <p>01.</p>
-                    <span class="GH_WorkInnerPage_Introduce_Left_Title_Mid">Tittle</span>
-                    <span class="GH_WorkInnerPage_Introduce_Left_Title_Small">TextTextText</span>
-                </div>
-                <img src="./img/WIP_350x640_001.jpg" alt="">
-            </section>
+            <section class="box">
+                <!-- 這邊放置 遊戲廠商圖文特點介紹 左側 -->
+                <section class="GH_WorkInnerPage_Introduce_Left">
+                    <div class="GH_WorkInnerPage_Introduce_Left_Title">
+                        <p>01.</p>
+                        <span class="GH_WorkInnerPage_Introduce_Left_Title_Mid">Tittle</span>
+                        <span class="GH_WorkInnerPage_Introduce_Left_Title_Small">TextTextText</span>
+                    </div>
+                    <img src="./img/WIP_350x640_001.jpg" alt="">
+                </section>
 
-             <!-- 這邊放置 遊戲廠商圖文特點介紹 中側 -->
-            <section class="GH_WorkInnerPage_Introduce_Mid">
-                <img src="./img/WIP_400x350_001.jpg" alt="">
-                <div class="GH_WorkInnerPage_Introduce_Mid_TextArea">
-                    <p>Title</p>
-                    <span class="GH_WorkInnerPage_Introduce_Mid_Title_Mid">Text</span>
-                    <span class="GH_WorkInnerPage_Introduce_Mid_Title_Small01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consequatur reprehenderit, dignissimos consectetur doloremque magnam dicta amet adipisci quae! Quo sunt earum praesentium non numquam, hic dolor autem error dicta!</span>
-                    <span class="GH_WorkInnerPage_Introduce_Mid_Title_Small02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consequatur reprehenderit, dignissimos consectetur doloremque magnam dicta amet adipisci quae! Quo sunt earum praesentium non numquam, hic dolor autem error dicta!</span>
-                </div>
-            </section>
-            
-            <!-- 這邊放置 遊戲廠商圖文特點介紹 右側 -->
-            <section class="GH_WorkInnerPage_Introduce_Right">
-                <img src="./img/WIP_400x629_001.jpg" alt="">
-                <div class="GH_WorkInnerPage_Introduce_Right_TextArea">
-                    <p>Title</p>
-                    <span class="GH_WorkInnerPage_Introduce_Right_Title_Mid">Text</span>
-                    <span class="GH_WorkInnerPage_Introduce_Right_Title_Small01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consequatur reprehenderit, dignissimos consectetur doloremque magnam dicta amet adipisci quae! Quo su dolor autem error dicta!</span>
-                </div>
+                <!-- 這邊放置 遊戲廠商圖文特點介紹 中側 -->
+                <section class="GH_WorkInnerPage_Introduce_Mid">
+                    <img src="./img/WIP_400x350_001.jpg" alt="">
+                    <div class="GH_WorkInnerPage_Introduce_Mid_TextArea">
+                        <p>Title</p>
+                        <span class="GH_WorkInnerPage_Introduce_Mid_Title_Mid">Text</span>
+                        <span class="GH_WorkInnerPage_Introduce_Mid_Title_Small01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consequatur reprehenderit, dignissimos consectetur doloremque magnam dicta amet adipisci quae! Quo sunt earum praesentium non numquam, hic dolor autem error dicta!</span>
+                </section>
+                
+                <!-- 這邊放置 遊戲廠商圖文特點介紹 右側 -->
+                <section class="GH_WorkInnerPage_Introduce_Right">
+                    <img src="./img/WIP_400x629_001.jpg" alt="">
+                    <div class="GH_WorkInnerPage_Introduce_Right_TextArea">
+                        <p>Title</p>
+                        <span class="GH_WorkInnerPage_Introduce_Right_Title_Mid">Text</span>
+                        <span class="GH_WorkInnerPage_Introduce_Right_Title_Small01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consequatur reprehenderit, dignissimos consectetur doloremque magnam dicta amet adipisci quae! Quo su dolor autem error dicta!</span>
+                    </div>
+                </section>
             </section>
         </article>
 
@@ -229,7 +233,6 @@
                
                 <!-- 立即購買 按鈕 -->
                     <button id="BTN_ProductTo_BuyGameNow" class="BTN_Style_ProductTo_BuyGameNow" onclick="location.href='GH_AddToCart.html'">立即購買</button>
-           
             </section>
 
             <!-- 紅底banner -->
@@ -285,212 +288,141 @@
 
         <!-- 這邊放置 遊戲發行商其他產品公告 -->
         <article class="GameHex_WorkInnerPage_OtherGames">
-            <!-- 該公司第一款遊戲 -->
-            <section class="GH_WIP_OtherGames_Product01">
-                <!-- 第一款遊戲的標題 -->
-                <div class="GH_WIP_OtherGames_Product_Title">
-                    <p>01.</p>
-                    <span class="GH_WIP_OtherGames_Product_SubTitle01">Tittle</span>
-                    <span class="GH_WIP_OtherGames_Product_SubTitle02">TextTextText</span>
-                </div>
+            <section class="box02">
 
-                <div class="GH_WIP_OtherGames_Product01_Card">
-                    <!-- 小卡一號 -->
-                    <div class="recomeGame_Card">
-                        <!-- 小卡圖片 -->
-                        <div class="recomeGame_img">
-                            <img src="./img/GameCard_400x269Card_001.jpg" alt="">
-                            <!-- 小卡圖片上的 折價標籤 -->
-                            <div class="discountPrice">
-                                <span>-25%</span>
-                                <p>NT$350</p>
-                            </div>
-                            <!-- 小卡圖片上的 願望清單 按鈕 -->
-                            <button id="HopeList_0001" class="HopeList_BTN"><img src="./img/love.png" alt=""></button>
-                            
-                            <!--  小卡文字資訊 -->
-                            <div class="recomeGame_info">
-                                <!-- 小卡遊戲名稱 以及 評價星星 -->
-                                <div class="recomeGame_info_title">
-                                    <p>GameTitle</p>
-                                    <ul>
-                                        <li><img src="./img/star.png" alt=""></li>
-                                        <li><img src="./img/star.png" alt=""></li>
-                                        <li><img src="./img/star.png" alt=""></li>
-                                        <li><img src="./img/star.png" alt=""></li>
-                                        <li><img src="./img/star.png" alt=""></li>
-                                    </ul>
+
+                <section class="GH_WIP_OtherGames_Product01">
+                    <!-- 第一款遊戲的標題 -->
+                    <div class="GH_WIP_OtherGames_Product_Title">
+                        <p>01.</p>
+                        <span class="GH_WIP_OtherGames_Product_SubTitle01">Tittle</span>
+                        <span class="GH_WIP_OtherGames_Product_SubTitle02">TextTextText</span>
+                    </div>
+
+                    <div class="GH_WIP_OtherGames_Product01_Card">
+                        <!-- 小卡一號 -->
+                        <div class="recomeGame_Card">
+                            <!-- 小卡圖片 -->
+                            <div class="recomeGame_img">
+                                <img src="./img/GameCard_400x269Card_001.jpg" alt="">
+                                <!-- 小卡圖片上的 折價標籤 -->
+                                <div class="discountPrice">
+                                    <span>-25%</span>
+                                    <p>NT$350</p>
                                 </div>
-
-                                <!-- 遊戲的類型Tag  -->
-                                <div class="gameTag_Bigbox">
-                                    <ul>
-                                        <li>獨立遊戲</li>
-                                        <li>動作</li>
-                                        <li>多人連線</li>
-                                        <li>類魂遊戲</li>
-                                        <li>角色扮演</li>
-                                        <li>搶先體驗</li>
-                                    </ul>
-                                    <!-- 小卡文字上的 加入購物車 按鈕 -->
-
-                                    <button id="AddToCart_0001" class="AddToCart_BTN">加入購物車</button>
+                                <!-- 小卡圖片上的 願望清單 按鈕 -->
+                                <button id="HopeList_0001" class="HopeList_BTN"><img src="./img/love.png" alt=""></button>
+                                <!--  小卡文字資訊 -->
+                                <div class="recomeGame_info">
+                                    <!-- 小卡遊戲名稱 以及 評價星星 -->
+                                    <div class="recomeGame_info_title">
+                                        <p>GameTitle</p>
+                                        <ul>
+                                            <li><img src="./img/star.png" alt=""></li>
+                                            <li><img src="./img/star.png" alt=""></li>
+                                            <li><img src="./img/star.png" alt=""></li>
+                                            <li><img src="./img/star.png" alt=""></li>
+                                            <li><img src="./img/star.png" alt=""></li>
+                                        </ul>
+                                    </div>
+                                    <!-- 遊戲的類型Tag  -->
+                                    <div class="gameTag_Bigbox">
+                                        <ul>
+                                            <li>獨立遊戲</li>
+                                            <li>動作</li>
+                                            <li>多人連線</li>
+                                            <li>類魂遊戲</li>
+                                            <li>角色扮演</li>
+                                            <li>搶先體驗</li>
+                                        </ul>
+                                        <!-- 小卡文字上的 加入購物車 按鈕 -->
+                                        <button id="AddToCart_0001" class="AddToCart_BTN">加入購物車</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- 第一款遊戲的介紹 -->
-                <div class="GH_WIP_OtherGames_Product_Info">
-                    <p>Title</p>
-                    <span class="GH_WIP_OtherGames_Product_Info_SubTitle" >This Game is About....</span>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quo quae. Nesciunt, repellendus odio ipsa ullam exercitationem molestiae nemo autem dolore animi vero ipsum explicabo ad nostrum culpa non sequi.</span>
-                </div>
-            </section>
+                    <!-- 第一款遊戲的介紹 -->
+                    <div class="GH_WIP_OtherGames_Product_Info">
+                        <p>Title</p>
+                        <span class="GH_WIP_OtherGames_Product_Info_SubTitle" >This Game is About....</span>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quo quae. Nesciunt, repellendus odio ipsa ullam exercitationem molestiae nemo autem dolore animi vero ipsum explicabo ad nostrum culpa non sequi.</span>
+                    </div>
+                </section>
 
-            <!-- 推薦玩家購買的標題01 -->
-            <section class="GH_WIP_OtherGames_Title01">
-                <p>Maybe you'll like our other products !</p>
-            </section>
+                <!-- 推薦玩家購買的標題01 -->
+                <section class="GH_WIP_OtherGames_Title01"><p>Maybe you'll like our other products !</p></section>
 
-            <!-- 該公司第二款遊戲 -->
-            <section class="GH_WIP_OtherGames_Product02">
-                <!-- 第二款遊戲的標題 -->
-                <div class="GH_WIP_OtherGames_Product_Title">
-                    <p>02.</p>
-                    <span class="GH_WIP_OtherGames_Product_SubTitle01">Tittle</span>
-                    <span class="GH_WIP_OtherGames_Product_SubTitle02">TextTextText</span>
-                </div>
 
-                <!-- 小卡二號 -->
-                <div class="recomeGame_Card">
-                    <!-- 小卡圖片 -->
-                    <div class="recomeGame_img">
-                        <img src="./img/GameCard_400x269Card_002.jpg" alt="">
-                        <!-- 小卡圖片上的 折價標籤 -->
-                        <div class="discountPrice">
-                            <span>-25%</span>
-                            <p>NT$350</p>
-                        </div>
-                        <!-- 小卡圖片上的 願望清單 按鈕 -->
-                        <button id="HopeList_0001" class="HopeList_BTN"><img src="./img/love.png" alt=""></button>
-                        
-                        <!--  小卡文字資訊 -->
-                        <div class="recomeGame_info">
-                            <!-- 小卡遊戲名稱 以及 評價星星 -->
-                            <div class="recomeGame_info_title">
-                                <p>GameTitle</p>
-                                <ul>
-                                    <li><img src="./img/star.png" alt=""></li>
-                                    <li><img src="./img/star.png" alt=""></li>
-                                    <li><img src="./img/star.png" alt=""></li>
-                                    <li><img src="./img/star.png" alt=""></li>
-                                    <li><img src="./img/star.png" alt=""></li>
-                                </ul>
-                            </div>
+                <section class="GH_WIP_OtherGames_Product01">
+                    <!-- 第一款遊戲的標題 -->
+                    <div class="GH_WIP_OtherGames_Product_Title">
+                        <p>01.</p>
+                        <span class="GH_WIP_OtherGames_Product_SubTitle01">Tittle</span>
+                        <span class="GH_WIP_OtherGames_Product_SubTitle02">TextTextText</span>
+                    </div>
 
-                            <!-- 遊戲的類型Tag  -->
-                            <div class="gameTag_Bigbox">
-                                <ul>
-                                    <li>獨立遊戲</li>
-                                    <li>動作</li>
-                                    <li>多人連線</li>
-                                    <li>類魂遊戲</li>
-                                    <li>角色扮演</li>
-                                    <li>搶先體驗</li>
-                                </ul>
-                                <!-- 小卡文字上的 加入購物車 按鈕 -->
-                                <button id="AddToCart_0001" class="AddToCart_BTN">加入購物車</button>
+                    <div class="GH_WIP_OtherGames_Product01_Card">
+                        <!-- 小卡一號 -->
+                        <div class="recomeGame_Card">
+                            <!-- 小卡圖片 -->
+                            <div class="recomeGame_img">
+                                <img src="./img/GameCard_400x269Card_001.jpg" alt="">
+                                <!-- 小卡圖片上的 折價標籤 -->
+                                <div class="discountPrice">
+                                    <span>-25%</span>
+                                    <p>NT$350</p>
+                                </div>
+                                <!-- 小卡圖片上的 願望清單 按鈕 -->
+                                <button id="HopeList_0001" class="HopeList_BTN"><img src="./img/love.png" alt=""></button>
+                                <!--  小卡文字資訊 -->
+                                <div class="recomeGame_info">
+                                    <!-- 小卡遊戲名稱 以及 評價星星 -->
+                                    <div class="recomeGame_info_title">
+                                        <p>GameTitle</p>
+                                        <ul>
+                                            <li><img src="./img/star.png" alt=""></li>
+                                            <li><img src="./img/star.png" alt=""></li>
+                                            <li><img src="./img/star.png" alt=""></li>
+                                            <li><img src="./img/star.png" alt=""></li>
+                                            <li><img src="./img/star.png" alt=""></li>
+                                        </ul>
+                                    </div>
+                                    <!-- 遊戲的類型Tag  -->
+                                    <div class="gameTag_Bigbox">
+                                        <ul>
+                                            <li>獨立遊戲</li>
+                                            <li>動作</li>
+                                            <li>多人連線</li>
+                                            <li>類魂遊戲</li>
+                                            <li>角色扮演</li>
+                                            <li>搶先體驗</li>
+                                        </ul>
+                                        <!-- 小卡文字上的 加入購物車 按鈕 -->
+                                        <button id="AddToCart_0001" class="AddToCart_BTN">加入購物車</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- 該遊戲的介紹 -->
-                <div class="GH_WIP_OtherGames_Product_Info">
-                    <p>Title</p>
-                    <span class="GH_WIP_OtherGames_Product_Info_SubTitle" >This Game is About....</span>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quo quae. Nesciunt, repellendus odio ipsa ullam exercitationem molestiae nemo autem dolore animi vero ipsum explicabo ad nostrum culpa non sequi.</span>
-                </div>
-            </section>
-
-            <!-- 推薦玩家購買的標題02 -->
-            <section class="GH_WIP_OtherGames_Title02">
-                <p>We hope you like our works !</p>
-            </section>
-
-            <!-- 該公司第三款遊戲 -->
-            <section class="GH_WIP_OtherGames_Product03">
-                <!-- 第三款遊戲的標題 -->
-                <div class="GH_WIP_OtherGames_Product_Title">
-                    <p>01.</p>
-                    <span class="GH_WIP_OtherGames_Product_SubTitle01">Tittle</span>
-                    <span class="GH_WIP_OtherGames_Product_SubTitle02">TextTextText</span>
-                </div>
-
-                <!-- 小卡三號 -->
-                <div class="recomeGame_Card">
-                    <!-- 小卡圖片 -->
-                    <div class="recomeGame_img">
-                        <img src="./img/GameCard_400x269Card_001.jpg" alt="">
-                        <!-- 小卡圖片上的 折價標籤 -->
-                        <div class="discountPrice">
-                            <span>-25%</span>
-                            <p>NT$350</p>
-                        </div>
-                        <!-- 小卡圖片上的 願望清單 按鈕 -->
-                        <button id="HopeList_0001" class="HopeList_BTN"><img src="./img/love.png" alt=""></button>
-                        
-                        <!--  小卡文字資訊 -->
-                        <div class="recomeGame_info">
-                            <!-- 小卡遊戲名稱 以及 評價星星 -->
-                            <div class="recomeGame_info_title">
-                                <p>GameTitle</p>
-                                <ul>
-                                    <li><img src="./img/star.png" alt=""></li>
-                                    <li><img src="./img/star.png" alt=""></li>
-                                    <li><img src="./img/star.png" alt=""></li>
-                                    <li><img src="./img/star.png" alt=""></li>
-                                    <li><img src="./img/star.png" alt=""></li>
-                                </ul>
-                            </div>
-
-                            <!-- 遊戲的類型Tag  -->
-                            <div class="gameTag_Bigbox">
-                                <ul>
-                                    <li>獨立遊戲</li>
-                                    <li>動作</li>
-                                    <li>多人連線</li>
-                                    <li>類魂遊戲</li>
-                                    <li>角色扮演</li>
-                                    <li>搶先體驗</li>
-                                </ul>
-                                <!-- 小卡文字上的 加入購物車 按鈕 -->
-                                <button id="AddToCart_0001" class="AddToCart_BTN">加入購物車</button>
-                            </div>
-                        </div>
+                    <!-- 第一款遊戲的介紹 -->
+                    <div class="GH_WIP_OtherGames_Product_Info">
+                        <p>Title</p>
+                        <span class="GH_WIP_OtherGames_Product_Info_SubTitle" >This Game is About....</span>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quo quae. Nesciunt, repellendus odio ipsa ullam exercitationem molestiae nemo autem dolore animi vero ipsum explicabo ad nostrum culpa non sequi.</span>
                     </div>
-                </div>
-                <!-- 該遊戲的介紹 -->
-                <div class="GH_WIP_OtherGames_Product_Info">
-                    <p>Title</p>
-                    <span class="GH_WIP_OtherGames_Product_Info_SubTitle" >This Game is About....</span>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quo quae. Nesciunt, repellendus odio ipsa ullam exercitationem molestiae nemo autem dolore animi vero ipsum explicabo ad nostrum culpa non sequi.</span>
-                </div>
-            </section>
+                </section>
+
+
+                <!-- 推薦玩家購買的標題02 -->
+                <section class="GH_WIP_OtherGames_Title02"><p>We hope you like our works !</p></section>
+
+
+                </section>
         </article>
-    
-
-        <!-- 這邊放置 遊戲反饋留言專區 -->
-         <!-- 之後有時間補寫 -->
-        <!-- <article class="GameHex_WorkInnerPage_Feedback">
-            <section class="GH_WIP_Feedback_Comment_Self">
-                <div class="GH_WIP_Feedback_Avatar"></div>
-                <div class="GH_WIP_Feedback_TextArea"></div>
-                <div class="GH_WIP_Feedback_BTN"></div>
-            </section>
-            <section class="GH_WIP_Feedback_Comment_Guys"></section>
-        </article> -->
     </main>
 </body>
 <script src="temp.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/GameShopInner.js"></script>
 </html>
