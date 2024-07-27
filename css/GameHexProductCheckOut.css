@@ -30,7 +30,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    max-width: 1440px;
     /* 排版 */
     margin: 0 auto;
 }
@@ -56,36 +55,16 @@ table {
 
 .cheakOutMain {
     /* 尺寸 */
-    width: 1440px;
-    height: 923px;
-
-    /* 排版 */
-    position: relative;
-
-    /* 外觀 */
-    /* border: 1px solid red; */
-}
-
-.cheakOutMain::before {
-    /* 尺寸 */
     width: 100%;
-    height: 100%;
-
-    /* 樣貌 */
-    content: "";
-    filter: brightness(30%) blur(5px);
+    height: 90vh;
     background-image: url(../img/BC_BG_001.png);
-
     /* 排版 */
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-size: cover;
-
-    /* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    background-repeat: no-repeat;
 }
 
 /* --------------------------------------------------------------- */
@@ -188,43 +167,28 @@ table {
 
 /* -------------------------------------------------------------- */
 /* 這邊是 內容 下層的區域 */
-
 .cheakOutMain_Bottom {
-    /* 外觀 */
-    /* border: 1px solid blue; */
-
     /* 排版 */
     display: flex;
-    position: absolute;
-    margin-top: 182px;
-
+    align-items: center;
+    justify-content: space-around;
     /* 尺寸 */
-    width: 1440px;
-    height: 693.5px;
+    width: 100%;
 }
 
 /* ------------------------------------------------------------ */
 /* 這邊是 內容 下層 左側的區域 */
 .cheakOutMain_Bottom_L {
-    /* 外觀 */
-    /* border: 1px solid green; */
-
     /* 尺寸 */
-    width: 871px;
-    height: 608px;
-
-    /* 排版 */
-    margin-left: 119px;
+    width: 60%;
 }
 
 .cheakOutMain_Bottom_L>h1 {
     /* 尺寸 */
     font-size: 24px;
     font-weight: bold;
-
     /* 外觀 */
     color: #fff;
-
     /* 排版 */
     margin-top: 12px;
     margin-bottom: 8px;
@@ -235,144 +199,126 @@ table {
 /*  這邊是購物車 最外層 */
 .cheakOutMain_Bottom_L_BigBox {
     /* 尺寸 */
-    width: 871px;
-    height: 552px;
-
+    width: 100%;
     /* 外觀 */
     background-color: #414141;
     border-radius: 8px;
-
     /* 排版 */
-    display: flex;
-    flex-direction: column;
-    /* ScrollBar */
-    overflow-y: scroll;
-    /* 添加垂直滾動條 */
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    padding: 20px;
 }
-
 
 /* 這邊是購物車 內層的小卡01 */
 .cheakOutMain_Bottom_L_Box01 {
     /* 尺寸 */
-    width: 800px;
-    height: 152px;
-
+    width: 100%;
     /* 外觀 */
     background-color: #1B2838;
-
     /* 排版 */
-    margin-top: 24px;
-    margin-left: 35px;
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
 }
 
 .cheakOutMain_Bottom_L_Box01>img {
     /* 尺寸 */
-    width: 200px;
-    height: 120px;
-    /* 排版 */
-    margin-left: 30px;
-    margin-top: 16px;
+    width: auto;
 }
 
 .gameInfo {
     /* 排版 */
-    display: flex;
-    flex-direction: column;
-    margin-left: 80px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
 }
 
 .gameInfo>p {
     /* 尺寸 */
     font-size: 18px;
     font-weight: bold;
-
     /* 外觀 */
     color: #fff;
-
     /* 字體 */
     font-family: "Noto Sans TC, sans-serif,Roboto";
-
-    /* 排版 */
-    margin-bottom: 16px;
-    margin-top: 20px;
 }
 
 .gameInfo .playform_Icon {
     /* 排版 */
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 16px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
 }
 
-.gameInfo .playform_Icon img {
-    /* 排版 */
-    margin-right: 8px;
-}
+.gameInfo .playform_Icon img {}
 
 .discount_Tag {
     /* 尺寸 */
-    width: 67px;
-    height: 32px;
-    font-size: 14px;
-    font-weight: 400;
-
+    width: 100%;
+    height: 4vh;
+    font-size: 20px;
+    font-weight: bold;
     /* 外觀 */
     border: 1px solid black;
     background-color: #F8442D;
     color: #fff;
-
     /* 字體 */
     font-family: "Roboto";
-
     /* 排版 */
     text-align: center;
-    line-height: 32px;
+    line-height: 4vh;
 }
 
 .price_Area {
     /* 排版 */
-    text-align: left;
-    margin-left: 80px;
-    margin-top: 47px;
-
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
     /* 外觀 */
     color: #fff;
-
     /* 字體 */
     font-family: "Roboto";
 }
 
 .price_Area p {
     /* 尺寸 */
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 400;
-
-    /* 排版 */
-    margin-bottom: 16px;
-    margin-right: 33px;
 }
 
 .price_Area span {
     /* 尺寸 */
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 500;
+    text-decoration: line-through;
 }
 
 .cancelBuy_BTN {
     /* 尺寸 */
-    width: 140px;
-    height: 60px;
-
+    width: 50%;
+    height: 6vh;
+    font-size: 20px;
+    font-weight: bold;
     /* 外觀 */
     background-color: #F8442D;
     color: #fff;
     border-radius: 16px;
     border: 0px solid black;
-
-    /* 排版 */
-    margin-top: 47px;
-    margin-bottom: 47px;
 }
 
 .cancelBuy_BTN:hover {
@@ -386,15 +332,9 @@ table {
 /* 這邊是購物車 內層的小卡02 */
 .cheakOutMain_Bottom_L_Box02 {
     /* 尺寸 */
-    width: 800px;
-    height: 152px;
-
+    width: 100%;
     /* 外觀 */
     background-color: #1B2838;
-
-    /* 排版 */
-    margin-top: 24px;
-    margin-left: 35px;
     display: flex;
 }
 
@@ -410,15 +350,9 @@ table {
 /* 這邊是購物車 內層的小卡03 */
 .cheakOutMain_Bottom_L_Box03 {
     /* 尺寸 */
-    width: 800px;
-    height: 152px;
-
+    width: 100%;
     /* 外觀 */
     background-color: #1B2838;
-
-    /* 排版 */
-    margin-top: 24px;
-    margin-left: 35px;
     display: flex;
 }
 
@@ -489,29 +423,19 @@ table {
 .cheakOutMain_Bottom_R {
     /* 外觀 */
     border: 1px solid ghostwhite;
-
     /* 尺寸 */
-    width: 318px;
-    height: 247px;
-
-    /* 排版 */
-    margin-top: 180.5px;
-    margin-left: 8px;
+    width: 30%;
 }
 
 .cheakOutMain_Bottom_R_Gauge {
     /* 尺寸 */
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
-
     /* 字體 */
     font-family: "Roboto";
-
     /* 排版 */
     text-align: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
-
+    padding: 8px 0;
     /* 外觀 */
     background-color: rgba(255, 255, 255, 0.5);
     border-top: 1px solid #fff;
@@ -522,21 +446,20 @@ table {
     /* 外觀 */
     background-color: rgba(255, 255, 255, 0.5);
     border-bottom: 1px solid #fff;
-
     /* 排版 */
-    padding-left: 9.5px;
-    padding-bottom: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap: 40px;
 }
 
 .item01 {
     /* 排版 */
     display: flex;
     align-items: center;
-    padding-top: 20px;
-
+    justify-content: space-around;
     /* 尺寸 */
     font-size: 16px;
-
     /* 字體 */
     font-family: "Roboto";
 }
@@ -545,11 +468,9 @@ table {
     /* 排版 */
     display: flex;
     align-items: center;
-    margin-top: 12px;
-
+    justify-content: space-around;
     /* 尺寸 */
     font-size: 16px;
-
     /* 字體 */
     font-family: "Roboto";
 }
@@ -558,11 +479,9 @@ table {
     /* 排版 */
     display: flex;
     align-items: center;
-    margin-top: 12px;
-
+    justify-content: space-around;
     /* 尺寸 */
     font-size: 16px;
-
     /* 字體 */
     font-family: "Roboto";
 }
@@ -571,23 +490,26 @@ table {
     /* 排版 */
     display: flex;
     align-items: center;
-    margin-top: 12px;
-
+    justify-content: space-around;
     /* 尺寸 */
     font-size: 16px;
-
     /* 字體 */
     font-family: "Roboto";
 }
 
 .itemTitle {
-    /* 排版 */
-    margin-right: 124px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .itemType {
-    /* 排版 */
-    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.itemPrice{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .cheakOutMain_Bottom_R_Total {
@@ -597,39 +519,26 @@ table {
 
 .priceTotla {
     /* 尺寸 */
-    font-size: 20px;
-
+    font-size: 28px;
+    font-weight: bold;
     /* 字體 */
     font-family: "Roboto";
-
     /* 排版 */
     display: flex;
-    padding-left: 42px;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    justify-content: space-around;
+    padding: 20px 0;
 }
 
-.TotalTitle {
-    /* 排版 */
-    margin-right: 128px;
-}
+.TotalTitle {}
 
 
 
 /* ------------------------------------------------------------ */
 /* 這邊是 內容 下層 下側的區域 */
 .cheakOutMain_Bottom_B {
-    /* 外觀 */
-    /* border: 1px solid gold; */
-
     /* 尺寸 */
     width: 649px;
     height: 67px;
-
-    /* 排版 */
-    position: absolute;
-    top: 810px;
-    left: 395px;
 }
 
 .clearlBuy_BTN {
