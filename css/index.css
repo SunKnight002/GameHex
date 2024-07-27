@@ -667,7 +667,6 @@ body {
     box-shadow: none;
     /*外觀圖樣 */
     background-image:url(../img/Vector-Right.png);
-    background-size: fit;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -753,6 +752,9 @@ body {
         width: 70%;
     }
 
+    .GH_I_ShopArea_GameTag{
+        width: 15%;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -788,7 +790,6 @@ body {
     .GH_I_ShopArea_GameTag_FromGame{
         padding: 12px 12px 0 12px;
     }
-
 }
 
 
@@ -820,8 +821,6 @@ body {
         width: 40%;
         height: 3vh;
     }
-
-
 }
 
 
@@ -832,6 +831,7 @@ body {
 /* ----------------- RWD - Mobile Part ------------------------ */
 
 @media (max-width: 900px) {
+
     .GH_I_ShopArea_GameArea_GameCardList{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -885,8 +885,48 @@ body {
     }
 
     .GH_I_ShopArea_SearchBar{
-        width: 80%;
-        height: auto;
+        display: none;
     }
 
+    .GameFilterStyle{
+        width: 35%;
+    }
+
+    .GameFilterStyle:optional{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .GH_I_ShopArea_GameArea{
+        width: 80%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .GH_I_ShopArea_GameArea_TitleAndSearh p{
+        font-size: 20px;
+    }
+
+    .GameFilterStyle{
+        font-size: 16px;
+    }
+
+    .GH_I_ShopArea_GameArea{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .GH_I_ShopArea_GameArea_TitleAndSearh{
+        flex-direction: column;
+        height: 6vh;
+    }
+
+    .GameFilterStyle{
+        width: 100%;
+    }
+
+    
 }

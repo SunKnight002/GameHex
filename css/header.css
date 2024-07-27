@@ -2,6 +2,11 @@
 /* 開始進行html5 寫法更正 */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------- 這邊為logo圖片 專用CSS ------------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 header {
     /* 尺寸 */
@@ -10,28 +15,20 @@ header {
     background-color: #000000;
     /* 排版 */
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 .header_Logo img{
     /* 尺寸 */
-    width: 142px;
-    height: 60px;
+    width: 100%;
+    height: 6vh;
     /* 排版 */
     display: block;
 }
-.hanber > img{
-    /* 尺寸 */
-    width: 40px;
-    height: 40px;
-    /* 顯示 */
-    display: none;
-    /* 排版 */
-    text-align: center;
-}
+
 .header_Logo a{
     /* 排版 */
     display: block;
@@ -39,66 +36,78 @@ header {
     width: auto;
     height: auto;
 }
-header ul{       
-    /* 排版 */
-    display: flex;
-}
-header ul > a{
-    /* 外觀 */
+
+.nav-link{
+    text-decoration: none;
     color: #fff;
-    Text-decoration:none;
-    /* 排版 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-header ul > a > img{
-    /* 尺寸 */
-    width: 20px;
-    height: 20px;
-    /* 排版 */
-    display: block;
-    text-align: center;
-    margin-right: 8px;
-}
-header ul > a > li{
-    /* 外觀 */
-    font-size: 18px;
-    /* for 中文字體 */
+    transition: 0.7s ease;
+    font-size: 24px;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    /* 排版 */
-    margin-right: 36px;
-}
-header ul > a > li:hover{
-    /* 外觀 */
-    border-bottom: 2px solid orange;
-    /* 尺寸 */
-    display: block;
-    width: auto;
-    /* 排版 */
-    padding-bottom: 12px;
 }
 
+.nav-link:hover{
+    color: dodgerblue;
+}
+
+.navbar{
+    width: 90%;
+    min-height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.nav-item{}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition:all 0.3s ease-in-out ;
+    transition:all 0.3s ease-in-out ;
+    background-color: #fff;
+}
 
 /* ----------------- RWD ----------------------- Start ---------------------- */
 /* ----------------- RWD ----------------------- PC ---------------------- */
+@media (max-width: 1920px) {}
 
-@media (max-width: 1280px) {
-    /* 在小於1280px的裝置上應用這些CSS規則 */
-    header {
-        padding-top: 4px;
-        padding-bottom: 4px;
+@media (max-width: 1536px) {
+    .nav-menu{
+        gap: 28px;
     }
-
 }
 
+
+
+@media (max-width: 1280px) {}
+
 @media (max-width: 1100px) {
-    /* 在小於1160px的裝置上應用這些CSS規則 */
-    header ul > a > li{
-        margin-right: 12px;
+
+    .nav-menu{
+        gap: 12px;
     }
+
+    .navbar{
+        width: 80%;
+    }
+
 }
 
 /* ----------------- RWD ----------------------- Start ---------------------- */
@@ -106,32 +115,87 @@ header ul > a > li:hover{
 
 @media (max-width: 968px) {
     /* 在小於968px的裝置上應用這些CSS規則 */
+
     header{
-        justify-content: space-between;
+        justify-content: space-around;
     }
+
     header ul{
         display: none;
     }
+
     .hanber > img{
         display: block;
-        margin-right: 40px;
     }
-    .header_Logo img{
-        /* 排版 */
-        margin-left: 40px;
+
+    .header_Logo img{}
+
+    .navbar{
+        width: 60%;
+    }
+
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(125, 125, 125, 0.7);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 5;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+    
+    .nav-menu.active{
+        left: 0;
     }
 }
-
 
 /* ----------------- RWD ----------------------- Start ---------------------- */
 /* ----------------- RWD ----------------------- Mobile ---------------------- */
 
-@media (max-width: 430px) {
+@media (max-width: 600px) {
+
+    .navbar{
+        width: 40%;
+    }
+
     header {
         padding-top: 8px;
         padding-bottom: 8px;
     }
-    .hanber > img {
-        margin-right: 20px;
+
+    .nav-menu{
+        top: 70px;
     }
+}
+
+
+
+@media (max-width: 430px) {
+
+
+
 }
