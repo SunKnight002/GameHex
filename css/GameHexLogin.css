@@ -429,7 +429,7 @@ table {
 /* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
 @media (max-width: 1100px) {
     .LoginPageMain01 {
-        height: 100vh;
+        height: 120vh;
     }
 
     .LoginPageMain01_Left h1 {

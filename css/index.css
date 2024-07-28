@@ -68,12 +68,6 @@ table {
 /* ---------------------------------------------------------------------- */
 /* -------------- 以下CSS區域為 輪播 使用  ------------------- */
 
-html,
-body {
-  /* position: relative; */
-  /* height: 100%; */
-}
-
 body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;

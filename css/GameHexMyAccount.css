@@ -564,7 +564,7 @@ table {
     .GH_MA_HopeList_GameCard {
         flex-direction: column;
         width: 70%;
-        height: 25vh;
+        height: 30vh;
     }
 
     .GH_MA_HopeList_SortTool {
@@ -580,10 +580,19 @@ table {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 8px;
     }
 
     .BTN_Style_ProductTo_BuyInSec {
         width: 160px;
         height: 50px;
+    }
+
+    .GH_MA_HopeList_SearchBox{
+        padding: 12px;
+    }
+
+    .GameHex_MyAccount_HopeList{
+        height: 110vh;
     }
 }

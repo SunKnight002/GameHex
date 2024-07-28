@@ -2107,6 +2107,7 @@ table {
 
 	.GH_WIP_OtherGames_Product_Info p{
 		margin-bottom: 0;
+		font-size: 24px;
 	}
 
 	.BTN_Style_ProductTo_HopeList{
@@ -2133,7 +2134,7 @@ table {
 	}
 
 	.GH_WIP_OtherGames_Title01{
-		font-size: 24px;
+		font-size: 20px;
 	}
 
 	.GH_WIP_OtherGames_Title02{
@@ -2173,6 +2174,13 @@ table {
 		display: none;
 	}
 
+	.GH_WIP_OverRall_Info_Text_Publisher{
+		display: none;
+	}
+
+	.GH_WIP_OverRall_Info_Text_GameView{
+		display: none;
+	}
 }
 
 

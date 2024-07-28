@@ -47,16 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-.wrap{
-    /* 尺寸 */
-    width: 1440px;
-    height: auto;
-
-    /* 排版 */
-    margin: 0 auto;
-}
-
-
 /* -------------------------------------------------------------------------------- */
 /* 此處開始為 main01 之 視覺設定 */
 
@@ -64,42 +54,28 @@ table {
 .main01{
 	/* 外觀 */
 	background-color: #2F2F2F;
-	/* border:  1px solid orange; */
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
-
 
 .main01 h1{
 	/* 尺寸 */
 	font-size: 40px;
-
 	/* 外觀 */
 	color: #fff;
-
 	/* 字體 */
 		/* for 中文字體 */
 		font-family: "Noto Sans TC", sans-serif;
 		font-weight: bold;
 		font-style: normal;
-
 	/* 排版 */
 	text-align: center;
-	padding-top: 40px;
-	margin-bottom: 20px;
+	margin: 20px 0;
 }
-
-.main01_img_CarouselArea{
-	/* 尺寸  */
-	/* height: 800px; */
-	height: 600px;
-
-	/* 外觀 */
-	/* border: 1px solid green; */
-
-	/* 排版 */
-	display: flex;
-	position: relative;
-}
-
 
 /* --------------------------------------------------------------------------------------------- */
 /* 此處開始為 卡片01 */
@@ -281,88 +257,67 @@ table {
 .main01_img_scroll{
 	/* 外觀 */
 	background-color: #2F2F2F;
-
-	/* 排版 */
-	margin-top: 30px;
-	margin-bottom: 32px;
+	width: 60%;
 }
-
 
 .main01_img_scroll ul{
 	/* 排版 */
 	display: flex;
 	justify-content: center;
+	justify-content: space-around;
 }
 
 .main01_img_scroll li{
-	/* 排版 */
-	margin-right: 24px;
+	display:flex;
+	align-items: center;
 }
-
 
 /* --------------------------------------------------------------------------------------------- */
 /* 此處開始為 main01 下方的紅色底部 */
 
 .main01_footer{
 	/* 尺寸 */
-	height: 124px;
-
+	width: 100%;
+	height: 10vh;
 	/* 外觀 */
 	background-color: #FF5252;
-
 	/* 排版 */
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 
 }
 
 .main01_footer h3{
 	/* 尺寸 */
 	font-size: 36px;
-
 	/* 外觀 */
 	color: #fff;
-
 	/* 字體 */
 			/* for 中文字體 */
 			font-family: "Noto Sans TC", sans-serif;
 			font-weight: bold;
 			font-style: normal;
-
 	/* 排版 */
 	text-align: center;
-	margin-top: 44px;
-	margin-bottom: 44px;
-	margin-left: 235px;
-	margin-right: 340px;
-
 }
 
 .main01_agelimit{
 	/* 排版 */
+	width: 20%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-
+	justify-content: space-around;
+	padding: 16px;
 	/* 外觀 */
 	background-color: #3E3E3E;
 }
 
-.main01_agelimit img{
-	/* 排版 */
-	margin-top: 8px;
-	margin-bottom: 8px;
-	margin-left: 12px;
-}
+.main01_agelimit img{}
 
 .main01_agelimit p{
-	/* 排版 */
-	margin:8px 12px;
-	margin-left: 20px;
-
 	/* 外觀 */
 	color: #fff;
-
 	/* 字體 */
 	font-size: 14px;
 	line-height: 16px;
@@ -376,50 +331,31 @@ table {
 
 .main02{
 	/* 尺寸 */
-	width: auto;
-	height: 1024px;
-	
-	/* 排版 */
-	position: relative;
-	/* border: 1px solid red; */
-}
-
-.main02::before{
-	/* 尺寸 */
 	width: 100%;
-	height: 1024px;
-
-	/* 外觀 */
-	content: "";
-	filter: brightness(50%) blur(5px);
-
-	/* 排版 */
-	display: block;
+	height: 100vh;
 	background-size: cover;
 	background-image: url(../img/BC_BG_001.png);
-	position: absolute;
-	/* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box{
+	width: 90%;
+	margin: 0 auto;
 }
 
 .main02_Title01{
 	/* 尺吋 */
 	font-size: 40px;
-
 	/* 字體 */
-				/* for 中文字體 */
-				font-family: "Noto Sans TC", sans-serif;
-				font-weight: bold;
-				font-style: normal;
+	/* for 中文字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
 	/* 排版 */
-	margin-bottom: 16px;
-	margin-left: 118px;
-	margin-top: 104px;
-	position: absolute;
-
+	margin-bottom: 40px;
 	/* 外觀 */
 	color: #fff;
 }
@@ -427,111 +363,88 @@ table {
 .main02_Title02{
 	/* 尺吋 */
 	font-size: 80px;
-
 	/* 字體 */
-				/* for 中文字體 */
-				font-family: "Noto Sans TC", sans-serif;
-				font-weight: bold;
-				font-style: normal;
-	/* 排版 */
-	margin-left: 118px;
-	margin-top: 178px;
-	position: absolute;
-
+	/* for 中文字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
 	/* 外觀 */
 	color: #fff;
+	margin-bottom: 40px;
 }
 
 .main02_content{
-	
 	/* 排版 */
-	display: flex;
-	position: absolute;
-	top: 313px;
-	left: 130px;
-
-	/* 外觀 */
-	/* border: 1px solid blue; */
-
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-rows: repeat(1,1fr);
+	grid-template-columns: repeat(4,1fr);
+	gap: 20px;
 	/* 尺寸 */
-	width: 1180px;
-	height: 620px;
-	
+	width: 100%;
 }
 
 /* ------------------------------------------------------------------------------ */
 /* 以下開始是 main02 的 第一張 卡片 */
 
+/* 了解更多按鈕 */
+.understandUS_btn{
+    /* 尺寸 */
+    width: 213px;
+    height: 67px;
+    font-size: 20px;
+    font-weight: bold;
+    /* 外觀 */
+    background-image: url(../img/BTN_001.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    /* 移除預設外觀 */
+    border: none;
+    background-color: transparent;
+    /* 排版 */
+    line-height: 67px;
+    text-align: center;
+	margin: 0 auto;
+}
+
+
 .main02_box1{
 	/* 外觀 */
 	border: 1px solid #fff;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
-
-	/* 排版 */
-	position: absolute;
-
 	/* 尺寸 */
-	width: 280px;
-	height: 620px;
-
+	width: 100%;
+	height: 60vh;
+	padding: 30px;
 	/* 顯示 */
 	opacity: 0.1;
+	display: flex;
+	flex-direction: column;
 }
 
-.main02_Title03{
-	/* 尺吋 */
-	font-size: 80px;
-
-	/* 字體 */
-				/* for 中文字體 */
-				font-family: "Noto Sans TC", sans-serif;
-				font-weight: bold;
-				font-style: normal;
-	/* 排版 */
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-top: 40px;
-
-	/* 外觀 */
-	color: #fff;
-}
 
 .main02_Title04{
 	/* 尺吋 */
 	font-size: 36px;
-
 	/* 字體 */
-				/* for 中文字體 */
-				font-family: "Noto Sans TC", sans-serif;
-				font-weight: bold;
-				font-style: normal;
-	/* 排版 */
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-top: 20px;
-	
+	/* for 中文字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
 	/* 外觀 */
 	color: #fff;
 }
 
 .main02_img01{
-	/* 排版 */
-	margin-left: 36px;
-	margin-top: 24px;
-	margin-bottom: 60px;
+	margin: 20px 0;
 }
-
-
 
 .main02_box1 p{
 	/* 尺吋 */
 	font-size: 16px;
-
-	/* 排版 */
-	margin-left: 30px;
-	margin-right: 30px;
 	margin-bottom: 80px;
-
 	/* 外觀 */
 	color: #fff;
 }
@@ -562,71 +475,32 @@ table {
 	/* 外觀 */
 	border: 1px solid #fff;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
-
-	/* 排版 */
-	position: absolute;
-	margin-left: 300px;
-
 	/* 尺寸 */
-	width: 280px;
-	height: 620px;
-
+	width: 100%;
+	height: 60vh;
+	padding: 30px;
 	/* 顯示 */
 	opacity: 0.1;
+	display: flex;
+	flex-direction: column;
 }
 
 .main02_Title03{
 	/* 尺吋 */
 	font-size: 80px;
-
 	/* 字體 */
-				/* for 中文字體 */
-				font-family: "Noto Sans TC", sans-serif;
-				font-weight: bold;
-				font-style: normal;
-	/* 排版 */
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-top: 40px;
-
+	/* for 中文字體 */
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: bold;
+	font-style: normal;
 	/* 外觀 */
 	color: #fff;
-}
-
-.main02_Title04{
-	/* 尺吋 */
-	font-size: 36px;
-
-	/* 字體 */
-				/* for 中文字體 */
-				font-family: "Noto Sans TC", sans-serif;
-				font-weight: bold;
-				font-style: normal;
-	/* 排版 */
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-top: 20px;
-	
-	/* 外觀 */
-	color: #fff;
-}
-
-.main02_img01{
-	/* 排版 */
-	margin-left: 36px;
-	margin-top: 24px;
-	margin-bottom: 60px;
 }
 
 .main02_box2 p{
 	/* 尺吋 */
 	font-size: 16px;
-
-	/* 排版 */
-	margin-left: 30px;
-	margin-right: 30px;
 	margin-bottom: 80px;
-
 	/* 外觀 */
 	color: #fff;
 }
@@ -657,71 +531,20 @@ table {
 	/* 外觀 */
 	border: 1px solid #fff;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
-
-	/* 排版 */
-	position: absolute;
-	margin-left: 600px;
-
 	/* 尺寸 */
-	width: 280px;
-	height: 620px;
-
+	width: 100%;
+	height: 60vh;
+	padding: 30px;
 	/* 顯示 */
 	opacity: 0.1;
-}
-
-.main02_Title03{
-	/* 尺吋 */
-	font-size: 80px;
-
-	/* 字體 */
-				/* for 中文字體 */
-				font-family: "Noto Sans TC", sans-serif;
-				font-weight: bold;
-				font-style: normal;
-	/* 排版 */
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-top: 40px;
-
-	/* 外觀 */
-	color: #fff;
-}
-
-.main02_Title04{
-	/* 尺吋 */
-	font-size: 36px;
-
-	/* 字體 */
-				/* for 中文字體 */
-				font-family: "Noto Sans TC", sans-serif;
-				font-weight: bold;
-				font-style: normal;
-	/* 排版 */
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-top: 20px;
-	
-	/* 外觀 */
-	color: #fff;
-}
-
-.main02_img01{
-	/* 排版 */
-	margin-left: 36px;
-	margin-top: 24px;
-	margin-bottom: 60px;
+	display: flex;
+	flex-direction: column;
 }
 
 .main02_box3 p{
 	/* 尺吋 */
 	font-size: 16px;
-
-	/* 排版 */
-	margin-left: 30px;
-	margin-right: 30px;
 	margin-bottom: 80px;
-
 	/* 外觀 */
 	color: #fff;
 }
@@ -732,11 +555,6 @@ table {
 }
 
 .main02_box3 a > span{
-	/* 排版 */
-	position: absolute;
-	left: 105px;
-	top: 497px;
-
 	/* 尺吋 */
 	font-size: 16px;
 	
@@ -753,71 +571,20 @@ table {
 	/* 外觀 */
 	border: 1px solid #fff;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
-
-	/* 排版 */
-	position: absolute;
-	margin-left: 900px;
-
 	/* 尺寸 */
-	width: 280px;
-	height: 620px;
-
+	width: 100%;
+	height: 60vh;
+	padding: 30px;
 	/* 顯示 */
 	opacity: 0.1;
-}
-
-.main02_Title03{
-	/* 尺吋 */
-	font-size: 80px;
-
-	/* 字體 */
-				/* for 中文字體 */
-				font-family: "Noto Sans TC", sans-serif;
-				font-weight: bold;
-				font-style: normal;
-	/* 排版 */
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-top: 40px;
-
-	/* 外觀 */
-	color: #fff;
-}
-
-.main02_Title04{
-	/* 尺吋 */
-	font-size: 36px;
-
-	/* 字體 */
-				/* for 中文字體 */
-				font-family: "Noto Sans TC", sans-serif;
-				font-weight: bold;
-				font-style: normal;
-	/* 排版 */
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-top: 20px;
-	
-	/* 外觀 */
-	color: #fff;
-}
-
-.main02_img01{
-	/* 排版 */
-	margin-left: 36px;
-	margin-top: 24px;
-	margin-bottom: 60px;
+	display: flex;
+	flex-direction: column;
 }
 
 .main02_box4 p{
 	/* 尺吋 */
 	font-size: 16px;
-
-	/* 排版 */
-	margin-left: 30px;
-	margin-right: 30px;
 	margin-bottom: 80px;
-
 	/* 外觀 */
 	color: #fff;
 }
@@ -891,12 +658,10 @@ table {
 .main03_text{
 	/* 尺寸 */
 	width: 100%;
-	height: 100px;
-
+	height: 10vh;
 	/* 外貌 */
 	border-bottom: 2px solid #fff;
 	border-top: 2px solid #fff;
-
 	/* 排版 */
 	display: flex;
 	justify-content: center;
@@ -1014,15 +779,10 @@ table {
 /* ------------------------------------------------------------------------------ */
 /* 以下開始是 main03 的 內容區域 */
 
-
 .main03_content{
 	/* 尺寸 */
-	width: 1197px;
-	height: 796px;
-
-	/* 外貌 */
-	/* border: 1px solid greenyellow; */
-
+	width: 80%;
+	height: 90vh;
 	/* 排版 */
 	margin: 0 auto;
 	margin-top: 35px;
@@ -1102,6 +862,7 @@ table {
 	/* 排版 */
 	display: flex;
 	flex-direction:row;
+	align-items: center;
 
 	/* 外貌 */
 	/* border: 1px solid red; */
@@ -1116,19 +877,14 @@ table {
 .main03_text01_text p{
 	/* 尺寸 */
 	font-size: 16px;
-
 	/* 字體 */
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	
 	/* 外貌 */
 	color: #fff;
-
 	/* 排版 */
 	margin-top: 38px;
-	margin-left: 40px;
-	margin-right: 40px;
 	margin-bottom: 32px;
 	line-height: 1.6;
 }
@@ -1136,34 +892,30 @@ table {
 .main03_faketitle01{
 	/* 尺寸 */
 	font-size: 36px;
-
 	/* 字體 */
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: bold;
 	font-style: normal;
-	
 	/* 外貌 */
 	color: #fff;
-
 	/* 排版 */
-	margin-left: 41px;
 	margin-bottom: 20px;
 }
 
 .main03_faketitle02{
 	/* 尺寸 */
 	font-size: 32px;
-
 	/* 字體 */
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: bold;
 	font-style: normal;
-	
 	/* 外貌 */
 	color: #fff;
+}
 
-	/* 排版 */
-	margin-left: 41px;
+.main03_text01_text{
+	padding: 40px;
+	width: 60%;
 }
 
 /* --------------------------------------------------------- */
@@ -1173,9 +925,7 @@ table {
 	/* 排版 */
 	display: flex;
 	flex-direction:row-reverse;
-
-	/* 外貌 */
-	/* border: 1px solid red; */
+	align-items: center;
 }
 
 .main03-text02 img{
@@ -1187,65 +937,63 @@ table {
 .main03_faketitle03{
 	/* 尺寸 */
 	font-size: 32px;
-
 	/* 字體 */
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: bold;
 	font-style: normal;
-	
 	/* 外貌 */
 	color: #fff;
-
 	/* 排版 */
-	margin-left: 44px;
 	margin-top: 51.5px;
 }
 
 .main03_text02_text p{
 	/* 尺寸 */
 	font-size: 16px;
-
 	/* 字體 */
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	
 	/* 外貌 */
 	color: #fff;
-
 	/* 排版 */
 	margin-top: 38px;
-	margin-left: 40px;
-	margin-right: 40px;
 	margin-bottom: 32px;
 	line-height: 1.6;
 }
+
+.main03-text02{}
 
 /* ------------------------------------------------------------------------------ */
 /* 以下開始是 main04 的 內容區域 */
 
 .main04{
 	/* 尺寸 */
-	width: 1440px;
-	height: 1024px;
+	width: 100%;
+	height: auto;
 	/* 外貌 */
 	background-color: #3A5A85;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .main04_content{
 	/* 排版 */
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+	width: 100%;
+}
+
+.main03_text02_text{
+	padding: 40px;
 }
 
 .main04_img{
 	/* 排版 */
-	margin-left: 120px;
-	margin-top: 24px;
-
+	width: 20%;
 	/* 外貌 */
  	/* 設定初始狀態的陰影效果 */
   	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -1286,11 +1034,7 @@ table {
 
 
 .main04_text{
-	/* 外貌 */
-	/* border: 1px solid green; */
-
-	/* 排版 */
-	margin-left: 97px;
+	width: 60%;
 }
 
 .main04-title01{
@@ -1328,8 +1072,8 @@ table {
 .main04_text  > ul{
 	/* 排版 */
 	display: flex;
+	margin: 40px 0;
 }
-
 
 .main04_text ul a{
 	/* 外貌 */
@@ -1346,82 +1090,79 @@ table {
 	
 }
 
-
 .main04_text ul a li{
 	/* 外貌 */
 	border: 1px solid #fff;
 	border-radius: 100px;
-
 	/* 排版 */
-	padding-top: 4px;
-	padding-bottom: 4px;
-	padding-right: 20px;
-	padding-left: 20px;
-	margin-top: 24px;
+	padding: 4px 20px;
 	margin-right: 16px;
-	margin-bottom: 28px;
-
 }
 
 .main04_text > p{
 	/* 外貌 */
 	color: #fff;
-
 	/* 尺寸 */
 	font-size: 16px;
-
 	/* 字體 */
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-
 	/* 排版 */
 	line-height: 1.6;
-	margin-bottom: 67px;
-	margin-right: 157px;
 }
-
 
 .main04_img_scroll{
 	/* 排版 */
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	
-	/* 外貌 */
-	/* border: 1px solid red; */
-
+	justify-content: space-around;
 	/* 尺寸 */
-	width: 564px;
+	width: 80%;
 }
 
 .main04_img_scroll ul{
 	/* 排版 */
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+	width: 60%;
 }
 
-.main04_img_scroll ul li{
-	/* 排版 */
-	margin-right: 24px;
+.LeftPicBTN{
+	background: transparent;
+	background-image: url(../img/Vector-Left.png);
+	display: block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 50px;  
+    height: 64px;  
+	border: none;
 }
 
-.main04_text .main04_img_scroll > p{
-	/* 排版 */
-	margin-top: 41px;
-	margin-bottom: 113px;
+.RightPicBTN{
+	background: transparent;
+	background-image: url(../img/Vector-Right.png);
+	display: block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 50px;  
+    height: 64px;  
+	border: none;
+}
 
+.main04_img_scroll ul li{}
+
+.main04_img_scroll > p{
 	/* 外貌 */
 	color: #fff;
-
 	/* 尺寸 */
-	font-size: 20px;
-
+	font-size: 40px;
 	/* 字體 */
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: bold;
-	font-style: normal;
+	margin: 20px 0;
+
 }
 
 
@@ -1429,23 +1170,21 @@ table {
 	/* 外貌 */
 	background-color: #515151;
 	/* 尺寸 */
-	width: auto;
-	height: 138px;
-	/* 排版 */
-	margin-top: 188px;
+	width: 100%;
+	padding: 12px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .main04_footer h1{
 	/* 排版 */
 	text-align: center;
-	padding-top: 43px;
-
 	/* 外貌 */
 	color: #fff;
-
 	/* 尺寸 */
 	font-size: 36px;
-
 	/* 字體 */
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: bold;
@@ -1458,21 +1197,25 @@ table {
 .main05{
 	/* 尺寸 */
 	width: 100%;
-	height: 924px;
+	height: 100vh;
 	/* 外貌 */
 	background-color: #531919;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
 }
 
 .main05_content_top01{
 	/* 尺寸 */
-	height: 174px;
+	width: 100%;
 	/* 樣貌 */
 	background-color: #333;
-
 	/* 排版 */
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 12px 0;
 }
 
 .main05_content_top01 h1{
@@ -1494,12 +1237,9 @@ table {
 }
 
 .main05_content_top02{
-	/* 尺寸 */
-	height: 114px;
-
+	width: 100%;
 	/* 樣貌 */
 	background-color: #F35858;
-
 	/* 排版 */
 	display: flex;
 	flex-direction: column;
@@ -1518,166 +1258,32 @@ table {
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: bold;
 	font-style: normal;
-
 	/* 尺寸 */
 	font-size: 28px;
-
 	/* 外貌 */
 	color: #fff;
-
 	/* 排版 */
 	margin-left: 8px;
 	margin-right: 40px;
 }
 
-.main05_content_mid{
-
-}
-
-.main05_img_CarouselArea{
-	/* 排版 */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 20px;
-
-	/* 外貌 */
-	/* border: 1px solid rebeccapurple; */
-}
-
-.main05_img_card01{
-	/* 排版 */
-	position: relative;
-	z-index: 3;
-}
-
-.main05_img_card01 img{
-	/* 尺寸 */
-	width: 450px;
-	height: 450px;
-
-	/* 排版 */
-	display: block;
-}
-
-.main05_img_card01 > a{
-	/* 樣貌 */
-	text-decoration: none;
-	color: #fff;
-	background-color: #FF5252;
-	border-radius: 8px;
-
-	/* 字體 */
-	font-family: "Noto Sans TC", sans-serif;
-	font-weight: bold;
-	font-style: normal;
-
-	/* 尺寸 */
-	font-size: 18px;
-	width: 118px;
-	height: 39px;
-
-	/* 排版 */
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	padding-top: 9px;
-	position: absolute;
-	right: 0;
-	left: 0;
-	top: 370px;
-}
-
-/* 以下為 main05 第二張 卡片 的區域 */
-
-.main05_img_card02{
-	position: relative;
-	z-index: 2;
-	opacity: 0.5;
-	right: -65px;
-}
-
-.main05_img_card02 img{
-	/* 尺寸 */
-	width: 350px;
-	height: 350px;
-
-	/* 排版 */
-	display: block;
-}
-
-.main05_img_card02 > a{
-	/* 樣貌 */
-	text-decoration: none;
-	color: #fff;
-	background-color: #FF5252;
-	border-radius: 8px;
-
-	/* 字體 */
-	font-family: "Noto Sans TC", sans-serif;
-	font-weight: bold;
-	font-style: normal;
-
-	/* 尺寸 */
-	font-size: 18px;
-	width: 118px;
-	height: 39px;
-
-	/* 排版 */
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	padding-top: 9px;
-	position: absolute;
-	right: 0;
-	left: 0;
-	top: 270px;
-}
-
-/* 以下為 main05 第三張 卡片 的區域 */
-
-.main05_img_card03{
-	position: relative;
-	z-index: 1;
-	opacity: 0.5;
-	left: -65px;
-}
-
-.main05_img_card03 img{
-	/* 尺寸 */
-	width: 350px;
-	height: 350px;
-
-	/* 排版 */
-	display: block;
-}
-
-.main05_img_card03 > a{
-	/* 樣貌 */
-	text-decoration: none;
-	color: #fff;
-	background-color: #FF5252;
-	border-radius: 8px;
-
-	/* 字體 */
-	font-family: "Noto Sans TC", sans-serif;
-	font-weight: bold;
-	font-style: normal;
-
-	/* 尺寸 */
-	font-size: 18px;
-	width: 118px;
-	height: 39px;
-
-	/* 排版 */
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	padding-top: 9px;
-	position: absolute;
-	right: 0;
-	left: 0;
-	top: 270px;
+.BTN_Style_ProductTo_BuyInSec{
+    /* 尺寸 */
+    width: 213px;
+    height: 67px;
+    font-size: 20px;
+    font-weight: bold;
+    /* 外觀 */
+    background-image: url(../img/BTN_001.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    /* 移除預設外觀 */
+    border: none;
+    background-color: transparent;
+    /* 排版 */
+    line-height: 67px;
+    text-align: center;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -1707,9 +1313,719 @@ table {
 	font-style: normal;
 }
 
-.main05_content_btn a > span{
+
+/* ------------------------------------------- 輪播 */
+
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* -------------- 以下CSS區域為 輪播1 使用  ------------------------------- */
+
+body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0 auto;
+	padding: 0;
+  }
+  
+
+  .swiper {
+	width: 100%;
+	height: 100%;
+  }
+
+  .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: relative;
+  }
+
+  .swiper {
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+  .swiper-slide h2{
 	position: absolute;
-	top: 25px;
-	left: 685px;
+	bottom: 120px;
+	right: 0;
+	left: 0;
+	color: #fff;
+  }
+
+  .swiper-slide p{
+	position: absolute;
+	bottom: 80px;
+	right: 0;
+	left: 0;
+	color: #fff;
+  }
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* -------------- 以下CSS區域為 輪播2 使用  ------------------------------- */
+
+.main05_content_mid{
+	width: 100%;
+	margin-top: 180px;
+}
+
+.main05_img_CarouselArea{
+	/* 排版 */
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+
+	/* 外貌 */
+	/* border: 1px solid rebeccapurple; */
+}
+
+.main05_img_card01{
+	transition: opacity 1s, z-index 1s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main05_img_card01 img{
+	/* 尺寸 */
+	width: 80%;
+	height: auto;
+	/* 排版 */
+	display: block;
+}
+
+/* 以下為 main05 第二張 卡片 的區域 */
+
+.main05_img_card02{
+	transition: opacity 1s, z-index 1s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main05_img_card02 img{
+	/* 尺寸 */
+	width: 80%;
+	height: auto;
+	/* 排版 */
+	display: block;
+}
+
+/* 以下為 main05 第三張 卡片 的區域 */
+
+.main05_img_card03{
+	transition: opacity 1s, z-index 1s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main05_img_card03 img{
+	/* 尺寸 */
+	width: 80%;
+	height: auto;
+	/* 排版 */
+	display: block;
+}
+
+.price01{
+	font-size: 28px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 40px;
+	background-color: #3A5A85;
+	border-radius: 8px;
+	width: 50%;
+	padding: 8px;
+}
+
+.price02{
+	font-size: 28px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 40px;
+	background-color: #3A5A85;
+	border-radius: 8px;
+	width: 50%;
+	padding: 8px;
+}
+
+.price03{
+	font-size: 28px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 40px;
+	background-color: #3A5A85;
+	border-radius: 8px;
+	width: 50%;
+	padding: 8px;
+}
+
+/* ----------------- RWD - Start -------------------------- */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+@media (max-width: 1920px) {}
+
+@media (max-width: 1536px) {
+
+	.box{
+		width: 80%;
+	}
+
+	.main02_content{
+		gap: 8px;
+	}
+
+	.main02_box1{
+		padding: 12px;
+	}
+
+	.main02_box2{
+		padding: 12px;
+	}
+
+	.main02_box3{
+		padding: 12px;
+	}
+
+	.main02_box4{
+		padding: 12px;
+	}
+
+	.main01_agelimit{
+		width: 30%;
+	}
+
+	.main03_content{
+		width: 90%;
+	}
+
+	.main03_text01_text{
+		padding: 20px;
+	}
+
+	.main03_text02_text{
+		padding: 20px;
+	}
+
+	.main04_img{
+		/* 排版 */
+		width: 20%;
+		/* 外貌 */
+		 /* 設定初始狀態的陰影效果 */
+		  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		/* 設定過渡時間為 3 秒 */
+		transition: filter 3s  box-shadow 0.5s;
+		/* ai提供的光暈效果 */
+		animation: glow 3s infinite;
+		@keyframes glow {
+			0% {
+			  box-shadow: 0 0 5px #ff0000;
+			}
+			50% {
+			  box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000;
+			}
+			100% {
+			  box-shadow: 0 0 5px #ff0000;
+			}
+		  }
+	}
+
+	.main04_img:hover{
+		/* 當滑鼠移至圖片上時，移除灰階效果 */
+		filter: grayscale(0%) opacity(100%) saturate(150%);
+		/* 自己另外製作的效果 */
+		animation: hover_glow 2s infinite;
+		@keyframes hover_glow {
+			0% {
+				box-shadow: 0 0 20px rgba(255, 217, 97, 0.5);
+			}
+			50% {
+				box-shadow: 0 0 20px rgba(247, 107, 28, 1);
+			}
+			100% {
+				box-shadow: 0 0 20px rgba(255, 217, 97, 0.3);
+			}
+		}
+	}
+	
+
+}
+
+@media (max-width: 1280px) {
+
+	.main02_content{
+		grid-template-rows: repeat(2,1fr);	
+		grid-template-columns: repeat(2,1fr);
+
+	}
+
+	.main02_Title01{
+		margin-bottom: 12px;
+	}
+
+	.main02_Title02{
+		margin-bottom: 12px;
+		font-size: 40px;
+	}
+
+	.main02_box1{
+		height: 40vh;
+	}
+
+	.main02_box2{
+		height: 40vh;
+	}
+
+	.main02_box3{
+		height: 40vh;
+	}
+
+	.main02_box4{
+		height: 40vh;
+	}
+
+	.main02_Title03{
+		font-size: 40px;
+	}
+
+	.main02_Title04{
+		font-size: 32px;
+	}
+
+	.main02_img01{
+		margin: 8px 0;
+	}
+
+	.main02_box1 p{
+		margin-bottom: 12px;
+	}
+
+	.main02_box2 p{
+		margin-bottom: 12px;
+	}
+
+	.main02_box3 p{
+		margin-bottom: 12px;
+	}
+
+	.main02_box4 p{
+		margin-bottom: 12px;
+	}
+
+	.main02_img01{
+		width: 80%;
+	}
+
+	.main04-title01{
+		margin-top: 0;
+	}
+
+	.main05_content_mid{
+		margin-top: 160px;
+	}
+
+	.main05_content_top02_01 p{
+		font-size: 20px;
+	}
+	.price01{
+		font-size: 20px;
+		margin-top: 12px;
+	}
+
+	.price02{
+		font-size: 20px;
+		margin-top: 12px;
+	}
+
+	.price03{
+		font-size: 20px;
+		margin-top: 12px;
+	}
+
+	.RightPicBTN{
+		width: 26px;
+		height: 34px;
+	}
+
+	.LeftPicBTN{
+		width: 26px;
+		height: 34px;
+	}
+
+	.main03_title01 a{
+		font-size: 28px;
+		margin-right: 40px;
+	}
+
+	.main03_title02 a{
+		font-size: 28px;
+		margin-right: 40px;
+	}
+
+	.main03_title03 a{
+		font-size: 28px;
+		margin-right: 40px;
+	}
+
+	.main03_title04 a{
+		font-size: 28px;
+		margin-right: 40px;
+	}
+
+	.main03_faketitle01{
+		font-size: 18px;
+	}
+
+	.main03_faketitle02{
+		font-size: 20px;
+	}
+
+	.main03_text01 img{
+		width: 300px;
+		height: 300px;
+	}
+
+	.main03-text02 img{
+		width: 300px;
+		height: 300px;
+	}
+
+	.main03_textarea{
+		justify-content: space-between;
+		height: 100vh;
+	}
+
+	.main01_agelimit{
+		padding: 8px;
+	}
+
+	.main04_img{
+		width: 30%;
+	}
+
+	.main04_text{
+		width: 50%;
+	}
+
+	.main04_img{
+		/* 排版 */
+		width: 20%;
+		/* 外貌 */
+		 /* 設定初始狀態的陰影效果 */
+		  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		/* 設定過渡時間為 3 秒 */
+		transition: filter 3s  box-shadow 0.5s;
+		/* ai提供的光暈效果 */
+		animation: glow 3s infinite;
+		@keyframes glow {
+			0% {
+			  box-shadow: 0 0 5px #ff0000;
+			}
+			50% {
+			  box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000;
+			}
+			100% {
+			  box-shadow: 0 0 5px #ff0000;
+			}
+		  }
+	}
+
+	.main04_img:hover{
+		/* 當滑鼠移至圖片上時，移除灰階效果 */
+		filter: grayscale(0%) opacity(100%) saturate(150%);
+		/* 自己另外製作的效果 */
+		animation: hover_glow 2s infinite;
+		@keyframes hover_glow {
+			0% {
+				box-shadow: 0 0 20px rgba(255, 217, 97, 0.5);
+			}
+			50% {
+				box-shadow: 0 0 20px rgba(247, 107, 28, 1);
+			}
+			100% {
+				box-shadow: 0 0 20px rgba(255, 217, 97, 0.3);
+			}
+		}
+	}
+}
+
+
+
+
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+
+/* 實際上應該以768px，但是這邊直接把1000px以下當作平板 */
+@media (max-width: 1000px) {
+
+	.main01 h1{
+		font-size: 28px;
+	}
+
+	.main01_agelimit{
+		width: 40%;
+	}
+
+	.main01_footer h3{
+		font-size: 28px;
+	}
+
+	.understandUS_btn{
+		font-size: 18px;
+		width: 180px;
+		height: 50px;
+		line-height: 50px;
+	}
+
+	.main03_banner02{
+		display: none;
+	}
+
+	.main03_banner01{
+		display: none;
+	}
+
+	.main05_content_mid{
+		margin-top: 0px;
+	}
+
+	.main02_Title01{
+		font-size: 28px;
+	}
+
+	.main02_Title02{
+		font-size: 32px;
+	}
+
+	.main02_Title03{
+		font-size: 28px;
+	}
+
+	.main02_Title04{
+		font-size: 24px;
+	}
+
+	.main04_footer h1{
+		font-size: 24px;
+	}
+
+	.main05_content_top01 h1{
+		font-size: 28px;
+	}
+
+	.main03_textarea{
+		justify-content: space-around;
+	}
+
+	.main04_content{
+		flex-direction: column;
+	}
+
+	.main04_img{
+		height: 60%;
+	}
+
+	.main04_text{
+		width: 90%;
+	}
+
+	.main04-title02{
+		margin-top: 12px;
+		font-size: 24px;
+	}
+
+	.main04_text  > ul{
+		margin: 12px 0;
+	}
+
+	.main04-title01{
+		font-size: 28px;
+	}
+
+	.main04_img{
+		/* 排版 */
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* 外貌 */
+		 /* 設定初始狀態的陰影效果 */
+		  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		/* 設定過渡時間為 3 秒 */
+		transition: filter 3s  box-shadow 0.5s;
+		/* ai提供的光暈效果 */
+		animation: glow 3s infinite;
+		@keyframes glow {
+			0% {
+			  box-shadow: 0 0 5px #ff0000;
+			}
+			50% {
+			  box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000;
+			}
+			100% {
+			  box-shadow: 0 0 5px #ff0000;
+			}
+		  }
+	}
+
+	.main04_img:hover{
+		/* 當滑鼠移至圖片上時，移除灰階效果 */
+		filter: grayscale(0%) opacity(100%) saturate(150%);
+		/* 自己另外製作的效果 */
+		animation: hover_glow 2s infinite;
+		@keyframes hover_glow {
+			0% {
+				box-shadow: 0 0 20px rgba(255, 217, 97, 0.5);
+			}
+			50% {
+				box-shadow: 0 0 20px rgba(247, 107, 28, 1);
+			}
+			100% {
+				box-shadow: 0 0 20px rgba(255, 217, 97, 0.3);
+			}
+		}
+	}
+
+	.main04_img_scroll{
+		margin: 20px 0;
+	}
+
+	.main05_img_CarouselArea{
+		width: 60%;
+		display: grid;
+		grid-template-rows: repeat(3,1fr);
+		grid-template-columns: repeat(1,1fr);
+		gap: 20px;
+	}
+
+	.main05_img_card02 img{
+		width: 50%;
+	}
+
+	.main05_img_card01 img{
+		width: 50%;
+	}
+
+	.main05_img_card03 img{
+		width: 50%;
+	}
+
+	.main05_content_top02_01 p{
+		font-size: 16px;
+	}
+
+	.main05_content_btn{
+		margin-top: 8px;
+	}
+	
+}
+
+
+
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+
+@media (max-width: 600px) {
+
+	.main04_footer h1{
+		font-size: 16px;
+	}
+
+	.main05_content_top02_01 p{
+		font-size: 14px;
+		margin-right: 12px;
+	}
+
+	.main01_agelimit{
+		display: none;
+	}
+
+	.main02_content{
+		grid-template-rows: repeat(2,1fr);
+		grid-template-columns: repeat(1,1fr);
+	}
+
+	.main02_box3{
+		display: none;
+	}
+
+	.main02_box4{
+		display: none;
+	}
+
+	.main03_text{
+		display: grid;
+		grid-template-rows: repeat(1,1fr);
+		grid-template-columns: repeat(4,0.5fr);
+	}
+
+
+	.main03_title01 a{
+		font-size: 16px;
+		margin-right: 0;
+	}
+
+	.main03_title02 a{
+		font-size: 16px;
+		margin-right: 0;
+	}
+
+	.main03_title03 a{
+		font-size: 16px;
+		margin-right: 0;
+	}
+
+	.main03_title04 a{
+		font-size: 16px;
+		margin-right: 0;
+	}
+
+	.main03-text02{
+		display: none;
+	}
+
+	.main03_text01{
+		flex-direction: column;
+	}
+
+	.main03_text01_text{
+		width: 80%;
+	}
+
+	.main05_img_CarouselArea{
+		width: 90%;
+	}
+
+	.main05_content_top01{
+		display: none;
+	}
+
+	
+
+
 }
 
