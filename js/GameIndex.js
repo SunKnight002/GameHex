@@ -1,16 +1,16 @@
 // 建立一個陣列來儲存所有的卡片資訊
 let gameCards = [
-    { img: "./img/GameCard_252140Card_001.jpg", discount: "-25%", price: "NT$350", title: "盧恩戰記", tags: ["獨立遊戲", "動作", "多人連線", "類魂遊戲", "角色扮演", "搶先體驗"] },
-    { img: "./img/GameCard_252140Card_001.jpg", discount: "-25%", price: "NT$880", title: "動物牛仔", tags: ["派對遊戲", "動作", "多人連線", "可愛", "角色扮演", "搶先體驗"] },
-    { img: "./img/GameCard_252140Card_001.jpg", discount: "-15%", price: "NT$900", title: "洛雷的陰影", tags: ["恐怖遊戲", "第一人稱", "多人連線", "解謎遊戲", "支援VR", "搶先體驗"] },
-    { img: "./img/GameCard_252140Card_005.jpg", discount: "-15%", price: "NT$400", title: "疾速飆風", tags: ["競速遊戲", "第一人稱", "多人連線", "單人劇情", "經營模擬", "搶先體驗"] },
-    { img: "./img/GameCard_252140Card_004.jpg", discount: "-30%", price: "NT$340", title: "黑鐵勇者", tags: ["冒險遊戲", "動作", "多人連線", "類魂遊戲", "角色扮演", "搶先體驗"] },
-    { img: "./img/GameCard_252140Card_001.jpg", discount: "-60%", price: "NT$512", title: "特戰雷霆", tags: ["射擊遊戲", "支援VR", "多人連線", "寫實模擬", "第一人稱", "搶先體驗"] },
-    { img: "./img/GameCard_252140Card_001.jpg", discount: "-35%", price: "NT$250", title: "遊戲創作物語", tags: ["養成遊戲", "商業模擬", "單人", "單人劇情", "角色扮演", "搶先體驗"] },
-    { img: "./img/GameCard_252140Card_001.jpg", discount: "-60%", price: "NT$300", title: "冷冽莊園", tags: ["獨立遊戲", "策略模擬", "領地養成", "單機劇情", "角色扮演", "搶先體驗"] },
-    { img: "./img/GameCard_252140Card_003.jpg", discount: "-50%", price: "NT$400", title: "獵龍之心", tags: ["獨立遊戲", "砍殺", "多人連線", "搞笑類型", "角色扮演", "搶先體驗"] },
-    { img: "./img/GameCard_252140Card_002.jpg", discount: "-80%", price: "NT$100", title: "節奏趴搭碰", tags: ["音樂遊戲", "動作", "多人連線", "類魂遊戲", "角色扮演", "搶先體驗"] },
-    { img: "./img/GameCard_252140Card_001.jpg", discount: "-20%", price: "NT$200", title: "虛擬路人主播", tags: ["獨立遊戲", "模擬", "虛擬主播", "經營養成", "策略管理", "搶先體驗"] },
+    { img: "./img/GameCard_252140Card_002.jpg", discount: "-25%", price: "NT$350", title: "青春搖滾", tags: ["獨立遊戲", "動作", "多人連線", "類魂遊戲", "角色扮演", "搶先體驗"] },
+    { img: "./img/GameCard_252140Card_003.jpg", discount: "-25%", price: "NT$880", title: "獵龍之心", tags: ["動作遊戲", "砍殺", "單機", "血腥", "角色扮演", "類魂遊戲"] },
+    { img: "./img/GameCard_252140Card_004.jpg", discount: "-15%", price: "NT$900", title: "暗黑世紀", tags: ["恐怖遊戲", "第一人稱", "動作", "角色扮演", "支援VR", "搶先體驗"] },
+    { img: "./img/GameCard_252140Card_005.jpg", discount: "-15%", price: "NT$400", title: "亂世紅塵", tags: ["經營模擬", "商業模擬", "多線劇情", "單機", "多重結局", "搶先體驗"] },
+    { img: "./img/GameCard_252140Card_006.jpg", discount: "-30%", price: "NT$340", title: "黑鐵勇者", tags: ["冒險遊戲", "動作", "多人連線", "類魂遊戲", "角色扮演", "搶先體驗"] },
+    { img: "./img/GameCard_252140Card_007.jpg", discount: "-60%", price: "NT$512", title: "天使戰記", tags: ["角色扮演", "支援VR", "多人連線", "寫實模擬", "多重結局", "搶先體驗"] },
+    { img: "./img/GameCard_252140Card_008.jpg", discount: "-35%", price: "NT$250", title: "失落之光", tags: ["動作遊戲", "類魂遊戲", "單人", "多重結局", "Roguelike", "搶先體驗"] },
+    { img: "./img/GameCard_252140Card_009.jpg", discount: "-60%", price: "NT$300", title: "生命之妙", tags: ["獨立遊戲", "感人劇情", "多重結局", "單機", "角色扮演", "搶先體驗"] },
+    { img: "./img/GameCard_252140Card_010.jpg", discount: "-50%", price: "NT$400", title: "黃昏酒館", tags: ["模擬經營", "感人劇情", "戀愛", "搞笑類型", "輕鬆詼諧", "搶先體驗"] },
+    { img: "./img/GameCard_252140Card_011.jpg", discount: "-80%", price: "NT$100", title: "槍與玫瑰", tags: ["射擊遊戲", "狙擊", "暗殺", "激烈槍戰", "第一人稱", "搶先體驗"] },
+    { img: "./img/GameCard_252140Card_012.jpg", discount: "-20%", price: "NT$200", title: "虛擬路人主播", tags: ["獨立遊戲", "模擬", "虛擬主播", "經營養成", "策略管理", "搶先體驗"] },
 ];
 
 // 獲取要插入卡片的div

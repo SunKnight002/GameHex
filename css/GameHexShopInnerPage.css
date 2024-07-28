@@ -466,7 +466,6 @@ table {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding-top: 80px;
 }
 
 .GH_WorkInnerPage_Introduce_Left img{
@@ -583,7 +582,7 @@ table {
 	color: #fff;
 	/* 排版 */
 	margin-bottom: 20px;
-	line-height: 1.2;	
+	line-height: 1.6;	
 }
 
 .GH_WorkInnerPage_Introduce_Mid_Title_Small02{
@@ -857,7 +856,8 @@ table {
 	/* 排版 */
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
+	width: 80%;
 }
 
 .GH_WIP_DLC_ArtBook{
@@ -938,7 +938,7 @@ table {
 	background-color: #0C223F;	
 	/* 尺寸 */
 	width: 100%;
-	height: 100vh;
+	height: 110vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1083,7 +1083,7 @@ table {
 
 .recomeGame_Card {
     /* 尺寸 */
-	width: 90%;
+	width: 80%;
 }
 
 .recomeGame_CardFin{

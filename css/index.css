@@ -318,10 +318,11 @@ body {
     font-size: 16px;
 }
 
+
 .GH_I_ShopArea_GameTag_FromYour ul a li{}
 
 .GH_I_ShopArea_GameTag_FromYour ul a:hover{
-    background-color: #fff;
+    background-color: #000;
     font-size: 16px;
     font-weight: bold;
 }
