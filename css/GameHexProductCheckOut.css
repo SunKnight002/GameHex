@@ -60,7 +60,7 @@ table {
     background-image: url(../img/BC_BG_001.png);
     /* 排版 */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     background-size: cover;
@@ -192,6 +192,7 @@ table {
     /* 排版 */
     margin-top: 12px;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 /* ------------------------------------------------------------ */
@@ -245,7 +246,7 @@ table {
 
 .gameInfo>p {
     /* 尺寸 */
-    font-size: 18px;
+    font-size: 28px;
     font-weight: bold;
     /* 外觀 */
     color: #fff;
@@ -310,7 +311,7 @@ table {
 
 .cancelBuy_BTN {
     /* 尺寸 */
-    width: 50%;
+    width: 100%;
     height: 6vh;
     font-size: 20px;
     font-weight: bold;
@@ -498,17 +499,17 @@ table {
 }
 
 .itemTitle {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .itemType {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .itemPrice{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -537,71 +538,71 @@ table {
 /* 這邊是 內容 下層 下側的區域 */
 .cheakOutMain_Bottom_B {
     /* 尺寸 */
-    width: 649px;
-    height: 67px;
+    width: 60%;
+    height: 10vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 60px;
 }
 
 .clearlBuy_BTN {
     /* 尺寸 */
-    width: 213px;
-    height: 67px;
-    font-size: 20px;
+    /* width: 213px;
+    height: 68px; */
+    width: 80%;
+    height: 80px;
+    font-size: 24px;
     font-weight: bold;
-
     /* 外觀 */
     background-image: url(../img/BTN_003.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     color: #fff;
-
     /* 移除預設外觀 */
     border: none;
     background-color: transparent;
-
     /* 排版 */
-    line-height: 67px;
+    text-align: center;
 }
 
 .cheackHopeList_BTN {
     /* 尺寸 */
-    width: 213px;
-    height: 67px;
-    font-size: 20px;
+    width: 80%;
+    height: 80px;
+    font-size: 24px;
     font-weight: bold;
-
     /* 外觀 */
     background-image: url(../img/BTN_004.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     color: #fff;
-
     /* 移除預設外觀 */
     border: none;
     background-color: transparent;
-
     /* 排版 */
-    line-height: 67px;
+    text-align: center;
 }
 
 .payMoney_BTN {
     /* 尺寸 */
-    width: 213px;
-    height: 67px;
-    font-size: 20px;
+    width: 80%;
+    height: 80px;
+    font-size: 24px;
     font-weight: bold;
-
     /* 外觀 */
     background-image: url(../img/BTN_001.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     color: #fff;
-
     /* 移除預設外觀 */
     border: none;
     background-color: transparent;
-
     /* 排版 */
-    line-height: 67px;
+    text-align: center;
 }
 
 
@@ -610,74 +611,51 @@ table {
 
 .cheakOutMain_Discount {
     /* 尺寸 */
-    width: auto;
-    height: 1024px;
-    /* 排版 */
-    position: relative;
-}
-
-.cheakOutMain_Discount::before {
-    /* 外觀 */
-    content: "";
-    filter: brightness(30%) blur(5px);
+    width: 100%;
+    height: 100vh;
     background-image: url(../img/BC_BG_001.png);
-
-    /* 排版 */
-    display: block;
     background-size: cover;
-
-    /* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .cheakOutMain_Discount_Top {
-    /* 排版 */
-    position: absolute;
+
 }
 
 .cheakOutMain_Discount_Top>p {
     /* 外觀 */
     color: #fff;
-
     /* 尺寸 */
     font-size: 36px;
     font-weight: bold;
-
-    /* 排版 */
-    margin-top: 134px;
-    margin-left: 560px;
+    margin-bottom: 40px;
 }
-
 
 /*  ---------------------- 這是收容折價券  大型容器 的容器------------------------ */
 
 .discountBigBox {
-    /* 尺寸 */
-    /* width: 1038px; */
-
-    /* 外觀 */
-    /* border: 1px solid red; */
+    width: 80%;
     background-color: #414141;
-
     /* 排版 */
-    margin-left: 201px;
-    margin-top: 10px;
-    padding-right: 26px;
-    padding-left: 26px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 26px;
+    margin: 0 auto;
 }
 
 /*  ---------------------- 這是收容折價券  內層 的容器------------------------ */
 
 .discountBox {
     /* 排版 */
-    display: flex;
+    display: grid;
     align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
 }
 
 .discountBox ul li>img {
@@ -688,13 +666,17 @@ table {
 
 .discountBox ul {
     /* 排版 */
-    display: flex;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
 }
 
 .discountBox ul li {
     /* 排版 */
     display: flex;
-    margin-right: 24px;
     position: relative;
 }
 
@@ -710,24 +692,18 @@ table {
     line-height: 36px;
     font-size: 14px;
     font-weight: 400;
-
     /* 外觀 */
     background-color: #F8442D;
     border-radius: 8px;
-
     /* 移除預設外觀 */
     border: none;
-
     /* 排版 */
     position: absolute;
     top: 99px;
     left: 25px;
-
     /* 字體 */
     font-family: "Noto Sans TC, sans-serif,Roboto";
 }
-
-
 
 /* ------------------------------------------------------------------------- */
 /*  這邊是左邊 按鈕 */
@@ -736,13 +712,9 @@ table {
     /* 移除預設外觀 */
     border: none;
     background-color: transparent;
-
     /* 尺寸 */
     width: 30px;
     height: 30px;
-
-    /* 排版 */
-    margin-right: 40px;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -752,13 +724,9 @@ table {
     /* 移除預設外觀 */
     border: none;
     background-color: transparent;
-
     /* 尺寸 */
     width: 30px;
     height: 30px;
-
-    /* 排版 */
-    margin-left: 40px;
 }
 
 
@@ -766,20 +734,13 @@ table {
 /* ---- 以下 是 推薦購買 專區 */
 
 .cheakOutMain_Discount_Bottom {
-    /* 排版 */
-    position: absolute;
-    margin-top: 468px;
-    margin-left: 375px;
-
-
-    /* 外觀 */
-    /* border: 1px solid yellow; */
+    margin-top: 40px;
+    margin-bottom: 32px;
 }
 
 .cheakOutMain_Discount_Bottom p {
     /* 外觀 */
     color: #fff;
-
     /* 尺寸 */
     font-size: 36px;
     font-weight: bold;
@@ -789,51 +750,46 @@ table {
 /* ----------------------------------------------------- */
 /* ------------------ 以下是推薦購買遊戲區 ------------------- */
 .cheakOutMain_Discount_Bottom_GameList {
-    /* 外觀 */
-    /* border: 1px solid turquoise; */
-
     /* 尺寸 */
-    width: 1060px;
-    height: 300px;
-
+    width: 100%;
+    height: 30vh;
     /* 排版 */
-    display: flex;
-    position: absolute;
-    top: 552px;
-    left: 178px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
 }
 
 .recomeGame_Card {
     /* 尺寸 */
-    width: 300px;
-    height: 300px;
-
-    /* 排版 */
-    margin-right: 80px;
-
-    /* 外觀 */
-    /* border: 1px solid yellow; */
+    width: 80%;
 }
+
+.recomeGame_Card03 {
+    /* 尺寸 */
+    width: 80%;
+}
+
 
 .recomeGame_CardFin{
     /* 尺寸 */
     width: 300px;
     height: 300px;
-    
 }
 
-.recomeGame_img {}
+.recomeGame_img {
+    /* 排版 */
+    position: relative;
+}
 
 
 .recomeGame_img>img {
     /* 尺寸 */
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 20vh;
     object-fit: cover;
-
-    /* 排版 */
-    position: relative;
-
     /* 外觀 */
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -843,76 +799,59 @@ table {
     /* 排版 */
     display: flex;
     align-items: center;
+    justify-content: space-around;
     position: absolute;
     top: 20px;
-    left: 16px;
-
+    left: 40px;
     /* 尺寸 */
-    width: auto;
+    width: 40%;
     height: 39px;
-
     /* 外觀 */
     background-color: #292929;
     border-radius: 4px;
     border: 1px solid #fff;
 }
 
+.HopeList_BTN {
+    /* 排版 */
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    /* 移除外觀 */
+    border: none;
+    background-color: transparent;
+}
+
 .discountPrice span {
     /* 尺寸 */
     font-size: 12px;
-
     /* 外觀 */
     color: #000;
     border-radius: 16px;
-
     /* 字體 */
     font-family: "Roboto";
-
     /* 排版 */
     display: block;
     background-color: #fff;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    margin-left: 7.5px;
+    padding: 4px 12px;
 }
 
 .discountPrice p {
     /* 尺寸 */
     font-size: 14px;
     font-weight: 500;
-
     /* 外觀 */
     color: #fff;
-
     /* 字體 */
     font-family: "Roboto";
-
-    /* 排版 */
-    margin-left: 8px;
-    margin-right: 7px;
 }
-
-.HopeList_BTN {
-    /* 排版 */
-    position: absolute;
-    top: 20px;
-    left: 244px;
-
-    /* 移除外觀 */
-    border: none;
-    background-color: transparent;
-}
-
 
 /* --------------------------------- */
 /* 小卡文字資訊區域 */
 .recomeGame_info {
     /* 尺寸 */
-    width: 300px;
-    height: 100px;
-
+    width: 100%;
+    height: 12vh;
     /* 外觀 */
     background-color: #1B2838;
     border-bottom-left-radius: 16px;
@@ -923,19 +862,16 @@ table {
     /* 排版 */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
-    padding-top: 8px;
 }
 
 .recomeGame_info_title p {
     /* 尺寸 */
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
-
     /* 字體 */
     font-family: "Noto Sans TC, sans-serif,Roboto";
-
     /* 外觀 */
     color: #fff;
 }
@@ -944,7 +880,6 @@ table {
     /* 排版 */
     display: flex;
     align-items: center;
-    margin-left: 72px;
 }
 
 /* -----------------------------------  */
@@ -953,70 +888,346 @@ table {
 .gameTag_Bigbox {
     /* 排版 */
     display: flex;
-    margin-left: 14px;
-    margin-top: 4px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .gameTag_Bigbox ul {
     /* 尺吋 */
-    width: 152px;
-
+    width: 65%;
     /* 排版 */
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    gap: 8px;
 }
 
 .gameTag_Bigbox ul li {
     /* 尺寸 */
-    font-size: 10px;
-
+    font-size: 16px;
     /* 外觀 */
     color: #fff;
     background-color: #3A5A85;
     border-radius: 8px;
-
     /* 排版 */
     padding: 4px;
-    margin-bottom: 12px;
 }
 
 .AddToCart_BTN {
     /* 尺寸 */
-    width: 109px;
+    width: 30%;
     height: 28px;
-
     /* 外觀 */
     background-color: #fff;
     border-radius: 8px;
     border: none;
-
-    /* 排版 */
-    margin-top: 14px;
-    margin-left: 12px;
 }
 
 
+/* ----------------- RWD - Start -------------------------- */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+@media (max-width: 1920px) {}
 
-/* -------------------------------------------------------- */
-/* 以下是 輪播條 */
+@media (max-width: 1536px) {
+    
+    .cheakOutMain_Bottom_B{
+        width: 80%;
+    }
+        
+    .clearlBuy_BTN {
+        width: 65%;
+        height: 75px;
+        font-size: 24px;
+    }
 
-.cheakOutMain_Discount_Bottom_Scroll {
-    /* 排版 */
-    position: absolute;
-    top: 902px;
-    left: 500px;
+    .cheackHopeList_BTN {
+        width: 65%;
+        height: 75px;
+        font-size: 24px;
+    }
 
-    /* 外觀 */
-    /* border: 1px solid pink; */
+    .payMoney_BTN {
+        width: 65%;
+        height: 75px;
+        font-size: 24px;
+    }
+
+    .gameTag_Bigbox{
+        margin-top: 12px;
+    }
+
+    .recomeGame_Card{
+        width: 90%;
+    }
+    
+    .recomeGame_Card03{
+        width: 90%;
+    }
+
 }
 
-.cheakOutMain_Discount_Bottom_Scroll ul {
-    /* 排版 */
-    display: flex;
+
+@media (max-width: 1280px) {
+
+    .cheakOutMain_Bottom_L_BigBox{
+        padding: 8px;
+    }
+
+    .cheakOutMain_Bottom_L_Box01{
+        padding: 8px;
+    }
+
+    .gameInfo>p{
+        font-size: 24px;
+    }
+
+    .price_Area p{
+        font-size: 20px;
+    }
+
+    .price_Area span{
+        font-size: 16px;
+    }
+
+    .priceTotla{
+        font-size: 24px;
+        padding: 8px 0;
+    }
+
+    .cancelBuy_BTN{
+        font-size: 16px;
+    }
+
+    .clearlBuy_BTN {
+        width: 85%;
+    }
+
+    .cheackHopeList_BTN {
+        width: 85%;
+    }
+
+    .payMoney_BTN {
+        width: 85%;
+    }
+
+    .recomeGame_Card{
+        width: 80%;
+    }
+
+    .cheakOutMain_Discount_Bottom_GameList{
+        gap: 20px;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .recomeGame_info{
+        height: 14vh;
+    }
+
+    .recomeGame_Card03 {
+        display: none;
+    }
+
+    .discountBigBox{
+        width: 90%;
+    }
+
+
 }
 
-.cheakOutMain_Discount_Bottom_Scroll li {
-    /* 排版 */
-    margin-right: 24px;
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+
+/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
+@media (max-width: 1100px) {
+
+    .cheakOutMain_Bottom_L{
+        width: 70%;
+    }
+
+    .price_Area p{
+        font-size: 16px;
+    }
+
+    .cheakOutMain_Bottom_R{
+        width: 20%;
+    }
+
+    .cheakOutMain_Bottom_R_Price{
+        padding: 8px;
+    }
+
+    .itemTitle{
+        font-size: 14px;
+    }
+
+    .itemType{
+        font-size: 14px;
+    }
+
+    .itemPrice{
+        font-size: 14px;
+    }
+
+    .priceTotla{
+        font-size: 14px;
+    }
+
+    .cheakOutMain_Bottom_R_Gauge{
+        font-size: 14px;
+    }
+
+    .discount_Tag{
+        font-size: 16px;
+    }
+
+    .clearlBuy_BTN{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .cheackHopeList_BTN{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .payMoney_BTN{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .discountBigBox{
+        width: 100%;
+    }
+
+    .discountBox{
+        width: 100%;
+        padding: 4px;
+    }
+
+    .LeftArrow_BTN{
+        margin-right: 0;
+    }
+
+    .RightArrow_BTN{
+        margin-left: 0;
+    }
 }
 
+
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+
+@media (max-width: 970px) {
+    .cheakOutMain_Bottom{
+        flex-direction: column;
+    }
+
+    .cheakOutMain_Bottom_R_Price{
+        gap: 4px;
+    }
+
+    .cheakOutMain_Bottom_R{
+        width: 100%;
+    }
+
+    .cheakOutMain_Bottom_L{
+        width: 100%;
+    }
+
+    .cheakOutMain_Bottom_L_BigBox{
+        gap: 8px;
+    }
+
+    .cheakOutMain_Bottom_L_Box01{
+        gap: 4px;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .gameInfo{
+        display: none;
+    }
+
+    .discountBigBox{
+        padding: 4px 4px;
+    }
+
+    .discountBox ul{
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .RightArrow_BTN{
+        display: none;
+    }
+
+    .LeftArrow_BTN{
+        display: none;
+    }
+
+    .discountBox{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .cheakOutMain_Discount_Bottom{
+        margin: 0;
+    }
+
+    .cheakOutMain_Discount_Bottom p{
+        font-size: 16px;
+    }
+
+    .cheakOutMain_Discount_Top>p{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .cheakOutMain_Discount_Bottom_GameList{
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
+        height: 90vh;
+    }
+    
+    .discountBox ul li>img{
+        width: 100px;
+        height: auto;
+    }
+
+    .UseThisCoupon_BTN{
+        width: 80px;
+        top: 50px;
+        left: 10px;
+    }
+
+    .cheakOutMain_Discount_Top{
+        display: none;
+    }
+
+    .recomeGame_Card{
+        width: 100%;
+    }
+
+    .cheakOutMain_Bottom_B{
+        display: none;
+    }
+
+    .price_Area span{
+        font-size: 14px;
+    }
+
+    .cancelBuy_BTN{
+        font-size: 14px;
+    }
+
+    .discountPrice{
+        left: 20px;
+    }
+
+
+}
