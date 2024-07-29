@@ -1781,6 +1781,10 @@ body {
 /* 實際上應該以768px，但是這邊直接把1000px以下當作平板 */
 @media (max-width: 1000px) {
 
+	.main04_text ul a{
+		font-size: 16px;
+	}
+
 	.main01 h1{
 		font-size: 28px;
 	}
@@ -1809,7 +1813,7 @@ body {
 	}
 
 	.main05_content_mid{
-		margin-top: 0px;
+		margin-top: 120px;
 	}
 
 	.main02_Title01{

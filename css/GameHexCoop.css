@@ -64,8 +64,8 @@ main{
 /* ----------------------- 這邊為 GameHex_Coop_Introduce 專用CSS ----------------- */
 .GameHex_Coop_Introduce{
     /* 尺寸 */
-    width: auto;
-    height: 924px;
+    width: 100%;
+    height:100vh;
     /* 外觀 */
     /* border: 1px solid blue; */
     background-color: #313131;
@@ -308,8 +308,8 @@ main{
 /* ----------------------- 這邊為 GameHex_Coop_Upload 專用CSS ----------------- */
 .GameHex_Coop_Upload{
     /* 尺寸 */
-    width: auto;
-    height: 1024px;
+    width: 100%;
+    height: 100vh;
     /* 外觀 */
     /* border: 1px solid greenyellow; */
     /* 排版 */
@@ -608,8 +608,8 @@ main{
 /* ----------------------- 這邊為 GameHex_Coop_Offer 專用CSS ----------------- */
 .GameHex_Coop_Offer{
     /* 尺寸 */
-    width: auto;
-    height: 1024px;
+    width: 100%;
+    height: 100vh;
     /* 外觀 */
     /* border: 1px solid yellow; */
     /* 排版 */
@@ -832,8 +832,8 @@ main{
 /* ----------------------- 這邊為 GameHex_Coop_Contact 專用CSS ----------------- */
 .GameHex_Coop_Contact{
     /* 尺寸 */
-    width: auto;
-    height: 924px;
+    width: 100%;
+    height: 100vh;
     /* 外觀 */
     /* border: 1px solid pink; */
     /* 排版 */
