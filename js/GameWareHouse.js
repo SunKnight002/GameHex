@@ -1,16 +1,16 @@
 // 建立一個陣列來儲存所有的卡片資訊
 let gameCard_L = [
-    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
-    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "盧恩戰記"},
+    { img: "./img/GameCard_280x200Card_002.jpg", playTime: "127", playDay: "2024/01/06", title: "青春搖滾"},
+    { img: "./img/GameCard_280x200Card_003.jpg", playTime: "127", playDay: "2024/01/06", title: "獵龍之心"},
+    { img: "./img/GameCard_280x200Card_004.jpg", playTime: "127", playDay: "2024/01/06", title: "虛擬路人主播2"},
+    { img: "./img/GameCard_280x200Card_005.jpg", playTime: "127", playDay: "2024/01/06", title: "亂世紅塵"},
+    { img: "./img/GameCard_280x200Card_006.jpg", playTime: "127", playDay: "2024/01/06", title: "黑鐵勇者"},
+    { img: "./img/GameCard_280x200Card_007.jpg", playTime: "127", playDay: "2024/01/06", title: "天使戰記"},
+    { img: "./img/GameCard_280x200Card_008.jpg", playTime: "127", playDay: "2024/01/06", title: "失落之光"},
+    { img: "./img/GameCard_280x200Card_009.jpg", playTime: "127", playDay: "2024/01/06", title: "生命之妙"},
+    { img: "./img/GameCard_280x200Card_010.jpg", playTime: "127", playDay: "2024/01/06", title: "黃昏酒館"},
+    { img: "./img/GameCard_280x200Card_011.jpg", playTime: "127", playDay: "2024/01/06", title: "槍與玫瑰"},
+    { img: "./img/GameCard_280x200Card_012.jpg", playTime: "127", playDay: "2024/01/06", title: "虛擬路人主播"},
 ];
 
 // 獲取要插入卡片的section

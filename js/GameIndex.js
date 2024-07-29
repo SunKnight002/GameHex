@@ -1,6 +1,6 @@
 // 建立一個陣列來儲存所有的卡片資訊
 let gameCards = [
-    { img: "./img/GameCard_252140Card_002.jpg", discount: "-25%", price: "NT$350", title: "青春搖滾", tags: ["獨立遊戲", "動作", "多人連線", "類魂遊戲", "角色扮演", "搶先體驗"] },
+    { img: "./img/GameCard_252140Card_002.jpg", discount: "-25%", price: "NT$350", title: "青春搖滾", tags: ["獨立遊戲", "節奏", "多人連線", "音樂", "角色扮演", "搶先體驗"] },
     { img: "./img/GameCard_252140Card_003.jpg", discount: "-25%", price: "NT$880", title: "獵龍之心", tags: ["動作遊戲", "砍殺", "單機", "血腥", "角色扮演", "類魂遊戲"] },
     { img: "./img/GameCard_252140Card_004.jpg", discount: "-15%", price: "NT$900", title: "暗黑世紀", tags: ["恐怖遊戲", "第一人稱", "動作", "角色扮演", "支援VR", "搶先體驗"] },
     { img: "./img/GameCard_252140Card_005.jpg", discount: "-15%", price: "NT$400", title: "亂世紅塵", tags: ["經營模擬", "商業模擬", "多線劇情", "單機", "多重結局", "搶先體驗"] },
