@@ -1,0 +1,19 @@
+// @import url(../css/reset.css);
+// @import './node_modules/sass-google-fonts/src/GoogleFonts.scss';
+@import 'reset';
+
+
+@import 'basic/color';
+@import 'basic/font';
+@import 'basic/var';
+
+@import 'mixins/minins';
+
+@import 'component/btn';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/login';
+
+@import 'page/index';
+@import 'page/landpage';

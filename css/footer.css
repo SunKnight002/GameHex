@@ -1,15 +1,12 @@
 footer{
-    /* 外觀 */
     background-color: #000000;
 }
 
 footer img{
-    /* 尺寸 */
     width:  10vw;
 }
 
 .footer_area{
-    /* 排版 */
 	width: 100%;
     margin: 0 auto;
     display: flex;
@@ -19,7 +16,6 @@ footer img{
 }
 
 .footer_text{
-	/* 排版 */
 	width: 80%;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -27,16 +23,12 @@ footer img{
 }
 
 .footer_text p{
-	/* 外貌 */
 	color: #fff;
-	/* 排版 */
 	display: flex;
 	flex-direction: column;
-	/* 字體 */
 	font-family: "Noto Sans TC", sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	/* 尺吋 */
 	font-size: 18px;
 	line-height: 1.2;
 }
@@ -80,12 +72,10 @@ footer img{
 @media (max-width: 600px) {
 
 	footer img{
-		/* 尺寸 */
 		width: 20vw;
 	}
 
 	.footer_text{
-	/* 排版 */
 		width: 70%;
 	}
 

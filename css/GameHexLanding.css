@@ -998,20 +998,21 @@ table {
  	/* 設定初始狀態的陰影效果 */
   	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 	/* 設定過渡時間為 3 秒 */
-	transition: filter 3s  box-shadow 0.5s;
+	transition: filter 3s , box-shadow 0.5s;
 	/* ai提供的光暈效果 */
 	animation: glow 3s infinite;
-	@keyframes glow {
-		0% {
-		  box-shadow: 0 0 5px #ff0000;
-		}
-		50% {
-		  box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000;
-		}
-		100% {
-		  box-shadow: 0 0 5px #ff0000;
-		}
-	  }
+}
+
+@keyframes glow {
+	0% {
+	  box-shadow: 0 0 5px #ff0000;
+	}
+	50% {
+	  box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000;
+	}
+	100% {
+	  box-shadow: 0 0 5px #ff0000;
+	}
 }
 
 .main04_img:hover{
@@ -1019,16 +1020,17 @@ table {
 	filter: grayscale(0%) opacity(100%) saturate(150%);
 	/* 自己另外製作的效果 */
 	animation: hover_glow 2s infinite;
-	@keyframes hover_glow {
-		0% {
-			box-shadow: 0 0 20px rgba(255, 217, 97, 0.5);
-		}
-		50% {
-			box-shadow: 0 0 20px rgba(247, 107, 28, 1);
-		}
-		100% {
-			box-shadow: 0 0 20px rgba(255, 217, 97, 0.3);
-		}
+}
+
+@keyframes hover_glow {
+	0% {
+		box-shadow: 0 0 20px rgba(255, 217, 97, 0.5);
+	}
+	50% {
+		box-shadow: 0 0 20px rgba(247, 107, 28, 1);
+	}
+	100% {
+		box-shadow: 0 0 20px rgba(255, 217, 97, 0.3);
 	}
 }
 
@@ -1539,34 +1541,36 @@ body {
 		transition: filter 3s  box-shadow 0.5s;
 		/* ai提供的光暈效果 */
 		animation: glow 3s infinite;
-		@keyframes glow {
-			0% {
-			  box-shadow: 0 0 5px #ff0000;
-			}
-			50% {
-			  box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000;
-			}
-			100% {
-			  box-shadow: 0 0 5px #ff0000;
-			}
-		  }
 	}
+
+	@keyframes glow {
+		0% {
+		  box-shadow: 0 0 5px #ff0000;
+		}
+		50% {
+		  box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000;
+		}
+		100% {
+		  box-shadow: 0 0 5px #ff0000;
+		}
+	  }
 
 	.main04_img:hover{
 		/* 當滑鼠移至圖片上時，移除灰階效果 */
 		filter: grayscale(0%) opacity(100%) saturate(150%);
 		/* 自己另外製作的效果 */
 		animation: hover_glow 2s infinite;
-		@keyframes hover_glow {
-			0% {
-				box-shadow: 0 0 20px rgba(255, 217, 97, 0.5);
-			}
-			50% {
-				box-shadow: 0 0 20px rgba(247, 107, 28, 1);
-			}
-			100% {
-				box-shadow: 0 0 20px rgba(255, 217, 97, 0.3);
-			}
+	}
+
+	@keyframes hover_glow {
+		0% {
+			box-shadow: 0 0 20px rgba(255, 217, 97, 0.5);
+		}
+		50% {
+			box-shadow: 0 0 20px rgba(247, 107, 28, 1);
+		}
+		100% {
+			box-shadow: 0 0 20px rgba(255, 217, 97, 0.3);
 		}
 	}
 	
@@ -1739,35 +1743,37 @@ body {
 		transition: filter 3s  box-shadow 0.5s;
 		/* ai提供的光暈效果 */
 		animation: glow 3s infinite;
-		@keyframes glow {
-			0% {
-			  box-shadow: 0 0 5px #ff0000;
-			}
-			50% {
-			  box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000;
-			}
-			100% {
-			  box-shadow: 0 0 5px #ff0000;
-			}
-		  }
 	}
+
+	@keyframes glow {
+		0% {
+		  box-shadow: 0 0 5px #ff0000;
+		}
+		50% {
+		  box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000;
+		}
+		100% {
+		  box-shadow: 0 0 5px #ff0000;
+		}
+	  }
 
 	.main04_img:hover{
 		/* 當滑鼠移至圖片上時，移除灰階效果 */
 		filter: grayscale(0%) opacity(100%) saturate(150%);
 		/* 自己另外製作的效果 */
 		animation: hover_glow 2s infinite;
-		@keyframes hover_glow {
-			0% {
-				box-shadow: 0 0 20px rgba(255, 217, 97, 0.5);
-			}
-			50% {
-				box-shadow: 0 0 20px rgba(247, 107, 28, 1);
-			}
-			100% {
-				box-shadow: 0 0 20px rgba(255, 217, 97, 0.3);
-			}
-		}
+	}
+}
+
+@keyframes hover_glow {
+	0% {
+		box-shadow: 0 0 20px rgba(255, 217, 97, 0.5);
+	}
+	50% {
+		box-shadow: 0 0 20px rgba(247, 107, 28, 1);
+	}
+	100% {
+		box-shadow: 0 0 20px rgba(255, 217, 97, 0.3);
 	}
 }
 
@@ -1882,34 +1888,36 @@ body {
 		transition: filter 3s  box-shadow 0.5s;
 		/* ai提供的光暈效果 */
 		animation: glow 3s infinite;
-		@keyframes glow {
-			0% {
-			  box-shadow: 0 0 5px #ff0000;
-			}
-			50% {
-			  box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000;
-			}
-			100% {
-			  box-shadow: 0 0 5px #ff0000;
-			}
-		  }
 	}
+
+	@keyframes glow {
+		0% {
+		  box-shadow: 0 0 5px #ff0000;
+		}
+		50% {
+		  box-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000;
+		}
+		100% {
+		  box-shadow: 0 0 5px #ff0000;
+		}
+	  }
 
 	.main04_img:hover{
 		/* 當滑鼠移至圖片上時，移除灰階效果 */
 		filter: grayscale(0%) opacity(100%) saturate(150%);
 		/* 自己另外製作的效果 */
 		animation: hover_glow 2s infinite;
-		@keyframes hover_glow {
-			0% {
-				box-shadow: 0 0 20px rgba(255, 217, 97, 0.5);
-			}
-			50% {
-				box-shadow: 0 0 20px rgba(247, 107, 28, 1);
-			}
-			100% {
-				box-shadow: 0 0 20px rgba(255, 217, 97, 0.3);
-			}
+	}
+
+	@keyframes hover_glow {
+		0% {
+			box-shadow: 0 0 20px rgba(255, 217, 97, 0.5);
+		}
+		50% {
+			box-shadow: 0 0 20px rgba(247, 107, 28, 1);
+		}
+		100% {
+			box-shadow: 0 0 20px rgba(255, 217, 97, 0.3);
 		}
 	}
 
@@ -2027,9 +2035,6 @@ body {
 	.main05_content_top01{
 		display: none;
 	}
-
-	
-
 
 }
 

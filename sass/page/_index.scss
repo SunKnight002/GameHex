@@ -1,0 +1,1364 @@
+$color_1: #000;
+$color_2: var(--swiper-theme-color);
+$color_3: #fff;
+$font-family_1: Helvetica Neue, Helvetica, Arial, sans-serif;
+$font-family_2: "Noto Sans TC", sans-serif;
+$font-family_3: "Roboto";
+$font-family_4: "Noto Sans TC, sans-serif,Roboto";
+$background-color_1: #FF5252;
+$background-color_2: #3A5A85;
+$background-color_3: #0092FF;
+$background-color_4: #ACACAC;
+$background-color_5: #000;
+$background-color_6: #fff;
+$background-color_7: #333333;
+$background-color_8: #292929;
+$background-color_9: #1B2838;
+$background-color_10: transparent;
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* HTML5 display-role reset for older browsers */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* -------------- 以下CSS區域為 index.html 使用  ------------------- */
+/* index 頁面最上層 第一個 1440*1024尺寸 */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* -------------- 以下CSS區域為 輪播 使用  ------------------- */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* index 頁面最上層 第二個 1440*1024尺寸 */
+/* index 頁面最上層 第二個 1440*1024尺寸 */
+/* index 頁面最上層 第二個 1440*1024尺寸 */
+/* ------------------------------- 依照類型瀏覽 */
+/* ------------------------------- 依照類型瀏覽 */
+/* ------------------------------- 依照類型瀏覽 */
+/* ------------------------------- 遊戲卡片放置區 */
+/* ------------------------------- 遊戲卡片放置區 */
+/* ------------------------------- 遊戲卡片放置區 */
+/* ---------------------------------------- */
+/* ------------------- 小卡 */
+/* ------------------- 小卡  ------------- */
+/* --------------------------------- */
+/* 小卡文字資訊區域 */
+/* -----------------------------------  */
+/* 遊戲類型tag 以及 加入購物車按鈕 */
+/* ---------------------- 按鈕專區 ----- */
+/* ---------------------- 按鈕專區 ----- */
+/* ---------------------- 按鈕專區 ----- */
+/*  加入購物車 按鈕  小卡上面的 */
+/* ----------------- RWD - Start -------------------------- */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	line-height: 1;
+	margin: 0 auto;
+	background: #eee;
+	font-family: $font-family_1;
+	font-size: 14px;
+	color: $color_1;
+	margin: 0 auto;
+	padding: 0;
+}
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+applet {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+object {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+iframe {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h2 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h3 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h4 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h5 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h6 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+blockquote {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	quotes: none;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
+}
+pre {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+abbr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+acronym {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+address {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+big {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+cite {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+code {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+del {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+dfn {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+em {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ins {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+kbd {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+q {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	quotes: none;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
+}
+s {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+samp {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+small {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+strike {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+strong {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+sub {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+sup {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+tt {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+var {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+b {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+u {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+i {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+center {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+dl {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+dt {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+dd {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ol {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	list-style: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	list-style: none;
+}
+li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+table {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+tbody {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+tfoot {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+thead {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+th {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+aside {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+canvas {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+details {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+embed {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+figure {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+figcaption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+footer {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+hgroup {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+menu {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+output {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ruby {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	display: block;
+}
+summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+time {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+mark {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+audio {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.GameHex_Index_Swiper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+.swiper {
+	width: 100%;
+	height: 90vh;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		display: block;
+		width: 100%;
+		height: 90vh;
+		object-fit: cover;
+	}
+}
+.autoplay-progress {
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+	z-index: 10;
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	color: $color_2;
+	svg {
+		--progress: 0;
+		position: absolute;
+		left: 0;
+		top: 0px;
+		z-index: 10;
+		width: 100%;
+		height: 100%;
+		stroke-width: 4px;
+		stroke: var(--swiper-theme-color);
+		fill: none;
+		stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+		stroke-dasharray: 125.6;
+		transform: rotate(-90deg);
+		stroke: #eee;
+	}
+}
+.swiper-button-next {
+	--swiper-theme-color: #fff;
+}
+.swiper-button-prev {
+	--swiper-theme-color: #fff;
+}
+.GH_I_Swiper_Footer {
+	width: 100%;
+	height: auto;
+	background-color: $background-color_1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	p {
+		font-family: $font-family_2;
+		font-size: 40px;
+		font-weight: bold;
+		color: $color_3;
+	}
+}
+.GameHex_Index_ShopArea {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-image: url(../img/BC_BG_001m.jpg);
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.GH_I_ShopArea_SearchBar {
+	border: 1px solid #000;
+	width: 60%;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	background-color: $background-color_2;
+	border-radius: 8px;
+}
+.GH_I_ShopArea_SearchBar_TagBTN {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 60%;
+	ul {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		a {
+			font-family: $font-family_2;
+			font-size: 14px;
+			color: $color_3;
+			text-decoration: none;
+			text-align: center;
+			li {
+				&:hover {
+					background-color: $background-color_3;
+					color: $color_3;
+					font-weight: bold;
+				}
+				width: 92px;
+				height: 24px;
+				line-height: 24px;
+				border: 1px solid #000;
+				border-radius: 8px;
+			}
+		}
+	}
+}
+.GH_I_ShopArea_SearchBar_SeeBTN {
+	width: 40%;
+	height: 40px;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+.GH_MA_HopeList_SearchTool {
+	width: 178px;
+	height: 40px;
+	background-color: $background-color_4;
+	border: 1px solid black;
+	border-radius: 8px;
+	position: relative;
+	&::placeholder {
+		padding-left: 8px;
+	}
+}
+.GH_I_ShopArea_DispalyAndTag {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	height: auto;
+}
+.GH_I_ShopArea_GameTag {
+	width: 10%;
+	height: auto;
+	border: 1px solid #000;
+	border-radius: 8px;
+	background-color: $background-color_2;
+	margin-right: 8px;
+	display: flex;
+	flex-direction: column;
+}
+.GH_I_ShopArea_GameTag_FromYour {
+	font-family: $font-family_2;
+	color: $color_3;
+	padding: 20px 20px 0 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	p {
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 16px;
+	}
+	ul {
+		height: 40vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		a {
+			color: $color_3;
+			text-decoration: none;
+			font-size: 16px;
+			&:hover {
+				background-color: $background-color_5;
+				font-size: 16px;
+				font-weight: bold;
+			}
+		}
+	}
+}
+.GH_I_ShopArea_GameTag_FromGame {
+	font-family: $font-family_2;
+	color: $color_3;
+	padding: 20px 20px 0 20px;
+	text-align: center;
+	p {
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 16px;
+	}
+	ul {
+		height: 40vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		a {
+			color: $color_3;
+			text-decoration: none;
+			font-size: 16px;
+			&:hover {
+				background-color: $background-color_6;
+				font-size: 16px;
+				font-weight: bold;
+			}
+		}
+	}
+}
+.GH_I_ShopArea_GameArea {
+	width: 70%;
+	height: 85vh;
+	border: 1px solid #000;
+	border-radius: 16px;
+	background-color: $background-color_2;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.GH_I_ShopArea_GameArea_TitleAndSearh {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	p {
+		font-family: $font-family_2;
+		font-size: 36px;
+		font-weight: bold;
+		color: $color_3;
+	}
+}
+.GameFilterStyle {
+	width: 206px;
+	height: 40px;
+	font-family: $font-family_2;
+	font-size: 20px;
+	font-weight: bold;
+	border: 1px solid #000;
+	border-radius: 4px;
+	text-align: center;
+	padding-right: 20px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url('../img/Down.png') no-repeat, linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-position: right 10px center;
+	background-size: 20px 20px;
+	&:optional {
+		padding-left: 24px;
+	}
+}
+.GH_I_ShopArea_GameArea_GameCardList {
+	width: 100%;
+	height: 90%;
+	background-color: $background-color_7;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	overflow-y: scroll;
+	overflow-wrap: normal;
+}
+.recomeGame_Card {
+	width: 100%;
+	height: auto;
+	&:nth-child(4) {
+		margin-right: 0;
+	}
+	&:nth-child(8) {
+		margin-right: 0;
+	}
+	&:nth-child(12) {
+		margin-right: 0;
+	}
+}
+.recomeGame_CardFin {
+	width: 300px;
+	height: 300px;
+}
+.recomeGame_img {
+	position: relative;
+	>img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		border-top-left-radius: 16px;
+		border-top-right-radius: 16px;
+	}
+}
+.Card_000 {
+	width: 100%;
+}
+.Card_BTN01 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.Card_Love {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.discountPrice {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	width: 40%;
+	height: 30px;
+	background-color: $background-color_8;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	span {
+		font-size: 12px;
+		color: $color_1;
+		border-radius: 16px;
+		font-family: $font-family_3;
+		display: block;
+		background-color: $background-color_6;
+		padding-left: 12px;
+		padding-right: 12px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+	p {
+		font-size: 14px;
+		font-weight: 500;
+		color: $color_3;
+		font-family: $font-family_3;
+	}
+}
+.HopeList_BTN {
+	img {
+		width: 28px;
+		height: 28px;
+	}
+	position: absolute;
+	top: 10px;
+	right: 0;
+	border: none;
+	background-color: $background-color_10;
+}
+.recomeGame_info {
+	width: 100%;
+	height: auto;
+	background-color: $background-color_9;
+}
+.recomeGame_info_title {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	p {
+		font-size: 16px;
+		font-weight: 500;
+		font-family: $font-family_4;
+		color: $color_3;
+	}
+	ul {
+		display: flex;
+		align-items: center;
+		margin-left: 60px;
+		li {
+			img {
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+}
+.gameTag_Bigbox {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 6vh;
+	width: 100%;
+	ul {
+		width: 70%;
+		height: auto;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, auto);
+		gap: 8px;
+		li {
+			font-size: 12px;
+			color: $color_3;
+			background-color: $background-color_2;
+			border-radius: 8px;
+			text-align: center;
+		}
+	}
+}
+.BTN_Style_ProductTo_SearchName {
+	width: 47px;
+	height: 44px;
+	background-color: $background-color_7;
+	border-radius: 8px;
+	box-shadow: none;
+	background-image: url(../img/Vector-Right.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.AddToCart_BTN {
+	width: 30%;
+	height: 24px;
+	background-color: $background-color_6;
+	border-radius: 8px;
+	border: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+@media (max-width: 1536px) {
+	.GH_I_ShopArea_GameArea {
+		height: 90vh;
+		padding: 12px;
+		justify-content: space-around;
+	}
+	.gameTag_Bigbox {
+		ul {
+			gap: 4px;
+			width: 65%;
+			li {
+				font-size: 10px;
+				padding: 4px;
+			}
+		}
+	}
+	.GH_MA_HopeList_SearchTool {
+		height: 4vh;
+	}
+	.BTN_Style_ProductTo_SearchName {
+		height: 4.3vh;
+	}
+	.AddToCart_BTN {
+		width: 25%;
+		height: auto;
+	}
+	.GH_I_ShopArea_GameTag_FromGame {
+		p {
+			font-size: 14px;
+		}
+	}
+	.GH_I_ShopArea_GameTag_FromYour {
+		p {
+			font-size: 14px;
+		}
+	}
+	.discountPrice {
+		width: 50%;
+	}
+	.recomeGame_info_title {
+		ul {
+			margin-left: 0;
+		}
+	}
+	.GH_I_ShopArea_SearchBar {
+		width: 70%;
+	}
+	.GH_I_ShopArea_GameTag {
+		width: 15%;
+	}
+}
+@media (max-width: 1280px) {
+	.GH_I_ShopArea_GameTag {
+		width: 15%;
+	}
+	.gameTag_Bigbox {
+		justify-content: space-between;
+		ul {
+			li {
+				padding: 2px;
+			}
+			width: 70%;
+		}
+	}
+	.AddToCart_BTN {
+		width: 25%;
+		font-size: 12px;
+	}
+	.GH_I_ShopArea_GameTag_FromYour {
+		padding: 12px 12px 0 12px;
+	}
+	.GH_I_ShopArea_GameTag_FromGame {
+		padding: 12px 12px 0 12px;
+	}
+}
+@media (max-width: 1150px) {
+	.GH_I_ShopArea_GameArea_GameCardList {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.GH_I_ShopArea_GameTag {
+		display: none;
+	}
+	.GH_I_ShopArea_DispalyAndTag {
+		width: 100%;
+	}
+	.GH_I_ShopArea_SearchBar_TagBTN {
+		ul {
+			a {
+				li {
+					width: 7vw;
+				}
+			}
+		}
+	}
+	.GH_MA_HopeList_SearchTool {
+		width: 40%;
+		height: 3vh;
+	}
+}
+@media (max-width: 900px) {
+	.GH_I_ShopArea_GameArea_GameCardList {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.discountPrice {
+		width: 50%;
+		span {
+			font-size: 18px;
+			font-weight: bold;
+		}
+		p {
+			font-size: 18px;
+			font-weight: bold;
+		}
+	}
+	.recomeGame_info_title {
+		p {
+			font-size: 20px;
+		}
+		ul {
+			li {
+				img {
+					width: 32px;
+					height: 32px;
+				}
+			}
+		}
+	}
+	.gameTag_Bigbox {
+		ul {
+			li {
+				font-size: 16px;
+			}
+		}
+	}
+	.AddToCart_BTN {
+		font-size: 18px;
+	}
+	.GH_I_ShopArea_GameArea_TitleAndSearh {
+		p {
+			font-size: 28px;
+		}
+	}
+	.GH_I_ShopArea_SearchBar_SeeBTN {
+		width: 30%;
+	}
+	.BTN_Style_ProductTo_SearchName {
+		height: 4vh;
+		width: 5vw;
+	}
+	.GH_I_ShopArea_SearchBar_TagBTN {
+		width: 70%;
+	}
+	.GH_I_ShopArea_SearchBar {
+		display: none;
+	}
+	.GameFilterStyle {
+		width: 35%;
+		&:optional {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.GH_I_ShopArea_GameArea {
+		width: 80%;
+	}
+}
+@media (max-width: 650px) {
+	.GH_I_ShopArea_GameArea_TitleAndSearh {
+		p {
+			font-size: 20px;
+		}
+	}
+	.GameFilterStyle {
+		font-size: 16px;
+	}
+	.GH_I_ShopArea_GameArea {
+		width: 100%;
+	}
+}
+@media (max-width: 450px) {
+	.GH_I_ShopArea_GameArea_TitleAndSearh {
+		flex-direction: column;
+		height: 6vh;
+	}
+	.GameFilterStyle {
+		width: 100%;
+	}
+}
