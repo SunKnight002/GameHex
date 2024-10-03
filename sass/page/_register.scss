@@ -1,0 +1,853 @@
+$color_1: #fff;
+$color_2: #000;
+$font-family_1: "Roboto", sans-serif;
+$background-color_1: #fff;
+$background-color_2: #000;
+
+/* ---------------------------------------------------------- */
+/* 這邊是 第二個 藍色點點 */
+/* ---------------------------------------------------------- */
+/* 這邊是 第三個 藍色點點 */
+/* ------------------------------------------------------- */
+/* 以下這邊為  Register 下半 區域 */
+/* ------------------------------ 帳號輸入框 ----------------------*/
+/* ------------------------------ 密碼輸入框 ----------------------*/
+/* ------------------------------ 二次密碼輸入框 ----------------------*/
+/* ------------------------------ 繼續按鈕 ----------------------*/
+/* ----------------- RWD - Start -------------------------- */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+.RegisterMain {
+	width: 100%;
+	height: 90vh;
+	background-image: url(../img/BG_For_Register_002m.jpg);
+	background-size: cover;
+}
+.RegisterMain_Top {
+	width: 80%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding-top: 56px;
+}
+.arrow01 {
+	width: 10vw;
+}
+.arrow02 {
+	width: 10vw;
+}
+.RegisterMain_Top_Box01 {
+	width: 26%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	img {
+		width: auto;
+		height: auto;
+		display: block;
+	}
+	p {
+		color: $color_1;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	span {
+		color: $color_1;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		font-family: $font-family_1;
+	}
+}
+.RegisterMain_Top_Box02 {
+	width: 26%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	img {
+		width: auto;
+		height: auto;
+		display: block;
+	}
+	p {
+		color: $color_1;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	span {
+		color: $color_1;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		font-family: $font-family_1;
+	}
+}
+.RegisterMain_Top_Box03 {
+	width: 26%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	img {
+		width: auto;
+		height: auto;
+		display: block;
+	}
+	p {
+		color: $color_1;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	span {
+		color: $color_1;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		font-family: $font-family_1;
+	}
+}
+.RegisterMain_Bot {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		font-size: 36px;
+		font-weight: bold;
+		color: $color_1;
+		font-family: $font-family_1;
+		margin-top: 64px;
+		margin-bottom: 36px;
+		text-align: center;
+	}
+	>p {
+		font-size: 28px;
+		font-weight: bold;
+		color: $color_1;
+		font-family: $font-family_1;
+		margin-bottom: 16px;
+		text-align: center;
+	}
+	>a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin-top: 31px;
+		text-decoration: none;
+		color: $color_1;
+		background-color: $background-color_2;
+		border: 1px solid #fff;
+		border-radius: 16px;
+		width: 40%;
+		height: 6vh;
+		font-size: 24px;
+		font-weight: bold;
+	}
+}
+.tipsText {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 12px;
+	text-align-last: left;
+	color: $color_1;
+}
+.inputBox01 {
+	width: 50%;
+	margin-bottom: 20px;
+	input {
+		width: 100%;
+		height: 4vh;
+		border-radius: 16px;
+		background-color: $background-color_1;
+		padding-left: 12px;
+		&::placeholder {
+			font-size: 16px;
+			font-weight: 400;
+			color: $color_2;
+			padding-left: 0px;
+		}
+	}
+}
+.inputBox02 {
+	width: 50%;
+	margin-bottom: 20px;
+	input {
+		width: 100%;
+		height: 4vh;
+		border-radius: 16px;
+		background-color: $background-color_1;
+		padding-left: 12px;
+		&::placeholder {
+			font-size: 16px;
+			font-weight: 400;
+			color: $color_2;
+			padding-left: 0px;
+		}
+	}
+}
+.inputBox03 {
+	width: 50%;
+	margin-bottom: 20px;
+	input {
+		width: 100%;
+		height: 4vh;
+		border-radius: 16px;
+		background-color: $background-color_1;
+		padding-left: 12px;
+		&::placeholder {
+			font-size: 16px;
+			font-weight: 400;
+			color: $color_2;
+			padding-left: 0px;
+		}
+	}
+}
+@media (max-width: 1536px) {
+	.RegisterMain_Top {
+		padding-top: 40px;
+	}
+	.RegisterMain_Bot {
+		h1 {
+			margin-top: 40px;
+		}
+	}
+}
+@media (max-width: 1280px) {
+	.RegisterMain {
+		height: 100vh;
+	}
+}
+@media (max-width: 600px) {
+	.RegisterMain_Top_Box01 {
+		p {
+			font-size: 18px;
+		}
+		span {
+			font-size: 14px;
+		}
+		img {
+			width: 60%;
+		}
+	}
+	.RegisterMain_Top_Box02 {
+		p {
+			font-size: 18px;
+		}
+		span {
+			font-size: 14px;
+		}
+		img {
+			width: 60%;
+		}
+	}
+	.RegisterMain_Top_Box03 {
+		p {
+			font-size: 18px;
+		}
+		span {
+			font-size: 14px;
+		}
+		img {
+			width: 60%;
+		}
+	}
+	.RegisterMain_Bot {
+		>p {
+			font-size: 24px;
+		}
+		>a {
+			width: 60%;
+		}
+		h1 {
+			font-size: 32px;
+		}
+	}
+	.inputBox01 {
+		width: 100%;
+	}
+	.inputBox02 {
+		width: 100%;
+	}
+	.inputBox03 {
+		width: 100%;
+	}
+}
+
+
+$color_1: #fff;
+$color_2: #000;
+$color_3: #480E07;
+$font-family_1: "Roboto", sans-serif;
+$background-color_1: #fff;
+$background-color_2: #F8442D;
+$background-color_3: #E6331C;
+$background-color_4: #6D6D6D;
+$background-color_5: #000;
+
+/* -------------------------------------------------------------------------------- */
+/* 此處開始為 Register 02  之 視覺設定相關檔案 */
+/* ---------------------------------------------------------- */
+/* 這邊是 第二個 藍色點點 */
+/* ---------------------------------------------------------- */
+/* 這邊是 第三個 藍色點點 */
+/* ------------------------------ */
+/* ------------------------------ 驗證碼輸入框 ----------------------*/
+/* ----------------- RWD - Start -------------------------- */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+.RegisterMain02 {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/BG_For_Register_003.jpg);
+	display: block;
+	background-size: cover;
+}
+.RegisterMain_Top {
+	width: 80%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding-top: 56px;
+}
+.arrow01 {
+	width: 10vw;
+}
+.arrow02 {
+	width: 10vw;
+}
+.RegisterMain_Top_Box01 {
+	width: 26%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	img {
+		width: auto;
+		height: auto;
+		display: block;
+	}
+	p {
+		color: $color_1;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	span {
+		color: $color_1;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		font-family: $font-family_1;
+	}
+}
+.RegisterMain_Top_Box02 {
+	width: 26%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	img {
+		width: auto;
+		height: auto;
+		display: block;
+	}
+	p {
+		color: $color_1;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	span {
+		color: $color_1;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		font-family: $font-family_1;
+	}
+}
+.RegisterMain_Top_Box03 {
+	width: 26%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	img {
+		width: auto;
+		height: auto;
+		display: block;
+	}
+	p {
+		color: $color_1;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	span {
+		color: $color_1;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		font-family: $font-family_1;
+	}
+}
+.RegisterMain_Bot {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		font-size: 36px;
+		font-weight: bold;
+		color: $color_1;
+		font-family: $font-family_1;
+		margin-top: 64px;
+		margin-bottom: 36px;
+		text-align: center;
+	}
+	>p {
+		font-size: 28px;
+		font-weight: bold;
+		color: $color_1;
+		font-family: $font-family_1;
+		margin-bottom: 16px;
+		text-align: center;
+	}
+	.errorNotGet {
+		font-size: 20px;
+		font-weight: bold;
+		color: $color_1;
+		margin-top: 44px;
+		margin-bottom: 0;
+		text-align: left;
+	}
+	.Resend_BTN {
+		margin-top: 12px;
+		background-color: $background-color_2;
+	}
+	>a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin-top: 31px;
+		text-decoration: none;
+		color: $color_1;
+		background-color: $background-color_5;
+		border: 1px solid #fff;
+		border-radius: 16px;
+		width: 40%;
+		height: 6vh;
+		font-size: 24px;
+		font-weight: bold;
+	}
+}
+.tipsText {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 12px;
+	text-align-last: left;
+	color: $color_1;
+}
+.inputBox01 {
+	width: 50%;
+	input {
+		width: 100%;
+		height: 4vh;
+		border-radius: 16px;
+		background-color: $background-color_1;
+		padding-left: 12px;
+		&::placeholder {
+			font-size: 16px;
+			font-weight: 400;
+			color: $color_2;
+			padding-left: 0px;
+		}
+	}
+}
+.Resend_BTN {
+	&:hover {
+		background-color: $background-color_3;
+		color: $color_3;
+	}
+}
+.Keep_BTN {
+	&:hover {
+		background-color: $background-color_4;
+		color: $color_2;
+	}
+}
+@media (max-width: 1280px) {
+	.RegisterMain_Top {
+		padding-top: 28px;
+	}
+	.RegisterMain_Bot {
+		h1 {
+			margin-top: 40px;
+			margin-bottom: 28px;
+		}
+		>a {
+			margin-top: 20px;
+		}
+		.errorNotGet {
+			margin-top: 20px;
+		}
+		.Resend_BTN {
+			margin-top: 20px;
+		}
+	}
+}
+@media (max-width: 600px) {
+	.RegisterMain_Top {
+		width: 90%;
+	}
+	.RegisterMain_Top_Box01 {
+		img {
+			width: 60%;
+		}
+		width: 30%;
+		p {
+			font-size: 20px;
+		}
+		span {
+			font-size: 14px;
+		}
+	}
+	.RegisterMain_Top_Box02 {
+		img {
+			width: 60%;
+		}
+		width: 30%;
+		p {
+			font-size: 20px;
+		}
+		span {
+			font-size: 14px;
+		}
+	}
+	.RegisterMain_Top_Box03 {
+		img {
+			width: 60%;
+		}
+		p {
+			font-size: 20px;
+		}
+		width: 30%;
+		span {
+			font-size: 14px;
+		}
+	}
+	.RegisterMain_Bot {
+		h1 {
+			font-size: 24px;
+		}
+		>p {
+			font-size: 20px;
+		}
+		>a {
+			font-size: 18px;
+			font-size: 18px;
+		}
+	}
+	.tipsText {
+		font-size: 16px;
+	}
+	.arrow01 {
+		width: 8vw;
+	}
+	.arrow02 {
+		width: 8vw;
+	}
+	.RegisterMain02 {
+		height: 120vh;
+	}
+	.inputBox01 {
+		width: 80%;
+	}
+}
+
+$color_1: #fff;
+$color_2: #000;
+$font-family_1: "Roboto", sans-serif;
+$background-color_1: #000;
+$background-color_2: #6D6D6D;
+
+/* -------------------------------------------------------------------------------- */
+/* 此處開始為 Register 03  之 視覺設定相關檔案 */
+/* ---------------------------------------------------------- */
+/* 這邊是 第二個 藍色點點 */
+/* ---------------------------------------------------------- */
+/* 這邊是 第三個 藍色點點 */
+/* ------------------------------ */
+/* ----------------- RWD - Start -------------------------- */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - PC Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* ----------------- RWD - Table Part ------------------------ */
+/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+/* ----------------- RWD - Mobile Part ------------------------ */
+.RegisterMain03 {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/BG_For_Register_004.jpg);
+	display: block;
+	background-size: cover;
+}
+.RegisterMain_Bot {
+	span {
+		color: $color_1;
+		font-size: 24px;
+		font-weight: bold;
+		display: block;
+		text-align: center;
+	}
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		font-size: 36px;
+		font-weight: bold;
+		color: $color_1;
+		font-family: $font-family_1;
+		margin-top: 64px;
+		margin-bottom: 36px;
+		text-align: center;
+	}
+	>p {
+		font-size: 28px;
+		font-weight: bold;
+		color: $color_1;
+		font-family: $font-family_1;
+		margin-bottom: 16px;
+		text-align: center;
+	}
+	>a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin-top: 31px;
+		text-decoration: none;
+		color: $color_1;
+		background-color: $background-color_1;
+		border: 1px solid #fff;
+		border-radius: 16px;
+		width: 40%;
+		height: 6vh;
+		font-size: 24px;
+		font-weight: bold;
+	}
+}
+.arrow01 {
+	width: 10vw;
+}
+.arrow02 {
+	width: 10vw;
+}
+.RegisterMain_Top {
+	width: 80%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding-top: 56px;
+}
+.RegisterMain_Top_Box01 {
+	width: 26%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	img {
+		width: auto;
+		height: auto;
+		display: block;
+	}
+	p {
+		color: $color_1;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	span {
+		color: $color_1;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		font-family: $font-family_1;
+	}
+}
+.RegisterMain_Top_Box02 {
+	width: 26%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	img {
+		width: auto;
+		height: auto;
+		display: block;
+	}
+	p {
+		color: $color_1;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	span {
+		color: $color_1;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		font-family: $font-family_1;
+	}
+}
+.RegisterMain_Top_Box03 {
+	width: 26%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	img {
+		width: auto;
+		height: auto;
+		display: block;
+	}
+	p {
+		color: $color_1;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	span {
+		color: $color_1;
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		font-family: $font-family_1;
+	}
+}
+.Keep_BTN {
+	&:hover {
+		background-color: $background-color_2;
+		color: $color_2;
+	}
+}
+@media (max-width: 1100px) {
+	.RegisterMain_Top_Box01 {
+		p {
+			font-size: 22px;
+		}
+	}
+	.RegisterMain_Top_Box02 {
+		p {
+			font-size: 22px;
+		}
+	}
+	.RegisterMain_Top_Box03 {
+		p {
+			font-size: 22px;
+		}
+	}
+	.RegisterMain_Bot {
+		>a {
+			font-size: 20px;
+		}
+	}
+}
+@media (max-width: 600px) {
+	.RegisterMain_Top_Box01 {
+		img {
+			width: 60%;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+	.RegisterMain_Top_Box02 {
+		img {
+			width: 60%;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+	.RegisterMain_Top_Box03 {
+		img {
+			width: 60%;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+	.RegisterMain_Bot {
+		span {
+			font-size: 20px;
+		}
+		>a {
+			width: 60%;
+			font-size: 18px;
+		}
+	}
+}

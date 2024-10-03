@@ -1,170 +1,267 @@
-$color_1: #fff;
-$color_2: dodgerblue;
-$font-family_1: "Noto Sans TC", sans-serif;
-$background-color_1: #000000;
-$background-color_2: #fff;
-$background-color_3: rgba(125, 125, 125, 0.7);
-
 /* ------------------------------------------------------------------------- */
 /* 開始進行html5 寫法更正 */
 /* ----------------------------------------------------------------------------- */
 /* ----------------------- 這邊為logo圖片 專用CSS ------------------------------- */
-/* ----------------- RWD ----------------------- Start ---------------------- */
-/* ----------------- RWD ----------------------- PC ---------------------- */
-/* ----------------- RWD ----------------------- Start ---------------------- */
-/* ----------------- RWD ----------------------- Table ---------------------- */
-/* 在小於968px的裝置上應用這些CSS規則 */
-/* ----------------- RWD ----------------------- Start ---------------------- */
-/* ----------------- RWD ----------------------- Mobile ---------------------- */
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 header {
-	width: 100%;
-	background-color: $background-color_1;
-	margin: 0 auto;
-	padding-top: 16px;
-	padding-bottom: 16px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+
+    width: 100%;
+    background-color: #000000;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include rwd(968px) {
+
+        justify-content: space-around;
+
+        ul {
+            display: none;
+        }
+    }
+
+    @include rwd(600px) {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
 }
 
 .header_Logo {
-	img {
-		width: 100%;
-		height: 6vh;
-		display: block;
-	}
-	a {
-		display: block;
-		width: auto;
-		height: auto;
-	}
+
+    img {
+        width: 100%;
+        height: 6vh;
+        display: block;
+    }
+
+    a {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
 }
 
 .nav-link {
-	text-decoration: none;
-	color: $color_1;
-	transition: 0.7s ease;
-	font-size: 24px;
-	font-family: $font-family_1;
-	font-weight: 400;
-	&:hover {
-		color: $color_2;
-	}
+    text-decoration: none;
+    color: #fff;
+    transition: 0.7s ease;
+    font-size: 18px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    :hover {
+        color: dodgerblue;
+    }
+
+    span {
+        display: inline-block;
+        font-weight: 500;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            left: 0;
+            top: 25px;
+            background-color: rgb(168, 212, 255);
+            transition: width 0.3s ease;
+        }
+
+        &:hover {
+            color: dodgerblue;
+
+            &::after {
+                width: 100%;
+                background: rgb(5, 205, 255);
+            }
+        }
+    }
 }
 
 .navbar {
-	width: 100%;
-	min-height: 6vh;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 12px 0px;
+    width: 100%;
+    min-height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 .nav-menu {
-	width: auto;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	gap: 60px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+
+    @include rwd(1536px) {
+        gap: 28px;
+    }
+
+    @include rwd(1100px) {
+        gap: 12px;
+    }
+
+    @include rwd(968px) {
+        position: fixed;
+        left: -100%;
+        top: 6%;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(125, 125, 125, 0.7);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 5;
+    }
 }
 
 .hamburger {
-	display: none;
-	cursor: pointer;
+    display: none;
+    cursor: pointer;
+
+    @include rwd(968px) {
+        display: block;
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    }
+
+    @include rwd(1000px) {
+        margin-left: 160px;
+    }
+
+    @include phone {
+        margin-left: 100px;
+    }
 }
 
 .bar {
-	display: block;
-	width: 25px;
-	height: 3px;
-	margin: 5px auto;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	background-color: $background-color_2;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
 }
 
-@media (max-width: 1536px) {
-	.nav-menu {
-		gap: 28px;
-	}
+@include rwd(968px) {
+
+    .hanber > img {
+        display: block;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
 }
 
-@media (max-width: 1100px) {
-	.nav-menu {
-		gap: 12px;
-	}
-	.navbar {
-		width: 80%;
-	}
+.active-link span {
+    color: dodgerblue;
 }
+
+/* ----------------- RWD ----------------------- Start ---------------------- */
+/* ----------------- RWD ----------------------- Table ---------------------- */
 
 @media (max-width: 968px) {
-	header {
-		justify-content: space-around;
-		ul {
-			display: none;
-		}
-	}
-	.hanber {
-		>img {
-			display: block;
-		}
-	}
-	.navbar {
-		width: 60%;
-	}
-	.hamburger {
-		display: block;
-	}
-	.hamburger.active {
-		.bar {
-			&:nth-child(2) {
-				opacity: 0;
-			}
-			&:nth-child(1) {
-				transform: translateY(8px) rotate(45deg);
-			}
-			&:nth-child(3) {
-				transform: translateY(-8px) rotate(-45deg);
-			}
-		}
-	}
-	.nav-menu {
-		position: fixed;
-		left: -100%;
-		top: 100px;
-		gap: 0;
-		flex-direction: column;
-		background-color: $background-color_3;
-		width: 100%;
-		text-align: center;
-		transition: 0.3s;
-		z-index: 5;
-	}
-	.nav-item {
-		margin: 16px 0;
-	}
-	.nav-menu.active {
-		left: 0;
-	}
+    /* 在小於968px的裝置上應用這些CSS規則 */
+
+    // header{
+    //     justify-content: space-around;
+    // }
+
+    // header ul{
+    //     display: none;
+    // }
+
+    // .hanber > img{
+    //     display: block;
+    // }
+
+    // .navbar{
+    //     width: 100%;
+    // 	justify-content: space-between;
+    // }
+
+    // .hamburger{
+    //     display: block;
+    // }
+
+    // .hamburger.active .bar:nth-child(2){
+    //     opacity: 0;
+    // }
+
+    // .hamburger.active .bar:nth-child(1){
+    //     transform: translateY(8px) rotate(45deg);
+    // }
+
+    // .hamburger.active .bar:nth-child(3){
+    //     transform: translateY(-8px) rotate(-45deg);
+    // }
+
+    // .nav-menu{
+    //     position: fixed;
+    //     left: -100%;
+    //     top: 100px;
+    //     gap: 0;
+    //     flex-direction: column;
+    //     background-color: rgba(125, 125, 125, 0.7);
+    //     width: 100%;
+    //     text-align: center;
+    //     transition: 0.3s;
+    //     z-index: 5;
+    // }
+
+    // .nav-item{
+    //     margin: 16px 0;
+    // }
+
+    // .nav-menu.active{
+    //     left: 0;
+    // }
 }
 
+/* ----------------- RWD ----------------------- Start ---------------------- */
+/* ----------------- RWD ----------------------- Mobile ---------------------- */
+
 @media (max-width: 600px) {
-	.navbar {
-		width: 40%;
-	}
-	header {
-		padding-top: 8px;
-		padding-bottom: 8px;
-	}
-	.nav-menu {
-		top: 70px;
-	}
+
+    // .navbar{
+    //     width: 40%;
+    // }
+
+    // header {
+    //     padding-top: 8px;
+    //     padding-bottom: 8px;
+    // }
+
+    // .nav-menu{
+    //     top: 70px;
+    // }
 }

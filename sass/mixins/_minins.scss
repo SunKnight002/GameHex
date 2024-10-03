@@ -1,0 +1,19 @@
+//=========================RWD===========
+@mixin pad(){
+    @media (max-width: $pad){
+        @content;
+    }
+}
+
+@mixin phone(){
+    @media (max-width: $phone) {
+        @content;
+    }
+}
+
+@mixin rwd($rwd){
+    @media (max-width: $rwd){
+        @content;
+    }
+}
+
