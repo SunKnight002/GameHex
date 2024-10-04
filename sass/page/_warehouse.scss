@@ -1,0 +1,126 @@
+$font-family_1: "Noto Sans TC", sans-serif;
+
+.GameHex_WareHouse_GameChest {
+    width: 100%;
+    padding: 100px 0;
+    background-color: map-get($colors, blueOther);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: map-get($colors, white);
+        margin-top: 20px;
+        margin-bottom: 16px;
+
+        @include rwd(600px) {
+            font-size: 24px;
+        }
+    }
+    > p {
+        font-size: 16px;
+        color: map-get($colors, white);
+        margin-bottom: 20px;
+    }
+}
+.GH_WH_GameChest_GameArea {
+    width: 80%;
+    height: 100vh;
+    padding: 40px;
+    background-color: map-get($colors, darkBlue);
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    justify-content: space-around;
+    gap: 40px;
+    border-radius: 20px;
+
+    @include rwd(1280px) {
+        gap: 20px;
+    }
+
+    @include phone {
+        width: 90%;
+        padding: 20px;
+    }
+
+
+}
+.GameCard_Lunch {
+    width: 280px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 16px;
+    cursor: pointer;
+
+    &:hover{
+        animation: glow 1.5s infinite alternate;
+    }
+}
+.GameCard_Lunch_Img {
+    width: 280px;
+    height: 200px;
+    position: relative;
+    img {
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+    }
+    p {
+        display: block;
+        padding: 8px;
+        position: absolute;
+        top: 132px;
+        left: 78.5px;
+        background-color: map-get($colors, coffee04);
+        color: map-get($colors, white);
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 4px;
+    }
+    span {
+        display: block;
+        position: absolute;
+        padding: 8px;
+        top: 168px;
+        left: 69px;
+        background-color: map-get($colors, coffee04);
+        color: map-get($colors, white);
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 4px;
+    }
+}
+.GameCard_Lunch_Info {
+    background-color: map-get($colors, grayDeep);
+    height: 100px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.GameCard_Lunch_Info_Title {
+    color: map-get($colors, white);
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.BTN_Style_ProductTo_Lunch {
+    font-family: $font-family_1;
+    font-size: 16px;
+    color: map-get($colors, dark);
+    text-align: center;
+    width: 96px;
+    height: 32px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: dodgerblue;
+        color: map-get($colors, white );
+    }
+}
