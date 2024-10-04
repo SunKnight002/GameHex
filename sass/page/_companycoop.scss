@@ -1,0 +1,818 @@
+$color_2: #363300;
+$font-family_1: "Roboto", sans-serif;
+$font-family_2: "Noto Sans TC", sans-serif;
+$background-color_9: transparent;
+$background-color_10: rgba(91, 91,91, 0.8);
+
+.GameHex_Coop_Introduce {
+	width: 100%;
+	background-color: map-get($colors , grayReallyDeep );
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.GameHex_Coop_Introduce_Title {
+	width: 276px;
+	height: 197px;
+    display: flex;
+    margin-left: 80px;
+
+    @include phone{
+        margin-left: 40px;
+    }
+
+	img {
+		width: 25px;
+		height: 181px;
+	}
+
+	p {
+		font-family: $font-family_1;
+		font-weight: bold;
+		font-size: 60px;
+		font-weight: bold;
+		color: map-get($colors, white);
+	}
+
+	h1 {
+		font-family: $font-family_1;
+		font-weight: bold;
+		font-size: 40px;
+		color: map-get($colors, white);
+	}
+
+	span {
+		font-family: $font-family_1;
+		font-weight: bold;
+		font-size: 28px;
+		color: map-get($colors, white);
+	}
+
+    .GameHex_Coop_Introduce_Title_text{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        text-align: left;
+    }
+}
+.GameHex_Coop_Introduce_Slogan {
+	font-family: $font-family_2;
+	font-weight: bold;
+	font-size: 28px;
+	color: map-get($colors, white);
+    text-align: center;
+    margin-top: 60px;
+
+    @include rwd(540px){
+        font-size: 22px;
+    }
+
+    @include phone{
+        font-size: 18px;
+    }
+
+    @include rwd(350px){
+        font-size: 16px;
+    }
+}
+.GameHex_Coop_Introduce_Slogan01 {
+    margin-bottom: 20px;
+}
+.GameHex_Coop_Introduce_Slogan02 {
+    margin-bottom: 20px;
+}
+.GameHex_Coop_Introduce_Slogan03 {
+
+}
+.GameHex_Coop_Introduce_CardBox {
+    width: 90%;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+	grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    margin: 0 auto;
+
+    @include rwd(1400px){
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    @include rwd(980px){
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    @include rwd(680px){
+        grid-template-columns: repeat(1,1fr);
+        display: flex;
+        justify-content: center;
+    }
+}
+.GameHex_Coop_Introduce_Card01 {
+	// width: 240px;
+	// height: 630px;
+	margin-top: 270px;
+    position: relative;
+    transform: translateY(-50px); /* 初始位置 */
+    animation: slideIn 1s forwards; /* 動畫效果 */
+    opacity: 0;
+
+	img {
+		display: block;
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+
+        &:hover{
+            animation: glow 3s infinite alternate;
+        }
+	}
+	p {
+		position: absolute;
+		top: 50%;
+        right: 0;
+        padding: 20px 10px;
+		color: map-get($colors , yellowDark );
+		background-color: map-get($colors , yellowLight );
+		font-family: $font-family_1;
+		font-size: 28px;
+		font-weight: 500;
+        text-align: center;
+
+        @include phone{
+            font-size: 20px;
+        }
+	}
+}
+.GameHex_Coop_Introduce_Card02 {
+	// width: 240px;
+	// height: 630px;
+	margin-top: 193px;
+	// margin-left: 60px;
+    position: relative;
+    transform: translateY(-50px); /* 初始位置 */
+    animation: slideIn 1s forwards; /* 動畫效果 */
+    animation: slideIn 1s forwards 0.5s;
+    opacity: 0;
+
+    @include rwd(680px){
+        display: none;
+    }
+
+	img {
+		display: block;
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+
+        &:hover{
+            animation: glow 3s infinite alternate;
+        }
+
+	}
+	p {
+		position: absolute;
+		top: 50%;
+        right: 0%;
+        padding: 20px 10px;
+		color: map-get($colors, coffeeRed );
+		background-color: map-get($colors , red02 );
+		font-family: $font-family_1;
+		font-size: 28px;
+		font-weight: 500;
+        text-align: center;
+
+        @include phone{
+            font-size: 20px;
+        }
+	}
+}
+.GameHex_Coop_Introduce_Card03 {
+	// width: 240px;
+	// height: 630px;
+	margin-top: 116px;
+    position: relative;
+    transform: translateY(-50px); /* 初始位置 */
+    animation: slideIn 1s forwards; /* 動畫效果 */
+    animation: slideIn 1s forwards 1s; 
+    opacity: 0;
+
+    @include rwd(980px){
+        display: none;
+    }
+
+	img {
+		display: block;
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+
+        &:hover{
+            animation: glow 3s infinite alternate;
+        }
+
+	}
+	p {
+		position: absolute;
+		top: 50%;
+        right: 0%;
+        padding: 20px 10px;
+		color: map-get($colors , yellowDark );
+		background-color: map-get($colors , yellowLight );
+		font-family: $font-family_1;
+		font-size: 28px;
+		font-weight: 500;
+        text-align: center;
+
+        @include phone{
+            font-size: 20px;
+        }
+	}
+}
+.GameHex_Coop_Introduce_Card04 {
+	// width: 240px;
+	// height: 630px;
+	margin-top: 39px;
+    position: relative;
+    transform: translateY(-50px); /* 初始位置 */
+    animation: slideIn 1s forwards; /* 動畫效果 */
+    animation: slideIn 1s forwards 1.5s; 
+    opacity: 0;
+
+    @include rwd(1400px){
+        display: none;
+    }
+
+	img {
+		display: block;
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+
+        &:hover{
+            animation: glow 3s infinite alternate;
+        }
+	}
+	p {
+		position: absolute;
+		top: 50%;
+        right: 0%;
+        padding: 20px 10px;
+		color: map-get($colors, coffeeRed );
+		background-color: map-get($colors , red02 );
+		font-family: $font-family_1;
+		font-size: 28px;
+		font-weight: 500;
+        text-align: center;
+
+        @include phone{
+            font-size: 20px;
+        }
+	}
+}
+.GameHex_Coop_Upload {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	&::before {
+		width: 100%;
+		height: 1024px;
+		content: "";
+		filter: brightness(60%) blur(3px);
+		display: block;
+		background-size: cover;
+		background-image: url(../img/BG_For_Register_003.jpg);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+.GameHex_Coop_Upload_Info {
+	width: 320px;
+	height: 620px;
+	border: 1px solid #fff;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
+	position: absolute;
+	top: 100px;
+	left: 119px;
+	img {
+		width: auto;
+		margin-left: 40px;
+		margin-bottom: 40px;
+	}
+}
+.GameHex_Coop_Upload_Info_Num {
+	font-size: 80px;
+	font-family: $font-family_1;
+	font-weight: bold;
+	color: map-get($colors, white);
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+.GameHex_Coop_Upload_Info_Title {
+	font-size: 40px;
+	font-family: $font-family_2;
+	font-weight: bold;
+	color: map-get($colors, white);
+	margin-left: 40px;
+	margin-bottom: 12px;
+}
+.GameHex_Coop_Upload_Info_SubTitle {
+	font-size: 40px;
+	font-family: $font-family_1;
+	font-weight: bold;
+	color: map-get($colors, white);
+	margin-left: 40px;
+	margin-bottom: 16px;
+}
+.GameHex_Coop_Upload_Info_Paragraph_01 {
+	font-size: 16px;
+	font-family: $font-family_2;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	margin-right: 32px;
+	line-height: 1.2;
+	color: map-get($colors, white);
+}
+.GameHex_Coop_Upload_Img {
+	position: absolute;
+	top: 100px;
+	left: 519px;
+	img {
+		width: 800px;
+		height: 620px;
+		display: block;
+	}
+}
+.GameHex_Coop_Upload_Pop {
+	width: 1440px;
+	height: 218px;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	background-color: map-get($colors, grayDeep );
+}
+.GameHex_Coop_Upload_Pop_01 {
+	width: 280px;
+	background-color: map-get($colors, blueDeepOcean );
+	display: flex;
+	align-items: center;
+	color: map-get($colors, white);
+	p {
+		margin-left: 14px;
+		margin-right: 16px;
+		font-size: 40px;
+		font-weight: bold;
+		font-family: $font-family_1;
+	}
+	img {
+		width: 13px;
+		height: 54px;
+		display: block;
+	}
+	span {
+		margin-left: 8px;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: $font-family_2;
+	}
+}
+.GameHex_Coop_Upload_Pop_02 {
+	width: 280px;
+	background-color: map-get($colors, blueOcean );
+	display: flex;
+	align-items: center;
+	color: map-get($colors, white);
+	p {
+		margin-left: 14px;
+		margin-right: 16px;
+		font-size: 40px;
+		font-weight: bold;
+		font-family: $font-family_1;
+	}
+	img {
+		width: 13px;
+		height: 54px;
+		display: block;
+	}
+	span {
+		margin-left: 8px;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: $font-family_2;
+	}
+}
+.GameHex_Coop_Upload_Pop_03 {
+	width: 280px;
+	background-color: map-get($colors , blueLighting );
+	display: flex;
+	align-items: center;
+	color: map-get($colors, white);
+	p {
+		margin-left: 14px;
+		margin-right: 0px;
+		font-size: 40px;
+		font-weight: bold;
+		font-family: $font-family_1;
+	}
+	img {
+		width: 13px;
+		height: 54px;
+		display: block;
+	}
+	span {
+		margin-left: 8px;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: $font-family_2;
+	}
+}
+.GameHex_Coop_Upload_Pop_04 {
+	width: 280px;
+	background-color: map-get($colors , blueWater );
+	display: flex;
+	align-items: center;
+	color: map-get($colors, white);
+	p {
+		margin-left: 51px;
+		margin-right: 16px;
+		font-size: 40px;
+		font-weight: bold;
+		font-family: $font-family_1;
+	}
+	img {
+		width: 13px;
+		height: 54px;
+		display: block;
+	}
+	span {
+		margin-left: 8px;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: $font-family_2;
+	}
+}
+.GameHex_Coop_Offer {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	position: relative;
+	&::before {
+		content: "";
+		filter: brightness(50%) blur(5px);
+		background-image: url(../img/BC_BG_001.png);
+		position: absolute;
+		display: block;
+		background-size: cover;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 1024px;
+	}
+}
+.GameHex_Coop_Offer_Img {
+	img {
+		width: 224px;
+		height: 738px;
+		display: block;
+		margin-top: 128px;
+		margin-left: 122px;
+		position: absolute;
+	}
+}
+.GameHex_Coop_Offer_TextBox {
+	position: absolute;
+	top: 185px;
+	left: 366px;
+	display: flex;
+	flex-direction: column;
+	width: 550px;
+}
+.GameHex_Coop_Offer_TextBox_box01 {
+	display: flex;
+	align-items: center;
+	img {
+		width: 220px;
+		height: 220px;
+	}
+}
+.TextBox {
+	width: 294px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 12px;
+	margin-right: 24px;
+	color: map-get($colors, white);
+	font-family: $font-family_2;
+	border-right: 1px solid #fff;
+	span {
+		line-height: 30px;
+		padding-right: 12px;
+		font-size: 16px;
+	}
+}
+.TextBox02 {
+	width: 294px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 12px;
+	margin-left: 24px;
+	color: map-get($colors, white);
+	font-family: $font-family_2;
+	border-left: 1px solid #fff;
+}
+.TextBox_Title {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.TextBox_SubTitle {
+	margin-bottom: 16px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.GameHex_Coop_Offer_TextBox_box02 {
+	display: flex;
+	align-items: center;
+	img {
+		width: 220px;
+		height: 220px;
+	}
+}
+.GameHex_Coop_Offer_TextBox_box03 {
+	display: flex;
+	align-items: center;
+	img {
+		width: 220px;
+		height: 220px;
+	}
+}
+.GameHex_Coop_Offer_Info {
+	width: 325px;
+	height: 718px;
+	border: 1px solid #fff;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
+	position: absolute;
+	top: 129px;
+	right: 117px;
+	img {
+		width: auto;
+		margin-left: 40px;
+		margin-bottom: 40px;
+	}
+}
+.GameHex_Coop_Offer_Info_Num {
+	font-size: 80px;
+	font-family: $font-family_1;
+	font-weight: bold;
+	color: map-get($colors, white);
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+.GameHex_Coop_Offer_Info_Title {
+	font-size: 40px;
+	font-family: $font-family_2;
+	font-weight: bold;
+	color: map-get($colors, white);
+	margin-left: 40px;
+	margin-bottom: 12px;
+}
+.GameHex_Coop_Offer_Info_SubTitle {
+	font-size: 40px;
+	font-family: $font-family_1;
+	font-weight: bold;
+	color: map-get($colors, white);
+	margin-left: 40px;
+	margin-bottom: 16px;
+}
+.GameHex_Coop_Offer_Info_Paragraph_01 {
+	font-size: 16px;
+	font-family: $font-family_2;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	margin-right: 32px;
+	line-height: 1.2;
+	color: map-get($colors, white);
+}
+.GameHex_Coop_Contact {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	&::before {
+		content: "";
+		filter: brightness(50%) blur(5px);
+		background-image: url(../img/BC_BG_001.png);
+		position: absolute;
+		display: block;
+		background-size: cover;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 924px;
+	}
+}
+.GameHex_Coop_Contact_Info {
+	width: 325px;
+	height: 718px;
+	border: 1px solid #fff;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
+	position: absolute;
+	top: 113px;
+	left: 173px;
+	img {
+		width: auto;
+		margin-left: 40px;
+		margin-bottom: 40px;
+	}
+}
+.GameHex_Coop_Contact_Info_Num {
+	font-size: 80px;
+	font-family: $font-family_1;
+	font-weight: bold;
+	color: map-get($colors, white);
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+.GameHex_Coop_Contact_Info_Title {
+	font-size: 40px;
+	font-family: $font-family_2;
+	font-weight: bold;
+	color: map-get($colors, white);
+	margin-left: 40px;
+	margin-bottom: 12px;
+}
+.GameHex_Coop_Contact_Info_SubTitle {
+	font-size: 40px;
+	font-family: $font-family_1;
+	font-weight: bold;
+	color: map-get($colors, white);
+	margin-left: 40px;
+	margin-bottom: 16px;
+}
+.GameHex_Coop_Contact_Info_Paragraph_01 {
+	font-size: 16px;
+	font-family: $font-family_2;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	margin-right: 32px;
+	line-height: 1.2;
+	color:map-get($colors, white);
+}
+.understandUS_btn {
+	width: 213px;
+	height: 67px;
+	font-size: 20px;
+	font-weight: bold;
+	background-image: url(../img/BTN_001.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: map-get($colors, white);
+	border: none;
+	background-color: $background-color_9;
+	margin-left: 40px;
+	margin-top: 40px;
+	line-height: 67px;
+	text-align: center;
+}
+.GameHex_Coop_Contact_Text {
+	position: absolute;
+	top: 113px;
+	left: 638px;
+}
+.GameHex_Coop_Contact_Text_Title {
+	font-size: 40px;
+	font-family: $font-family_2;
+	font-weight: bold;
+	color: map-get($colors, white);
+	margin-bottom: 40px;
+}
+.GameHex_Coop_Contact_Text_Form {
+	width: 500px;
+	height: 620px;
+	border-radius: 16px;
+	background-color: $background-color_10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.GameHex_Coop_Contact_Text_Form_Top {
+	display: flex;
+	margin-bottom: 24px;
+}
+.GameHex_Coop_Contact_Text_Form_UserName {
+	margin-right: 40px;
+	p {
+		font-size: 20px;
+		font-family: $font-family_2;
+		font-weight: bold;
+		color: map-get($colors, white);
+		margin-bottom: 8px;
+	}
+	input {
+		width: 159px;
+		height: 24px;
+		font-size: 16px;
+		border-radius: 16px;
+		color: map-get($colors , dark );
+		font-family: $font-family_2;
+		font-weight: 400;
+		padding-left: 20px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+}
+.GameHex_Coop_Contact_Text_Form_UserLastName {
+	p {
+		font-size: 20px;
+		font-family: $font-family_2;
+		font-weight: bold;
+		color: map-get($colors, white);
+		margin-bottom: 8px;
+	}
+	input {
+		width: 159px;
+		height: 24px;
+		font-size: 16px;
+		border-radius: 16px;
+		border: none;
+		color: map-get($colors , dark );
+		font-family: $font-family_2;
+		font-weight: 400;
+		padding-left: 20px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+}
+.GameHex_Coop_Contact_Text_Form_mid {
+	margin-bottom: 24px;
+	p {
+		font-size: 20px;
+		font-family: $font-family_2;
+		font-weight: bold;
+		color: map-get($colors, white);
+		margin-bottom: 8px;
+	}
+	input {
+		width: 159px;
+		height: 24px;
+		font-size: 16px;
+		border-radius: 16px;
+		border: none;
+		color: map-get($colors , dark );
+		font-family: $font-family_2;
+		font-weight: 400;
+		padding-left: 20px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+}
+.GameHex_Coop_Contact_Text_Form_down {
+	p {
+		font-size: 20px;
+		font-family: $font-family_2;
+		font-weight: bold;
+		color: map-get($colors, white);
+		margin-bottom: 8px;
+	}
+	input {
+		width: 440px;
+		height: 240px;
+		font-size: 16px;
+		border-radius: 16px;
+		border: none;
+		color: map-get($colors , dark );
+		font-family: $font-family_2;
+		font-weight: 400;
+		padding-left: 20px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+}
+.submit_Btn {
+	width: 213px;
+	height: 67px;
+	font-size: 20px;
+	font-weight: bold;
+	background-image: url(../img/BTN_001.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: map-get($colors, white);
+	border: none;
+	background-color: $background-color_9;
+	margin-left: 144px;
+	margin-top: 28px;
+	line-height: 67px;
+	text-align: center;
+}

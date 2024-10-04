@@ -6167,6 +6167,850 @@ body {
   color: #fff;
 }
 
+.GameHex_Coop_Introduce {
+  width: 100%;
+  background-color: #313131;
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.GameHex_Coop_Introduce_Title {
+  width: 276px;
+  height: 197px;
+  display: flex;
+  margin-left: 80px;
+}
+@media (max-width: 430px) {
+  .GameHex_Coop_Introduce_Title {
+    margin-left: 40px;
+  }
+}
+.GameHex_Coop_Introduce_Title img {
+  width: 25px;
+  height: 181px;
+}
+.GameHex_Coop_Introduce_Title p {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+}
+.GameHex_Coop_Introduce_Title h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #fff;
+}
+.GameHex_Coop_Introduce_Title span {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: #fff;
+}
+.GameHex_Coop_Introduce_Title .GameHex_Coop_Introduce_Title_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.GameHex_Coop_Introduce_Slogan {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+}
+@media (max-width: 540px) {
+  .GameHex_Coop_Introduce_Slogan {
+    font-size: 22px;
+  }
+}
+@media (max-width: 430px) {
+  .GameHex_Coop_Introduce_Slogan {
+    font-size: 18px;
+  }
+}
+@media (max-width: 350px) {
+  .GameHex_Coop_Introduce_Slogan {
+    font-size: 16px;
+  }
+}
+
+.GameHex_Coop_Introduce_Slogan01 {
+  margin-bottom: 20px;
+}
+
+.GameHex_Coop_Introduce_Slogan02 {
+  margin-bottom: 20px;
+}
+
+.GameHex_Coop_Introduce_CardBox {
+  width: 90%;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin: 0 auto;
+}
+@media (max-width: 1400px) {
+  .GameHex_Coop_Introduce_CardBox {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 980px) {
+  .GameHex_Coop_Introduce_CardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 680px) {
+  .GameHex_Coop_Introduce_CardBox {
+    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.GameHex_Coop_Introduce_Card01 {
+  margin-top: 270px;
+  position: relative;
+  transform: translateY(-50px); /* 初始位置 */
+  animation: slideIn 1s forwards; /* 動畫效果 */
+  opacity: 0;
+}
+.GameHex_Coop_Introduce_Card01 img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.GameHex_Coop_Introduce_Card01 img:hover {
+  animation: glow 3s infinite alternate;
+}
+.GameHex_Coop_Introduce_Card01 p {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding: 20px 10px;
+  color: #363300;
+  background-color: #EFFF00;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 430px) {
+  .GameHex_Coop_Introduce_Card01 p {
+    font-size: 20px;
+  }
+}
+
+.GameHex_Coop_Introduce_Card02 {
+  margin-top: 193px;
+  position: relative;
+  transform: translateY(-50px); /* 初始位置 */
+  animation: slideIn 1s forwards; /* 動畫效果 */
+  animation: slideIn 1s forwards 0.5s;
+  opacity: 0;
+}
+@media (max-width: 680px) {
+  .GameHex_Coop_Introduce_Card02 {
+    display: none;
+  }
+}
+.GameHex_Coop_Introduce_Card02 img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.GameHex_Coop_Introduce_Card02 img:hover {
+  animation: glow 3s infinite alternate;
+}
+.GameHex_Coop_Introduce_Card02 p {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 20px 10px;
+  color: #680000;
+  background-color: #F8442D;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 430px) {
+  .GameHex_Coop_Introduce_Card02 p {
+    font-size: 20px;
+  }
+}
+
+.GameHex_Coop_Introduce_Card03 {
+  margin-top: 116px;
+  position: relative;
+  transform: translateY(-50px); /* 初始位置 */
+  animation: slideIn 1s forwards; /* 動畫效果 */
+  animation: slideIn 1s forwards 1s;
+  opacity: 0;
+}
+@media (max-width: 980px) {
+  .GameHex_Coop_Introduce_Card03 {
+    display: none;
+  }
+}
+.GameHex_Coop_Introduce_Card03 img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.GameHex_Coop_Introduce_Card03 img:hover {
+  animation: glow 3s infinite alternate;
+}
+.GameHex_Coop_Introduce_Card03 p {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 20px 10px;
+  color: #363300;
+  background-color: #EFFF00;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 430px) {
+  .GameHex_Coop_Introduce_Card03 p {
+    font-size: 20px;
+  }
+}
+
+.GameHex_Coop_Introduce_Card04 {
+  margin-top: 39px;
+  position: relative;
+  transform: translateY(-50px); /* 初始位置 */
+  animation: slideIn 1s forwards; /* 動畫效果 */
+  animation: slideIn 1s forwards 1.5s;
+  opacity: 0;
+}
+@media (max-width: 1400px) {
+  .GameHex_Coop_Introduce_Card04 {
+    display: none;
+  }
+}
+.GameHex_Coop_Introduce_Card04 img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.GameHex_Coop_Introduce_Card04 img:hover {
+  animation: glow 3s infinite alternate;
+}
+.GameHex_Coop_Introduce_Card04 p {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 20px 10px;
+  color: #680000;
+  background-color: #F8442D;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 430px) {
+  .GameHex_Coop_Introduce_Card04 p {
+    font-size: 20px;
+  }
+}
+
+.GameHex_Coop_Upload {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.GameHex_Coop_Upload::before {
+  width: 100%;
+  height: 1024px;
+  content: "";
+  filter: brightness(60%) blur(3px);
+  display: block;
+  background-size: cover;
+  background-image: url(../img/BG_For_Register_003.jpg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.GameHex_Coop_Upload_Info {
+  width: 320px;
+  height: 620px;
+  border: 1px solid #fff;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(153, 153, 153), rgba(255, 255, 254, 0));
+  position: absolute;
+  top: 100px;
+  left: 119px;
+}
+.GameHex_Coop_Upload_Info img {
+  width: auto;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.GameHex_Coop_Upload_Info_Num {
+  font-size: 80px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.GameHex_Coop_Upload_Info_Title {
+  font-size: 40px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 40px;
+  margin-bottom: 12px;
+}
+
+.GameHex_Coop_Upload_Info_SubTitle {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 40px;
+  margin-bottom: 16px;
+}
+
+.GameHex_Coop_Upload_Info_Paragraph_01 {
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-right: 32px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.GameHex_Coop_Upload_Img {
+  position: absolute;
+  top: 100px;
+  left: 519px;
+}
+.GameHex_Coop_Upload_Img img {
+  width: 800px;
+  height: 620px;
+  display: block;
+}
+
+.GameHex_Coop_Upload_Pop {
+  width: 1440px;
+  height: 218px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  background-color: #5D5D5D;
+}
+
+.GameHex_Coop_Upload_Pop_01 {
+  width: 280px;
+  background-color: #0F185B;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.GameHex_Coop_Upload_Pop_01 p {
+  margin-left: 14px;
+  margin-right: 16px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.GameHex_Coop_Upload_Pop_01 img {
+  width: 13px;
+  height: 54px;
+  display: block;
+}
+.GameHex_Coop_Upload_Pop_01 span {
+  margin-left: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.GameHex_Coop_Upload_Pop_02 {
+  width: 280px;
+  background-color: #0F1C79;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.GameHex_Coop_Upload_Pop_02 p {
+  margin-left: 14px;
+  margin-right: 16px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.GameHex_Coop_Upload_Pop_02 img {
+  width: 13px;
+  height: 54px;
+  display: block;
+}
+.GameHex_Coop_Upload_Pop_02 span {
+  margin-left: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.GameHex_Coop_Upload_Pop_03 {
+  width: 280px;
+  background-color: #5260C9;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.GameHex_Coop_Upload_Pop_03 p {
+  margin-left: 14px;
+  margin-right: 0px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.GameHex_Coop_Upload_Pop_03 img {
+  width: 13px;
+  height: 54px;
+  display: block;
+}
+.GameHex_Coop_Upload_Pop_03 span {
+  margin-left: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.GameHex_Coop_Upload_Pop_04 {
+  width: 280px;
+  background-color: #6895D2;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.GameHex_Coop_Upload_Pop_04 p {
+  margin-left: 51px;
+  margin-right: 16px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.GameHex_Coop_Upload_Pop_04 img {
+  width: 13px;
+  height: 54px;
+  display: block;
+}
+.GameHex_Coop_Upload_Pop_04 span {
+  margin-left: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.GameHex_Coop_Offer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+.GameHex_Coop_Offer::before {
+  content: "";
+  filter: brightness(50%) blur(5px);
+  background-image: url(../img/BC_BG_001.png);
+  position: absolute;
+  display: block;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1024px;
+}
+
+.GameHex_Coop_Offer_Img img {
+  width: 224px;
+  height: 738px;
+  display: block;
+  margin-top: 128px;
+  margin-left: 122px;
+  position: absolute;
+}
+
+.GameHex_Coop_Offer_TextBox {
+  position: absolute;
+  top: 185px;
+  left: 366px;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
+
+.GameHex_Coop_Offer_TextBox_box01 {
+  display: flex;
+  align-items: center;
+}
+.GameHex_Coop_Offer_TextBox_box01 img {
+  width: 220px;
+  height: 220px;
+}
+
+.TextBox {
+  width: 294px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+  margin-right: 24px;
+  color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
+  border-right: 1px solid #fff;
+}
+.TextBox span {
+  line-height: 30px;
+  padding-right: 12px;
+  font-size: 16px;
+}
+
+.TextBox02 {
+  width: 294px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+  margin-left: 24px;
+  color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
+  border-left: 1px solid #fff;
+}
+
+.TextBox_Title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.TextBox_SubTitle {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.GameHex_Coop_Offer_TextBox_box02 {
+  display: flex;
+  align-items: center;
+}
+.GameHex_Coop_Offer_TextBox_box02 img {
+  width: 220px;
+  height: 220px;
+}
+
+.GameHex_Coop_Offer_TextBox_box03 {
+  display: flex;
+  align-items: center;
+}
+.GameHex_Coop_Offer_TextBox_box03 img {
+  width: 220px;
+  height: 220px;
+}
+
+.GameHex_Coop_Offer_Info {
+  width: 325px;
+  height: 718px;
+  border: 1px solid #fff;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(153, 153, 153), rgba(255, 255, 254, 0));
+  position: absolute;
+  top: 129px;
+  right: 117px;
+}
+.GameHex_Coop_Offer_Info img {
+  width: auto;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.GameHex_Coop_Offer_Info_Num {
+  font-size: 80px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.GameHex_Coop_Offer_Info_Title {
+  font-size: 40px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 40px;
+  margin-bottom: 12px;
+}
+
+.GameHex_Coop_Offer_Info_SubTitle {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 40px;
+  margin-bottom: 16px;
+}
+
+.GameHex_Coop_Offer_Info_Paragraph_01 {
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-right: 32px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.GameHex_Coop_Contact {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.GameHex_Coop_Contact::before {
+  content: "";
+  filter: brightness(50%) blur(5px);
+  background-image: url(../img/BC_BG_001.png);
+  position: absolute;
+  display: block;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 924px;
+}
+
+.GameHex_Coop_Contact_Info {
+  width: 325px;
+  height: 718px;
+  border: 1px solid #fff;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(153, 153, 153), rgba(255, 255, 254, 0));
+  position: absolute;
+  top: 113px;
+  left: 173px;
+}
+.GameHex_Coop_Contact_Info img {
+  width: auto;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.GameHex_Coop_Contact_Info_Num {
+  font-size: 80px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.GameHex_Coop_Contact_Info_Title {
+  font-size: 40px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 40px;
+  margin-bottom: 12px;
+}
+
+.GameHex_Coop_Contact_Info_SubTitle {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 40px;
+  margin-bottom: 16px;
+}
+
+.GameHex_Coop_Contact_Info_Paragraph_01 {
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-right: 32px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.understandUS_btn {
+  width: 213px;
+  height: 67px;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: url(../img/BTN_001.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  margin-left: 40px;
+  margin-top: 40px;
+  line-height: 67px;
+  text-align: center;
+}
+
+.GameHex_Coop_Contact_Text {
+  position: absolute;
+  top: 113px;
+  left: 638px;
+}
+
+.GameHex_Coop_Contact_Text_Title {
+  font-size: 40px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.GameHex_Coop_Contact_Text_Form {
+  width: 500px;
+  height: 620px;
+  border-radius: 16px;
+  background-color: rgba(91, 91, 91, 0.8);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.GameHex_Coop_Contact_Text_Form_Top {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.GameHex_Coop_Contact_Text_Form_UserName {
+  margin-right: 40px;
+}
+.GameHex_Coop_Contact_Text_Form_UserName p {
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.GameHex_Coop_Contact_Text_Form_UserName input {
+  width: 159px;
+  height: 24px;
+  font-size: 16px;
+  border-radius: 16px;
+  color: #000;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.GameHex_Coop_Contact_Text_Form_UserLastName p {
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.GameHex_Coop_Contact_Text_Form_UserLastName input {
+  width: 159px;
+  height: 24px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: none;
+  color: #000;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.GameHex_Coop_Contact_Text_Form_mid {
+  margin-bottom: 24px;
+}
+.GameHex_Coop_Contact_Text_Form_mid p {
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.GameHex_Coop_Contact_Text_Form_mid input {
+  width: 159px;
+  height: 24px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: none;
+  color: #000;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.GameHex_Coop_Contact_Text_Form_down p {
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.GameHex_Coop_Contact_Text_Form_down input {
+  width: 440px;
+  height: 240px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: none;
+  color: #000;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.submit_Btn {
+  width: 213px;
+  height: 67px;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: url(../img/BTN_001.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  margin-left: 144px;
+  margin-top: 28px;
+  line-height: 67px;
+  text-align: center;
+}
+
 @keyframes glow {
   0% {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
@@ -6198,6 +7042,16 @@ body {
   }
   100% {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
