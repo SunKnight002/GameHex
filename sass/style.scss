@@ -1,26 +1,30 @@
 // @import url(../css/reset.css);
 // @import './node_modules/sass-google-fonts/src/GoogleFonts.scss';
+// 重製
 @import 'reset';
 
-
+// 基本變數
 @import 'basic/color';
 @import 'basic/font';
 @import 'basic/var';
 
-
+// RWD相關規範
 @import 'mixins/minins';
 
+// 按鈕
 @import 'component/btn';
 
+// 頁首頁尾
 @import 'layout/header';
 @import 'layout/footer';
 
-
+// 頁面
 @import 'page/index';
 @import 'page/landpage';
 @import 'page/login';
 @import 'page/register';
 @import 'page/myaccount';
+@import 'page/addtocart';
 
-
+// 動畫
 @import 'basic/_animate';

@@ -1,0 +1,161 @@
+$font-family_1: "Noto Sans TC", sans-serif;
+$background-color_1: rgba(104, 149, 210, 0.6);
+
+
+.GameHex_Product_Add {
+	width: 100%;
+    padding: 250px 0;
+	background-image: url(../img/BG_For_Register_004.jpg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+
+    @include rwd(1280px){
+        padding: 265px 0;
+    }
+
+    @include rwd(1100px){
+        padding: 280px 0;
+    }
+
+    @include rwd(853px){
+        padding: 365px 0;
+    }
+
+    @include phone{
+        padding: 220px 0;
+    }
+
+
+}
+.GameHex_Product_Add_Tips {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	padding: 40px;
+	margin: 0 auto;
+	width: 60%;
+	height: auto;
+	background-color: $background-color_1;
+	border: 1px solid black;
+	border-radius: 16px;
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+
+    @include rwd(1280px){
+        padding: 20px;
+		opacity: 0;
+		transition: opacity 2s ease-in-out;
+    }
+
+    @include rwd(600px){
+        width: 70%;
+    }
+
+    @include phone{
+        width: 90%;
+    }
+
+	h1 {
+		font-size: 36px;
+		font-weight: bold;
+		color: map-get($colors , white );
+		margin-bottom: 40px;
+		font-family: $font-family_1;
+
+        @include rwd(1100px){
+            font-size: 32px;
+			margin-bottom: 28px;
+        }
+
+        @include rwd(600px){
+            font-size: 24px;
+        }
+	}
+
+	p {
+		width: 80%;
+		font-size: 28px;
+		font-weight: bold;
+		color: map-get($colors , white );
+		text-align: center;
+		line-height: 1.3;
+		font-family: $font-family_1;
+
+        @include rwd(1100px){
+            font-size: 24px;
+        }
+
+        @include rwd(600px){
+            font-size: 18px;
+        }
+
+        @include phone{
+            width: 90%;
+        }
+	}
+	span {
+		font-size: 20px;
+		font-weight: bold;
+		color: map-get($colors , white );
+		margin-top: 40px;
+		font-family: $font-family_1;
+
+        @include rwd(600px){
+            font-size: 16px;
+        }
+	}
+	.Hit {
+		font-size: 20px;
+		font-weight: bold;
+		color: map-get($colors , white );
+		margin-top: 20px;
+		font-family: $font-family_1;
+
+        @include rwd(600px){
+            font-size: 16px;
+        }
+	}
+	a {
+		width: 32%;
+		height: 8vh;
+		font-size: 24px;
+		font-weight: bold;
+		color: map-get($colors , white );
+		background-color: map-get($colors, dark );
+		border: 1px solid #fff;
+		border-radius: 16px;
+		text-decoration: none;
+		font-family: $font-family_1;
+		text-align: center;
+		line-height: 8vh;
+		margin-top: 40px;
+
+        @include rwd(1280px){
+            width: 32%;
+			height: 8vh;
+			font-size: 20px;
+			line-height: 8vh;
+        }
+
+        @include rwd(1100px){
+            width: 50%;
+			height: 8vh;
+			font-size: 18px;
+			line-height: 8vh;
+        }
+
+        @include rwd(600px){
+            height: 6vh;
+			line-height: 6vh;
+        }
+
+		&:hover {
+			background-color: map-get($colors, gray );
+			color: map-get($colors , dark );
+            animation: glow 1.5s infinite alternate;
+		}
+	}
+}

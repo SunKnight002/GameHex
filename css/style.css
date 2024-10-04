@@ -5054,6 +5054,177 @@ body {
   }
 }
 
+.GameHex_Product_Add {
+  width: 100%;
+  padding: 250px 0;
+  background-image: url(../img/BG_For_Register_004.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+@media (max-width: 1280px) {
+  .GameHex_Product_Add {
+    padding: 265px 0;
+  }
+}
+@media (max-width: 1100px) {
+  .GameHex_Product_Add {
+    padding: 280px 0;
+  }
+}
+@media (max-width: 853px) {
+  .GameHex_Product_Add {
+    padding: 365px 0;
+  }
+}
+@media (max-width: 430px) {
+  .GameHex_Product_Add {
+    padding: 220px 0;
+  }
+}
+
+.GameHex_Product_Add_Tips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px;
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+  background-color: rgba(104, 149, 210, 0.6);
+  border: 1px solid black;
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+@media (max-width: 1280px) {
+  .GameHex_Product_Add_Tips {
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+}
+@media (max-width: 600px) {
+  .GameHex_Product_Add_Tips {
+    width: 70%;
+  }
+}
+@media (max-width: 430px) {
+  .GameHex_Product_Add_Tips {
+    width: 90%;
+  }
+}
+.GameHex_Product_Add_Tips h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 40px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@media (max-width: 1100px) {
+  .GameHex_Product_Add_Tips h1 {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .GameHex_Product_Add_Tips h1 {
+    font-size: 24px;
+  }
+}
+.GameHex_Product_Add_Tips p {
+  width: 80%;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 1.3;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@media (max-width: 1100px) {
+  .GameHex_Product_Add_Tips p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .GameHex_Product_Add_Tips p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 430px) {
+  .GameHex_Product_Add_Tips p {
+    width: 90%;
+  }
+}
+.GameHex_Product_Add_Tips span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 40px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@media (max-width: 600px) {
+  .GameHex_Product_Add_Tips span {
+    font-size: 16px;
+  }
+}
+.GameHex_Product_Add_Tips .Hit {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@media (max-width: 600px) {
+  .GameHex_Product_Add_Tips .Hit {
+    font-size: 16px;
+  }
+}
+.GameHex_Product_Add_Tips a {
+  width: 32%;
+  height: 8vh;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: center;
+  line-height: 8vh;
+  margin-top: 40px;
+}
+@media (max-width: 1280px) {
+  .GameHex_Product_Add_Tips a {
+    width: 32%;
+    height: 8vh;
+    font-size: 20px;
+    line-height: 8vh;
+  }
+}
+@media (max-width: 1100px) {
+  .GameHex_Product_Add_Tips a {
+    width: 50%;
+    height: 8vh;
+    font-size: 18px;
+    line-height: 8vh;
+  }
+}
+@media (max-width: 600px) {
+  .GameHex_Product_Add_Tips a {
+    height: 6vh;
+    line-height: 6vh;
+  }
+}
+.GameHex_Product_Add_Tips a:hover {
+  background-color: #6D6D6D;
+  color: #000;
+  animation: glow 1.5s infinite alternate;
+}
+
 @keyframes glow {
   0% {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);

@@ -14,7 +14,7 @@ window.onload = function() {
 let timeElement = document.querySelector('.GameHex_Product_Add_Tips span');
 
 // 設定初始時間
-let timeLeft = 6;
+let timeLeft = 8;
 
 // 更新HTML元素的文字內容
 function updateTimeText() {
