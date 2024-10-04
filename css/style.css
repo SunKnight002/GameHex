@@ -3685,17 +3685,6 @@ body {
   margin-top: 16px;
 }
 
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-  }
-  50% {
-    box-shadow: 0 0 20px rgb(255, 255, 255);
-  }
-  100% {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-  }
-}
 /* ----------------------------------------------------------------- */
 /* 以下 是  LoginPageMain01_Right 右邊的區域*/
 .LoginPageMain01_Right {
@@ -3748,32 +3737,21 @@ body {
   font-weight: bold;
 }
 
-/* ---------------------------------------------------------- */
-/* 這邊是 第二個 藍色點點 */
-/* ---------------------------------------------------------- */
-/* 這邊是 第三個 藍色點點 */
-/* ------------------------------------------------------- */
-/* 以下這邊為  Register 下半 區域 */
-/* ------------------------------ 帳號輸入框 ----------------------*/
-/* ------------------------------ 密碼輸入框 ----------------------*/
-/* ------------------------------ 二次密碼輸入框 ----------------------*/
-/* ------------------------------ 繼續按鈕 ----------------------*/
-/* ----------------- RWD - Start -------------------------- */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
-/* ----------------- RWD - Mobile Part ------------------------ */
-/* ----------------- RWD - Mobile Part ------------------------ */
-/* ----------------- RWD - Mobile Part ------------------------ */
 .RegisterMain {
   width: 100%;
-  height: 90vh;
-  background-image: url(../img/BG_For_Register_002m.jpg);
+  background-image: url("../img/BG_For_Register_002m.jpg");
   background-size: cover;
+  padding: 107px 0;
+}
+@media (max-width: 1920px) {
+  .RegisterMain {
+    padding: 155px 0;
+  }
+}
+@media (max-width: 1100px) {
+  .RegisterMain {
+    padding: 260px 0;
+  }
 }
 
 .RegisterMain_Top {
@@ -3783,7 +3761,16 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 56px;
+}
+@media (max-width: 1536px) {
+  .RegisterMain_Top {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 430px) {
+  .RegisterMain_Top {
+    display: none;
+  }
 }
 
 .arrow01 {
@@ -3813,6 +3800,12 @@ body {
   text-align: center;
   margin-top: 8px;
   margin-bottom: 8px;
+  animation: text-glow 1.5s infinite alternate;
+}
+@media (max-width: 600px) {
+  .RegisterMain_Top_Box01 p {
+    font-size: 18px;
+  }
 }
 .RegisterMain_Top_Box01 span {
   color: #fff;
@@ -3820,6 +3813,17 @@ body {
   font-weight: 500;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  animation: text-glow 1.5s infinite alternate;
+}
+@media (max-width: 600px) {
+  .RegisterMain_Top_Box01 span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .RegisterMain_Top_Box01 img {
+    width: 60%;
+  }
 }
 
 .RegisterMain_Top_Box02 {
@@ -3842,12 +3846,27 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+@media (max-width: 600px) {
+  .RegisterMain_Top_Box02 p {
+    font-size: 18px;
+  }
+}
 .RegisterMain_Top_Box02 span {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
   font-family: "Roboto", sans-serif;
+}
+@media (max-width: 600px) {
+  .RegisterMain_Top_Box02 span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .RegisterMain_Top_Box02 img {
+    width: 60%;
+  }
 }
 
 .RegisterMain_Top_Box03 {
@@ -3863,6 +3882,11 @@ body {
   height: auto;
   display: block;
 }
+@media (max-width: 600px) {
+  .RegisterMain_Top_Box03 img {
+    width: 60%;
+  }
+}
 .RegisterMain_Top_Box03 p {
   color: #fff;
   font-size: 28px;
@@ -3871,12 +3895,22 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+@media (max-width: 600px) {
+  .RegisterMain_Top_Box03 p {
+    font-size: 18px;
+  }
+}
 .RegisterMain_Top_Box03 span {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
   font-family: "Roboto", sans-serif;
+}
+@media (max-width: 600px) {
+  .RegisterMain_Top_Box03 span {
+    font-size: 14px;
+  }
 }
 
 .RegisterMain_Bot {
@@ -3897,6 +3931,16 @@ body {
   margin-bottom: 36px;
   text-align: center;
 }
+@media (max-width: 1536px) {
+  .RegisterMain_Bot h1 {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .RegisterMain_Bot h1 {
+    font-size: 32px;
+  }
+}
 .RegisterMain_Bot > p {
   font-size: 28px;
   font-weight: bold;
@@ -3905,10 +3949,15 @@ body {
   margin-bottom: 16px;
   text-align: center;
 }
+@media (max-width: 600px) {
+  .RegisterMain_Bot > p {
+    font-size: 24px;
+  }
+}
 .RegisterMain_Bot > a {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
   margin-top: 31px;
   text-decoration: none;
@@ -3920,6 +3969,14 @@ body {
   height: 6vh;
   font-size: 24px;
   font-weight: bold;
+}
+.RegisterMain_Bot > a:hover {
+  animation: glow 1.5s infinite;
+}
+@media (max-width: 600px) {
+  .RegisterMain_Bot > a {
+    width: 60%;
+  }
 }
 
 .tipsText {
@@ -3934,6 +3991,11 @@ body {
   width: 50%;
   margin-bottom: 20px;
 }
+@media (max-width: 900px) {
+  .inputBox01 {
+    width: 100%;
+  }
+}
 .inputBox01 input {
   width: 100%;
   height: 4vh;
@@ -3945,12 +4007,22 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #000;
-  padding-left: 0px;
+  padding-left: 0;
+}
+@media (max-width: 430px) {
+  .inputBox01 input::placeholder {
+    font-size: 14px;
+  }
 }
 
 .inputBox02 {
   width: 50%;
   margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .inputBox02 {
+    width: 100%;
+  }
 }
 .inputBox02 input {
   width: 100%;
@@ -3963,12 +4035,22 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #000;
-  padding-left: 0px;
+  padding-left: 0;
+}
+@media (max-width: 430px) {
+  .inputBox02 input::placeholder {
+    font-size: 14px;
+  }
 }
 
 .inputBox03 {
   width: 50%;
   margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .inputBox03 {
+    width: 100%;
+  }
 }
 .inputBox03 input {
   width: 100%;
@@ -3981,94 +4063,31 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #000;
-  padding-left: 0px;
+  padding-left: 0;
+}
+@media (max-width: 430px) {
+  .inputBox03 input::placeholder {
+    font-size: 14px;
+  }
 }
 
-@media (max-width: 1536px) {
-  .RegisterMain_Top {
-    padding-top: 40px;
-  }
-  .RegisterMain_Bot h1 {
-    margin-top: 40px;
-  }
-}
-@media (max-width: 1280px) {
-  .RegisterMain {
-    height: 100vh;
-  }
-}
-@media (max-width: 600px) {
-  .RegisterMain_Top_Box01 p {
-    font-size: 18px;
-  }
-  .RegisterMain_Top_Box01 span {
-    font-size: 14px;
-  }
-  .RegisterMain_Top_Box01 img {
-    width: 60%;
-  }
-  .RegisterMain_Top_Box02 p {
-    font-size: 18px;
-  }
-  .RegisterMain_Top_Box02 span {
-    font-size: 14px;
-  }
-  .RegisterMain_Top_Box02 img {
-    width: 60%;
-  }
-  .RegisterMain_Top_Box03 p {
-    font-size: 18px;
-  }
-  .RegisterMain_Top_Box03 span {
-    font-size: 14px;
-  }
-  .RegisterMain_Top_Box03 img {
-    width: 60%;
-  }
-  .RegisterMain_Bot > p {
-    font-size: 24px;
-  }
-  .RegisterMain_Bot > a {
-    width: 60%;
-  }
-  .RegisterMain_Bot h1 {
-    font-size: 32px;
-  }
-  .inputBox01 {
-    width: 100%;
-  }
-  .inputBox02 {
-    width: 100%;
-  }
-  .inputBox03 {
-    width: 100%;
-  }
-}
-/* -------------------------------------------------------------------------------- */
-/* 此處開始為 Register 02  之 視覺設定相關檔案 */
-/* ---------------------------------------------------------- */
-/* 這邊是 第二個 藍色點點 */
-/* ---------------------------------------------------------- */
-/* 這邊是 第三個 藍色點點 */
-/* ------------------------------ */
-/* ------------------------------ 驗證碼輸入框 ----------------------*/
-/* ----------------- RWD - Start -------------------------- */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
-/* ----------------- RWD - Mobile Part ------------------------ */
-/* ----------------- RWD - Mobile Part ------------------------ */
-/* ----------------- RWD - Mobile Part ------------------------ */
 .RegisterMain02 {
+  position: relative;
   width: 100%;
-  height: 100vh;
-  background-image: url(../img/BG_For_Register_003.jpg);
+  padding: 200px 0;
+  background-image: url("../img/BG_For_Register_d_003.jpg");
   display: block;
   background-size: cover;
+}
+@media (max-width: 1280px) {
+  .RegisterMain02 {
+    padding: 320px 0;
+  }
+}
+@media (max-width: 820px) {
+  .RegisterMain02 {
+    padding: 200px 0;
+  }
 }
 
 .RegisterMain_Top {
@@ -4078,7 +4097,6 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 56px;
 }
 
 .arrow01 {
@@ -4089,19 +4107,19 @@ body {
   width: 10vw;
 }
 
-.RegisterMain_Top_Box01 {
+.RegisterMain_Top_Ver_Box01 {
   width: 26%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.RegisterMain_Top_Box01 img {
+.RegisterMain_Top_Ver_Box01 img {
   width: auto;
   height: auto;
   display: block;
 }
-.RegisterMain_Top_Box01 p {
+.RegisterMain_Top_Ver_Box01 p {
   color: #fff;
   font-size: 28px;
   font-weight: bold;
@@ -4109,7 +4127,7 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-.RegisterMain_Top_Box01 span {
+.RegisterMain_Top_Ver_Box01 span {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -4117,35 +4135,37 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.RegisterMain_Top_Box02 {
+.RegisterMain_Top_Ver_Box02 {
   width: 26%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.RegisterMain_Top_Box02 img {
+.RegisterMain_Top_Ver_Box02 img {
   width: auto;
   height: auto;
   display: block;
 }
-.RegisterMain_Top_Box02 p {
+.RegisterMain_Top_Ver_Box02 p {
   color: #fff;
   font-size: 28px;
   font-weight: bold;
   text-align: center;
   margin-top: 8px;
   margin-bottom: 8px;
+  animation: text-glow 1.5s infinite alternate;
 }
-.RegisterMain_Top_Box02 span {
+.RegisterMain_Top_Ver_Box02 span {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  animation: text-glow 1.5s infinite alternate;
 }
 
-.RegisterMain_Top_Box03 {
+.RegisterMain_Top_Ver_Box03 {
   width: 26%;
   height: auto;
   display: flex;
@@ -4153,12 +4173,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-.RegisterMain_Top_Box03 img {
+.RegisterMain_Top_Ver_Box03 img {
   width: auto;
   height: auto;
   display: block;
 }
-.RegisterMain_Top_Box03 p {
+.RegisterMain_Top_Ver_Box03 p {
   color: #fff;
   font-size: 28px;
   font-weight: bold;
@@ -4166,7 +4186,7 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-.RegisterMain_Top_Box03 span {
+.RegisterMain_Top_Ver_Box03 span {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -4209,7 +4229,6 @@ body {
   text-align: left;
 }
 .RegisterMain_Bot .Resend_BTN {
-  margin-top: 12px;
   background-color: #F8442D;
 }
 .RegisterMain_Bot > a {
@@ -4237,21 +4256,27 @@ body {
   color: #fff;
 }
 
-.inputBox01 {
+.inputBox-Ver {
   width: 50%;
 }
-.inputBox01 input {
+@media (max-width: 820px) {
+  .inputBox-Ver {
+    width: 100%;
+  }
+}
+.inputBox-Ver input {
+  margin-bottom: 40px;
   width: 100%;
   height: 4vh;
   border-radius: 16px;
   background-color: #fff;
   padding-left: 12px;
 }
-.inputBox01 input::placeholder {
+.inputBox-Ver input::placeholder {
   font-size: 16px;
   font-weight: 400;
   color: #000;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .Resend_BTN:hover {
@@ -4265,9 +4290,6 @@ body {
 }
 
 @media (max-width: 1280px) {
-  .RegisterMain_Top {
-    padding-top: 28px;
-  }
   .RegisterMain_Bot h1 {
     margin-top: 40px;
     margin-bottom: 28px;
@@ -4284,7 +4306,7 @@ body {
 }
 @media (max-width: 600px) {
   .RegisterMain_Top {
-    width: 90%;
+    display: none;
   }
   .RegisterMain_Top_Box01 {
     width: 30%;
@@ -4341,40 +4363,25 @@ body {
   .arrow02 {
     width: 8vw;
   }
-  .RegisterMain02 {
-    height: 120vh;
-  }
   .inputBox01 {
-    width: 80%;
+    width: 100%;
   }
 }
-/* -------------------------------------------------------------------------------- */
-/* 此處開始為 Register 03  之 視覺設定相關檔案 */
-/* ---------------------------------------------------------- */
-/* 這邊是 第二個 藍色點點 */
-/* ---------------------------------------------------------- */
-/* 這邊是 第三個 藍色點點 */
-/* ------------------------------ */
-/* ----------------- RWD - Start -------------------------- */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
-/* ----------------- RWD - Mobile Part ------------------------ */
-/* ----------------- RWD - Mobile Part ------------------------ */
-/* ----------------- RWD - Mobile Part ------------------------ */
 .RegisterMain03 {
   width: 100%;
-  height: 100vh;
   background-image: url(../img/BG_For_Register_004.jpg);
   display: block;
   background-size: cover;
+  padding: 200px 0;
+}
+@media (max-width: 853px) {
+  .RegisterMain03 {
+    padding: 300px 0;
+  }
 }
 
-.RegisterMain_Bot {
+.RegisterMain_Fin_Bot {
+  padding-top: 180px;
   width: 80%;
   height: auto;
   margin: 0 auto;
@@ -4383,14 +4390,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-.RegisterMain_Bot span {
+.RegisterMain_Fin_Bot span {
   color: #fff;
   font-size: 24px;
   font-weight: bold;
   display: block;
   text-align: center;
 }
-.RegisterMain_Bot h1 {
+.RegisterMain_Fin_Bot h1 {
   font-size: 36px;
   font-weight: bold;
   color: #fff;
@@ -4399,7 +4406,7 @@ body {
   margin-bottom: 36px;
   text-align: center;
 }
-.RegisterMain_Bot > p {
+.RegisterMain_Fin_Bot > p {
   font-size: 28px;
   font-weight: bold;
   color: #fff;
@@ -4407,7 +4414,7 @@ body {
   margin-bottom: 16px;
   text-align: center;
 }
-.RegisterMain_Bot > a {
+.RegisterMain_Fin_Bot > a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4432,29 +4439,33 @@ body {
   width: 10vw;
 }
 
-.RegisterMain_Top {
+.RegisterMain_Fin_Top {
   width: 80%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 56px;
+}
+@media (max-width: 600px) {
+  .RegisterMain_Fin_Top {
+    display: none;
+  }
 }
 
-.RegisterMain_Top_Box01 {
+.RegisterMain_Top_Fin_Box01 {
   width: 26%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.RegisterMain_Top_Box01 img {
+.RegisterMain_Top_Fin_Box01 img {
   width: auto;
   height: auto;
   display: block;
 }
-.RegisterMain_Top_Box01 p {
+.RegisterMain_Top_Fin_Box01 p {
   color: #fff;
   font-size: 28px;
   font-weight: bold;
@@ -4462,7 +4473,7 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-.RegisterMain_Top_Box01 span {
+.RegisterMain_Top_Fin_Box01 span {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -4470,19 +4481,19 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.RegisterMain_Top_Box02 {
+.RegisterMain_Top_Fin_Box02 {
   width: 26%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.RegisterMain_Top_Box02 img {
+.RegisterMain_Top_Fin_Box02 img {
   width: auto;
   height: auto;
   display: block;
 }
-.RegisterMain_Top_Box02 p {
+.RegisterMain_Top_Fin_Box02 p {
   color: #fff;
   font-size: 28px;
   font-weight: bold;
@@ -4490,7 +4501,7 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-.RegisterMain_Top_Box02 span {
+.RegisterMain_Top_Fin_Box02 span {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -4498,7 +4509,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.RegisterMain_Top_Box03 {
+.RegisterMain_Top_Fin_Box03 {
   width: 26%;
   height: auto;
   display: flex;
@@ -4506,25 +4517,27 @@ body {
   align-items: center;
   justify-content: center;
 }
-.RegisterMain_Top_Box03 img {
+.RegisterMain_Top_Fin_Box03 img {
   width: auto;
   height: auto;
   display: block;
 }
-.RegisterMain_Top_Box03 p {
+.RegisterMain_Top_Fin_Box03 p {
   color: #fff;
   font-size: 28px;
   font-weight: bold;
   text-align: center;
   margin-top: 8px;
   margin-bottom: 8px;
+  animation: text-glow 1.5s infinite alternate;
 }
-.RegisterMain_Top_Box03 span {
+.RegisterMain_Top_Fin_Box03 span {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  animation: text-glow 1.5s infinite alternate;
 }
 
 .Keep_BTN:hover {
@@ -4565,12 +4578,45 @@ body {
   .RegisterMain_Top_Box03 p {
     font-size: 18px;
   }
-  .RegisterMain_Bot span {
+  .RegisterMain_Fin_Bot span {
     font-size: 20px;
   }
-  .RegisterMain_Bot > a {
-    width: 60%;
+  .RegisterMain_Fin_Bot > a {
+    width: 80%;
     font-size: 18px;
+  }
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+}
+@keyframes glow2 {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+}
+@keyframes text-glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   }
 }
 

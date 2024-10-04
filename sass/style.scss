@@ -7,6 +7,7 @@
 @import 'basic/font';
 @import 'basic/var';
 
+
 @import 'mixins/minins';
 
 @import 'component/btn';
@@ -19,3 +20,6 @@
 @import 'page/landpage';
 @import 'page/login';
 @import 'page/register';
+
+
+@import 'basic/_animate';
