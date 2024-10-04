@@ -1,0 +1,435 @@
+$font-family_1: "Noto Sans TC", sans-serif;
+$font-family_2: "Roboto", sans-serif;
+$background-color_8: transparent;
+
+.GameHex_MyAccount_HopeList {
+	background-color: map-get($colors, coffee02 );
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    padding: 80px 0;
+
+    @include rwd(1024px){
+        padding: 200px 0;
+    }
+
+    @include phone{
+        padding: 100px 0;
+    }
+
+
+	h1 {
+		width: 80%;
+		font-size: 36px;
+		font-weight: bold;
+		color: map-get($colors , white );
+		font-family: $font-family_1;
+		text-align: center;
+		margin-bottom: 40px;
+
+        @include rwd(700px){
+            margin-bottom: 12px;
+			font-size: 24px;
+        }
+	}
+}
+.GH_MA_HopeList_BigBox {
+	width: 80%;
+	height: auto;
+	background-color: map-get($colors, darkBlue );
+	border: 3px solid #fff;
+	border-radius: 16px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    padding: 20px;
+
+    @include rwd(1536px){
+        width: 96%;
+    }
+
+    @include rwd(900px){
+        width: 96%;
+    }
+}
+.GH_MA_HopeList_SearchBox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+	height: auto;
+	padding: 28px;
+
+    @include rwd(1536px){
+        width: 100%;
+    }
+
+    @include rwd(1280px){
+        width: 90%;
+    }
+
+    @include rwd(700px){
+        padding: 12px;
+    }
+}
+.tool {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+
+    @include rwd(700px){
+        width: 100%;
+    }
+}
+.GH_MA_HopeList_SearchTool {
+	width: 100%;
+	height: 40px;
+	background-color: map-get($colors, grayOther );
+	border: 1px solid black;
+	border-radius: 8px;
+	padding-left: 16px;
+	&::placeholder {
+		padding-left: 16px;
+	}
+}
+.GH_MA_HopeList_SortTool {
+	width: 100%;
+	height: 46px;
+	font-size: 20px;
+	font-weight: bold;
+	border: 1px solid #000;
+	border-radius: 16px;
+	background-color: map-get($colors, white );
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+
+    @include rwd(1280px){
+        font-size: 18px;
+		padding-left: 12px;
+    }
+
+    @include rwd(700px){
+        display: none;
+    }
+
+	img {
+		width: 22px;
+		height: 22px;
+		margin-left: 23px;
+	}
+	p {
+		font-family: $font-family_2;
+		font-size: 18px;
+		font-weight: 500;
+		color: map-get($colors , white );
+		margin-left: 16px;
+	}
+}
+.GH_MA_HopeList_GameList {
+	width: 80%;
+	height: auto;
+	display: grid;
+	gap: 24px;
+
+    @include rwd(1536px){
+        width: 100%;
+    }
+
+    @include rwd(700px){
+        display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+    }
+}
+.GH_MA_HopeList_GameCard {
+	width: 100%;
+	background-color: map-get($colors, blueOther );
+	border-radius: 16px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    padding: 20px;
+
+    @include rwd(700px){
+        flex-direction: column;
+		width: 90%;
+		height: 40vh;
+        margin-bottom: 80px;
+    }
+
+    @include phone{
+        height: 40vh;
+    }
+
+    @include rwd(376px){
+        height: 45vh;
+    }
+
+    @include rwd(345px){
+        height: 40vh;
+    }
+
+    &:hover{
+        animation: glow 1.5s infinite alternate;
+    }
+}
+.GH_MA_HopeList_GameCard_SortModify {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 20px;
+	border-left: 4px solid #fff;
+	width: 5%;
+	height: 15vh;
+
+    @include rwd(900px){
+        display: none;
+    }
+
+	p {
+		font-size: 40px;
+		font-weight: bold;
+		font-family: $font-family_2;
+		color: map-get($colors , white );
+	}
+}
+.GH_MA_HopeList_GameCard_img {
+	position: relative;
+	img {
+		border-radius: 16px;
+
+        @include rwd(1280px){
+            width: 200px;
+            height: 150px;
+        }
+	}
+}
+.GH_MA_HopeList_GameCard_Discount {
+	position: absolute;
+	top: 148px;
+	left: 86px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: map-get($colors, black );
+	border-radius: 4px;
+	color: map-get($colors , white );
+	width: 128px;
+	height: 39px;
+	font-family: $font-family_2;
+
+    @include rwd(1280px){
+        top: 96px;
+        left: 40px;
+    }
+
+	p {
+		border-radius: 16px;
+		background-color: map-get($colors, white );
+		color: map-get($colors , dark );
+		padding-top: 4px;
+		padding-bottom: 4px;
+		padding-right: 12px;
+		padding-left: 12px;
+		margin-right: 8px;
+		font-size: 12px;
+	}
+	span {
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
+.GH_MA_HopeList_GameCard_Ifo {
+	display: flex;
+	flex-direction: column;
+	width: 28%;
+
+    @include rwd(1536px){
+        width: 40%;
+    }
+
+    @include rwd(700px){
+        display: none;
+    }
+
+}
+.GH_MA_HopeList_GameCard_Ifo_Title {
+	font-family: $font-family_1;
+	font-size: 24px;
+	font-weight: bold;
+	color: map-get($colors , white );
+	margin-bottom: 8px;
+
+    @include rwd(1280px){
+        font-size: 20px;
+    }
+}
+.GH_MA_HopeList_GameCard_Ifo_View {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
+
+    @include rwd(1280px){
+        margin-bottom: 8px;
+    }
+
+	p {
+		font-family: $font-family_1;
+		font-size: 16px;
+		color: map-get($colors , white );
+	}
+	span {
+		font-family: $font-family_1;
+		font-size: 18px;
+		font-weight: bold;
+		color: map-get($colors , white );
+
+        @include rwd(1280px){
+            font-size: 16px;
+        }
+	}
+}
+.GH_MA_HopeList_GameCard_Ifo_ReleaseDay {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
+
+    @include rwd(1280px){
+        margin-bottom: 8px;
+    }
+
+	p {
+		font-family: $font-family_1;
+		font-size: 16px;
+		color: map-get($colors , white );
+	}
+	span {
+		font-family: $font-family_1;
+		font-size: 16px;
+		color: map-get($colors , white );
+	}
+}
+.GH_MA_HopeList_GameCard_Ifo_Tag {
+	width: 100%;
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, auto);
+		gap: 16px;
+
+        @include rwd(1536px){
+            gap: 12px;
+        }
+
+        @include rwd(1280px){
+            gap: 4px;
+        }
+
+		li {
+			font-family: $font-family_1;
+			font-size: 14px;
+			font-weight: bold;
+			color: map-get($colors , dark );
+			background-color: map-get($colors, white );
+			border: 1px solid black;
+			border-radius: 8px;
+			// width: 60px;
+			padding: 4px;
+			text-align: center;
+            cursor: pointer;
+
+            &:hover{
+                background-color: dodgerblue;
+            }
+
+			&:nth-child(3) {
+				margin-right: 0px;
+			}
+			&:nth-child(6) {
+				margin-right: 0px;
+			}
+		}
+	}
+}
+.BTN_Style_ProductTo_SearchName {
+	width: 50px;
+	height: 44px;
+	background-color: map-get($colors, coffee03 );
+	border-radius: 8px;
+	box-shadow: none;
+	background-image: url(../img/Vector-Right.png);
+	background-size: fit;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.BTN_Style_ProductTo_ModUpSort {
+	width: 50px;
+	height: 40px;
+	background-color: $background-color_8;
+	box-shadow: none;
+	background-image: url(../img/Up.png);
+	background-repeat: no-repeat;
+	background-position: center;
+    cursor: pointer;
+}
+.BTN_Style_ProductTo_ModDownSort {
+	width: 50px;
+	height: 40px;
+	background-color: $background-color_8;
+	box-shadow: none;
+	background-image: url(../img/Down.png);
+	background-repeat: no-repeat;
+	background-position: center;
+    cursor: pointer;
+}
+.BTN_Style_ProductTo_BuyInSec {
+	width: 213px;
+	height: 67px;
+	font-size: 20px;
+	font-weight: bold;
+	background-image: url(../img/BTN_001.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: map-get($colors , white );
+	border: none;
+	background-color: $background-color_8;
+	line-height: 67px;
+	text-align: center;
+
+    @include rwd(1280px){
+        width: 160px;
+		height: 48px;
+		line-height: 48px;
+		font-size: 16px;
+    }
+
+    @include rwd(700px){
+        width: 160px;
+		height: 50px;
+    }
+}
+
+.GH_MA_HopeList_Hide_Title{
+    display: none;
+
+    @include rwd(700px){
+        display: block;
+        font-family: $font-family_1;
+        font-size: 24px;
+        font-weight: bold;
+        color: map-get($colors , white );
+        margin-bottom: 8px;
+    }
+}

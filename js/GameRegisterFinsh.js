@@ -1,7 +1,7 @@
 // ------------------------------------------------------------------- 給跳轉網頁用
 
 // 獲取HTML元素
-let refreshTime10s = document.querySelector('.RegisterMain_Bot span');
+let refreshTime10s = document.querySelector('.RegisterMain_Fin_Bot span');
 
 // 設定初始時間
 let timeRefresh = 10;

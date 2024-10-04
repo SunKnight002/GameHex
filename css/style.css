@@ -4586,6 +4586,474 @@ body {
     font-size: 18px;
   }
 }
+.GameHex_MyAccount_HopeList {
+  background-color: #222222;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+@media (max-width: 1024px) {
+  .GameHex_MyAccount_HopeList {
+    padding: 200px 0;
+  }
+}
+@media (max-width: 430px) {
+  .GameHex_MyAccount_HopeList {
+    padding: 100px 0;
+  }
+}
+.GameHex_MyAccount_HopeList h1 {
+  width: 80%;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 700px) {
+  .GameHex_MyAccount_HopeList h1 {
+    margin-bottom: 12px;
+    font-size: 24px;
+  }
+}
+
+.GH_MA_HopeList_BigBox {
+  width: 80%;
+  height: auto;
+  background-color: #0C223F;
+  border: 3px solid #fff;
+  border-radius: 16px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+@media (max-width: 1536px) {
+  .GH_MA_HopeList_BigBox {
+    width: 96%;
+  }
+}
+@media (max-width: 900px) {
+  .GH_MA_HopeList_BigBox {
+    width: 96%;
+  }
+}
+
+.GH_MA_HopeList_SearchBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+  padding: 28px;
+}
+@media (max-width: 1536px) {
+  .GH_MA_HopeList_SearchBox {
+    width: 100%;
+  }
+}
+@media (max-width: 1280px) {
+  .GH_MA_HopeList_SearchBox {
+    width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  .GH_MA_HopeList_SearchBox {
+    padding: 12px;
+  }
+}
+
+.tool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+@media (max-width: 700px) {
+  .tool {
+    width: 100%;
+  }
+}
+
+.GH_MA_HopeList_SearchTool {
+  width: 100%;
+  height: 40px;
+  background-color: #ACACAC;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding-left: 16px;
+}
+.GH_MA_HopeList_SearchTool::placeholder {
+  padding-left: 16px;
+}
+
+.GH_MA_HopeList_SortTool {
+  width: 100%;
+  height: 46px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #000;
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+@media (max-width: 1280px) {
+  .GH_MA_HopeList_SortTool {
+    font-size: 18px;
+    padding-left: 12px;
+  }
+}
+@media (max-width: 700px) {
+  .GH_MA_HopeList_SortTool {
+    display: none;
+  }
+}
+.GH_MA_HopeList_SortTool img {
+  width: 22px;
+  height: 22px;
+  margin-left: 23px;
+}
+.GH_MA_HopeList_SortTool p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 16px;
+}
+
+.GH_MA_HopeList_GameList {
+  width: 80%;
+  height: auto;
+  display: grid;
+  gap: 24px;
+}
+@media (max-width: 1536px) {
+  .GH_MA_HopeList_GameList {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .GH_MA_HopeList_GameList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.GH_MA_HopeList_GameCard {
+  width: 100%;
+  background-color: #3A5A85;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+@media (max-width: 700px) {
+  .GH_MA_HopeList_GameCard {
+    flex-direction: column;
+    width: 90%;
+    height: 40vh;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 430px) {
+  .GH_MA_HopeList_GameCard {
+    height: 40vh;
+  }
+}
+@media (max-width: 376px) {
+  .GH_MA_HopeList_GameCard {
+    height: 45vh;
+  }
+}
+@media (max-width: 345px) {
+  .GH_MA_HopeList_GameCard {
+    height: 40vh;
+  }
+}
+.GH_MA_HopeList_GameCard:hover {
+  animation: glow 1.5s infinite alternate;
+}
+
+.GH_MA_HopeList_GameCard_SortModify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 20px;
+  border-left: 4px solid #fff;
+  width: 5%;
+  height: 15vh;
+}
+@media (max-width: 900px) {
+  .GH_MA_HopeList_GameCard_SortModify {
+    display: none;
+  }
+}
+.GH_MA_HopeList_GameCard_SortModify p {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.GH_MA_HopeList_GameCard_img {
+  position: relative;
+}
+.GH_MA_HopeList_GameCard_img img {
+  border-radius: 16px;
+}
+@media (max-width: 1280px) {
+  .GH_MA_HopeList_GameCard_img img {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+.GH_MA_HopeList_GameCard_Discount {
+  position: absolute;
+  top: 148px;
+  left: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #292929;
+  border-radius: 4px;
+  color: #fff;
+  width: 128px;
+  height: 39px;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 1280px) {
+  .GH_MA_HopeList_GameCard_Discount {
+    top: 96px;
+    left: 40px;
+  }
+}
+.GH_MA_HopeList_GameCard_Discount p {
+  border-radius: 16px;
+  background-color: #fff;
+  color: #000;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 8px;
+  font-size: 12px;
+}
+.GH_MA_HopeList_GameCard_Discount span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.GH_MA_HopeList_GameCard_Ifo {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+}
+@media (max-width: 1536px) {
+  .GH_MA_HopeList_GameCard_Ifo {
+    width: 40%;
+  }
+}
+@media (max-width: 700px) {
+  .GH_MA_HopeList_GameCard_Ifo {
+    display: none;
+  }
+}
+
+.GH_MA_HopeList_GameCard_Ifo_Title {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+@media (max-width: 1280px) {
+  .GH_MA_HopeList_GameCard_Ifo_Title {
+    font-size: 20px;
+  }
+}
+
+.GH_MA_HopeList_GameCard_Ifo_View {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+@media (max-width: 1280px) {
+  .GH_MA_HopeList_GameCard_Ifo_View {
+    margin-bottom: 8px;
+  }
+}
+.GH_MA_HopeList_GameCard_Ifo_View p {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+.GH_MA_HopeList_GameCard_Ifo_View span {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+@media (max-width: 1280px) {
+  .GH_MA_HopeList_GameCard_Ifo_View span {
+    font-size: 16px;
+  }
+}
+
+.GH_MA_HopeList_GameCard_Ifo_ReleaseDay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+@media (max-width: 1280px) {
+  .GH_MA_HopeList_GameCard_Ifo_ReleaseDay {
+    margin-bottom: 8px;
+  }
+}
+.GH_MA_HopeList_GameCard_Ifo_ReleaseDay p {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+.GH_MA_HopeList_GameCard_Ifo_ReleaseDay span {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.GH_MA_HopeList_GameCard_Ifo_Tag {
+  width: 100%;
+}
+.GH_MA_HopeList_GameCard_Ifo_Tag ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 16px;
+}
+@media (max-width: 1536px) {
+  .GH_MA_HopeList_GameCard_Ifo_Tag ul {
+    gap: 12px;
+  }
+}
+@media (max-width: 1280px) {
+  .GH_MA_HopeList_GameCard_Ifo_Tag ul {
+    gap: 4px;
+  }
+}
+.GH_MA_HopeList_GameCard_Ifo_Tag ul li {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+.GH_MA_HopeList_GameCard_Ifo_Tag ul li:hover {
+  background-color: dodgerblue;
+}
+.GH_MA_HopeList_GameCard_Ifo_Tag ul li:nth-child(3) {
+  margin-right: 0px;
+}
+.GH_MA_HopeList_GameCard_Ifo_Tag ul li:nth-child(6) {
+  margin-right: 0px;
+}
+
+.BTN_Style_ProductTo_SearchName {
+  width: 50px;
+  height: 44px;
+  background-color: #333333;
+  border-radius: 8px;
+  box-shadow: none;
+  background-image: url(../img/Vector-Right.png);
+  background-size: fit;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.BTN_Style_ProductTo_ModUpSort {
+  width: 50px;
+  height: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  background-image: url(../img/Up.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.BTN_Style_ProductTo_ModDownSort {
+  width: 50px;
+  height: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  background-image: url(../img/Down.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.BTN_Style_ProductTo_BuyInSec {
+  width: 213px;
+  height: 67px;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: url(../img/BTN_001.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  line-height: 67px;
+  text-align: center;
+}
+@media (max-width: 1280px) {
+  .BTN_Style_ProductTo_BuyInSec {
+    width: 160px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .BTN_Style_ProductTo_BuyInSec {
+    width: 160px;
+    height: 50px;
+  }
+}
+
+.GH_MA_HopeList_Hide_Title {
+  display: none;
+}
+@media (max-width: 700px) {
+  .GH_MA_HopeList_Hide_Title {
+    display: block;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+}
+
 @keyframes glow {
   0% {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
