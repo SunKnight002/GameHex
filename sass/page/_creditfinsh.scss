@@ -1,0 +1,273 @@
+$font-family_1: "Noto Sans TC", sans-serif;
+$font-family_2: "Roboto", sans-serif;
+$background-color_1: rgba(104, 149, 210, 0.6);
+
+.GameHex_CheckOut_Finish {
+    width: 100%;
+    padding: 80px 0;
+    background-image: url("../img/BC_BG_001m.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include rwd(1536px) {
+        padding: 140px 0;
+    }
+
+    @include rwd(1100px) {
+        padding: 260px 0;
+    }
+
+    @include phone {
+        padding: 160px 0;
+    }
+
+    @include rwd(375px) {
+        padding: 80px 0;
+    }
+
+
+}
+.GameHex_CheckOut_Finish_ProgressPoint {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 80%;
+
+    @include rwd(1536px) {
+        margin-top: 20px;
+    }
+
+    @include rwd(1280px) {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    @include rwd(620px) {
+        display: none;
+    }
+
+    > img {
+        width: 20%;
+
+        @include rwd(1100px) {
+            width: 10%;
+        }
+    }
+}
+.Finish_ProgressPoint_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+
+    @include rwd(1100px) {
+        width: 35%;
+    }
+
+    @include rwd(800px) {
+        width: 40%;
+    }
+
+    p {
+        font-size: 32px;
+        font-weight: 400;
+        color: map-get($colors , white);
+        margin-top: 24px;
+        font-family: $font-family_1;
+
+        @include rwd(1100px) {
+            font-size: 28px;
+        }
+
+        @include rwd(600px) {
+            font-size: 24px;
+            margin-top: 8px;
+        }
+    }
+
+    span {
+        font-size: 18px;
+        font-weight: 500;
+        color: map-get($colors , white);
+        margin-top: 24px;
+        font-family: $font-family_2;
+
+        @include rwd(1100px) {
+            font-size: 16px;
+        }
+
+        @include rwd(600px) {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+    }
+}
+
+.Finish_ProgressPoint_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+
+    @include rwd(1100px) {
+        width: 35%;
+    }
+
+    @include rwd(800px) {
+        width: 40%;
+    }
+
+    p {
+        font-size: 32px;
+        font-weight: 400;
+        color: map-get($colors , white);
+        margin-top: 24px;
+        font-family: $font-family_1;
+
+        @include rwd(1100px) {
+            font-size: 28px;
+        }
+
+        @include rwd(600px) {
+            font-size: 24px;
+            margin-top: 8px;
+        }
+    }
+    span {
+        font-size: 18px;
+        font-weight: 500;
+        color: map-get($colors , white);
+        margin-top: 24px;
+        font-family: $font-family_2;
+
+        @include rwd(1100px) {
+            font-size: 16px;
+        }
+
+        @include rwd(600px) {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+    }
+}
+.GameHex_CheckOut_Finish_Tips {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    width: 70%;
+    background-color: $background-color_1;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 40px;
+
+    @include rwd(1280px) {
+        margin-bottom: 0;
+        width: 80%;
+    }
+
+    @include rwd(800px) {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: map-get($colors , white);
+        margin-top: 40px;
+        font-family: $font-family_1;
+
+        @include rwd(1536px) {
+            font-size: 32px;
+        }
+
+        @include rwd(1100px) {
+            font-size: 28px;
+        }
+
+        @include rwd(600px) {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    }
+
+    p {
+        width: 96%;
+        font-size: 28px;
+        font-weight: bold;
+        color: map-get($colors , white);
+        text-align: center;
+        line-height: 1.2;
+        margin-top: 40px;
+        font-family: $font-family_1;
+
+        @include rwd(1536px) {
+            font-size: 24px;
+        }
+
+        @include rwd(543px) {
+            width: 100%;
+            font-size: 20px;
+        }
+
+        @include phone {
+            font-size: 16px;
+        }
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: bold;
+        color: map-get($colors , white);
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-family: $font-family_1;
+
+        @include rwd(1280px) {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        @include phone {
+            font-size: 12px;
+        }
+    }
+
+    a {
+        width: 20%;
+        height: 65px;
+        font-size: 24px;
+        font-weight: bold;
+        color: map-get($colors , white);
+        background-color: map-get($colors , dark);
+        border: 1px solid #fff;
+        border-radius: 16px;
+        text-decoration: none;
+        font-family: $font-family_1;
+        text-align: center;
+        line-height: 65px;
+
+        &:hover{
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @include rwd(1280px) {
+            font-size: 20px;
+            width: 30%;
+        }
+
+        @include rwd(600px) {
+            width: 40%;
+        }
+    }
+}

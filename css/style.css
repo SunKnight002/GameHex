@@ -5241,8 +5241,6 @@ body {
   }
 }
 .GameHex_Product_Add_Tips a:hover {
-  background-color: #6D6D6D;
-  color: #000;
   animation: glow 1.5s infinite alternate;
 }
 
@@ -7702,6 +7700,300 @@ input[type=checkbox] {
 @media (max-width: 430px) {
   .KeepToPay_BTN {
     width: 60vw;
+  }
+}
+
+.GameHex_CheckOut_Finish {
+  width: 100%;
+  padding: 80px 0;
+  background-image: url("../img/BC_BG_001m.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1536px) {
+  .GameHex_CheckOut_Finish {
+    padding: 140px 0;
+  }
+}
+@media (max-width: 1100px) {
+  .GameHex_CheckOut_Finish {
+    padding: 260px 0;
+  }
+}
+@media (max-width: 430px) {
+  .GameHex_CheckOut_Finish {
+    padding: 160px 0;
+  }
+}
+@media (max-width: 375px) {
+  .GameHex_CheckOut_Finish {
+    padding: 80px 0;
+  }
+}
+
+.GameHex_CheckOut_Finish_ProgressPoint {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 80%;
+}
+@media (max-width: 1536px) {
+  .GameHex_CheckOut_Finish_ProgressPoint {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1280px) {
+  .GameHex_CheckOut_Finish_ProgressPoint {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 620px) {
+  .GameHex_CheckOut_Finish_ProgressPoint {
+    display: none;
+  }
+}
+.GameHex_CheckOut_Finish_ProgressPoint > img {
+  width: 20%;
+}
+@media (max-width: 1100px) {
+  .GameHex_CheckOut_Finish_ProgressPoint > img {
+    width: 10%;
+  }
+}
+
+.Finish_ProgressPoint_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+@media (max-width: 1100px) {
+  .Finish_ProgressPoint_1 {
+    width: 35%;
+  }
+}
+@media (max-width: 800px) {
+  .Finish_ProgressPoint_1 {
+    width: 40%;
+  }
+}
+.Finish_ProgressPoint_1 p {
+  font-size: 32px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 24px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@media (max-width: 1100px) {
+  .Finish_ProgressPoint_1 p {
+    font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .Finish_ProgressPoint_1 p {
+    font-size: 24px;
+    margin-top: 8px;
+  }
+}
+.Finish_ProgressPoint_1 span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 24px;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 1100px) {
+  .Finish_ProgressPoint_1 span {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .Finish_ProgressPoint_1 span {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}
+
+.Finish_ProgressPoint_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+@media (max-width: 1100px) {
+  .Finish_ProgressPoint_2 {
+    width: 35%;
+  }
+}
+@media (max-width: 800px) {
+  .Finish_ProgressPoint_2 {
+    width: 40%;
+  }
+}
+.Finish_ProgressPoint_2 p {
+  font-size: 32px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 24px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@media (max-width: 1100px) {
+  .Finish_ProgressPoint_2 p {
+    font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .Finish_ProgressPoint_2 p {
+    font-size: 24px;
+    margin-top: 8px;
+  }
+}
+.Finish_ProgressPoint_2 span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 24px;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 1100px) {
+  .Finish_ProgressPoint_2 span {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .Finish_ProgressPoint_2 span {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}
+
+.GameHex_CheckOut_Finish_Tips {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  width: 70%;
+  background-color: rgba(104, 149, 210, 0.6);
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 40px;
+}
+@media (max-width: 1280px) {
+  .GameHex_CheckOut_Finish_Tips {
+    margin-bottom: 0;
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .GameHex_CheckOut_Finish_Tips {
+    width: 90%;
+    padding: 20px;
+  }
+}
+.GameHex_CheckOut_Finish_Tips h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 40px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@media (max-width: 1536px) {
+  .GameHex_CheckOut_Finish_Tips h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1100px) {
+  .GameHex_CheckOut_Finish_Tips h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .GameHex_CheckOut_Finish_Tips h1 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+.GameHex_CheckOut_Finish_Tips p {
+  width: 96%;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 40px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@media (max-width: 1536px) {
+  .GameHex_CheckOut_Finish_Tips p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 543px) {
+  .GameHex_CheckOut_Finish_Tips p {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+@media (max-width: 430px) {
+  .GameHex_CheckOut_Finish_Tips p {
+    font-size: 16px;
+  }
+}
+.GameHex_CheckOut_Finish_Tips span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@media (max-width: 1280px) {
+  .GameHex_CheckOut_Finish_Tips span {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 430px) {
+  .GameHex_CheckOut_Finish_Tips span {
+    font-size: 12px;
+  }
+}
+.GameHex_CheckOut_Finish_Tips a {
+  width: 20%;
+  height: 65px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: center;
+  line-height: 65px;
+}
+.GameHex_CheckOut_Finish_Tips a:hover {
+  animation: glow 1.5s infinite alternate;
+}
+@media (max-width: 1280px) {
+  .GameHex_CheckOut_Finish_Tips a {
+    font-size: 20px;
+    width: 30%;
+  }
+}
+@media (max-width: 600px) {
+  .GameHex_CheckOut_Finish_Tips a {
+    width: 40%;
   }
 }
 

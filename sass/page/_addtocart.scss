@@ -153,8 +153,6 @@ $background-color_1: rgba(104, 149, 210, 0.6);
         }
 
 		&:hover {
-			background-color: map-get($colors, gray );
-			color: map-get($colors , dark );
             animation: glow 1.5s infinite alternate;
 		}
 	}
