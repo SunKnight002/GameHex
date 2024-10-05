@@ -17,6 +17,19 @@ footer {
 	background-color: $background-color_1;
 	img {
 		width: 10vw;
+		cursor: pointer;
+
+		@include rwd(1280px){
+			width: 12vw;
+		}
+
+		@include pad{
+			width: 16vw;
+		}
+
+		@include rwd(600px){
+			width: 20vw;
+		}
 	}
 }
 .footer_area {
@@ -26,12 +39,21 @@ footer {
 	align-items: center;
 	justify-content: space-around;
 	padding: 20px 0;
+
+	@include rwd(1536px){
+		padding: 16px 0;
+	}
 }
 .footer_text {
 	width: 80%;
 	margin-top: auto;
 	margin-bottom: auto;
 	text-align: center;
+
+	@include rwd(600px){
+		width: 70%;
+	}
+
 	p {
 		color: $color_1;
 		display: flex;
@@ -41,30 +63,18 @@ footer {
 		font-style: normal;
 		font-size: 18px;
 		line-height: 1.2;
-	}
-}
-@media (max-width: 1536px) {
-	.footer_area {
-		padding: 4px 0 4px 0;
-	}
-}
-@media (max-width: 1280px) {
-	footer {
-		img {
-			width: 12vw;
+
+		@include rwd(1280px){
+			font-size: 14px;
+			margin-bottom: 8px;
 		}
-	}
-}
-@media (max-width: 600px) {
-	footer {
-		img {
-			width: 20vw;
-		}
-	}
-	.footer_text {
-		width: 70%;
-		p {
+
+		@include rwd(600px){
 			font-size: 12px;
+		}
+
+		@include phone{
+			font-size: 8px;
 		}
 	}
 }
