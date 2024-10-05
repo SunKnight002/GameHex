@@ -256,6 +256,22 @@ footer {
 }
 footer img {
   width: 10vw;
+  cursor: pointer;
+}
+@media (max-width: 1280px) {
+  footer img {
+    width: 12vw;
+  }
+}
+@media (max-width: 820px) {
+  footer img {
+    width: 16vw;
+  }
+}
+@media (max-width: 600px) {
+  footer img {
+    width: 20vw;
+  }
 }
 
 .footer_area {
@@ -266,12 +282,22 @@ footer img {
   justify-content: space-around;
   padding: 20px 0;
 }
+@media (max-width: 1536px) {
+  .footer_area {
+    padding: 16px 0;
+  }
+}
 
 .footer_text {
   width: 80%;
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .footer_text {
+    width: 70%;
+  }
 }
 .footer_text p {
   color: #fff;
@@ -283,28 +309,23 @@ footer img {
   font-size: 18px;
   line-height: 1.2;
 }
-
-@media (max-width: 1536px) {
-  .footer_area {
-    padding: 4px 0 4px 0;
-  }
-}
 @media (max-width: 1280px) {
-  footer img {
-    width: 12vw;
+  .footer_text p {
+    font-size: 14px;
+    margin-bottom: 8px;
   }
 }
 @media (max-width: 600px) {
-  footer img {
-    width: 20vw;
-  }
-  .footer_text {
-    width: 70%;
-  }
   .footer_text p {
     font-size: 12px;
   }
 }
+@media (max-width: 430px) {
+  .footer_text p {
+    font-size: 8px;
+  }
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -7009,6 +7030,679 @@ body {
   margin-top: 28px;
   line-height: 67px;
   text-align: center;
+}
+
+.GameHex_CheckOut_Credit {
+  width: 100%;
+  background-image: url("../img/BC_BG_001m.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 130px 0;
+}
+@media (max-width: 1600px) {
+  .GameHex_CheckOut_Credit {
+    padding: 160px 0;
+  }
+}
+@media (max-width: 1300px) {
+  .GameHex_CheckOut_Credit {
+    padding: 230px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .GameHex_CheckOut_Credit {
+    padding: 360px 0;
+  }
+}
+@media (max-width: 853px) {
+  .GameHex_CheckOut_Credit {
+    padding: 320px 0;
+  }
+}
+@media (max-width: 430px) {
+  .GameHex_CheckOut_Credit {
+    padding: 200px 0;
+  }
+}
+
+.GameHex_CheckOut_Credit_Area {
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 1536px) {
+  .GameHex_CheckOut_Credit_Area {
+    width: 90%;
+  }
+}
+@media (max-width: 1100px) {
+  .GameHex_CheckOut_Credit_Area {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .GameHex_CheckOut_Credit_Area {
+    flex-direction: column;
+  }
+}
+
+.GameHex_CheckOut_Credit_Info {
+  width: 20%;
+  height: auto;
+  border: 1px solid #fff;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(153, 153, 153), rgba(255, 255, 254, 0));
+  padding: 30px;
+}
+@media (max-width: 1280px) {
+  .GameHex_CheckOut_Credit_Info {
+    padding: 20px;
+  }
+}
+@media (max-width: 1536px) {
+  .GameHex_CheckOut_Credit_Info {
+    padding: 28px;
+  }
+}
+@media (max-width: 1100px) {
+  .GameHex_CheckOut_Credit_Info {
+    display: none;
+    width: 80%;
+  }
+}
+.GameHex_CheckOut_Credit_Info img {
+  width: auto;
+  margin-bottom: 40px;
+}
+@media (max-width: 1280px) {
+  .GameHex_CheckOut_Credit_Info img {
+    margin-bottom: 20px;
+  }
+}
+
+.GameHex_CheckOut_Credit_Info_Num {
+  font-size: 80px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 40px;
+}
+@media (max-width: 1280px) {
+  .GameHex_CheckOut_Credit_Info_Num {
+    margin-bottom: 20px;
+    font-size: 60px;
+  }
+}
+
+.GameHex_CheckOut_Credit_Info_Title {
+  font-size: 40px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 12px;
+}
+@media (max-width: 1280px) {
+  .GameHex_CheckOut_Credit_Info_Title {
+    font-size: 32px;
+  }
+}
+
+.GameHex_CheckOut_Credit_Info_SubTitle {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 16px;
+}
+@media (max-width: 1280px) {
+  .GameHex_CheckOut_Credit_Info_SubTitle {
+    font-size: 32px;
+  }
+}
+
+.Text_Box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.GameHex_CheckOut_Credit_Paragraph_01 {
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1280px) {
+  .GameHex_CheckOut_Credit_Paragraph_01 {
+    margin-bottom: 12px;
+  }
+}
+
+.GameHex_CheckOut_Credit_BOX {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+@media (max-width: 1536px) {
+  .GameHex_CheckOut_Credit_BOX {
+    width: 70%;
+  }
+}
+@media (max-width: 1100px) {
+  .GameHex_CheckOut_Credit_BOX {
+    width: 90%;
+    justify-content: space-around;
+  }
+}
+
+.Box_CheckOut {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .Box_CheckOut {
+    flex-direction: column-reverse;
+    font-size: 12px;
+  }
+}
+
+.GameHex_CheckOut_Credit_Input {
+  width: 55%;
+}
+@media (max-width: 1536px) {
+  .GameHex_CheckOut_Credit_Input {
+    width: 65%;
+  }
+}
+@media (max-width: 800px) {
+  .GameHex_CheckOut_Credit_Input {
+    width: 90%;
+  }
+}
+@media (max-width: 430px) {
+  .GameHex_CheckOut_Credit_Input {
+    width: 96%;
+  }
+}
+
+.Credit_Input_PayType {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+@media (max-width: 1280px) {
+  .Credit_Input_PayType {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 800px) {
+  .Credit_Input_PayType {
+    font-size: 16px;
+  }
+}
+.Credit_Input_PayType label {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media (max-width: 1100px) {
+  .Credit_Input_PayType p {
+    margin-right: 0;
+  }
+}
+
+.c01 {
+  display: flex;
+  align-items: center;
+}
+.c01 label {
+  margin-left: 8px;
+}
+
+.c02 {
+  display: flex;
+  align-items: center;
+}
+.c02 label {
+  margin-left: 8px;
+}
+
+.c03 {
+  display: flex;
+  align-items: center;
+}
+.c03 label {
+  margin-left: 8px;
+}
+
+input[type=checkbox] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+@media (max-width: 800px) {
+  input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.Credit_Input_Num {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+@media (max-width: 1100px) {
+  .Credit_Input_Num {
+    font-size: 16px;
+  }
+}
+.Credit_Input_Num input {
+  border-radius: 8px;
+  height: 32px;
+  width: 15vw;
+  padding-left: 8px;
+}
+@media (max-width: 1536px) {
+  .Credit_Input_Num input {
+    padding-left: 8px;
+  }
+}
+@media (max-width: 900px) {
+  .Credit_Input_Num input {
+    width: 35vw;
+  }
+}
+@media (max-width: 430px) {
+  .Credit_Input_Num input {
+    width: 50vw;
+  }
+}
+.Credit_Input_Num input::placeholder {
+  padding-left: 8px;
+}
+
+.Credit_Input_LimitDate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .Credit_Input_LimitDate {
+    font-size: 16px;
+  }
+}
+.Credit_Input_LimitDate input {
+  width: 80px;
+  height: 32px;
+  border-radius: 8px;
+  padding-left: 8px;
+}
+@media (max-width: 1536px) {
+  .Credit_Input_LimitDate input {
+    padding-left: 8px;
+    width: 8vw;
+  }
+}
+@media (max-width: 430px) {
+  .Credit_Input_LimitDate input {
+    width: 17vw;
+  }
+}
+.Credit_Input_LimitDate input::placeholder {
+  padding-left: 8px;
+}
+
+.Credit_Input_CardDate {
+  margin-right: 40px;
+}
+
+.Credit_Input_CardUserName {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .Credit_Input_CardUserName {
+    font-size: 16px;
+  }
+}
+.Credit_Input_CardUserName input {
+  border-radius: 8px;
+  height: 32px;
+  width: 15vw;
+  padding-left: 8px;
+}
+@media (max-width: 1536px) {
+  .Credit_Input_CardUserName input {
+    padding-left: 8px;
+    width: 25vw;
+  }
+}
+@media (max-width: 900px) {
+  .Credit_Input_CardUserName input {
+    width: 35vw;
+  }
+}
+@media (max-width: 430px) {
+  .Credit_Input_CardUserName input {
+    width: 50vw;
+  }
+}
+.Credit_Input_CardUserName input::placeholder {
+  padding-left: 8px;
+}
+
+.Credit_Input_CardSafeNum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+@media (max-width: 1100px) {
+  .Credit_Input_CardSafeNum {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 800px) {
+  .Credit_Input_CardSafeNum {
+    font-size: 16px;
+  }
+}
+.Credit_Input_CardSafeNum input {
+  width: 10vw;
+  height: 32px;
+  border-radius: 8px;
+  padding-left: 8px;
+}
+@media (max-width: 1536px) {
+  .Credit_Input_CardSafeNum input {
+    padding-left: 8px;
+    width: 25vw;
+  }
+}
+@media (max-width: 900px) {
+  .Credit_Input_CardSafeNum input {
+    width: 35vw;
+  }
+}
+@media (max-width: 430px) {
+  .Credit_Input_CardSafeNum input {
+    width: 50vw;
+  }
+}
+.Credit_Input_CardSafeNum input::placeholder {
+  padding-left: 8px;
+}
+@media (max-width: 1100px) {
+  .Credit_Input_CardSafeNum p {
+    margin-right: 0;
+  }
+}
+
+.Credit_Input_EmailAccount {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .Credit_Input_EmailAccount {
+    font-size: 16px;
+  }
+}
+.Credit_Input_EmailAccount input {
+  border-radius: 8px;
+  height: 32px;
+  width: 15vw;
+  padding-left: 8px;
+}
+@media (max-width: 1536px) {
+  .Credit_Input_EmailAccount input {
+    padding-left: 8px;
+    width: 25vw;
+  }
+}
+@media (max-width: 900px) {
+  .Credit_Input_EmailAccount input {
+    width: 35vw;
+  }
+}
+@media (max-width: 430px) {
+  .Credit_Input_EmailAccount input {
+    width: 50vw;
+  }
+}
+.Credit_Input_EmailAccount input::placeholder {
+  padding-left: 8px;
+}
+
+.Credit_Input_Receipt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .Credit_Input_Receipt {
+    font-size: 16px;
+  }
+}
+.Credit_Input_Receipt input {
+  border-radius: 8px;
+  height: 32px;
+  width: 15vw;
+  padding-left: 8px;
+}
+@media (max-width: 1536px) {
+  .Credit_Input_Receipt input {
+    padding-left: 8px;
+    width: 25vw;
+  }
+}
+@media (max-width: 900px) {
+  .Credit_Input_Receipt input {
+    width: 35vw;
+  }
+}
+@media (max-width: 430px) {
+  .Credit_Input_Receipt input {
+    width: 50vw;
+  }
+}
+.Credit_Input_Receipt input::placeholder {
+  padding-left: 8px;
+}
+
+.GameHex_CheckOut_Credit_Tips {
+  width: 40%;
+  height: auto;
+  background-color: rgba(104, 149, 210, 0.7);
+  padding: 24px 16px;
+  margin-left: 60px;
+}
+@media (max-width: 1100px) {
+  .GameHex_CheckOut_Credit_Tips {
+    width: 28%;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .GameHex_CheckOut_Credit_Tips {
+    display: none;
+  }
+}
+.GameHex_CheckOut_Credit_Tips p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-bottom: 16px;
+}
+@media (max-width: 1100px) {
+  .GameHex_CheckOut_Credit_Tips p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .GameHex_CheckOut_Credit_Tips p {
+    font-size: 18px;
+  }
+}
+.GameHex_CheckOut_Credit_Tips span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.6;
+}
+
+.GameHex_CheckOut_Credit_Agree {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media (max-width: 1536px) {
+  .GameHex_CheckOut_Credit_Agree {
+    margin-bottom: 20px;
+  }
+}
+.GameHex_CheckOut_Credit_Agree label {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-left: 8px;
+}
+@media (max-width: 1536px) {
+  .GameHex_CheckOut_Credit_Agree label {
+    font-size: 16px;
+  }
+}
+@media (max-width: 800px) {
+  .GameHex_CheckOut_Credit_Agree label {
+    font-size: 14px;
+  }
+}
+
+.Agree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+@media (max-width: 800px) {
+  .Agree {
+    width: 100%;
+  }
+}
+
+.understandUSP_btn {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: url("../img/BTN_001.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  line-height: 60px;
+  text-align: center;
+}
+@media (max-width: 1536px) {
+  .understandUSP_btn {
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+  }
+}
+
+.KeepToPay_BTN {
+  width: 15vw;
+  height: 65px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #000;
+  border-radius: 8px;
+  border: 1px solid #fff;
+}
+.KeepToPay_BTN:hover {
+  animation: glow 1.5s infinite alternate;
+}
+@media (max-width: 1100px) {
+  .KeepToPay_BTN {
+    width: 30vw;
+  }
+}
+@media (max-width: 800px) {
+  .KeepToPay_BTN {
+    height: 6vh;
+  }
+}
+@media (max-width: 430px) {
+  .KeepToPay_BTN {
+    width: 60vw;
+  }
 }
 
 @keyframes glow {

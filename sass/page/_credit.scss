@@ -1,0 +1,619 @@
+$font-family_1: "Roboto", sans-serif;
+$font-family_2: "Noto Sans TC", sans-serif;
+$background-color_2: rgba(104, 149, 210, 0.7);
+$background-color_3: transparent;
+
+.GameHex_CheckOut_Credit {
+    width: 100%;
+    background-image: url("../img/BC_BG_001m.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 130px 0;
+
+    @include rwd(1600px) {
+        padding: 160px 0;
+    }
+
+    @include rwd(1300px) {
+        padding: 230px 0;
+    }
+
+    @include rwd(1024px) {
+        padding: 360px 0;
+    }
+
+    @include rwd(853px) {
+        padding: 320px 0;
+    }
+
+    @include phone {
+        padding: 200px 0;
+    }
+
+
+
+}
+
+.GameHex_CheckOut_Credit_Area {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include rwd(1536px) {
+        width: 90%;
+    }
+
+    @include rwd(1100px) {
+        width: 100%;
+        justify-content: center;
+    }
+
+    @include rwd(800px) {
+        flex-direction: column;
+    }
+}
+.GameHex_CheckOut_Credit_Info {
+    width: 20%;
+    height: auto;
+    border: 1px solid #fff;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(153, 153, 153, 1), rgba(255,255,254,0));
+    padding: 30px;
+
+    @include rwd(1280px) {
+        padding: 20px;
+    }
+
+    @include rwd(1536px) {
+        padding: 28px;
+    }
+
+    @include rwd(1100px) {
+        display: none;
+        width: 80%;
+    }
+
+    img {
+        width: auto;
+        margin-bottom: 40px;
+
+        @include rwd(1280px) {
+            margin-bottom: 20px;
+        }
+    }
+}
+.GameHex_CheckOut_Credit_Info_Num {
+    font-size: 80px;
+    font-family: $font-family_1;
+    font-weight: bold;
+    color: map-get($colors, white);
+    margin-bottom: 40px;
+
+    @include rwd(1280px) {
+        margin-bottom: 20px;
+        font-size: 60px;
+    }
+}
+.GameHex_CheckOut_Credit_Info_Title {
+    font-size: 40px;
+    font-family: $font-family_2;
+    font-weight: bold;
+    color: map-get($colors, white);
+    margin-bottom: 12px;
+
+    @include rwd(1280px) {
+        font-size: 32px;
+    }
+}
+.GameHex_CheckOut_Credit_Info_SubTitle {
+    font-size: 40px;
+    font-family: $font-family_1;
+    font-weight: bold;
+    color: map-get($colors, white);
+    margin-bottom: 16px;
+
+    @include rwd(1280px) {
+        font-size: 32px;
+    }
+}
+.Text_Box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.GameHex_CheckOut_Credit_Paragraph_01 {
+    font-size: 16px;
+    font-family: $font-family_2;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: map-get($colors, white);
+
+    @include rwd(1280px) {
+        margin-bottom: 12px;
+    }
+}
+.GameHex_CheckOut_Credit_BOX {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    @include rwd(1536px) {
+        width: 70%;
+    }
+
+    @include rwd(1100px) {
+        width: 90%;
+        justify-content: space-around;
+    }
+}
+.Box_CheckOut {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    @include rwd(800px) {
+        flex-direction: column-reverse;
+        font-size: 12px;
+    }
+}
+.GameHex_CheckOut_Credit_Input {
+    width: 55%;
+
+    @include rwd(1536px) {
+        width: 65%;
+    }
+
+    @include rwd(800px) {
+        width: 90%;
+    }
+
+    @include phone {
+        width: 96%;
+    }
+}
+.Credit_Input_PayType {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: $font-family_2;
+    font-size: 20px;
+    font-weight: bold;
+    color: map-get($colors, white);
+
+    @include rwd(1280px) {
+        justify-content: space-between;
+    }
+
+    @include rwd(800px) {
+        font-size: 16px;
+    }
+
+    label {
+        font-family: $font-family_1;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    p {
+        @include rwd(1100px) {
+            margin-right: 0;
+        }
+    }
+}
+.c01 {
+    display: flex;
+    align-items: center;
+
+    label{
+        margin-left: 8px;
+    }
+}
+.c02 {
+    display: flex;
+    align-items: center;
+
+    label{
+        margin-left: 8px;
+    }
+}
+.c03 {
+    display: flex;
+    align-items: center;
+
+    label{
+        margin-left: 8px;
+    }
+}
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: map-get($colors, white);
+    border: 1px solid #000;
+    border-radius: 50%;
+
+    @include rwd(800px) {
+        width: 16px;
+        height: 16px;
+    }
+}
+.Credit_Input_Num {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    font-family: $font-family_2;
+    font-size: 18px;
+    font-weight: 500;
+    color: map-get($colors, white);
+
+    @include rwd(1100px) {
+        font-size: 16px;
+    }
+
+
+
+    input {
+        border-radius: 8px;
+        height: 32px;
+        width: 15vw;
+        padding-left: 8px;
+
+        @include rwd(1536px) {
+            padding-left: 8px;
+        }
+
+        @include rwd(900px) {
+            width: 35vw;
+        }
+
+        @include phone {
+            width: 50vw;
+        }
+
+        &::placeholder {
+            padding-left: 8px;
+        }
+    }
+}
+.Credit_Input_LimitDate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: $font-family_2;
+    font-size: 18px;
+    font-weight: 500;
+    color: map-get($colors, white);
+
+    @include rwd(800px) {
+        font-size: 16px;
+    }
+
+    input {
+        width: 80px;
+        height: 32px;
+        border-radius: 8px;
+        padding-left: 8px;
+
+        @include rwd(1536px) {
+            padding-left: 8px;
+            width: 8vw;
+        }
+
+        @include phone {
+            width: 17vw;
+        }
+
+        &::placeholder {
+            padding-left: 8px;
+        }
+    }
+}
+.Credit_Input_CardDate {
+    margin-right: 40px;
+}
+.Credit_Input_CardUserName {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    font-family: $font-family_2;
+    font-size: 18px;
+    font-weight: 500;
+    color: map-get($colors, white);
+
+    @include rwd(800px) {
+        font-size: 16px;
+    }
+
+    input {
+        border-radius: 8px;
+        height: 32px;
+        width: 15vw;
+        padding-left: 8px;
+
+        @include rwd(1536px) {
+            padding-left: 8px;
+            width: 25vw;
+        }
+
+        @include rwd(900px) {
+            width: 35vw;
+        }
+
+        @include phone {
+            width: 50vw;
+        }
+
+        &::placeholder {
+            padding-left: 8px;
+        }
+    }
+}
+.Credit_Input_CardSafeNum {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: $font-family_2;
+    font-size: 18px;
+    font-weight: 500;
+    color: map-get($colors, white);
+
+    @include rwd(1100px) {
+
+        justify-content: space-between;
+
+    }
+
+    @include rwd(800px) {
+        font-size: 16px;
+    }
+
+    input {
+        width: 10vw;
+        height: 32px;
+        border-radius: 8px;
+        padding-left: 8px;
+
+        @include rwd(1536px) {
+            padding-left: 8px;
+            width: 25vw;
+        }
+
+        @include rwd(900px) {
+            width: 35vw;
+        }
+
+        @include phone {
+            width: 50vw;
+        }
+
+
+        &::placeholder {
+            padding-left: 8px;
+        }
+    }
+
+    p {
+        @include rwd(1100px) {
+            margin-right: 0;
+        }
+    }
+}
+.Credit_Input_EmailAccount {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    font-family: $font-family_2;
+    font-size: 18px;
+    font-weight: 500;
+    color: map-get($colors, white);
+
+    @include rwd(800px) {
+        font-size: 16px;
+    }
+
+    input {
+        border-radius: 8px;
+        height: 32px;
+        width: 15vw;
+        padding-left: 8px;
+
+        @include rwd(1536px) {
+            padding-left: 8px;
+            width: 25vw;
+        }
+
+        @include rwd(900px) {
+            width: 35vw;
+        }
+
+        @include phone {
+            width: 50vw;
+        }
+
+        &::placeholder {
+            padding-left: 8px;
+        }
+    }
+}
+.Credit_Input_Receipt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-family: $font-family_2;
+    font-size: 18px;
+    font-weight: 500;
+    color: map-get($colors, white);
+
+    @include rwd(800px) {
+        font-size: 16px;
+    }
+
+    input {
+        border-radius: 8px;
+        height: 32px;
+        width: 15vw;
+        padding-left: 8px;
+
+        @include rwd(1536px) {
+            padding-left: 8px;
+            width: 25vw;
+        }
+
+        @include rwd(900px) {
+            width: 35vw;
+        }
+
+        @include phone {
+            width: 50vw;
+        }
+
+        &::placeholder {
+            padding-left: 8px;
+        }
+    }
+}
+.GameHex_CheckOut_Credit_Tips {
+    width: 40%;
+    height: auto;
+    background-color: $background-color_2;
+    padding: 24px 16px;
+    margin-left: 60px;
+
+    @include rwd(1100px) {
+        width: 28%;
+        height: auto;
+    }
+
+    @include rwd(800px) {
+        display: none;
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: bold;
+        color: map-get($colors, white);
+        font-family: $font-family_2;
+        margin-bottom: 16px;
+
+        @include rwd(1100px) {
+            font-size: 20px;
+        }
+
+        @include rwd(800px) {
+            font-size: 18px;
+        }
+    }
+    span {
+        font-size: 16px;
+        font-weight: 400;
+        color: map-get($colors, white);
+        font-family: $font-family_2;
+        line-height: 1.6;
+    }
+}
+.GameHex_CheckOut_Credit_Agree {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @include rwd(1536px) {
+        margin-bottom: 20px;
+    }
+    label {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.2;
+        color: map-get($colors, white);
+        font-family: $font-family_2;
+        margin-left: 8px;
+
+        @include rwd(1536px) {
+            font-size: 16px;
+        }
+
+        @include rwd(800px) {
+            font-size: 14px;
+        }
+    }
+}
+.Agree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+    @include rwd(800px) {
+        width: 100%;
+    }
+}
+.understandUSP_btn {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    background-image: url("../img/BTN_001.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: map-get($colors, white);
+    border: none;
+    background-color: $background-color_3;
+    line-height: 60px;
+    text-align: center;
+
+    @include rwd(1536px) {
+        width: 200px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 16px;
+    }
+}
+.KeepToPay_BTN {
+    width: 15vw;
+    height: 65px;
+    color: map-get($colors, white);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: map-get($colors, dark);
+    border-radius: 8px;
+    border: 1px solid #fff;
+
+    &:hover{
+        animation: glow 1.5s infinite alternate;
+    }
+
+    @include rwd(1100px) {
+        width: 30vw;
+    }
+
+    @include rwd(800px) {
+        height: 6vh;
+    }
+
+    @include phone {
+        width: 60vw;
+    }
+}
