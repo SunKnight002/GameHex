@@ -8,7 +8,7 @@ let timeRefresh = 10;
 
 // 更新HTML元素的文字內容
 function updateTimeText10s() {
-    refreshTime10s.textContent = '將於' + timeRefresh + '秒跳轉到新作登陸頁';
+    refreshTime10s.textContent = '將於' + timeRefresh + '秒跳轉到首頁';
 }
 
 updateTimeText10s();
