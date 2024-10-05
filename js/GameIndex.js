@@ -20,18 +20,18 @@ let gameCardList = document.querySelector(".GH_I_ShopArea_GameArea_GameCardList"
 for (let i = 0; i < gameCards.length; i++) {
     // 建立一個新的div元素來代表卡片
     let card = document.createElement("div");
-    card.className = "recomeGame_Card";
+    card.className = "recomeGame_indexUse_Card";
     // 建立卡片的內容
     let content = `
-        <div class="recomeGame_img">
+        <div class="recomeGame_indexUse_img">
             <img id="GameImg_${i + 1}" src="${gameCards[i].img}" alt="" class="Card_000">
-            <div class="discountPrice">
+            <div class="discountPrice_index">
                 <span>${gameCards[i].discount}</span>
                 <p>${gameCards[i].price}</p>
             </div>
-            <button id="HopeList_${i + 1}" class="HopeList_BTN"><img src="./img/love.png" alt=""></button>
-            <div class="recomeGame_info">
-                <div class="recomeGame_info_title">
+            <button id="HopeList_${i + 1}" class="HopeList_BTN_index"><img src="./img/love.png" alt=""></button>
+            <div class="recomeGame_info_index">
+                <div class="recomeGame_info_index_title">
                     <p>${gameCards[i].title}</p>
                     <ul>
                         <li><img src="./img/star.png" alt=""></li>
@@ -41,11 +41,11 @@ for (let i = 0; i < gameCards.length; i++) {
                         <li><img src="./img/star.png" alt=""></li>
                     </ul>
                 </div>
-                <div class="gameTag_Bigbox">
+                <div class="gameTag_indexUse_Bigbox">
                     <ul>
                         ${gameCards[i].tags.map(tag => `<li>${tag}</li>`).join('')}
                     </ul>
-                    <button id="AddToCart_${i + 1}" class="AddToCart_BTN">加入購物車</button>
+                    <button id="AddToCart_${i + 1}" class="AddToCart_indexUse_BTN">加入購物車</button>
                 </div>
             </div>
         </div>

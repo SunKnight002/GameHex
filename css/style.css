@@ -56,6 +56,7 @@ table {
 html,
 body {
   font-family: Noto Sans TC;
+  scrollbar-color: #2196F3 #f5f5f5;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -326,826 +327,20 @@ footer img {
   }
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* HTML5 display-role reset for older browsers */
-/* ---------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------- */
-/* -------------- 以下CSS區域為 index.html 使用  ------------------- */
-/* index 頁面最上層 第一個 1440*1024尺寸 */
-/* ---------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------- */
-/* -------------- 以下CSS區域為 輪播 使用  ------------------- */
-/* ---------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------- */
-/* index 頁面最上層 第二個 1440*1024尺寸 */
-/* index 頁面最上層 第二個 1440*1024尺寸 */
-/* index 頁面最上層 第二個 1440*1024尺寸 */
-/* ------------------------------- 依照類型瀏覽 */
-/* ------------------------------- 依照類型瀏覽 */
-/* ------------------------------- 依照類型瀏覽 */
-/* ------------------------------- 遊戲卡片放置區 */
-/* ------------------------------- 遊戲卡片放置區 */
-/* ------------------------------- 遊戲卡片放置區 */
-/* ---------------------------------------- */
-/* ------------------- 小卡 */
-/* ------------------- 小卡  ------------- */
-/* --------------------------------- */
-/* 小卡文字資訊區域 */
-/* -----------------------------------  */
-/* 遊戲類型tag 以及 加入購物車按鈕 */
-/* ---------------------- 按鈕專區 ----- */
-/* ---------------------- 按鈕專區 ----- */
-/* ---------------------- 按鈕專區 ----- */
-/*  加入購物車 按鈕  小卡上面的 */
-/* ----------------- RWD - Start -------------------------- */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - PC Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-/* ----------------- RWD - Table Part ------------------------ */
-/* 實際上應該以768px，但是這邊直接把1100px以下當作平板 */
-/* ----------------- RWD - Mobile Part ------------------------ */
-/* ----------------- RWD - Mobile Part ------------------------ */
-/* ----------------- RWD - Mobile Part ------------------------ */
-html {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+.GameHex_Index_Swiper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  line-height: 1;
-  margin: 0 auto;
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0 auto;
   padding: 0;
-}
-
-div {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-span {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-applet {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-object {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-iframe {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-h2 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-h3 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-h4 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-h5 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-h6 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-blockquote {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  quotes: none;
-}
-blockquote:before {
-  content: "";
-  content: none;
-}
-blockquote:after {
-  content: "";
-  content: none;
-}
-
-pre {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-a {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-abbr {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-acronym {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-address {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-big {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-cite {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-code {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-del {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-dfn {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-em {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-img {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-ins {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-kbd {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-q {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  quotes: none;
-}
-q:before {
-  content: "";
-  content: none;
-}
-q:after {
-  content: "";
-  content: none;
-}
-
-s {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-samp {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-small {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-strike {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-strong {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-sub {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-sup {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-tt {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-var {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-b {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-u {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-i {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-center {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-dl {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-dt {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-dd {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-ol {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  list-style: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  list-style: none;
-}
-
-li {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-fieldset {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-form {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-label {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-legend {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-table {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-tbody {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-tfoot {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-thead {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-tr {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-th {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: block;
-}
-
-aside {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: block;
-}
-
-canvas {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-details {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: block;
-}
-
-embed {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-figure {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: block;
-}
-
-figcaption {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: block;
-}
-
-footer {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: block;
-}
-
-header {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: block;
-}
-
-hgroup {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: block;
-}
-
-menu {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: block;
-}
-
-nav {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: block;
-}
-
-output {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-ruby {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-section {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: block;
-}
-
-summary {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-time {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-mark {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-audio {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-.GameHex_Index_Swiper {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .swiper {
@@ -1185,7 +380,7 @@ video {
   --progress: 0;
   position: absolute;
   left: 0;
-  top: 0px;
+  top: 0;
   z-index: 10;
   width: 100%;
   height: 100%;
@@ -1225,24 +420,31 @@ video {
 
 .GameHex_Index_ShopArea {
   width: 100%;
-  height: 100vh;
   background-size: cover;
-  background-image: url(../img/BC_BG_001m.jpg);
+  background-image: url("../img/BC_BG_001m.jpg");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 100px 0;
 }
 
 .GH_I_ShopArea_SearchBar {
   border: 1px solid #000;
-  width: 60%;
-  height: 40px;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   background-color: #3A5A85;
   border-radius: 8px;
+  margin-bottom: 60px;
+  align-items: center;
+  padding: 20px 0;
+}
+@media (max-width: 1536px) {
+  .GH_I_ShopArea_SearchBar {
+    display: none;
+  }
 }
 
 .GH_I_ShopArea_SearchBar_TagBTN {
@@ -1250,6 +452,11 @@ video {
   align-items: center;
   justify-content: space-around;
   width: 60%;
+}
+@media (max-width: 900px) {
+  .GH_I_ShopArea_SearchBar_TagBTN {
+    width: 70%;
+  }
 }
 .GH_I_ShopArea_SearchBar_TagBTN ul {
   width: 100%;
@@ -1259,22 +466,28 @@ video {
 }
 .GH_I_ShopArea_SearchBar_TagBTN ul a {
   font-family: "Noto Sans TC", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   color: #fff;
   text-decoration: none;
   text-align: center;
 }
 .GH_I_ShopArea_SearchBar_TagBTN ul a li {
-  width: 92px;
-  height: 24px;
+  width: 100%;
+  padding: 12px;
   line-height: 24px;
   border: 1px solid #000;
+  background-color: dodgerblue;
   border-radius: 8px;
+}
+@media (max-width: 1150px) {
+  .GH_I_ShopArea_SearchBar_TagBTN ul a li {
+    width: 7vw;
+  }
 }
 .GH_I_ShopArea_SearchBar_TagBTN ul a li:hover {
   background-color: #0092FF;
   color: #fff;
-  font-weight: bold;
+  animation: glow 1.5s infinite alternate;
 }
 
 .GH_I_ShopArea_SearchBar_SeeBTN {
@@ -1284,16 +497,33 @@ video {
   justify-content: right;
   align-items: center;
 }
+@media (max-width: 900px) {
+  .GH_I_ShopArea_SearchBar_SeeBTN {
+    width: 30%;
+  }
+}
 
-.GH_MA_HopeList_SearchTool {
-  width: 178px;
-  height: 40px;
+.GH_MA_HopeList_SearchTool_index {
+  width: 80%;
+  padding: 12px;
+  padding-left: 8px;
   background-color: #ACACAC;
   border: 1px solid black;
   border-radius: 8px;
   position: relative;
 }
-.GH_MA_HopeList_SearchTool::placeholder {
+@media (max-width: 1536px) {
+  .GH_MA_HopeList_SearchTool_index {
+    height: 4vh;
+  }
+}
+@media (max-width: 1150px) {
+  .GH_MA_HopeList_SearchTool_index {
+    width: 40%;
+    height: 3vh;
+  }
+}
+.GH_MA_HopeList_SearchTool_index::placeholder {
   padding-left: 8px;
 }
 
@@ -1303,62 +533,60 @@ video {
   width: 80%;
   height: auto;
 }
+@media (max-width: 1150px) {
+  .GH_I_ShopArea_DispalyAndTag {
+    width: 100%;
+  }
+}
 
 .GH_I_ShopArea_GameTag {
-  width: 10%;
+  width: 15%;
   height: auto;
-  border: 1px solid #000;
-  border-radius: 8px;
+  outline: 4px solid #fff;
+  border-radius: 20px;
   background-color: #3A5A85;
-  margin-right: 8px;
+  margin-right: 40px;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1536px) {
+  .GH_I_ShopArea_GameTag {
+    width: 15%;
+  }
+}
+@media (max-width: 1150px) {
+  .GH_I_ShopArea_GameTag {
+    display: none;
+  }
 }
 
-.GH_I_ShopArea_GameTag_FromYour {
-  font-family: "Noto Sans TC", sans-serif;
-  color: #fff;
-  padding: 20px 20px 0 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-.GH_I_ShopArea_GameTag_FromYour p {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
-.GH_I_ShopArea_GameTag_FromYour ul {
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-.GH_I_ShopArea_GameTag_FromYour ul a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-}
-.GH_I_ShopArea_GameTag_FromYour ul a:hover {
-  background-color: #000;
-  font-size: 16px;
-  font-weight: bold;
-}
-
+.GH_I_ShopArea_GameTag_FromYour,
 .GH_I_ShopArea_GameTag_FromGame {
   font-family: "Noto Sans TC", sans-serif;
   color: #fff;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 0;
   text-align: center;
 }
+@media (max-width: 1280px) {
+  .GH_I_ShopArea_GameTag_FromYour,
+  .GH_I_ShopArea_GameTag_FromGame {
+    padding: 12px;
+  }
+}
+.GH_I_ShopArea_GameTag_FromYour p,
 .GH_I_ShopArea_GameTag_FromGame p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 16px;
+  color: #EFFF00;
 }
+@media (max-width: 1536px) {
+  .GH_I_ShopArea_GameTag_FromYour p,
+  .GH_I_ShopArea_GameTag_FromGame p {
+    font-size: 14px;
+  }
+}
+.GH_I_ShopArea_GameTag_FromYour ul,
 .GH_I_ShopArea_GameTag_FromGame ul {
   height: 40vh;
   display: flex;
@@ -1366,20 +594,54 @@ video {
   align-items: center;
   justify-content: space-around;
 }
-.GH_I_ShopArea_GameTag_FromGame ul a {
+.GH_I_ShopArea_GameTag_FromYour ul li,
+.GH_I_ShopArea_GameTag_FromGame ul li {
+  position: relative;
+  overflow: hidden;
+}
+.GH_I_ShopArea_GameTag_FromYour ul li a,
+.GH_I_ShopArea_GameTag_FromGame ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
 }
-.GH_I_ShopArea_GameTag_FromGame ul a:hover {
-  background-color: #fff;
-  font-size: 16px;
-  font-weight: bold;
+.GH_I_ShopArea_GameTag_FromYour ul li a span,
+.GH_I_ShopArea_GameTag_FromGame ul li a span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s;
+}
+.GH_I_ShopArea_GameTag_FromYour ul li a::before,
+.GH_I_ShopArea_GameTag_FromGame ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #0092FF;
+  transition: left 0.3s;
+  z-index: 1;
+}
+.GH_I_ShopArea_GameTag_FromYour ul li a:hover::before,
+.GH_I_ShopArea_GameTag_FromGame ul li a:hover::before {
+  left: 0;
+  width: 100%;
+}
+.GH_I_ShopArea_GameTag_FromYour ul li a:hover span,
+.GH_I_ShopArea_GameTag_FromGame ul li a:hover span {
+  color: #292929;
 }
 
 .GH_I_ShopArea_GameArea {
-  width: 70%;
-  height: 85vh;
+  width: 90%;
+  height: 95vh;
   border: 1px solid #000;
   border-radius: 16px;
   background-color: #3A5A85;
@@ -1388,17 +650,50 @@ video {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 1536px) {
+  .GH_I_ShopArea_GameArea {
+    height: 90vh;
+    padding: 12px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 900px) {
+  .GH_I_ShopArea_GameArea {
+    width: 80%;
+  }
+}
+@media (max-width: 650px) {
+  .GH_I_ShopArea_GameArea {
+    width: 100%;
+  }
+}
 
 .GH_I_ShopArea_GameArea_TitleAndSearh {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 450px) {
+  .GH_I_ShopArea_GameArea_TitleAndSearh {
+    flex-direction: column;
+    height: 6vh;
+  }
+}
 .GH_I_ShopArea_GameArea_TitleAndSearh p {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 36px;
   font-weight: bold;
   color: #fff;
+}
+@media (max-width: 900px) {
+  .GH_I_ShopArea_GameArea_TitleAndSearh p {
+    font-size: 28px;
+  }
+}
+@media (max-width: 650px) {
+  .GH_I_ShopArea_GameArea_TitleAndSearh p {
+    font-size: 20px;
+  }
 }
 
 .GameFilterStyle {
@@ -1418,13 +713,36 @@ video {
   background-position: right 10px center;
   background-size: 20px 20px;
 }
+@media (max-width: 900px) {
+  .GameFilterStyle {
+    width: 35%;
+  }
+}
+@media (max-width: 650px) {
+  .GameFilterStyle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 450px) {
+  .GameFilterStyle {
+    width: 100%;
+  }
+}
 .GameFilterStyle:optional {
   padding-left: 24px;
+}
+@media (max-width: 900px) {
+  .GameFilterStyle:optional {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .GH_I_ShopArea_GameArea_GameCardList {
   width: 100%;
   height: 90%;
+  padding: 20px;
+  border-radius: 20px;
   background-color: #333333;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1432,18 +750,28 @@ video {
   overflow-y: scroll;
   overflow-wrap: normal;
 }
+@media (max-width: 1400px) {
+  .GH_I_ShopArea_GameArea_GameCardList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  .GH_I_ShopArea_GameArea_GameCardList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
-.recomeGame_Card {
+.recomeGame_indexUse_Card {
   width: 100%;
   height: auto;
 }
-.recomeGame_Card:nth-child(4) {
+.recomeGame_indexUse_Card:nth-child(4) {
   margin-right: 0;
 }
-.recomeGame_Card:nth-child(8) {
+.recomeGame_indexUse_Card:nth-child(8) {
   margin-right: 0;
 }
-.recomeGame_Card:nth-child(12) {
+.recomeGame_indexUse_Card:nth-child(12) {
   margin-right: 0;
 }
 
@@ -1452,10 +780,21 @@ video {
   height: 300px;
 }
 
-.recomeGame_img {
+.recomeGame_indexUse_img {
   position: relative;
 }
-.recomeGame_img > img {
+.recomeGame_indexUse_img > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.Usage_img {
+  position: relative;
+}
+.Usage_img > img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -1465,6 +804,10 @@ video {
 
 .Card_000 {
   width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .Card_BTN01 {
@@ -1479,100 +822,203 @@ video {
   justify-content: space-between;
 }
 
-.discountPrice {
+.discountPrice_index {
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: absolute;
   top: 12px;
   left: 15px;
-  width: 40%;
-  height: 30px;
+  width: 50%;
+  padding: 12px;
   background-color: #292929;
-  border-radius: 4px;
-  border: 1px solid #fff;
+  border-radius: 20px;
+  outline: 0.5px solid #fff;
 }
-.discountPrice span {
-  font-size: 12px;
+@media (max-width: 1536px) {
+  .discountPrice_index {
+    width: 40%;
+  }
+}
+@media (max-width: 1280px) {
+  .discountPrice_index {
+    width: 45%;
+  }
+}
+@media (max-width: 1024px) {
+  .discountPrice_index {
+    width: 38%;
+  }
+}
+@media (max-width: 900px) {
+  .discountPrice_index {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 700px) {
+  .discountPrice_index {
+    width: 45%;
+  }
+}
+@media (max-width: 430px) {
+  .discountPrice_index {
+    width: 60%;
+    padding: 8px;
+  }
+}
+.discountPrice_index span {
+  font-size: 16px;
   color: #000;
   border-radius: 16px;
   font-family: "Roboto";
   display: block;
   background-color: #fff;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 4px 12px;
 }
-.discountPrice p {
-  font-size: 14px;
-  font-weight: 500;
+@media (max-width: 1536px) {
+  .discountPrice_index span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1280px) {
+  .discountPrice_index span {
+    font-size: 18px;
+  }
+}
+.discountPrice_index p {
+  font-size: 16px;
+  font-weight: bold;
   color: #fff;
   font-family: "Roboto";
 }
+@media (max-width: 1536px) {
+  .discountPrice_index p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1280px) {
+  .discountPrice_index p {
+    font-size: 20px;
+  }
+}
 
-.HopeList_BTN {
+.HopeList_BTN_index {
   position: absolute;
-  top: 10px;
-  right: 0;
+  top: 20px;
+  right: 30px;
   border: none;
   background-color: transparent;
 }
-.HopeList_BTN img {
-  width: 28px;
-  height: 28px;
+@media (max-width: 1536px) {
+  .HopeList_BTN_index {
+    right: 10px;
+  }
+}
+.HopeList_BTN_index img {
+  width: 100%;
 }
 
-.recomeGame_info {
+.recomeGame_info_index {
   width: 100%;
   height: auto;
   background-color: #1B2838;
+  border-radius: 0 0 20px 20px;
 }
 
-.recomeGame_info_title {
+.recomeGame_info_index_title {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  padding-top: 20px;
 }
-.recomeGame_info_title p {
-  font-size: 16px;
+.recomeGame_info_index_title p {
+  font-size: 24px;
   font-weight: 500;
   font-family: "Noto Sans TC, sans-serif,Roboto";
   color: #fff;
 }
-.recomeGame_info_title ul {
+@media (max-width: 1536px) {
+  .recomeGame_info_index_title p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1280px) {
+  .recomeGame_info_index_title p {
+    font-size: 28px;
+  }
+}
+.recomeGame_info_index_title ul {
   display: flex;
   align-items: center;
-  margin-left: 60px;
 }
-.recomeGame_info_title ul li img {
-  width: 16px;
-  height: 16px;
+@media (max-width: 1536px) {
+  .recomeGame_info_index_title ul {
+    display: none;
+  }
+}
+.recomeGame_info_index_title ul li img {
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .recomeGame_info_index_title ul li img {
+    width: 32px;
+    height: 32px;
+  }
 }
 
-.gameTag_Bigbox {
+.gameTag_indexUse_Bigbox {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 6vh;
   width: 100%;
+  padding: 20px 10px;
+  flex-direction: column;
 }
-.gameTag_Bigbox ul {
-  width: 70%;
+.gameTag_indexUse_Bigbox ul {
+  width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 8px;
 }
-.gameTag_Bigbox ul li {
-  font-size: 12px;
+.gameTag_indexUse_Bigbox ul li {
+  padding: 6px;
+  font-size: 16px;
   color: #fff;
   background-color: #3A5A85;
   border-radius: 8px;
   text-align: center;
+  cursor: pointer;
+}
+.gameTag_indexUse_Bigbox ul li:hover {
+  color: #fff;
+  background-color: #6895D2;
+  animation: glow 1.5s infinite alternate;
+}
+@media (max-width: 1536px) {
+  .gameTag_indexUse_Bigbox ul li {
+    padding: 4px;
+  }
+}
+@media (max-width: 1280px) {
+  .gameTag_indexUse_Bigbox ul li {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .gameTag_indexUse_Bigbox ul li {
+    font-size: 16px;
+  }
+}
+@media (max-width: 430px) {
+  .gameTag_indexUse_Bigbox ul li {
+    padding: 6px;
+  }
 }
 
 .BTN_Style_ProductTo_SearchName {
@@ -1581,181 +1027,52 @@ video {
   background-color: #333333;
   border-radius: 8px;
   box-shadow: none;
-  background-image: url(../img/Vector-Right.png);
+  background-image: url("../img/Vector-Right.png");
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.AddToCart_BTN {
-  width: 30%;
-  height: 24px;
-  background-color: #fff;
-  border-radius: 8px;
-  border: none;
-  font-size: 14px;
-  font-weight: bold;
-}
-
 @media (max-width: 1536px) {
-  .GH_I_ShopArea_GameArea {
-    height: 90vh;
-    padding: 12px;
-    justify-content: space-around;
-  }
-  .gameTag_Bigbox ul {
-    gap: 4px;
-    width: 65%;
-  }
-  .gameTag_Bigbox ul li {
-    font-size: 10px;
-    padding: 4px;
-  }
-  .GH_MA_HopeList_SearchTool {
-    height: 4vh;
-  }
   .BTN_Style_ProductTo_SearchName {
     height: 4.3vh;
   }
-  .AddToCart_BTN {
-    width: 25%;
-    height: auto;
-  }
-  .GH_I_ShopArea_GameTag_FromGame p {
-    font-size: 14px;
-  }
-  .GH_I_ShopArea_GameTag_FromYour p {
-    font-size: 14px;
-  }
-  .discountPrice {
-    width: 50%;
-  }
-  .recomeGame_info_title ul {
-    margin-left: 0;
-  }
-  .GH_I_ShopArea_SearchBar {
-    width: 70%;
-  }
-  .GH_I_ShopArea_GameTag {
-    width: 15%;
-  }
-}
-@media (max-width: 1280px) {
-  .GH_I_ShopArea_GameTag {
-    width: 15%;
-  }
-  .gameTag_Bigbox {
-    justify-content: space-between;
-  }
-  .gameTag_Bigbox ul {
-    width: 70%;
-  }
-  .gameTag_Bigbox ul li {
-    padding: 2px;
-  }
-  .AddToCart_BTN {
-    width: 25%;
-    font-size: 12px;
-  }
-  .GH_I_ShopArea_GameTag_FromYour {
-    padding: 12px 12px 0 12px;
-  }
-  .GH_I_ShopArea_GameTag_FromGame {
-    padding: 12px 12px 0 12px;
-  }
-}
-@media (max-width: 1150px) {
-  .GH_I_ShopArea_GameArea_GameCardList {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .GH_I_ShopArea_GameTag {
-    display: none;
-  }
-  .GH_I_ShopArea_DispalyAndTag {
-    width: 100%;
-  }
-  .GH_I_ShopArea_SearchBar_TagBTN ul a li {
-    width: 7vw;
-  }
-  .GH_MA_HopeList_SearchTool {
-    width: 40%;
-    height: 3vh;
-  }
 }
 @media (max-width: 900px) {
-  .GH_I_ShopArea_GameArea_GameCardList {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .discountPrice {
-    width: 50%;
-  }
-  .discountPrice span {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  .discountPrice p {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  .recomeGame_info_title p {
-    font-size: 20px;
-  }
-  .recomeGame_info_title ul li img {
-    width: 32px;
-    height: 32px;
-  }
-  .gameTag_Bigbox ul li {
-    font-size: 16px;
-  }
-  .AddToCart_BTN {
-    font-size: 18px;
-  }
-  .GH_I_ShopArea_GameArea_TitleAndSearh p {
-    font-size: 28px;
-  }
-  .GH_I_ShopArea_SearchBar_SeeBTN {
-    width: 30%;
-  }
   .BTN_Style_ProductTo_SearchName {
     height: 4vh;
     width: 5vw;
   }
-  .GH_I_ShopArea_SearchBar_TagBTN {
-    width: 70%;
-  }
-  .GH_I_ShopArea_SearchBar {
-    display: none;
-  }
-  .GameFilterStyle {
-    width: 35%;
-  }
-  .GameFilterStyle:optional {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .GH_I_ShopArea_GameArea {
-    width: 80%;
+}
+
+.AddToCart_indexUse_BTN {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.AddToCart_indexUse_BTN:hover {
+  color: #fff;
+  background-color: dodgerblue;
+  animation: glow 1.5s infinite alternate;
+}
+@media (max-width: 1536px) {
+  .AddToCart_indexUse_BTN {
+    height: auto;
+    padding: 16px;
+    font-size: 24px;
   }
 }
-@media (max-width: 650px) {
-  .GH_I_ShopArea_GameArea_TitleAndSearh p {
-    font-size: 20px;
-  }
-  .GameFilterStyle {
-    font-size: 16px;
-  }
-  .GH_I_ShopArea_GameArea {
-    width: 100%;
+@media (max-width: 900px) {
+  .AddToCart_indexUse_BTN {
+    font-size: 18px;
+    padding: 12px;
   }
 }
-@media (max-width: 450px) {
-  .GH_I_ShopArea_GameArea_TitleAndSearh {
-    flex-direction: column;
-    height: 6vh;
-  }
-  .GameFilterStyle {
-    width: 100%;
-  }
-}
+
 .main01 {
   /* 外觀 */
   background-color: #2F2F2F;
