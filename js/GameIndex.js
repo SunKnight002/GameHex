@@ -45,7 +45,7 @@ for (let i = 0; i < gameCards.length; i++) {
                     <ul>
                         ${gameCards[i].tags.map(tag => `<li>${tag}</li>`).join('')}
                     </ul>
-                    <button id="AddToCart_${i + 1}" class="AddToCart_indexUse_BTN">加入購物車</button>
+                    <button id="AddToCart_${i + 1}" class="AddToCart_indexUse_BTN">了解更多</button>
                 </div>
             </div>
         </div>

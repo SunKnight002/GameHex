@@ -28,9 +28,9 @@ function startTimerForRefresh() {
         if(timeRefresh <= 0) {
             // 停止計時器
             clearInterval(timer10s);
-        
+
             // 跳轉到新的頁面
-            window.location.href = "GH_LandingPage.html";
+            window.location.href = "index.html";
         }
 
     }, 1000); // 每1000毫秒（1秒）執行一次

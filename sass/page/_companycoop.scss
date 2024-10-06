@@ -392,6 +392,8 @@ $background-color_10: rgba(91, 91,91, 0.8);
 		width: 100%;
 		object-fit: cover;
 		display: block;
+		cursor: pointer;
+		border-radius: 20px;
 	}
 }
 .GameHex_Coop_Upload_Pop {

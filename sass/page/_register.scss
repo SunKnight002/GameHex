@@ -551,8 +551,7 @@ $font-family_1: "Roboto", sans-serif;
 }
 .Keep_BTN {
     &:hover {
-        background-color: map-get($colors, gray);
-        color: map-get($colors , dark);
+        animation: glow 1.5s infinite alternate;
     }
 }
 @media (max-width: 1280px) {
@@ -655,6 +654,13 @@ $font-family_1: "Roboto", sans-serif;
 }
 .RegisterMain_Fin_Bot {
 	padding-top: 180px;
+    width: 80%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
 	span {
 		color: map-get($colors , white );
@@ -663,13 +669,7 @@ $font-family_1: "Roboto", sans-serif;
 		display: block;
 		text-align: center;
 	}
-	width: 80%;
-	height: auto;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+
 	h1 {
 		font-size: 36px;
 		font-weight: bold;
@@ -806,12 +806,7 @@ $font-family_1: "Roboto", sans-serif;
 		animation: text-glow 1.5s infinite alternate;
 	}
 }
-.Keep_BTN {
-	&:hover {
-		background-color: map-get($colors , gray );
-		color: map-get($colors , dark );
-	}
-}
+
 @media (max-width: 1100px) {
 	.RegisterMain_Top_Box01 {
 		p {

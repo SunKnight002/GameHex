@@ -220,9 +220,9 @@
 
                 <!-- 這邊是 作品 輪播區 -->
                 <section class="cheakOutMain_Discount_Bottom_GameList">
-                    
+
                     <!-- 小卡一號 -->
-                    <section class="recomeGame_Card">
+                    <section class="recomeGame_Card_P">
                         <!-- 小卡圖片 -->
                         <section class="recomeGame_img">
                             <img src="./img/GameCard_300x200Card_006.jpg" alt="">
@@ -259,14 +259,14 @@
                                     <li>Roguelike</li>
                                     <li>搶先體驗</li>
                                 </ul>
-                                <!-- 小卡文字上的 加入購物車 按鈕 -->
-                                <button id="AddToCart_0001" class="AddToCart_BTN">加入購物車</button>
+                                <!-- 小卡文字上的 了解更多 按鈕 -->
+                                <button id="AddToCart_0001" class="AddToCart_BTN">了解更多</button>
                             </div>
                         </section>
                     </section>
 
                     <!-- 小卡二號 -->
-                    <section class="recomeGame_Card">
+                    <section class="recomeGame_Card_P">
                         <!-- 小卡圖片 -->
                         <section class="recomeGame_img">
                             <img src="./img/GameCard_300x200Card_002.jpg" alt="">
@@ -301,14 +301,14 @@
                                     <li>角色扮演</li>
                                     <li>搶先體驗</li>
                                 </ul>
-                                <!-- 小卡文字上的 加入購物車 按鈕 -->
-                                <button id="AddToCart_0001" class="AddToCart_BTN">加入購物車</button>
+                                <!-- 小卡文字上的 了解更多 按鈕 -->
+                                <button id="AddToCart_0002" class="AddToCart_BTN">了解更多</button>
                             </div>
                         </section>
                     </section>
 
                         <!-- 小卡三號 -->
-                        <section class="recomeGame_Card03">
+                        <section class="recomeGame_Card_P">
                             <!-- 小卡圖片 -->
                             <section class="recomeGame_img">
                                 <img src="./img/GameCard_300x200Card_005.jpg" alt="">
@@ -343,8 +343,8 @@
                                         <li>角色扮演</li>
                                         <li>搶先體驗</li>
                                     </ul>
-                                    <!-- 小卡文字上的 加入購物車 按鈕 -->
-                                    <button id="AddToCart_0001" class="AddToCart_BTN">加入購物車</button>
+                                    <!-- 小卡文字上的 了解更多 按鈕 -->
+                                    <button id="AddToCart_0003" class="AddToCart_BTN">了解更多</button>
                                 </div>
                             </section>
                         </section>
@@ -352,4 +352,12 @@
             </article>
 </body>
 <script src="./js/header.js"></script>
+<script>
+
+            document.querySelectorAll('.recomeGame_Card_P').forEach(function(button) {
+                        button.addEventListener('click', function() {
+                    window.location.href = 'GH_ShopWorkInnerPage.html';
+                });
+            });
+</script>
 </html>

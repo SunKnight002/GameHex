@@ -578,7 +578,6 @@ body {
 }
 .GH_I_ShopArea_GameTag_FromYour ul,
 .GH_I_ShopArea_GameTag_FromGame ul {
-  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -755,6 +754,10 @@ body {
   width: 100%;
   height: auto;
   cursor: pointer;
+}
+.recomeGame_indexUse_Card:hover {
+  animation: glow 1.5s infinite alternate;
+  border-radius: 20px;
 }
 .recomeGame_indexUse_Card:nth-child(4) {
   margin-right: 0;
@@ -2708,7 +2711,7 @@ body {
 .LoginPageMain01_Left_Account {
   /* 尺寸 */
   width: 100%;
-  height: 4vh;
+  height: 60px;
   /* 外觀 */
   border-radius: 16px;
   /* 排版 */
@@ -2717,7 +2720,6 @@ body {
 }
 @media (max-width: 1100px) {
   .LoginPageMain01_Left_Account {
-    height: 60px;
     margin-top: 24px;
   }
 }
@@ -2754,17 +2756,12 @@ body {
 .LoginPageMain01_Left_Password {
   /* 尺寸 */
   width: 100%;
-  height: 4vh;
+  height: 60px;
   /* 外觀 */
   border-radius: 16px;
   /* 排版 */
   padding-left: 20px;
   margin-top: 12px;
-}
-@media (max-width: 1100px) {
-  .LoginPageMain01_Left_Password {
-    height: 60px;
-  }
 }
 @media (max-width: 430px) {
   .LoginPageMain01_Left_Password {
@@ -3616,8 +3613,7 @@ body {
 }
 
 .Keep_BTN:hover {
-  background-color: #6D6D6D;
-  color: #000;
+  animation: glow 1.5s infinite alternate;
 }
 
 @media (max-width: 1280px) {
@@ -3869,11 +3865,6 @@ body {
   text-align: center;
   font-family: "Roboto", sans-serif;
   animation: text-glow 1.5s infinite alternate;
-}
-
-.Keep_BTN:hover {
-  background-color: #6D6D6D;
-  color: #000;
 }
 
 @media (max-width: 1100px) {
@@ -5219,26 +5210,32 @@ body {
 @media (max-width: 1280px) {
   .cheakOutMain_Discount_Bottom_GameList {
     gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 970px) {
   .cheakOutMain_Discount_Bottom_GameList {
+    width: 80%;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.recomeGame_Card {
+.recomeGame_Card_P {
   width: 80%;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.recomeGame_Card_P:hover {
+  animation: glow 1.5s infinite alternate;
 }
 @media (max-width: 1536px) {
-  .recomeGame_Card {
+  .recomeGame_Card_P {
     width: 90%;
   }
 }
 @media (max-width: 1280px) {
-  .recomeGame_Card {
+  .recomeGame_Card_P {
     width: 80%;
   }
 }
@@ -5267,7 +5264,6 @@ body {
 }
 .recomeGame_img > img {
   width: 100%;
-  height: 20vh;
   object-fit: cover;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -6030,6 +6026,8 @@ body {
   width: 100%;
   object-fit: cover;
   display: block;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
 .GameHex_Coop_Upload_Pop {
@@ -7569,6 +7567,8 @@ input[type=checkbox] {
 }
 .GH_WIP_OverRall_Info_Img_Thumbnail img {
   width: 100%;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
 .GH_WIP_WIP_OverRall_Info_Text {
