@@ -1,0 +1,1587 @@
+$font-family_1: "Roboto", sans-serif;
+$font-family_2: "Noto Sans TC", sans-serif;
+$font-family_3: "Roboto";
+$font-family_4: "Noto Sans TC, sans-serif,Roboto";
+$background-color_6: rgba(255, 255, 255, 0.6);
+$background-color_20: transparent;
+
+
+.GameHex_WorkInnerPage_OverRall {
+	background-color: map-get($colors, blueHellOcean);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+    padding: 140px 0;
+
+    @include rwd(1536px){
+        gap: 40px;
+    }
+}
+
+.GH_WIP_OverRall_Info {
+	width: 90%;
+	display: flex;
+	margin: 0 auto;
+
+    @include rwd(1400px){
+		flex-direction: column;
+    }
+}
+
+.GH_WIP_OverRall_Info_Img {
+
+
+    @include rwd(1060px){
+        width: 100%;
+		gap: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+    }
+}
+
+.GH_WIP_OverRall_Info_Img{
+    display: flex;
+    align-items: center;
+
+    @include rwd(1400px){
+        display: block;
+    }
+}
+
+.GH_WIP_OverRall_Info_Img_Video {
+	img {
+		width: 100%;
+        cursor: pointer;
+        border-radius: 20px;
+	}
+}
+
+.GH_WIP_OverRall_Info_Img_Thumbnail {
+    width: 90%;
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+
+    @include rwd(1400px){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    @include rwd(500px){
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include phone{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+	img {
+		width: 100%;
+	}
+}
+
+.GH_WIP_WIP_OverRall_Info_Text {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+    margin-left: 40px;
+
+    @include rwd(1400px){
+        width: 100%;
+        margin-left: 0;
+    }
+
+	>p {
+		font-size: 18px;
+		font-weight: bold;
+		color: map-get($colors, white );
+		text-align: left;
+        margin-top: 20px;
+
+        @include rwd(1400px){
+            text-align: center;
+            font-size: 36px;
+        }
+	}
+}
+
+.GH_WIP_OverRall_Info_Text_Itro {
+	h1 {
+		font-size: 36px;
+		font-weight: bold;
+		margin-bottom: 16px;
+		color: map-get($colors, white );
+        text-align: center;
+
+        @include rwd(1400px){
+			margin: 20px 0;
+        }
+	}
+	span {
+		font-size: 16px;
+		line-height: 1.8;
+		color: map-get($colors, white );
+
+        @include rwd(1400px){
+            font-size: 24px;
+        }
+
+        @include pad{
+            font-size: 20px;
+        }
+	}
+}
+
+.GH_WIP_OverRall_Info_Text_ReleDay {
+	display: flex;
+	align-items: center;
+	text-align: center;
+    margin: 20px 0;
+
+	p {
+		font-size: 18px;
+		font-weight: bold;
+		color: map-get($colors, white );
+		margin-right: 40px;
+
+        @include rwd(1400px){
+            font-size: 24px;
+        }
+
+        @include phone{
+            font-size: 20px;
+        }
+
+        @include rwd(344px){
+            font-size: 18px;
+        }
+	}
+	span {
+		font-size: 16px;
+		font-weight: 400;
+		color: map-get($colors, white );
+
+        @include rwd(1400px){
+            font-size: 24px;
+        }
+
+        
+        @include phone{
+            font-size: 20px;
+        }
+
+        @include rwd(344px){
+            font-size: 18px;
+        }
+	}
+}
+
+.GH_WIP_OverRall_Info_Text_Publisher {
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	p {
+		font-size: 18px;
+		font-weight: bold;
+		color: map-get($colors, white );
+		margin-right: 60px;
+
+        @include rwd(1400px){
+            font-size: 24px;
+        }
+
+        
+        @include phone{
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        @include rwd(344px){
+            font-size: 18px;
+            margin-right: 8px;
+        }
+	}
+	span {
+		font-size: 16px;
+		font-weight: 400;
+		color: map-get($colors, white );
+
+        @include rwd(1400px){
+            font-size: 24px;
+        }
+
+        
+        @include phone{
+            font-size: 20px;
+        }
+
+        @include rwd(344px){
+            font-size: 18px;
+        }
+	}
+}
+
+.GH_WIP_OverRall_Info_Text_Tag {
+	width: 100%;
+
+    @include rwd(970px){
+        display: none;
+    }
+	ul {
+		display: grid;
+		grid-template-rows: repeat(2,1fr);
+		grid-template-columns: repeat(4,1fr);
+		gap: 20px;
+        margin: 20px 0;
+
+        @include rwd(1280px){
+            gap: 8px;
+        }
+	}
+	li {
+		border-radius: 16px;
+		color: map-get($colors, white );
+		font-size: 20px;
+        padding: 12px;
+        background-color: map-get($colors, dodgerBlue );
+        cursor: pointer;
+        text-align: center;
+
+        &:hover{
+            animation: glow 1.5s infinite alternate;
+        }
+
+		&:nth-child(4) {
+			margin-right: 0;
+		}
+		&:nth-child(8) {
+			margin-right: 0;
+		}
+	}
+}
+
+.GH_WIP_OverRall_Info_Text_GameView {
+	// display: grid;
+	// grid-template-columns: repeat(2,1fr);
+	// grid-template-rows: repeat(1,1fr);
+	// justify-content: space-around;
+	// width: 100%;
+    // margin-top: 40px;
+    display: none;
+}
+
+.GH_WIP_OverRall_Info_Text_PMView {
+    width: 80%;
+	display: flex;
+	flex-direction: column;
+
+    @include rwd(1280px){
+        display: none;
+    }
+}
+
+.GH_WIP_OverRall_Info_Text_PView {
+	display: flex;
+	flex-direction: column;
+
+	p {
+		color: map-get($colors, white );
+		background-color: map-get($colors, coffee03);
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		display: block;
+		padding: 8px;
+	}
+}
+
+.GH_WIP_OverRall_Info_Text_MView {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	padding: 20px;
+	background-color: map-get($colors, red01);
+
+    @include rwd(1536px){
+        padding: 8px;
+    }
+
+	span {
+		color: map-get($colors, white );
+		font-size: 32px;
+		font-weight: bold;
+		&:nth-child(2) {
+			color: map-get($colors, white );
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
+}
+
+.GH_WIP_OverRall_Info_Text_MagaViewAll {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+    @include rwd(1536px){
+        display: none;
+    }
+}
+
+.GH_WIP_OverRall_Info_Text_MagaView01 {
+	width: 80%;
+	font-size: 16px;
+	background-color: map-get($colors, greenDragon);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: $font-family_1;
+	color: map-get($colors, white );
+	img {
+		margin-right: 4px;
+		width: 39px;
+		height: 42px;
+	}
+}
+
+.GH_WIP_OverRall_Info_Text_MagaView02 {
+	width: 205px;
+	height: 46px;
+	font-size: 16px;
+	background-color: map-get($colors, greenDragon);
+	display: flex;
+	align-items: center;
+	font-family: $font-family_1;
+	color: map-get($colors, white );
+	img {
+		margin-right: 4px;
+		width: 39px;
+		height: 42px;
+	}
+}
+
+.GH_WIP_OverRall_Behavior {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 80px;
+	background-color: map-get($colors, blueOther);
+	width: 90%;
+    padding: 20px;
+
+    @include rwd(1280px){
+        justify-content: space-around;
+        gap: 0px;
+    }
+
+    @include rwd(970px){
+        width: 100%;
+        gap: 20px;
+		flex-direction: column;
+    }
+}
+
+.GH_WIP_OverRall_Comment_UserInfo {
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+    @include rwd(1280px){
+        width: 30%;
+    }
+
+    @include rwd(1060px){
+        display: none;
+    }
+}
+
+.GH_WIP_OverRall_Comment {
+	width: 90%;
+	padding: 40px;
+	display: flex;
+	align-items: center;
+	background-color: map-get($colors, blueOther);
+
+    @include rwd(1400px){
+        display: none;
+    }
+}
+
+.GH_WIP_OverRall_Comment_Avatar {
+	display: flex;
+	img {
+		// width: 67px;
+		// height: 67px;
+        width: 100px;
+        height: 100px;
+		border-radius: 50%;
+		margin-right: 20px;
+        object-fit: cover; // 確保圖片內容不會變形
+
+        @include rwd(1280px){
+            margin-right: 0;
+        }
+	}
+}
+
+.GH_WIP_OverRall_Comment_AvatarNameTime {
+	color: map-get($colors, white );
+	p {
+		font-size: 28px;
+		font-weight: bold;
+		margin-bottom: 16px;
+
+        @include rwd(1280px){
+            font-size: 24px;
+        }
+	}
+	span {
+		font-size: 16px;
+		font-weight: 400;
+
+        @include rwd(1280px){
+            font-size: 14px;
+        }
+	}
+}
+
+.GH_WIP_OverRall_Comment_Post {
+	width: 90%;
+	font-family: $font-family_2;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: map-get($colors, white );
+
+    @include rwd(1280px){
+        width: 70%;
+    }
+}
+
+.GameHex_WorkInnerPage_Introduce {
+	background-color: map-get($colors, blueHellOcean);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    padding: 120px 0;
+}
+
+.box {
+	width: 80%;
+	height: auto;
+    display: grid;
+	grid-template-rows: repeat(1,1fr);
+	grid-template-columns: repeat(3,1fr);
+	gap: 20px;
+
+    @include rwd(970px){
+        flex-direction: column;
+    }
+}
+
+.GH_WorkInnerPage_Introduce_Left {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+        object-fit: cover;
+	}
+}
+
+.GH_WorkInnerPage_Introduce_Left_Title {
+	border-left: 1px solid #fff;
+	display: flex;
+	flex-direction: column;
+	padding-left: 40px;
+    margin-bottom: 200px;
+
+    @include rwd(1060px){
+        padding-left: 20px;
+    }
+
+	p {
+		font-family: $font-family_1;
+		font-size: 60px;
+		font-weight: bold;
+		color: map-get($colors, white );
+		margin-top: 19px;
+	}
+}
+
+.GH_WorkInnerPage_Introduce_Left_Title_Mid {
+	font-family: $font-family_2;
+	font-size: 40px;
+	font-weight: bold;
+	color: map-get($colors, white );
+	margin-top: 19px;
+}
+
+.GH_WorkInnerPage_Introduce_Left_Title_Small {
+	font-family: $font-family_2;
+	font-size: 28px;
+	font-weight: bold;
+	color: map-get($colors, white );
+	margin-top: 19px;
+}
+
+.GH_WorkInnerPage_Introduce_Mid {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+
+    @include rwd(1060px){
+        width: 30%;
+    }
+
+    @include rwd(970px){
+        width: 100%;
+		height: auto;
+    }
+
+	img {
+		width: 100%;
+		height: auto;
+        object-fit: cover;
+        margin-bottom: 80px;
+	}
+}
+
+.GH_WorkInnerPage_Introduce_Mid_TextArea {
+	width: 100%;
+	background-color: $background-color_6;
+	font-family: $font-family_2;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+    padding: 200px 20px;
+
+    @include rwd(1280px){
+        gap: 8px;
+    }
+
+    @include rwd(1060px){
+        padding: 8px;
+    }
+
+	p {
+		font-size: 32px;
+		font-weight: bold;
+		color: map-get($colors, white );
+	}
+}
+
+.GH_WorkInnerPage_Introduce_Mid_Title_Mid {
+	font-size: 28px;
+	font-weight: bold;
+	color: map-get($colors, white );
+}
+
+.GH_WorkInnerPage_Introduce_Mid_Title_Small01 {
+	font-size: 24px;
+	font-weight: 400;
+	color: map-get($colors, white );
+	line-height: 1.6;
+}
+
+.GH_WorkInnerPage_Introduce_Mid_Title_Small02 {
+	font-size: 16px;
+	font-weight: 400;
+	color: map-get($colors, white );
+}
+
+.GH_WorkInnerPage_Introduce_Right {
+	width: 100%;
+	display: flex;
+    justify-content: center;
+	flex-direction: column;
+
+
+	img {
+		width: 100%;
+		height: auto;
+        object-fit: cover;
+	}
+}
+
+.GH_WorkInnerPage_Introduce_Right_TextArea {
+	width: 100%;
+	background-color: $background-color_6;
+	font-family: $font-family_2;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+    padding: 80px 20px;
+
+    @include rwd(1060px){
+        padding: 8px;
+    }
+
+	p {
+		font-size: 32px;
+		font-weight: bold;
+		color: map-get($colors, white );
+	}
+}
+
+.GH_WorkInnerPage_Introduce_Right_Title_Mid {
+	font-size: 24px;
+	font-weight: bold;
+	color: map-get($colors, white );
+}
+
+.GH_WorkInnerPage_Introduce_Right_Title_Small01 {
+	font-size: 24px;
+	font-weight: 400;
+	color: map-get($colors, white );
+	line-height: 1.6;
+}
+
+.GameHex_WorkInnerPage_DLC {
+	background-color: map-get($colors, blueHellOcean);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.GH_WIP_DLC_Game {
+	width: 90%;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+    @include rwd(970px){
+        width: 100%;
+    }
+}
+
+.GH_WIP_DLC_Version {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.GH_WIP_DLC_Game_Gold {
+	border: 1px solid #fff;
+	width: 60%;
+	display: grid;
+	grid-template-rows: repeat(1, 1fr);
+	grid-gap: 20px;
+	padding: 20px 0;
+	margin: 0 20px;
+
+    @include rwd(1536px){
+        width: 40%;
+		height: 50vh;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
+    }
+
+    @include rwd(970px){
+        width: 60%;
+		height: 40vh;
+		margin-right: 0;
+    }
+
+	p {
+		font-size: 32px;
+		font-weight: bold;
+		text-align: center;
+		color: map-get($colors, white );
+		font-family: $font-family_1;
+
+        @include rwd(1280px){
+            font-size: 28px;
+        }
+
+        @include rwd(970px){
+            font-size: 20px;
+        }
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.GH_WIP_DLC_Game_Deluxe {
+	border: 1px solid #fff;
+	width: 60%;
+	display: grid;
+	grid-template-rows: repeat(1, 1fr);
+	grid-gap: 20px;
+	padding: 20px 0;
+	margin: 0 20px;
+
+    @include rwd(1536px){
+        width: 40%;
+		height: 50vh;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
+    }
+
+    @include rwd(970px){
+        width: 60%;
+		height: 40vh;
+    }
+
+	p {
+		font-size: 32px;
+		font-weight: bold;
+		text-align: center;
+		color: map-get($colors, white );
+		font-family: $font-family_1;
+
+        @include rwd(1280px){
+            font-size: 28px;
+        }
+
+        @include rwd(970px){
+            font-size: 18px;
+        }
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.GH_WIP_DLC_Game_Standard {
+	border: 1px solid #fff;
+	width: 60%;
+	display: grid;
+	grid-template-rows: repeat(1, 1fr);
+	grid-gap: 20px;
+	padding: 20px 0;
+	margin: 0 20px;
+
+    @include rwd(1536px){
+        width: 40%;
+		height: 50vh;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
+    }
+
+    @include rwd(970px){
+        height: 40vh;
+		display: none;
+    }
+
+	p {
+		font-size: 32px;
+		font-weight: bold;
+		text-align: center;
+		color: map-get($colors, white );
+		font-family: $font-family_1;
+
+        @include rwd(1280px){
+            font-size: 28px;
+        }
+
+        @include rwd(970px){
+            font-size: 20px;
+        }
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.GH_WIP_DLC_Banner {
+	width: 100%;
+	background-color: map-get($colors, red03);
+	display: grid;
+	grid-template-rows: repeat(2,1fr);
+	grid-template-columns: repeat(1,1fr);
+	gap: 20px;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+
+    @include rwd(1536px){
+        gap: 0;
+    }
+
+    @include rwd(1060px){
+        display: none;
+    }
+}
+
+.GH_WIP_DLC_Banner_Left_Maga {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		width: 39px;
+		height: 42px;
+		margin-left: 40px;
+	}
+	p {
+		font-family: $font-family_1;
+		color: map-get($colors, white );
+		font-size: 28px;
+		font-weight: bold;
+		margin-left: 8px;
+
+        @include rwd(1280px){
+            font-size: 20px;
+        }
+	}
+}
+
+.GH_WIP_DLC_Banner_Right_Maga {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		width: 39px;
+		height: 42px;
+		margin-left: 40px;
+	}
+	p {
+		font-family: $font-family_1;
+		color: map-get($colors, white );
+		font-size: 28px;
+		font-weight: bold;
+		margin-left: 8px;
+
+        @include rwd(1280px){
+            font-size: 20px;
+        }
+	}
+}
+
+.GH_WIP_DLC_ArtBook_Swiper {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 80%;
+}
+
+.GH_WIP_DLC_ArtBook {
+	background-color: map-get($colors, blueOther);
+	width: 100%;
+	height: 25vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+    @include rwd(970px){
+        height: 20vh;
+    }
+}
+
+.GH_WIP_DLC_ArtBook01 {
+	position: relative;
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 16px;
+
+        @include rwd(1280px){
+            width: 80%;
+        }
+	}
+}
+
+.GH_WIP_DLC_ArtBook02 {
+	position: relative;
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 16px;
+
+        @include rwd(1280px){
+            width: 80%;
+        }
+	}
+}
+
+.GH_WIP_DLC_ArtBook03 {
+	position: relative;
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 16px;
+
+        @include rwd(1280px){
+            width: 80%;
+        }
+	}
+}
+
+.GH_WIP_DLC_ArtBook04 {
+	position: relative;
+
+    @include rwd(970px){
+        display: none;
+    }
+
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 16px;
+
+        @include rwd(1280px){
+            width: 80%;
+        }
+	}
+}
+
+.GameHex_WorkInnerPage_OtherGames {
+	background-color: map-get($colors, blueHellOcean);
+	width: 100%;
+	height: 110vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.box02 {
+	width: 90%;
+
+    @include rwd(1536px){
+        width: 100%;
+    }
+}
+
+.GH_WIP_OtherGames_Title01 {
+	font-family: $font-family_1;
+	color: map-get($colors, white );
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 12px;
+	margin-bottom: 12px;
+
+    @include rwd(1060px){
+        font-size: 28px;
+    }
+
+    @include rwd(970px){
+        font-size: 20px;
+    }
+}
+
+.GH_WIP_OtherGames_Title02 {
+	font-family: $font-family_1;
+	color: map-get($colors, white );
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 16px;
+	margin-bottom: 16px;
+
+    @include rwd(1060px){
+        font-size: 28px;
+    }
+
+    @include rwd(970px){
+        display: none;
+    }
+}
+
+.GH_WIP_OtherGames_Product01 {
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: map-get($colors, blueOther);
+
+    @include rwd(1280px){
+        padding: 0;
+    }
+
+    @include rwd(970px){
+        justify-content: center;
+		flex-direction: column;
+		height: auto;
+    }
+}
+
+.GH_WIP_OtherGames_Product_Title {
+	border-left: 4px solid #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 40px;
+	width: 15%;
+	height: 20vh;
+
+    @include rwd(1280px){
+        padding-left: 20px;
+		margin-left: 20px;
+    }
+
+    @include rwd(970px){
+        display: none;
+    }
+
+	p {
+		font-family: $font-family_1;
+		font-size: 60px;
+		font-weight: bold;
+		color: map-get($colors, white );
+	}
+}
+
+.GH_WIP_OtherGames_Product_SubTitle01 {
+	font-family: $font-family_1;
+	font-size: 40px;
+	font-weight: bold;
+	color: map-get($colors, white );
+
+    @include rwd(1060px){
+        font-size: 32px;
+    }
+}
+
+.GH_WIP_OtherGames_Product_SubTitle02 {
+	font-family: $font-family_1;
+	font-size: 28px;
+	font-weight: bold;
+	color: map-get($colors, white );
+
+    @include rwd(1060px){
+        font-size: 24px;
+    }
+}
+
+.GH_WIP_OtherGames_Product_Info {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+
+    @include rwd(1536px){
+        width: 40%;
+    }
+
+    @include rwd(970px){
+        width: 90%;
+    }
+
+	span {
+		font-family: $font-family_2;
+		color: map-get($colors, white );
+		font-size: 16px;
+		line-height: 1.4;
+	}
+	p {
+		font-family: $font-family_2;
+		color: map-get($colors, white );
+		font-size: 32px;
+		font-weight: bold;
+		margin-bottom: 24px;
+
+        @include rwd(970px){
+            margin-bottom: 0;
+			font-size: 24px;
+        }
+	}
+}
+
+.GH_WIP_OtherGames_Product01_Info_SubTitle {
+	font-family: $font-family_2;
+	color: map-get($colors, white );
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.GH_WIP_OtherGames_Product01_Card {
+	width: 30%;
+
+    @include rwd(1536px){
+        width: 35%;
+    }
+
+    @include rwd(1280px){
+        width: 30%;
+    }
+
+    @include rwd(1060px){
+        width: 35%;
+    }
+
+    @include rwd(970px){
+        width: 100%;
+    }
+}
+
+.recomeGame_Card {
+	width: 80%;
+
+    @include rwd(1536px){
+        width: 75%;
+    }
+
+    @include rwd(1280px){
+        width: 80%;
+    }
+
+    @include rwd(970px){
+        width: 100%;
+    }
+}
+
+.recomeGame_CardFin {
+	width: 300px;
+	height: 300px;
+}
+
+.recomeGame_img {
+	width: 100%;
+	position: relative;
+	>img {
+		width: 100%;
+		object-fit: cover;
+		border-top-left-radius: 16px;
+		border-top-right-radius: 16px;
+	}
+}
+
+.discountPrice {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	top: 20px;
+	left: 16px;
+	width: 40%;
+	height: 4vh;
+	background-color: map-get($colors, black );
+	border-radius: 4px;
+	border: 1px solid #fff;
+
+    @include rwd(1060px){
+        width: 50%;
+    }
+
+	span {
+		font-size: 12px;
+		color: map-get($colors, dark );
+		border-radius: 16px;
+		font-family: $font-family_3;
+		display: block;
+		background-color: map-get($colors, white);
+		padding-left: 12px;
+		padding-right: 12px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+	p {
+		font-size: 14px;
+		font-weight: 500;
+		color: map-get($colors, white );
+		font-family: $font-family_3;
+	}
+}
+.HopeList_BTN {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	border: none;
+	background-color: $background-color_20;
+}
+
+.recomeGame_info {
+	width: 100%;
+	height: 10vh;
+	background-color: map-get($colors, blueHellOcean);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.recomeGame_info_title {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	p {
+		font-size: 24px;
+		font-weight: bold;
+		font-family: $font-family_4;
+		color: map-get($colors, white );
+
+        @include rwd(1280px){
+            font-size: 20px;
+        }
+	}
+	ul {
+		display: flex;
+		align-items: center;
+		li {
+			img {
+				width: 24px;
+				height: 22px;
+			}
+		}
+	}
+}
+
+.gameTag_Bigbox {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	ul {
+		width: 60%;
+		display: grid;
+		grid-template-rows: repeat(2,1fr);
+		grid-template-columns: repeat(3,1fr);
+		gap: 12px;
+
+        @include rwd(1536px){
+            width: 70%;
+			gap: 4px;
+        }
+
+		li {
+			font-size: 14px;
+			font-weight: bold;
+			color: map-get($colors, white );
+			background-color: map-get($colors, blueOther);
+			border-radius: 8px;
+			padding: 4px 8px;
+			text-align: center;
+
+            @include rwd(1280px){
+                padding: 0;
+            }
+		}
+	}
+}
+.GH_WIP_OtherGames_Product02 {
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: map-get($colors, blueOther);
+}
+
+.GH_WIP_OtherGames_Product03 {
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: map-get($colors, blueOther);
+}
+
+.GameHex_WorkInnerPage_Feedback {
+	background-color: map-get($colors, blueHellOcean);
+	width: auto;
+	height: 1024px;
+	border: 1px solid pink;
+}
+
+
+.BTN_Style_ProductTo_HopeList {
+    @include button-style(map-get($colors, red03), map-get($colors, red01), map-get($colors, white));
+}
+
+.BTN_Style_ProductTo_Cart {
+    @include button-style(map-get($colors, greenGrass), map-get($colors, greenGrassDark), map-get($colors, coffee02));
+}
+
+.BTN_Style_ProductTo_Ignore {
+    @include button-style(map-get($colors, blueSky), map-get($colors, dodgerBlue), map-get($colors, white));
+}
+
+.BTN_Style_ProductTo_OtherGame {
+    @include button-style(map-get($colors, blueSky), map-get($colors, dodgerBlue), map-get($colors, white));
+}
+
+.BTN_Style_ProductTo_BuyGame1350 {
+	text-align: center;
+	margin: 0 auto;
+	width: 36%;
+	height: 4vh;
+	color: map-get($colors, dark );
+	background-color: map-get($colors, white);
+	border: 1px solid #000;
+	border-radius: 16px;
+	font-family: $font-family_1;
+	font-size: 20px;
+
+    @include rwd(970px){
+        width: 60%;
+    }
+}
+
+.BTN_Style_ProductTo_BuyGame1920 {
+	text-align: center;
+	margin: 0 auto;
+	width: 36%;
+	height: 4vh;
+	color: map-get($colors, dark );
+	background-color: map-get($colors, white);
+	border: 1px solid #000;
+	border-radius: 16px;
+	font-family: $font-family_1;
+	font-size: 20px;
+
+    @include rwd(970px){
+        width: 60%;
+    }
+}
+
+.BTN_Style_ProductTo_BuyGame1080 {
+	text-align: center;
+	margin: 0 auto;
+	width: 36%;
+	height: 4vh;
+	color: map-get($colors, dark );
+	background-color: map-get($colors, white);
+	border: 1px solid #000;
+	border-radius: 16px;
+	font-family: $font-family_1;
+	font-size: 20px;
+
+    @include rwd(970px){
+        width: 60%;
+    }
+}
+
+.BTN_Style_ProductTo_BuyGameNow {
+	margin: 20px auto;
+	width: 20%;
+	height: 8vh;
+	color: map-get($colors, dark );
+	background-color: map-get($colors, white);
+	border: 1px solid #000;
+	border-radius: 16px;
+	font-family: $font-family_1;
+	font-size: 32px;
+	font-weight: bold;
+
+    @include rwd(1536px){
+        width: 15%;
+		height: 6vh;
+    }
+
+    @include rwd(1280px){
+        font-size: 24px;
+    }
+
+    @include rwd(970px){
+        width: 30%;
+    }
+
+	&:hover {
+		background-color: map-get($colors, gray);
+		color: map-get($colors, orangeJuice);
+	}
+}
+
+.BTN_Style_Product_Swiper_Left {
+	background-image: url(../img/Vector-Left.png);
+	width: 26px;
+	height: 34px;
+	background-color: $background-color_20;
+	border: 0px;
+	margin-right: 24px;
+}
+
+.BTN_Style_Product_Swiper_Right {
+	background-image: url(../img/Vector-Right.png);
+	width: 26px;
+	height: 34px;
+	background-color: $background-color_20;
+	border: 0px;
+}
+
+.BTN_Style_ProductTo_ArtBook1920 {
+	position: absolute;
+	top: 160px;
+	left: 63px;
+	text-align: center;
+	width: 50%;
+	height: 4vh;
+	color: map-get($colors, dark );
+	background-color: map-get($colors, white);
+	border: 1px solid #000;
+	border-radius: 16px;
+	font-family: $font-family_1;
+	font-size: 20px;
+
+    @include rwd(1280px){
+        width: 40%;
+		top: 140px;
+		left: 50px;
+    }
+
+    @include rwd(1060px){
+        top: 120px;
+    }
+
+    @include rwd(970px){
+        top: 100px;
+		top: 40px;
+		left: 20px;
+		width: 60%;
+		font-size: 12px;
+    }
+}
+
+.BTN_Style_ProductTo_ArtBook1220 {
+	position: absolute;
+	top: 160px;
+	left: 63px;
+	text-align: center;
+	width: 50%;
+	height: 4vh;
+	color: map-get($colors, dark );
+	background-color: map-get($colors, white);
+	border: 1px solid #000;
+	border-radius: 16px;
+	font-family: $font-family_1;
+	font-size: 20px;
+
+    @include rwd(1280px){
+        width: 40%;
+		top: 140px;
+		left: 50px;
+    }
+
+    @include rwd(1060px){
+        top: 120px;
+    }
+
+    @include rwd(970px){
+        top: 100px;
+		top: 40px;
+		left: 20px;
+		width: 60%;
+		font-size: 12px;
+    }
+}
+
+.BTN_Style_ProductTo_ArtBook1420 {
+	position: absolute;
+	top: 160px;
+	left: 63px;
+	text-align: center;
+	width: 50%;
+	height: 4vh;
+	color: map-get($colors, dark );
+	background-color: map-get($colors, white);
+	border: 1px solid #000;
+	border-radius: 16px;
+	font-family: $font-family_1;
+	font-size: 20px;
+
+    @include rwd(1280px){
+        width: 40%;
+		top: 140px;
+		left: 50px;
+    }
+
+    @include rwd(1060px){
+        top: 120px;
+    }
+
+    @include rwd(970px){
+        top: 100px;
+		top: 40px;
+		left: 20px;
+		width: 60%;
+		font-size: 12px;
+    }
+}
+
+.BTN_Style_ProductTo_ArtBook1620 {
+	position: absolute;
+	top: 160px;
+	left: 63px;
+	text-align: center;
+	width: 50%;
+	height: 4vh;
+	color: map-get($colors, dark );
+	background-color: map-get($colors, white);
+	border: 1px solid #000;
+	border-radius: 16px;
+	font-family: $font-family_1;
+	font-size: 20px;
+
+    @include rwd(1280px){
+        width: 40%;
+		top: 140px;
+		left: 50px;
+    }
+
+    @include rwd(1060px){
+        top: 120px;
+    }
+
+    @include rwd(970px){
+        top: 100px;
+    }
+}
+
+.AddToCart_BTN {
+	width: 30%;
+	height: 4vh;
+	background-color: map-get($colors, white);
+	border-radius: 8px;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+
+    @include rwd(1536px){
+        width: 25%;
+		font-size: 16px;
+    }
+
+    @include rwd(1280px){
+        font-size: 14px;
+    }
+}
