@@ -522,6 +522,12 @@ $background-color_7: transparent;
     }
 
     ul {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(5,1fr);
+        gap: 20px;
 
         @include rwd(970px) {
             grid-template-rows: repeat(2,1fr);
@@ -547,12 +553,6 @@ $background-color_7: transparent;
                 margin-right: 0;
             }
         }
-        display: grid;
-        align-items: center;
-        justify-items: center;
-        grid-template-rows: repeat(1,1fr);
-        grid-template-columns: repeat(5,1fr);
-        gap: 20px;
     }
 }
 .UseThisCoupon_BTN {
