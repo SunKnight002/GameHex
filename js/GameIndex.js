@@ -66,4 +66,19 @@ for (let i = 0; i < gameCards.length; i++) {
     document.getElementById(`GameImg_${i + 1}`).addEventListener('click', function() {
         window.location.href = 'GH_ShopWorkInnerPage.html';
     });
+
+
+    // 使用事件委派為卡片添加點擊事件監聽器
+    gameCardList.addEventListener('click', function (event) {
+        let target = event.target;
+
+        // 確認點擊的是卡片或卡片內的元素
+        while (target !== gameCardList) {
+            if (target.classList.contains('recomeGame_indexUse_Card')) {
+                window.location.href = 'GH_ShopWorkInnerPage.html';
+                return;
+            }
+            target = target.parentNode;
+        }
+    });
 }

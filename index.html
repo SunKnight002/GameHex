@@ -129,10 +129,10 @@
                     <div class="GH_I_ShopArea_GameArea_TitleAndSearh">
                         <p>Game with Discount</p>
                         <select name="GameFilter" id="GameFilterSet" class="GameFilterStyle">
-                           <option value="GameFilter_01">價錢由低到高</option>
-                           <option value="GameFilter_02">價錢由高到低</option>
-                           <option value="GameFilter_03">最新販售</option>
-                           <option value="GameFilter_04">最高人氣</option>
+                            <option value="GameFilter_01">價錢由低到高</option>
+                            <option value="GameFilter_02">價錢由高到低</option>
+                            <option value="GameFilter_03">最新販售</option>
+                            <option value="GameFilter_04">最高人氣</option>
                         </select>
                     </div>
 
@@ -142,7 +142,7 @@
                         <div class="recomeGame_indexUse_Card">
                             <!-- 小卡圖片 -->
                             <div class="recomeGame_indexUse_img Usage_img>
-                                <a href="GH_ShopWorkInnerPage.html"><img src="./img/GameCard_252140Card_001.jpg" alt="" class="Card_000" ></a>
+                                <a href="GH_ShopWorkInnerPage.html" class="image-link"><img src="./img/GameCard_252140Card_001.jpg" alt="" class="Card_000" ></a>
                                 <div class="Card_Love">
                                     <!-- 小卡圖片上的 折價標籤 -->
                                     <div class="discountPrice_index">
@@ -177,7 +177,7 @@
                                             <li>搶先體驗</li>
                                         </ul>
                                         <!-- 小卡文字上的 加入購物車 按鈕 -->
-                                        <button id="AddToCart_0001" class="AddToCart_indexUse_BTN">加入購物車</button>
+                                        <button id="AddToCart_0001" class="AddToCart_indexUse_BTN image-link">加入購物車</button>
                                     </div>
                                 </div>
                             </div>
@@ -196,6 +196,18 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 點了圖片轉網址 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const imageLink = document.querySelector('.image-link');
+
+            imageLink.addEventListener('click', function (event) {
+                event.preventDefault(); // 防止默認行為
+                window.location.href = 'GH_ShopWorkInnerPage.html'; // 跳轉到新頁面
+            });
+        });
+    </script>
 
     <!-- Initialize Swiper -->
     <script>

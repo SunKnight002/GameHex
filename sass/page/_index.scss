@@ -414,6 +414,8 @@ body {
 .recomeGame_indexUse_Card {
     width: 100%;
     height: auto;
+	cursor: pointer;
+
     &:nth-child(4) {
         margin-right: 0;
     }
@@ -436,6 +438,7 @@ body {
         object-fit: cover;
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
+		cursor: pointer;
     }
 }
 
@@ -456,6 +459,7 @@ body {
     object-fit: cover;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+	cursor: pointer;
 }
 .Card_BTN01 {
     display: flex;

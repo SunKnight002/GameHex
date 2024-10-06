@@ -58,9 +58,7 @@ header {
     font-size: 18px;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: 400;
-    :hover {
-        color: dodgerblue;
-    }
+
 
     span {
         display: inline-block;
@@ -80,7 +78,7 @@ header {
         }
 
         &:hover {
-            color: dodgerblue;
+            color: map-get($colors , dodgerBlue );
 
             &::after {
                 width: 100%;
@@ -120,7 +118,7 @@ header {
         top: 6%;
         gap: 0;
         flex-direction: column;
-        background-color: rgba(125, 125, 125, 0.7);
+        background-color: map-get($colors , grayDeep );
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -184,84 +182,4 @@ header {
 
 .active-link span {
     color: dodgerblue;
-}
-
-/* ----------------- RWD ----------------------- Start ---------------------- */
-/* ----------------- RWD ----------------------- Table ---------------------- */
-
-@media (max-width: 968px) {
-    /* 在小於968px的裝置上應用這些CSS規則 */
-
-    // header{
-    //     justify-content: space-around;
-    // }
-
-    // header ul{
-    //     display: none;
-    // }
-
-    // .hanber > img{
-    //     display: block;
-    // }
-
-    // .navbar{
-    //     width: 100%;
-    // 	justify-content: space-between;
-    // }
-
-    // .hamburger{
-    //     display: block;
-    // }
-
-    // .hamburger.active .bar:nth-child(2){
-    //     opacity: 0;
-    // }
-
-    // .hamburger.active .bar:nth-child(1){
-    //     transform: translateY(8px) rotate(45deg);
-    // }
-
-    // .hamburger.active .bar:nth-child(3){
-    //     transform: translateY(-8px) rotate(-45deg);
-    // }
-
-    // .nav-menu{
-    //     position: fixed;
-    //     left: -100%;
-    //     top: 100px;
-    //     gap: 0;
-    //     flex-direction: column;
-    //     background-color: rgba(125, 125, 125, 0.7);
-    //     width: 100%;
-    //     text-align: center;
-    //     transition: 0.3s;
-    //     z-index: 5;
-    // }
-
-    // .nav-item{
-    //     margin: 16px 0;
-    // }
-
-    // .nav-menu.active{
-    //     left: 0;
-    // }
-}
-
-/* ----------------- RWD ----------------------- Start ---------------------- */
-/* ----------------- RWD ----------------------- Mobile ---------------------- */
-
-@media (max-width: 600px) {
-
-    // .navbar{
-    //     width: 40%;
-    // }
-
-    // header {
-    //     padding-top: 8px;
-    //     padding-bottom: 8px;
-    // }
-
-    // .nav-menu{
-    //     top: 70px;
-    // }
 }
