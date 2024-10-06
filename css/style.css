@@ -517,20 +517,32 @@ body {
   padding-left: 8px;
 }
 
+.index_funnyBox {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .GH_I_ShopArea_DispalyAndTag {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 15%;
   height: auto;
 }
-@media (max-width: 1150px) {
+@media (max-width: 1700px) {
   .GH_I_ShopArea_DispalyAndTag {
-    width: 100%;
+    width: 25%;
+  }
+}
+@media (max-width: 1400px) {
+  .GH_I_ShopArea_DispalyAndTag {
+    display: none;
   }
 }
 
 .GH_I_ShopArea_GameTag {
-  width: 15%;
+  width: 100%;
   height: auto;
   outline: 4px solid #fff;
   border-radius: 20px;
@@ -538,15 +550,11 @@ body {
   margin-right: 40px;
   display: flex;
   flex-direction: column;
+  padding: 200px 40px;
 }
 @media (max-width: 1536px) {
   .GH_I_ShopArea_GameTag {
-    width: 15%;
-  }
-}
-@media (max-width: 1150px) {
-  .GH_I_ShopArea_GameTag {
-    display: none;
+    padding: 40px 40px;
   }
 }
 
@@ -554,7 +562,6 @@ body {
 .GH_I_ShopArea_GameTag_FromGame {
   font-family: "Noto Sans TC", sans-serif;
   color: #fff;
-  padding: 20px 20px 0;
   text-align: center;
 }
 @media (max-width: 1280px) {
@@ -587,6 +594,7 @@ body {
 .GH_I_ShopArea_GameTag_FromGame ul li {
   position: relative;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .GH_I_ShopArea_GameTag_FromYour ul li a,
 .GH_I_ShopArea_GameTag_FromGame ul li a {
@@ -598,7 +606,8 @@ body {
   padding: 10px 0;
   position: relative;
   z-index: 1;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: bold;
 }
 .GH_I_ShopArea_GameTag_FromYour ul li a span,
 .GH_I_ShopArea_GameTag_FromGame ul li a span {
@@ -630,8 +639,6 @@ body {
 
 .GH_I_ShopArea_GameArea {
   width: 90%;
-  height: 95vh;
-  border: 1px solid #000;
   border-radius: 16px;
   background-color: #3A5A85;
   padding: 20px;
@@ -641,19 +648,9 @@ body {
 }
 @media (max-width: 1536px) {
   .GH_I_ShopArea_GameArea {
-    height: 90vh;
+    width: 100%;
     padding: 12px;
     justify-content: space-around;
-  }
-}
-@media (max-width: 900px) {
-  .GH_I_ShopArea_GameArea {
-    width: 80%;
-  }
-}
-@media (max-width: 650px) {
-  .GH_I_ShopArea_GameArea {
-    width: 100%;
   }
 }
 
@@ -722,14 +719,12 @@ body {
 }
 @media (max-width: 900px) {
   .GameFilterStyle:optional {
-    padding-left: 0;
-    padding-right: 0;
+    display: none;
   }
 }
 
 .GH_I_ShopArea_GameArea_GameCardList {
   width: 100%;
-  height: 90%;
   padding: 20px;
   border-radius: 20px;
   background-color: #333333;
@@ -747,6 +742,11 @@ body {
 @media (max-width: 1200px) {
   .GH_I_ShopArea_GameArea_GameCardList {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 430px) {
+  .GH_I_ShopArea_GameArea_GameCardList {
+    padding: 12px;
   }
 }
 
@@ -972,6 +972,11 @@ body {
   width: 100%;
   padding: 20px 10px;
   flex-direction: column;
+}
+@media (max-width: 430px) {
+  .gameTag_indexUse_Bigbox {
+    padding: 20px 4px;
+  }
 }
 .gameTag_indexUse_Bigbox ul {
   width: 100%;

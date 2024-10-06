@@ -1,148 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <title>GameHex首頁</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <head>
+        <meta charset="utf-8"/>
+        <title>GameHex首頁</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <nav class="navbar">
-            <a class="header_Logo" href="index.html" target="_self"><img src="./img/logo.png" alt="GameHex Logo"></a>
-            <ul class="nav-menu">
-                <a class="nav-link" href="index.html" target="_self"><li class="nav-item"><span>產品銷售</span></li></a>
-                <a class="nav-link" href="GH_ProductCheckout.html" target="_self"><li class="nav-item"><span>購物推車</span></li></a>
-                <a class="nav-link" href="GH_WareHouse.html" target="_self"><li class="nav-item"><span>遊戲倉庫</span></li></a>
-                <a class="nav-link" href="GH_CompanyCoop.html" target="_self"><li class="nav-item"><span>企業合作</span></li></a>
-                <a class="nav-link" href="GH_MyAccount.html" target="_self"><li class="nav-item"><span>願望清單</span></li></a>
-                <a class="nav-link" href="GH_LoginPage.html" target="_self"><li class="nav-item"><span>登入/註冊</span></li></a>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <!-- index 頁面最上層 第一個 1440*1024尺寸 -->
-        <section class="GameHex_Index_Swiper">
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./img/BG_For_Index_001.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/BG_For_Index_002.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/BG_For_Index_003.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/BG_For_Index_004.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/BG_For_Index_005.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/BG_For_Index_011.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/BG_For_Index_007.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/BG_For_Index_008.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="./img/BG_For_Index_009.jpg" alt=""></div>
+        <header>
+            <nav class="navbar">
+                <a class="header_Logo" href="index.html" target="_self"><img src="./img/logo.png" alt="GameHex Logo"></a>
+                <ul class="nav-menu">
+                    <a class="nav-link" href="index.html" target="_self">
+                        <li class="nav-item">
+                            <span>產品銷售</span></li>
+                    </a>
+                    <a class="nav-link" href="GH_ProductCheckout.html" target="_self">
+                        <li class="nav-item">
+                            <span>購物推車</span></li>
+                    </a>
+                    <a class="nav-link" href="GH_WareHouse.html" target="_self">
+                        <li class="nav-item">
+                            <span>遊戲倉庫</span></li>
+                    </a>
+                    <a class="nav-link" href="GH_CompanyCoop.html" target="_self">
+                        <li class="nav-item">
+                            <span>企業合作</span></li>
+                    </a>
+                    <a class="nav-link" href="GH_MyAccount.html" target="_self">
+                        <li class="nav-item">
+                            <span>願望清單</span></li>
+                    </a>
+                    <a class="nav-link" href="GH_LoginPage.html" target="_self">
+                        <li class="nav-item">
+                            <span>登入/註冊</span></li>
+                    </a>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-                <div class="autoplay-progress">
-                    <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20"></circle></svg>
-                    <span></span>
-                </div>
-            </div>
-            <!-- 遊戲標題 -->
-            <!-- <section class="GH_I_Swiper_Footer"><p>即將上市的新遊戲</p></section> -->
-        </section>
+            </nav>
+        </header>
 
-
-        <!-- index 頁面最上層 第二個 1440*1024尺寸 -->
-        <section class="GameHex_Index_ShopArea">
-            <!-- 上方 搜尋列表 -->
-            <section class="GH_I_ShopArea_SearchBar">
-                <div class="GH_I_ShopArea_SearchBar_TagBTN">
-                    <ul>
-                        <a href="#"><li>所有項目</li></a>
-                        <a href="#"><li>矚目新品</li></a>
-                        <a href="#"><li>近期暢銷</li></a>
-                        <a href="#"><li>最高評價</li></a>
-                        <a href="#"><li>特價中</li></a>
-                        <a href="#"><li>即將發行</li></a>
-                    </ul>
+        <main>
+            <!-- index 頁面最上層 第一個 1440*1024尺寸 -->
+            <section class="GameHex_Index_Swiper">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/BG_For_Index_001.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/BG_For_Index_002.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/BG_For_Index_003.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/BG_For_Index_004.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/BG_For_Index_005.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/BG_For_Index_011.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/BG_For_Index_007.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/BG_For_Index_008.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/BG_For_Index_009.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                        <svg viewbox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span></span>
+                    </div>
                 </div>
-
-                <div class="GH_I_ShopArea_SearchBar_SeeBTN">
-                    <!-- 搜尋列表 -->
-                    <input type="text" placeholder="請輸入遊戲名稱" class="GH_MA_HopeList_SearchTool_index">
-                    <button id="BTN_ProductTo_SearchName" class="BTN_Style_ProductTo_SearchName" onclick="location.href='#'"></button>
-                </div>
+                <!-- 遊戲標題 -->
+                <!-- <section class="GH_I_Swiper_Footer"><p>即將上市的新遊戲</p></section> -->
             </section>
 
-            <!-- 中間與左側 遊戲陳列專區 -->
-            <section class="GH_I_ShopArea_DispalyAndTag">
-                <section class="GH_I_ShopArea_GameTag">
-                    <div class="GH_I_ShopArea_GameTag_FromYour">
-                        <p>您的標籤</p>
+            <!-- index 頁面最上層 第二個 1440*1024尺寸 -->
+            <section class="GameHex_Index_ShopArea">
+                <!-- 上方 搜尋列表 -->
+                <section class="GH_I_ShopArea_SearchBar">
+                    <div class="GH_I_ShopArea_SearchBar_TagBTN">
                         <ul>
-                            <li><a href="#"><span>射擊</span></a></li>
-                            <li><a href="#"><span>中世紀</span></a></li>
-                            <li><a href="#"><span>動作</span></a></li>
-                            <li><a href="#"><span>大型多人</span></a></li>
-                            <li><a href="#"><span>生存</span></a></li>
-                            <li><a href="#"><span>建造模擬</span></a></li>
-                            <li><a href="#"><span>模擬經營</span></a></li>
-                            <li><a href="#"><span>黑暗奇幻</span></a></li>
-                            <li><a href="#"><span>機甲</span></a></li>
-                            <li><a href="#"><span>搞笑</span></a></li>
-                            <li><a href="#"><span>派對遊戲</span></a></li>
-                            <li><a href="#"><span>策略模擬</span></a></li>
+                            <a href="#">
+                                <li>所有項目</li>
+                            </a>
+                            <a href="#">
+                                <li>矚目新品</li>
+                            </a>
+                            <a href="#">
+                                <li>近期暢銷</li>
+                            </a>
+                            <a href="#">
+                                <li>最高評價</li>
+                            </a>
+                            <a href="#">
+                                <li>特價中</li>
+                            </a>
+                            <a href="#">
+                                <li>即將發行</li>
+                            </a>
                         </ul>
                     </div>
 
-                    <div class="GH_I_ShopArea_GameTag_FromGame">
-                        <p>依類型瀏覽</p>
-                        <ul>
-                            <li><a href="#"><span>免費遊玩</span></a></li>
-                            <li><a href="#"><span>搶先體驗</span></a></li>
-                            <li><a href="#"><span>休閒</span></a></li>
-                            <li><a href="#"><span>冒險</span></a></li>
-                            <li><a href="#"><span>動作</span></a></li>
-                            <li><a href="#"><span>大型多人</span></a></li>
-                            <li><a href="#"><span>模擬</span></a></li>
-                            <li><a href="#"><span>獨立</span></a></li>
-                            <li><a href="#"><span>競速</span></a></li>
-                            <li><a href="#"><span>策略</span></a></li>
-                            <li><a href="#"><span>角色扮演</span></a></li>
-                            <li><a href="#"><span>運動</span></a></li>
-                        </ul>
+                    <div class="GH_I_ShopArea_SearchBar_SeeBTN">
+                        <!-- 搜尋列表 -->
+                        <input
+                            type="text"
+                            placeholder="請輸入遊戲名稱"
+                            class="GH_MA_HopeList_SearchTool_index">
+                        <button
+                            id="BTN_ProductTo_SearchName"
+                            class="BTN_Style_ProductTo_SearchName"
+                            onclick="location.href='#'"></button>
                     </div>
-
                 </section>
 
-                <!-- 放置遊戲卡片的區域 -->
-                <section class="GH_I_ShopArea_GameArea">
-                    <!-- 標題 -->
-                    <div class="GH_I_ShopArea_GameArea_TitleAndSearh">
-                        <p>Game with Discount</p>
-                        <select name="GameFilter" id="GameFilterSet" class="GameFilterStyle">
-                            <option value="GameFilter_01">價錢由低到高</option>
-                            <option value="GameFilter_02">價錢由高到低</option>
-                            <option value="GameFilter_03">最新販售</option>
-                            <option value="GameFilter_04">最高人氣</option>
-                        </select>
-                    </div>
+                <section class="index_funnyBox">
+                    <!-- 中間與左側 遊戲陳列專區 -->
+                    <section class="GH_I_ShopArea_DispalyAndTag">
+                        <section class="GH_I_ShopArea_GameTag">
+                            <div class="GH_I_ShopArea_GameTag_FromYour">
+                                <p>您的標籤</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>射擊</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>中世紀</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>動作</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>大型多人</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>生存</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>建造模擬</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>模擬經營</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>黑暗奇幻</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>機甲</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>搞笑</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>派對遊戲</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>策略模擬</span></a>
+                                    </li>
+                                </ul>
+                            </div>
 
-                    <!-- 塞滿小卡 -->
-                    <div class="GH_I_ShopArea_GameArea_GameCardList">
-                        <!-- 小卡一號 -->
-                        <div class="recomeGame_indexUse_Card">
-                            <!-- 小卡圖片 -->
-                            <div class="recomeGame_indexUse_img Usage_img>
-                                <a href="GH_ShopWorkInnerPage.html" class="image-link"><img src="./img/GameCard_252140Card_001.jpg" alt="" class="Card_000" ></a>
+                            <div class="GH_I_ShopArea_GameTag_FromGame">
+                                <p>依類型瀏覽</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>免費遊玩</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>搶先體驗</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>休閒</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>冒險</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>動作</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>大型多人</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>模擬</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>獨立</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>競速</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>策略</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>角色扮演</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>運動</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- 放置遊戲卡片的區域 -->
+                    <section class="GH_I_ShopArea_GameArea">
+                        <!-- 標題 -->
+                        <div class="GH_I_ShopArea_GameArea_TitleAndSearh">
+                            <p>Game with Discount</p>
+                            <select name="GameFilter" id="GameFilterSet" class="GameFilterStyle">
+                                <option value="GameFilter_01">價錢由低到高</option>
+                                <option value="GameFilter_02">價錢由高到低</option>
+                                <option value="GameFilter_03">最新販售</option>
+                                <option value="GameFilter_04">最高人氣</option>
+                            </select>
+                        </div>
+
+                        <!-- 塞滿小卡 -->
+                        <div class="GH_I_ShopArea_GameArea_GameCardList">
+                            <!-- 小卡一號 -->
+                            <div class="recomeGame_indexUse_Card">
+                                <!-- 小卡圖片 -->
+                                <div
+                                    class="recomeGame_indexUse_img Usage_img>
+                                    <a href="
+                                    GH_ShopWorkInnerPage.html" class="
+                                    image-link"="image-link""><img src="./img/GameCard_252140Card_001.jpg" alt="" class="Card_000"></a>
                                 <div class="Card_Love">
                                     <!-- 小卡圖片上的 折價標籤 -->
                                     <div class="discountPrice_index">
@@ -152,7 +269,7 @@
                                     <!-- 小卡圖片上的 願望清單 按鈕 -->
                                     <button id="HopeList_0001" class="HopeList_BTN_index"><img src="./img/love.png" alt=""></button>
                                 </div>
-                                <!--  小卡文字資訊 -->
+                                <!-- 小卡文字資訊 -->
                                 <div class="recomeGame_info_index">
                                     <!-- 小卡遊戲名稱 以及 評價星星 -->
                                     <div class="recomeGame_info_index_title">
@@ -166,7 +283,7 @@
                                         </ul>
                                     </div>
 
-                                    <!-- 遊戲的類型Tag  -->
+                                    <!-- 遊戲的類型Tag -->
                                     <div class="gameTag_indexUse_Bigbox">
                                         <ul>
                                             <li>獨立遊戲</li>
@@ -186,8 +303,9 @@
                 </section>
             </section>
         </section>
-    </main>
 
+    </section>
+</main>
 
 
 
